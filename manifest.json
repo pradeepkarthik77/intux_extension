@@ -1,18 +1,28 @@
 {
-    "name": "Extension",
-    "version": "1.0",
-    "description": "Tracking your eyes!",
-    "permissions": ["activeTab","declarativeContent", "storage"],
-    "background": {
-      "scripts": ["background.js"],
-      "persistent": false
-    },
-    "browser_action": {
-      "default_popup": "popup.html"
-    },
-    "content_scripts": [{
-      "matches": ["https://*/*"],
-      "js": ["content.js","WebGazer.js"]
-    }],
-    "manifest_version": 2
-  }
+  "manifest_version": 3,
+  "name": "Extension",
+  "version": "1.0",
+  "description": "Tracking your eyes!",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js",
+        "WebGazer.js"
+      ]
+    }
+  ]
+}
