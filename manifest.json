@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Extension",
+  "name": "INTUX",
   "version": "1.0",
-  "description": "Tracking your eyes!",
+  "description": "Tracking to Improve!",
   "permissions": [
     "activeTab",
     "scripting",

@@ -18,9 +18,6 @@ function initGazer() {
             .showPredictionPoints(true) /* shows a square every 100 milliseconds where current prediction is */
             .applyKalmanFilter(true); /* Ka*/
 
-            // content-script.js
-
-                // Create the overlay div
                 const overlayDiv = document.createElement('div');
                 overlayDiv.id = 'calibration-overlay';
                 document.body.appendChild(overlayDiv);
@@ -64,8 +61,8 @@ function createDots() {
         const dot = document.createElement('div');
         dot.className = 'calibration-dot';
         dot.style.position = 'absolute';
-        dot.style.width = '20px'; // Adjust the width and height as needed
-        dot.style.height = '20px';
+        dot.style.width = '15px'; // Adjust the width and height as needed
+        dot.style.height = '15px';
         dot.style.borderRadius = '50%'; // Make the dot round
         dot.style.transition = 'background-color 0.3s'; // Add transition for color change
 
@@ -122,11 +119,35 @@ function handleDotClick(dot) {
     // Change color after 10 clicks
     if (dot.clickCount === 10) {
         dot.style.background = 'yellow';
+    }
 
-        // Reset click count for the current dot
-        dot.clickCount = 0;
+    if (areAllDotsClickedEnough()) {
+
+        setTimeout(removeOverlay, 500);
+        
     }
 
     // Perform any additional actions needed for calibration
     console.log('Dot clicked:', dot.style.background);
+}
+
+function areAllDotsClickedEnough() {
+    const dots = document.getElementsByClassName('calibration-dot');
+    const numDots = dots.length;
+
+    for (let i = 0; i < numDots; i++) {
+        if (dots[i].clickCount < 9) {
+            return false; // At least one dot has not been clicked 9 times
+        }
+    }
+
+    return true; // All dots have been clicked 9 times
+}
+
+function removeOverlay() {
+    const overlayDiv = document.getElementById('calibration-overlay');
+    if (overlayDiv) {
+        overlayDiv.parentNode.removeChild(overlayDiv);
+        alert("All Dots are clicked and calibration is finished")
+    }
 }
