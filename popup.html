@@ -16,7 +16,7 @@
             color: #333;
         }
 
-        #sendMessageButton {
+        .action-button {
             background-color: #4CAF50;
             color: white;
             padding: 10px 20px;
@@ -25,9 +25,10 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
+            margin: 10px;
         }
 
-        #sendMessageButton:hover {
+        .action-button:hover {
             background-color: #45a049;
         }
 
@@ -39,9 +40,10 @@
 </head>
 <body>
     <h2>Eye Tracking Extension</h2>
-    <p>Welcome to the Eye Tracking Extension. Click the button below to start tracking your eyes!</p>
+    <p>Welcome to the Eye Tracking Extension. Click the buttons below to interact with eye tracking features!</p>
     
-    <button id="sendMessageButton" onclick="sendMessage">Start Tracking</button>
+    <button id="startCalibrationBtn" class="action-button" onclick="startCalibration">Start Calibration</button>
+    <button id="startTrackingBtn" class="action-button" onclick="startTracking">Start Tracking</button>
 
     <div id="content">
         <p>Enjoy exploring the world of eye tracking!</p>
