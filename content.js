@@ -25,7 +25,7 @@ function initGazer() {
 
             webgazer.setRegression('ridge')
             .setGazeListener(function(data,clock) {
-                //     console.log(data,clock);
+                    console.log(data,clock);
             })
             .begin();
 
