@@ -2,9 +2,14 @@ appendLoop = '';
 eyeData = [];
 runs = 0;
 
-setTimeout(function (){
-	initGazer();
-},50);
+// content.js
+chrome.runtime.onMessage.addListener(
+    function (request, sender, sendResponse) {
+        if (request.message === 'enabledWebgazer') {
+            initGazer();
+        }
+    }
+);
 
 function initGazer() {
 

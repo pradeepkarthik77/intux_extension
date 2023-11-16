@@ -1,21 +1,52 @@
+<!-- popup.html -->
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Sample Popup</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Tracking Extension</title>
     <style>
         body {
-            width: 200px;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             text-align: center;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        #sendMessageButton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #sendMessageButton:hover {
+            background-color: #45a049;
+        }
+
+        #content {
+            margin-top: 20px;
+            color: #555;
         }
     </style>
 </head>
-
 <body>
-    <h2>Sample Chrome Extension</h2>
-    <p>This is a basic popup with WebGazer!</p>
-    <div id="prediction">Looking at: (x, y)</div>
-</body>
+    <h2>Eye Tracking Extension</h2>
+    <p>Welcome to the Eye Tracking Extension. Click the button below to start tracking your eyes!</p>
+    
+    <button id="sendMessageButton" onclick="sendMessage">Start Tracking</button>
 
+    <div id="content">
+        <p>Enjoy exploring the world of eye tracking!</p>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
 </html>
