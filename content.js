@@ -2,12 +2,25 @@ appendLoop = '';
 eyeData = [];
 runs = 0;
 
+if(sessionStorage.getItem("ExtensionURL") == window.location.hostname)
+{
+    console.log("Proceeding to continue");
+    setTimeout(initGazer,1000);
+}
+else{
+    sessionStorage.getItem("ExtensionURL");
+}
+
 // content.js
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
         if (request.message === 'enabledWebgazer') {
+
+            var hostname = window.location.hostname;
+            sessionStorage.setItem('ExtensionURL', hostname);
+
             initGazer();
-            createCalibration();
+            // createCalibration();
         }
     }
 );
@@ -16,7 +29,12 @@ chrome.runtime.onMessage.addListener(
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
         if (request.message === 'enableCalibration') {
+
+            var hostname = window.location.hostname;
+            sessionStorage.setItem('ExtensionURL', hostname);
+
             createCalibration();
+            initGazer();
         }
     }
 );
@@ -51,6 +69,8 @@ function createCalibration()
     overlayDiv.style.background = 'rgba(0, 0, 0, 0.5)'; // Semi-transparent black background
     overlayDiv.style.zIndex = '9999'; // Ensure the overlay is on top of other elements
 
+    
+    webgazer.clearData();
     // content-script.js
 
     createDots();
@@ -164,6 +184,7 @@ function removeOverlay() {
     const overlayDiv = document.getElementById('calibration-overlay');
     if (overlayDiv) {
         overlayDiv.parentNode.removeChild(overlayDiv);
+        webgazer.showVideoPreview(false);
         alert("All Dots are clicked and calibration is finished")
     }
 }
