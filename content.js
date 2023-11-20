@@ -2,16 +2,16 @@ appendLoop = '';
 eyeData = [];
 runs = 0;
 
+var webgazerInitialized = false;
+
 if(sessionStorage.getItem("ExtensionURL") == window.location.hostname)
 {
     console.log("Proceeding to continue");
     setTimeout(initGazer,1000);
-}
-else{
-    sessionStorage.getItem("ExtensionURL");
+    setTimeout(removeOverlay,500);
+    setTimeout(setDBstore,500);
 }
 
-// content.js
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
         if (request.message === 'enabledWebgazer') {
@@ -19,22 +19,25 @@ chrome.runtime.onMessage.addListener(
             var hostname = window.location.hostname;
             sessionStorage.setItem('ExtensionURL', hostname);
 
-            initGazer();
+            if (!webgazerInitialized) {
+                initGazer();
+                webgazerInitialized = true;
+            }
+
+            setTimeout(removeOverlay,500);
+            setTimeout(setDBstore,500);
             // createCalibration();
         }
-    }
-);
-
-// content.js
-chrome.runtime.onMessage.addListener(
-    function (request, sender, sendResponse) {
-        if (request.message === 'enableCalibration') {
-
+        else if(request.message === 'enableCalibration')
+        {
             var hostname = window.location.hostname;
             sessionStorage.setItem('ExtensionURL', hostname);
 
             createCalibration();
             initGazer();
+        }
+        else if(request.message === 'disabledWebgazer') {
+            alert("Write function to stop webgazer and upload data into DB");
         }
     }
 );
@@ -42,9 +45,6 @@ chrome.runtime.onMessage.addListener(
 function initGazer() {
 
             webgazer.setRegression('ridge')
-            .setGazeListener(function(data,clock) {
-                    console.log(data,clock);
-            })
             .begin();
 
             webgazer.showVideoPreview(true) /* shows all video previews */
@@ -184,7 +184,17 @@ function removeOverlay() {
     const overlayDiv = document.getElementById('calibration-overlay');
     if (overlayDiv) {
         overlayDiv.parentNode.removeChild(overlayDiv);
-        webgazer.showVideoPreview(false);
         alert("All Dots are clicked and calibration is finished")
     }
+    webgazer.showVideoPreview(false);
+}
+
+async function setDBstore() {
+
+    alert("Tracking has started");
+
+    webgazer.setGazeListener(function(data,clock) {
+            console.log(data,clock);
+    })
+
 }

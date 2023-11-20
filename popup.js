@@ -8,11 +8,34 @@ button.addEventListener('click', function () {
 
         var storedObject = JSON.parse(localStorage.getItem('ExtensionURL'));
 
-        console.log(storedObject);
+         // Toggle tracking state in localStorage
+         var trackingState = localStorage.getItem('trackingState');
+         if (trackingState === 'enabled') {
+             localStorage.setItem('trackingState', 'disabled');
+            chrome.tabs.sendMessage(activeTab.id, { message: 'disabledWebgazer' });
+         } else {
+            localStorage.setItem('trackingState', 'enabled');
+            chrome.tabs.sendMessage(activeTab.id, { message: 'enabledWebgazer' });
+         }
 
-        chrome.tabs.sendMessage(activeTab.id, { message: 'enabledWebgazer' });
+         updateTrackingButton();
+
     });
 });
+
+function updateTrackingButton() {
+    var trackingState = localStorage.getItem('trackingState');
+    if (trackingState === 'enabled') {
+        button.style.backgroundColor = 'red';
+        button.textContent = 'Stop Tracking';
+    } else {
+        button.style.backgroundColor = '#4CAF50';
+        button.textContent = 'Start Tracking';
+    }
+}
+
+// Initialize button appearance
+updateTrackingButton();
 
 var startCalibration = document.getElementById('startCalibrationBtn');
 
