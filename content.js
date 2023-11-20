@@ -192,15 +192,17 @@ function removeOverlay() {
 }
 
 async function setDBstore() {
+    
+    var db = await openDatabase('EyeGaze');
+    var date = new Date();
+    var gazePredictionStore;
 
     webgazer.setGazeListener(async function(data, clock) {
-
-            db = await openDatabase('EyeGaze');
-            gazePredictionStore = await openStore(db, 'GazePrediction');
-            date = new Date();
-            localStorage.setItem('hasEnteredListener', 'true');
-
+        
+        gazePredictionStore = await openStore(db, 'GazePrediction');
+    
         let time = date.getTime();
+
         storeDataInStore(gazePredictionStore, { timestamp: time, x: data.x, y: data.y });
     });
 }
@@ -250,6 +252,7 @@ function storeDataInStore(store, data) {
         };
     });
 }
+
 
 function readAllDataFromStore(store) {
     return new Promise((resolve, reject) => {
