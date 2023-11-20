@@ -37,12 +37,14 @@ chrome.runtime.onMessage.addListener(
             initGazer();
         }
         else if(request.message === 'disabledWebgazer') {
-            alert("Write function to stop webgazer and upload data into DB");
+            endGazer();
         }
     }
 );
 
 function initGazer() {
+
+            localStorage.setItem('hasEnteredListener', 'false');
 
             webgazer.setRegression('ridge')
             .begin();
@@ -191,10 +193,124 @@ function removeOverlay() {
 
 async function setDBstore() {
 
-    alert("Tracking has started");
+    webgazer.setGazeListener(async function(data, clock) {
 
-    webgazer.setGazeListener(function(data,clock) {
-            console.log(data,clock);
-    })
+            db = await openDatabase('EyeGaze');
+            gazePredictionStore = await openStore(db, 'GazePrediction');
+            date = new Date();
+            localStorage.setItem('hasEnteredListener', 'true');
 
+        let time = date.getTime();
+        storeDataInStore(gazePredictionStore, { timestamp: time, x: data.x, y: data.y });
+    });
+}
+
+
+function openDatabase(databaseName) {
+    return new Promise((resolve, reject) => {
+        const request = indexedDB.open(databaseName, 1);
+
+        request.onerror = function(event) {
+            reject(`Error opening database: ${event.target.error}`);
+        };
+
+        request.onsuccess = function(event) {
+            const db = event.target.result;
+            resolve(db);
+        };
+
+        request.onupgradeneeded = function(event) {
+            const db = event.target.result;
+
+            const gazePredictionStore = db.createObjectStore('GazePrediction', { autoIncrement: true });
+            gazePredictionStore.createIndex('timestamp', 'timestamp', { unique: false });
+        };
+    });
+}
+
+function openStore(db, storeName) {
+    return new Promise((resolve, reject) => {
+        const transaction = db.transaction([storeName], 'readwrite');
+        const store = transaction.objectStore(storeName);
+        resolve(store);
+    });
+}
+
+function storeDataInStore(store, data) {
+    return new Promise((resolve, reject) => {
+        const request = store.add(data);
+
+        request.onerror = function(event) {
+            console.log(event.target.error);
+            reject(`Error adding data to store: ${event.target.error}`);
+        };
+
+        request.onsuccess = function(event) {
+            resolve();
+        };
+    });
+}
+
+function readAllDataFromStore(store) {
+    return new Promise((resolve, reject) => {
+        const request = store.getAll();
+
+        request.onerror = function (event) {
+            reject(`Error reading data from store: ${event.target.error}`);
+        };
+
+        request.onsuccess = function (event) {
+            const data = event.target.result;
+            resolve(data);
+        };
+    });
+}
+
+async function endGazer() {
+    webgazer.end();
+    localStorage.setItem('hasEnteredListener', 'false');
+
+    alert("Webgazer ended");
+
+    try {
+        const db = await openDatabase('EyeGaze');
+        const gazePredictionStore = await openStore(db, 'GazePrediction');
+
+        // Read all data from the GazePrediction store
+        const allData = await readAllDataFromStore(gazePredictionStore);
+
+        // Log all the values
+        console.log('All data from GazePrediction store:', allData);
+    } catch (error) {
+        console.error('Error ending webgazer or reading data:', error);
+    }
+
+    await deleteDatabase();
+}
+
+async function deleteDatabase() {
+    try {
+        // Open a connection to the database
+        const db = await openDatabase('EyeGaze');
+
+        // Close the connection to the database to ensure it's not in use
+        db.close();
+
+        // Delete the database
+        await new Promise((resolve, reject) => {
+            const deleteRequest = indexedDB.deleteDatabase('EyeGaze');
+
+            deleteRequest.onerror = function (event) {
+                reject(`Error deleting database: ${event.target.error}`);
+            };
+
+            deleteRequest.onsuccess = function () {
+                resolve();
+            };
+        });
+
+        console.log('EyeGaze database deleted successfully');
+    } catch (error) {
+        console.error('Error deleting EyeGaze database:', error);
+    }
 }

@@ -6,8 +6,6 @@ button.addEventListener('click', function () {
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
         var activeTab = tabs[0];
 
-        var storedObject = JSON.parse(localStorage.getItem('ExtensionURL'));
-
          // Toggle tracking state in localStorage
          var trackingState = localStorage.getItem('trackingState');
          if (trackingState === 'enabled') {
