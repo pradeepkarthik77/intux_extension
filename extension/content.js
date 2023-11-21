@@ -269,6 +269,29 @@ function readAllDataFromStore(store) {
     });
 }
 
+async function uploadDataToBackend(allData) {
+    const url = 'http://localhost:5000/uploadData'; // Replace with your actual backend endpoint
+
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(allData),
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const responseData = await response.json();
+        console.log('Data uploaded successfully:', responseData);
+    } catch (error) {
+        console.error('Error uploading data to backend:', error);
+    }
+}
+
 async function endGazer() {
     webgazer.end();
     localStorage.setItem('hasEnteredListener', 'false');
@@ -279,10 +302,10 @@ async function endGazer() {
         const db = await openDatabase('EyeGaze');
         const gazePredictionStore = await openStore(db, 'GazePrediction');
 
-        // Read all data from the GazePrediction store
         const allData = await readAllDataFromStore(gazePredictionStore);
 
-        // Log all the values
+        await uploadDataToBackend(allData);
+
         console.log('All data from GazePrediction store:', allData);
     } catch (error) {
         console.error('Error ending webgazer or reading data:', error);
