@@ -1,4 +1,5 @@
 var button = document.getElementById('startTrackingBtn');
+var rollnoInput = document.getElementById('rollnoInput');
 
 // Add a click event listener to the button
 button.addEventListener('click', function () {
@@ -43,4 +44,17 @@ startCalibration.addEventListener('click', function () {
         var activeTab = tabs[0];
         chrome.tabs.sendMessage(activeTab.id, { message: 'enableCalibration' });
     });
+});
+
+// Save button click event
+var saveBtn = document.getElementById('saveBtn');
+saveBtn.addEventListener('click', function () {
+    var rollnoValue = rollnoInput.value;
+    if (rollnoValue) {
+        // Send the rollno value as a message to the active tab
+        chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+            var activeTab = tabs[0];
+            chrome.tabs.sendMessage(activeTab.id, { message: 'saveRollNo', rollno: rollnoValue });
+        });
+    }
 });

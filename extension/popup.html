@@ -36,12 +36,40 @@
             margin-top: 20px;
             color: #555;
         }
+
+        /* Additional styles for the input field and button */
+        #rollnoInput {
+            padding: 8px;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        #saveBtn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #saveBtn:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <h2>Eye Tracking Extension</h2>
-    <p>Welcome to the Eye Tracking Extension. Click the buttons below to interact with eye tracking features!</p>
-    
+
+    <!-- Text input field for roll number -->
+    <label for="rollnoInput"><h4>Enter rollno:</h4></label>
+    <input type="text" id="rollnoInput" placeholder="Enter your roll number">
+
+    <!-- Save button for roll number -->
+    <button id="saveBtn" class="action-button" onclick="saveRollNo">Save</button>
+
     <button id="startCalibrationBtn" class="action-button" onclick="startCalibration">Start Calibration</button>
     <button id="startTrackingBtn" class="action-button" onclick="startTracking">Start Tracking</button>
 

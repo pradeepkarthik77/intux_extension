@@ -39,6 +39,11 @@ chrome.runtime.onMessage.addListener(
         else if(request.message === 'disabledWebgazer') {
             endGazer();
         }
+        else if(request.message === 'saveRollNo')
+        {
+            localStorage.setItem('rollNo',request.rollno);
+            console.log("saved value "+request.rollno);
+        }
     }
 );
 
@@ -278,7 +283,7 @@ async function uploadDataToBackend(allData) {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(allData),
+            body: JSON.stringify({data: allData,rollNo: localStorage.getItem('rollNo')}),
         });
 
         if (!response.ok) {
@@ -298,18 +303,14 @@ async function endGazer() {
 
     alert("Webgazer ended");
 
-    try {
-        const db = await openDatabase('EyeGaze');
-        const gazePredictionStore = await openStore(db, 'GazePrediction');
+    const db = await openDatabase('EyeGaze');
+    const gazePredictionStore = await openStore(db, 'GazePrediction');
 
-        const allData = await readAllDataFromStore(gazePredictionStore);
+    const allData = await readAllDataFromStore(gazePredictionStore);
 
-        await uploadDataToBackend(allData);
+    await uploadDataToBackend(allData);
 
-        console.log('All data from GazePrediction store:', allData);
-    } catch (error) {
-        console.error('Error ending webgazer or reading data:', error);
-    }
+    console.log('All data from GazePrediction store:', allData);
 
     await deleteDatabase();
 }
