@@ -34,7 +34,6 @@ chrome.runtime.onMessage.addListener(
             sessionStorage.setItem('ExtensionURL', hostname);
 
             createCalibration();
-            initGazer();
         }
         else if(request.message === 'disabledWebgazer') {
             endGazer();
@@ -53,6 +52,8 @@ function initGazer() {
 
             webgazer.setRegression('ridge')
             .begin();
+
+            console.log("Ridge regression");
 
             webgazer.showVideoPreview(true) /* shows all video previews */
             .showPredictionPoints(true) /* shows a square every 100 milliseconds where current prediction is */
@@ -79,6 +80,12 @@ function createCalibration()
     
     webgazer.clearData();
     // content-script.js
+    
+    initGazer();
+
+    // webgazer.setRegression('weightedRidge');
+
+    // console.log("WeightedRidge regression");
 
     createDots();
 
