@@ -85,8 +85,6 @@ function createCalibration()
 
     // webgazer.setRegression('weightedRidge');
 
-    // console.log("WeightedRidge regression");
-
     createDots();
 
     overlayDiv.addEventListener('click', function(event) {

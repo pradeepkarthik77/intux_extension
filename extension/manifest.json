@@ -20,9 +20,15 @@
         "<all_urls>"
       ],
       "js": [
-        "content.js",
+        "content_script.js",
         "WebGazer.js"
       ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["crosshair.png","target.png","red_target.png"],
+      "matches": ["<all_urls>"]
     }
   ]
 }

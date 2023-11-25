@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+    #calibrator {
+      position: relative;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <img id="calibrator" width="100px" height="100px" src="crosshair.png">
+
+  <script>
+
+    function getCenterCoordinates(element) {
+        // Get the bounding box of the element
+        const rect = element.getBoundingClientRect();
+
+        // Calculate the center coordinates relative to the viewport
+        const centerX = rect.left + rect.right / 2;
+        const centerY = rect.top + rect.bottom / 2;
+
+        return { x: centerX, y: centerY };
+    }
+
+    function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    function goUntilMidTop(iteration,direction,limit,container,elem,currentValue)
+    {
+        var newvalue = currentValue;
+
+        let timer = setInterval(function() {
+
+        if(direction == "left")
+        {
+            newvalue+=5;
+            elem.style.left = newvalue+'px';
+        }
+        else if(direction == "bottom")
+        {
+            newvalue-=5;
+            elem.style.bottom = newvalue+"px";
+            console.log(elem.style.bottom)
+        }
+
+        centerCoord = getCenterCoordinates(elem);
+
+        var compareVal = 0;
+
+        if(direction == "left")
+        {
+            compareVal = centerCoord.x;
+        }
+        else if(direction == "bottom")
+        {
+            compareVal = centerCoord.y;
+        }
+
+        var boole = false;
+
+        if(direction == "left")
+        {
+            boole = compareVal >=limit;
+        }
+        else if(direction == "bottom")
+        {
+            boole = compareVal >= limit;
+        }
+
+        if(boole)
+        {
+            clearInterval(timer);
+
+            if(iteration == 1)
+            {
+                delay(1000).then(()=>{
+                    goUntilMidTop(iteration+1,"left",container.offsetWidth-30,container,calibrator,getCenterCoordinates(calibrator).x);
+                })
+            }
+            else if(iteration == 2)
+            {
+                console.log(container.offsetHeight);
+                // delay(1000).then(()=>{
+                //     goUntilMidTop(iteration+1,"bottom",container.offsetHeight/2,container,calibrator,getCenterCoordinates(calibrator).y);
+                // })
+            }
+        }
+
+        }, 20);
+
+    }
+
+
+    // function goUntilMidTop(container,elem)
+    // {
+    //     var newvalue = 0;
+
+    //     let timer = setInterval(function() {
+
+    //     newvalue += 5;
+
+    //     elem.style.left = newvalue+'px';
+
+    //     centerCoord = getCenterCoordinates(elem)
+
+    //     if(centerCoord.x >= container.offsetWidth/2)
+    //     {
+    //         clearInterval(timer);
+    //         console.log("over")
+    //     }
+
+    //   }, 20);
+    // }
+
+    calibrator.onclick = function() {
+
+      var container = document.body;
+        goUntilMidTop(1,"left",container.offsetWidth/2,container,calibrator,getCenterCoordinates(calibrator).x);
+
+    }
+  </script>
+
+
+</body>
+
+</html>
