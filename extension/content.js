@@ -43,10 +43,6 @@ chrome.runtime.onMessage.addListener(
             localStorage.setItem('rollNo',request.rollno);
             console.log("saved value "+request.rollno);
         }
-        else if(request.message == 'startCalibration')
-        {
-            startCalibration();
-        }
     }
 );
 
@@ -316,7 +312,6 @@ function createCalibration()
 
     
     webgazer.clearData();
-    // content-script.js
     
     initGazer();
 
@@ -450,34 +445,6 @@ function createImage() {
 
     // Add the image to the overlay
     document.getElementById('calibration-overlay').appendChild(img);
-
-
-        // delay(5000).then(()=>{
-
-        // let centerCoord = getCenterCoordinates(calibrator);
-
-        // simulateClick(centerCoord.x,centerCoord.y);
-
-        // let start = Date.now();
-
-        // customTime = 2000;
-        
-        // let innertimer = setInterval(function() {
-        //     let timePassed = Date.now() - start;
-        
-        //     // Calculate rotation angle based on timePassed
-        //     let rotationAngle = (timePassed / customTime) * 360; // 360 degrees for 2 seconds
-        
-        //     // Apply rotation to the element
-        //     calibrator.style.transform = 'rotate(' + rotationAngle + 'deg)';
-        
-        //     if (timePassed > customTime) clearInterval(innertimer);
-        
-        // }, 50);
-
-        // delay(5000).then(()=>{goUntilMidTop(1,"left",container.offsetWidth/4,container,calibrator,getCenterCoordinates(calibrator).x)});
-
-        // })
 }
 
 function removeOverlay() {
