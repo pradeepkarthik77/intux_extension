@@ -30,5 +30,10 @@
       "resources": ["crosshair.png","target.png","red_target.png"],
       "matches": ["<all_urls>"]
     }
-  ]
+  ],
+  "icons": {
+    "16": "INTUX.png",
+    "48": "INTUX.png",
+    "128": "INTUX.png"
+  }
 }
