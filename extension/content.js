@@ -43,6 +43,10 @@ chrome.runtime.onMessage.addListener(
             localStorage.setItem('rollNo',request.rollno);
             console.log("saved value "+request.rollno);
         }
+        else if(request.message == 'startCalibration')
+        {
+            startCalibration();
+        }
     }
 );
 
@@ -58,6 +62,239 @@ function initGazer() {
             webgazer.showVideoPreview(true) /* shows all video previews */
             .showPredictionPoints(true) /* shows a square every 100 milliseconds where current prediction is */
             .applyKalmanFilter(true); /* Ka*/
+}
+
+
+function getCenterCoordinates(element) {
+    // Get the bounding box of the element
+    const rect = element.getBoundingClientRect();
+
+    // Calculate the center coordinates relative to the viewport
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+
+    return { x: centerX, y: centerY };
+}
+
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+function simulateClick(x, y) {
+    // Find the element at the specified coordinates
+    const element = document.elementFromPoint(x, y);
+
+
+    console.log("Called me");
+
+    // Check if the element is found
+    if (element) {
+        // Simulate 10 clicks with intervals
+        for (let i = 0; i < 10; i++) {
+            // Use setTimeout to introduce a delay between clicks
+            setTimeout(() => {
+                // Create a new MouseEvent with the type 'click' and appropriate coordinates
+                const clickEvent = new MouseEvent('click', {
+                    bubbles: true,
+                    cancelable: true,
+                    clientX: x,
+                    clientY: y
+                });
+
+                // Dispatch the click event to the element
+                element.dispatchEvent(clickEvent);
+
+                // Log information about the simulated click
+                console.log(`Simulated click ${i + 1} on coordinates:`, { x, y });
+            }, 50);
+        }
+    } else {
+        console.log('No element found at coordinates:', { x, y });
+    }
+}
+
+function goUntilMidTop(iteration,direction,limit,container,elem,currentValue)
+{
+    var newvalue = currentValue;
+
+    var speed = 10;
+
+    let timer = setInterval(function() {
+
+    if(direction == "left")
+    {
+        newvalue+=speed;
+        elem.style.left = newvalue+'px';
+    }
+    else if(direction == "bottom")
+    {
+        newvalue+=speed;
+        elem.style.top = newvalue+'px';
+    }
+    else if(direction == "right")
+    {
+        newvalue-=speed;
+        elem.style.left = newvalue+'px';
+    }
+
+    centerCoord = getCenterCoordinates(elem);
+
+    var compareVal = 0;
+
+    if(direction == "left")
+    {
+        compareVal = centerCoord.x;
+    }
+    else if(direction == "bottom")
+    {
+        compareVal = centerCoord.y;
+    }
+    else if(direction == "right")
+    {
+        compareVal = centerCoord.x;
+    }
+
+    var boole = false;
+
+    if(direction == "left")
+    {
+        boole = compareVal >=limit;
+    }
+    else if(direction == "bottom")
+    {
+        boole = compareVal >= limit;
+    }
+    else if(direction == "right")
+    {
+        boole = compareVal <= limit;
+    }
+
+    if(boole)
+    {
+        clearInterval(timer);
+
+        customTime = 2000;
+
+        simulateClick(centerCoord.x,centerCoord.y);
+
+        let start = Date.now();
+        
+        let innertimer = setInterval(function() {
+            let timePassed = Date.now() - start;
+        
+            // Calculate rotation angle based on timePassed
+            let rotationAngle = (timePassed / customTime) * 360; // 360 degrees for 2 seconds
+        
+            // Apply rotation to the element
+            elem.style.transform = 'rotate(' + rotationAngle + 'deg)';
+        
+            if (timePassed > customTime) clearInterval(innertimer);
+        
+        }, 50);
+
+        if(iteration == 1)
+        {
+            delay(customTime).then(()=>{
+                goUntilMidTop(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
+            })
+        }
+
+        if(iteration == 2)
+        {
+            delay(customTime).then(()=>{
+                goUntilMidTop(iteration+1,"left",container.offsetWidth*(0.75),container,elem,getCenterCoordinates(elem).x);
+            })
+        }
+
+        if(iteration == 3)
+        {
+            delay(customTime).then(()=>{
+                goUntilMidTop(iteration+1,"left",container.offsetWidth-50,container,elem,getCenterCoordinates(elem).x);
+            })
+        }
+
+        //above code is until first line
+
+
+        else if(iteration == 4)
+        {
+            delay(customTime).then(()=>{
+                goUntilMidTop(iteration+1,"bottom",container.offsetHeight/2,container,elem,getCenterCoordinates(elem).y);
+            })
+        }
+
+        else if(iteration == 5)
+        {
+            delay(customTime).then(()=>{
+                goUntilMidTop(iteration+1,"right",container.offsetWidth*(0.75),container,elem,getCenterCoordinates(elem).x);
+            })
+        }
+
+        else if(iteration == 6)
+        {
+            delay(customTime).then(()=>{
+                goUntilMidTop(iteration+1,"right",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
+            })
+        }
+
+        else if(iteration == 7)
+        {
+            delay(customTime).then(()=>{
+                goUntilMidTop(iteration+1,"right",container.offsetWidth/4,container,elem,getCenterCoordinates(elem).x);
+            })
+        }
+
+        else if(iteration == 8)
+        {
+            delay(customTime).then(()=>{
+                goUntilMidTop(iteration+1,"right",50,container,elem,getCenterCoordinates(elem).x);
+            })
+        }
+
+        //above code for 5 point calibration in line 2
+
+        else if(iteration == 9)
+        {
+            delay(customTime).then(()=>{
+                goUntilMidTop(iteration+1,"bottom",container.offsetHeight-50,container,elem,getCenterCoordinates(elem).y);
+            })
+        }
+
+        else if(iteration == 10)
+        {
+            delay(customTime).then(()=>{
+                goUntilMidTop(iteration+1,"left",container.offsetWidth/4,container,elem,getCenterCoordinates(elem).x);
+            })
+        }
+
+        else if(iteration == 11)
+        {
+            delay(customTime).then(()=>{
+                goUntilMidTop(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
+            })
+        }
+
+        else if(iteration == 12)
+        {
+            delay(customTime).then(()=>{
+                goUntilMidTop(iteration+1,"left",container.offsetWidth*(0.75),container,elem,getCenterCoordinates(elem).x);
+            })
+        }
+
+        else if(iteration == 13)
+        {
+            delay(customTime).then(()=>{
+                goUntilMidTop(iteration+1,"left",container.offsetWidth-50,container,elem,getCenterCoordinates(elem).x);
+            })
+        }
+        else if(iteration == 14)
+        {
+            setTimeout(removeOverlay,3000);
+        }
+    }
+
+    }, 20);
+
 }
 
 
@@ -85,8 +322,9 @@ function createCalibration()
 
     // webgazer.setRegression('weightedRidge');
 
-    createDots();
-
+    createImage();
+    createCalibrationDialog();
+    
     overlayDiv.addEventListener('click', function(event) {
             // Handle the click event
             const clickCoordinates = {
@@ -100,105 +338,156 @@ function createCalibration()
     });
 }
 
-function createDots() {
-    // Define the number of dots and their colors
-    const numDots = 9;
-    const dotColors = ['red', 'yellow'];
 
-    for (let i = 0; i < numDots; i++) {
-        const dot = document.createElement('div');
-        dot.className = 'calibration-dot';
-        dot.style.position = 'absolute';
-        dot.style.width = '15px'; // Adjust the width and height as needed
-        dot.style.height = '15px';
-        dot.style.borderRadius = '50%'; // Make the dot round
-        dot.style.transition = 'background-color 0.3s'; // Add transition for color change
+function startCalibration()
+{ 
+    var container = document.getElementById('calibration-overlay');
+    var calibrator = document.getElementById('calibration-image');
 
-        // Set initial click count to 0 for each dot
-        dot.clickCount = 0;
+    delay(5000).then(()=>{
 
-        // Set dot color based on the number of clicks
-        dot.style.background = dotColors[0];
+        let centerCoord = getCenterCoordinates(calibrator);
 
-        // Add the dot to the overlay
-        document.getElementById('calibration-overlay').appendChild(dot);
+        simulateClick(centerCoord.x,centerCoord.y);
 
-        // Add click event listener to each dot
-        dot.addEventListener('click', function () {
-            handleDotClick(dot);
-        });
-    }
+        let start = Date.now();
 
-    // Position the dots at the edges of the screen
-    positionDots();
-}
-
-function positionDots() {
-    const dots = document.getElementsByClassName('calibration-dot');
-    const numDots = dots.length;
-
-    // Set positions for each dot
-    const positions = [
-        { top: 0, left: 0 },           // Top-left
-        { top: 0, right: 0 },          // Top-right
-        { top: '50%', left: 0 },       // Middle-left
-        { top: '50%', right: 0 },      // Middle-right
-        { bottom: 0, left: 0 },        // Bottom-left
-        { bottom: 0, right: 0 },       // Bottom-right
-        { top: 0, left: '50%' },       // Top-center
-        { bottom: 0, left: '50%' },    // Bottom-center
-        { top: '50%', left: '50%' }    // Center
-    ];
-
-    for (let i = 0; i < numDots; i++) {
-        const dot = dots[i];
-        const position = positions[i];
-
-        // Apply position styles to each dot
-        Object.assign(dot.style, position);
-    }
-}
-
-let clickCount = 0; // Variable to track the number of clicks
-
-function handleDotClick(dot) {
-    dot.clickCount++;
-
-    // Change color after 10 clicks
-    if (dot.clickCount === 10) {
-        dot.style.background = 'yellow';
-    }
-
-    if (areAllDotsClickedEnough()) {
-
-        setTimeout(removeOverlay, 500);
+        customTime = 2000;
         
-    }
+        let innertimer = setInterval(function() {
+            let timePassed = Date.now() - start;
+        
+            // Calculate rotation angle based on timePassed
+            let rotationAngle = (timePassed / customTime) * 360; // 360 degrees for 2 seconds
+        
+            // Apply rotation to the element
+            calibrator.style.transform = 'rotate(' + rotationAngle + 'deg)';
+        
+            if (timePassed > customTime) clearInterval(innertimer);
+        
+        }, 50);
 
-    // Perform any additional actions needed for calibration
-    console.log('Dot clicked:', dot.style.background);
+        delay(3000).then(()=>{goUntilMidTop(1,"left",container.offsetWidth/4,container,calibrator,getCenterCoordinates(calibrator).x)});
+
+    });
+
+    // delay(5000).then(()=>{goUntilMidTop(0,"left",getCenterCoordinates(calibrator).x,container,calibrator,getCenterCoordinates(calibrator).x);})
 }
 
-function areAllDotsClickedEnough() {
-    const dots = document.getElementsByClassName('calibration-dot');
-    const numDots = dots.length;
+function createCalibrationDialog() {
+    // Create a modal dialog
+    const dialog = document.createElement('div');
+    dialog.id = 'calibration-dialog';
+    dialog.innerHTML = `
+        <h2 id="calibration-heading" style="text-align: center;">Instructions</h2>
+        <div id="calibration-instructions">
+            <ul style="font-size: 1.2em;">
+                <li>Click Start Calibration After you see a red prediction point in your screen.</li>
+                <li>Make sure to look at the target and not blink when it is rotating.</li>
+                <li>Make sure to not intercept clicks on the screen once calibration has started</li>
+                <!-- Add more instructions as needed -->
+            </ul>
+        </div>
+        <button id="start-calibration-btn">Begin Calibration</button>
+    `;
 
-    for (let i = 0; i < numDots; i++) {
-        if (dots[i].clickCount < 9) {
-            return false; // At least one dot has not been clicked 9 times
-        }
-    }
+    // Add styles to the modal dialog
+    dialog.style.position = 'fixed';
+    dialog.style.width = '500px';
+    dialog.style.height = '300px';
+    dialog.style.top = '50%';
+    dialog.style.left = '50%';
+    dialog.style.transform = 'translate(-50%, -50%)';
+    dialog.style.background = 'white';
+    dialog.style.borderRadius = '10px'; // Rounded edges
+    dialog.style.padding = '20px';
+    dialog.style.border = '1px solid #ccc';
+    dialog.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
+    dialog.style.zIndex = '10000';
 
-    return true; // All dots have been clicked 9 times
+    // Add styles to the instructions
+    const instructions = dialog.querySelector('#calibration-instructions');
+    instructions.style.marginBottom = '20px';
+
+    // Add styles to the "Begin Calibration" button
+    const startButton = dialog.querySelector('#start-calibration-btn');
+    startButton.style.width = '100%';
+    startButton.style.padding = '10px';
+    startButton.style.backgroundColor = '#4CAF50'; // Green background color
+    startButton.style.color = 'white';
+    startButton.style.border = 'none';
+    startButton.style.borderRadius = '5px';
+    startButton.style.cursor = 'pointer';
+
+    // Add event listener to the "Begin Calibration" button
+    startButton.addEventListener('click', () => {
+        removeDialog();
+        startCalibration();
+    });
+
+    document.getElementById('calibration-overlay').appendChild(dialog);
+}
+
+function removeDialog()
+{
+    const dialog = document.getElementById('calibration-dialog');
+    document.getElementById('calibration-overlay').removeChild(dialog);
+}
+
+function createImage() {
+    // Create an img element for the image
+    const img = document.createElement('img');
+    img.id = 'calibration-image';
+    img.style.position = 'absolute';
+    img.style.width = '100px'; // Adjust the width and height as needed
+    img.style.height = '100px';
+
+    img.src = chrome.runtime.getURL('red_target.png')
+
+    // Set the initial position to leftmost-top
+    img.style.left = '0';
+    img.style.top = '0';
+
+    // Add the image to the overlay
+    document.getElementById('calibration-overlay').appendChild(img);
+
+
+        // delay(5000).then(()=>{
+
+        // let centerCoord = getCenterCoordinates(calibrator);
+
+        // simulateClick(centerCoord.x,centerCoord.y);
+
+        // let start = Date.now();
+
+        // customTime = 2000;
+        
+        // let innertimer = setInterval(function() {
+        //     let timePassed = Date.now() - start;
+        
+        //     // Calculate rotation angle based on timePassed
+        //     let rotationAngle = (timePassed / customTime) * 360; // 360 degrees for 2 seconds
+        
+        //     // Apply rotation to the element
+        //     calibrator.style.transform = 'rotate(' + rotationAngle + 'deg)';
+        
+        //     if (timePassed > customTime) clearInterval(innertimer);
+        
+        // }, 50);
+
+        // delay(5000).then(()=>{goUntilMidTop(1,"left",container.offsetWidth/4,container,calibrator,getCenterCoordinates(calibrator).x)});
+
+        // })
 }
 
 function removeOverlay() {
+
+    webgazer.showVideoPreview(false);
     const overlayDiv = document.getElementById('calibration-overlay');
     if (overlayDiv) {
         overlayDiv.parentNode.removeChild(overlayDiv);
-        alert("All Dots are clicked and calibration is finished")
+        console.log("Calibration Done");
     }
-    webgazer.showVideoPreview(false);
 }
 
 async function setDBstore() {

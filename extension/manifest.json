@@ -20,7 +20,7 @@
         "<all_urls>"
       ],
       "js": [
-        "content_script.js",
+        "content.js",
         "WebGazer.js"
       ]
     }
