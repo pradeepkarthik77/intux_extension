@@ -65,7 +65,7 @@ function simulateClick(x, y) {
     // Check if the element is found
     if (element) {
         // Simulate 10 clicks with intervals
-        for (let i = 0; i < 20; i++) {
+        for (let i = 0; i < 10; i++) {
             // Use setTimeout to introduce a delay between clicks
             setTimeout(() => {
                 // Create a new MouseEvent with the type 'click' and appropriate coordinates
@@ -81,7 +81,7 @@ function simulateClick(x, y) {
 
                 // Log information about the simulated click
                 console.log(`Simulated click ${i + 1} on coordinates:`, { x, y });
-            }, 100);
+            }, 50);
         }
     } else {
         console.log('No element found at coordinates:', { x, y });
@@ -148,7 +148,7 @@ function goUntilMidTop(iteration,direction,limit,container,elem,currentValue)
     {
         clearInterval(timer);
 
-        customTime = 5000;
+        customTime = 2000;
 
         simulateClick(centerCoord.x,centerCoord.y);
 
@@ -170,40 +170,93 @@ function goUntilMidTop(iteration,direction,limit,container,elem,currentValue)
         if(iteration == 1)
         {
             delay(customTime).then(()=>{
+                goUntilMidTop(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
+            })
+        }
+
+        if(iteration == 2)
+        {
+            delay(customTime).then(()=>{
+                goUntilMidTop(iteration+1,"left",container.offsetWidth*(0.75),container,elem,getCenterCoordinates(elem).x);
+            })
+        }
+
+        if(iteration == 3)
+        {
+            delay(customTime).then(()=>{
                 goUntilMidTop(iteration+1,"left",container.offsetWidth-50,container,elem,getCenterCoordinates(elem).x);
             })
         }
-        else if(iteration == 2)
+
+        //above code is until first line
+
+
+        else if(iteration == 4)
         {
             delay(customTime).then(()=>{
                 goUntilMidTop(iteration+1,"bottom",container.offsetHeight/2,container,elem,getCenterCoordinates(elem).y);
             })
         }
-        else if(iteration == 3)
+
+        else if(iteration == 5)
+        {
+            delay(customTime).then(()=>{
+                goUntilMidTop(iteration+1,"right",container.offsetWidth*(0.75),container,elem,getCenterCoordinates(elem).x);
+            })
+        }
+
+        else if(iteration == 6)
         {
             delay(customTime).then(()=>{
                 goUntilMidTop(iteration+1,"right",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
             })
         }
-        else if(iteration == 4)
+
+        else if(iteration == 7)
+        {
+            delay(customTime).then(()=>{
+                goUntilMidTop(iteration+1,"right",container.offsetWidth/4,container,elem,getCenterCoordinates(elem).x);
+            })
+        }
+
+        else if(iteration == 8)
         {
             delay(customTime).then(()=>{
                 goUntilMidTop(iteration+1,"right",50,container,elem,getCenterCoordinates(elem).x);
             })
         }
-        else if(iteration == 5)
+
+        //above code for 5 point calibration in line 2
+
+        else if(iteration == 9)
         {
             delay(customTime).then(()=>{
                 goUntilMidTop(iteration+1,"bottom",container.offsetHeight-50,container,elem,getCenterCoordinates(elem).y);
             })
         }
-        else if(iteration == 6)
+
+        else if(iteration == 10)
+        {
+            delay(customTime).then(()=>{
+                goUntilMidTop(iteration+1,"left",container.offsetWidth/4,container,elem,getCenterCoordinates(elem).x);
+            })
+        }
+
+        else if(iteration == 11)
         {
             delay(customTime).then(()=>{
                 goUntilMidTop(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
             })
         }
-        else if(iteration == 7)
+
+        else if(iteration == 12)
+        {
+            delay(customTime).then(()=>{
+                goUntilMidTop(iteration+1,"left",container.offsetWidth*(0.75),container,elem,getCenterCoordinates(elem).x);
+            })
+        }
+
+        else if(iteration == 13)
         {
             delay(customTime).then(()=>{
                 goUntilMidTop(iteration+1,"left",container.offsetWidth-50,container,elem,getCenterCoordinates(elem).x);
@@ -245,9 +298,7 @@ function createImage() {
 
         let start = Date.now();
 
-        let elem = centerCoord;
-
-        customTime = 5000;
+        customTime = 2000;
         
         let innertimer = setInterval(function() {
             let timePassed = Date.now() - start;
@@ -256,13 +307,13 @@ function createImage() {
             let rotationAngle = (timePassed / customTime) * 360; // 360 degrees for 2 seconds
         
             // Apply rotation to the element
-            elem.style.transform = 'rotate(' + rotationAngle + 'deg)';
+            calibrator.style.transform = 'rotate(' + rotationAngle + 'deg)';
         
             if (timePassed > customTime) clearInterval(innertimer);
         
         }, 50);
 
-        delay(5000).then(()=>{goUntilMidTop(1,"left",container.offsetWidth/2,container,calibrator,getCenterCoordinates(calibrator).x)});
+        delay(5000).then(()=>{goUntilMidTop(1,"left",container.offsetWidth/4,container,calibrator,getCenterCoordinates(calibrator).x)});
 
         })
 }
