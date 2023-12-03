@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eye Tracking Extension</title>
+    
+
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -13,7 +15,12 @@
         }
 
         h2 {
-            color: #333;
+            font-size: 24px; /* Increased font size */
+            margin-bottom: 10px; /* Added margin for spacing */
+        }
+
+        .highlight-ux {
+            color: #197dff; /* Color for UX */
         }
 
         .action-button {
@@ -33,8 +40,17 @@
         }
 
         #content {
-            margin-top: 20px;
-            color: #555;
+            margin-top: 10px;
+            color: #fff; /* Text color for the notification */
+            background-color: rgb(255, 25, 59); /* Light red color for the notification */
+            padding: 10px; /* Padding for the notification */
+            border-radius: 8px; /* Rounded corners for the notification */
+            font-size: 16px; /* Increased font size */
+            display: none;
+        }
+
+        #content.show {
+            display: block;
         }
 
         /* Additional styles for the input field and button */
@@ -57,25 +73,24 @@
 
         #saveBtn:hover {
             background-color: #0056b3;
-        }
+        }  
+
     </style>
 </head>
 <body>
-    <h2>INTUX</h2>
+    <h2><span class="highlight-ux">INTUX</span> - <span class="highlight-ux">INT</span>entional <span class="highlight-ux">U</span>ser e<span class="highlight-ux">X</span>perience design</h2>
 
     <!-- Text input field for roll number -->
-    <label for="rollnoInput"><h4>Enter rollno:</h4></label>
+    <label for="rollnoInput"><h4>Enter your Roll Number:</h4></label>
     <input type="text" id="rollnoInput" placeholder="Enter your roll number">
 
     <!-- Save button for roll number -->
-    <button id="saveBtn" class="action-button" onclick="saveRollNo">Save</button>
+    <button id="saveBtn" class="action-button" onclick="saveRollNo()">Save</button>
 
-    <button id="startCalibrationBtn" class="action-button" onclick="startCalibration">Start Calibration</button>
-    <button id="startTrackingBtn" class="action-button" onclick="startTracking">Start Tracking</button>
-
+    <button id="startCalibrationBtn" class="action-button" onclick="startCalibration()">Start Calibration</button>
+    <!-- <button id="startTrackingBtn" class="action-button" onclick="startTracking">Start Tracking</button> -->
 
     <div id="content">
-        <p>Enjoy exploring the world of eye tracking!</p>
     </div>
 
     <script src="popup.js"></script>
