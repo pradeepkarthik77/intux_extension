@@ -15,14 +15,21 @@ const client = new MongoClient(uri);
 
 const database = client.db("intuxDB");
 const EyeGazeCollection = database.collection("EyeGazeCollection");
+const ClickCollection = database.collection("ClickCollection");
 
 app.post('/uploadData', (req, res) => {
-    const receivedData = req.body.data;
+    const gazeData = req.body.gazeData;
+    const clickData = req.body.clickData;
     const rollNo = req.body.rollNo;
     
-    receivedData.forEach((eyegaze, index) => {
+    gazeData.forEach((eyegaze, index) => {
         let objtoStore = {rollNo: rollNo, x: eyegaze.x, y: eyegaze.y, timestamp: eyegaze.timestamp};
         const result = EyeGazeCollection.insertOne(objtoStore);
+    });
+
+    clickData.forEach((click,index) => {
+        let objtoStore = {rollNo: rollNo, x: click.x, y: click.y, timestamp: click.timestamp};
+        const result = ClickCollection.insertOne(objtoStore);
     });
 
     res.json({ message: 'Data received successfully' });
