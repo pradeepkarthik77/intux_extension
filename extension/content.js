@@ -7,7 +7,10 @@ var webgazerInitialized = false;
 if(sessionStorage.getItem("ExtensionURL") == window.location.hostname)
 {
     console.log("Proceeding to continue");
-    setTimeout(initGazer,1000);
+    if (!webgazerInitialized) {
+        setTimeout(initGazer,1000);
+        webgazerInitialized = true;
+    }
     setTimeout(removeOverlay,500);
     setTimeout(setDBstore,500);
 }
@@ -48,8 +51,6 @@ chrome.runtime.onMessage.addListener(
 
 function initGazer() {
 
-            localStorage.setItem('hasEnteredListener', 'false');
-
             webgazer.setRegression('ridge')
             .begin();
 
@@ -59,7 +60,6 @@ function initGazer() {
             .showPredictionPoints(true) /* shows a square every 100 milliseconds where current prediction is */
             .applyKalmanFilter(true); /* Ka*/
 }
-
 
 function getCenterCoordinates(element) {
     // Get the bounding box of the element
@@ -285,7 +285,7 @@ function goUntilMidTop(iteration,direction,limit,container,elem,currentValue)
         }
         else if(iteration == 14)
         {
-            setTimeout(removeOverlay,3000);
+            setTimeout(onStopCalibration,3000);
         }
     }
 
@@ -312,8 +312,12 @@ function createCalibration()
 
     
     webgazer.clearData();
-    
-    initGazer();
+
+    if(!webgazerInitialized)
+    {
+        initGazer();
+        webgazerInitialized = true;
+    }
 
     // webgazer.setRegression('weightedRidge');
 
@@ -447,6 +451,12 @@ function createImage() {
     document.getElementById('calibration-overlay').appendChild(img);
 }
 
+function onStopCalibration()
+{
+    setTimeout(removeOverlay,3000);
+    setTimeout(createFloatingDialog,3000);
+}
+
 function removeOverlay() {
 
     webgazer.showVideoPreview(false);
@@ -560,7 +570,6 @@ async function uploadDataToBackend(allData) {
 
 async function endGazer() {
     webgazer.end();
-    localStorage.setItem('hasEnteredListener', 'false');
 
     alert("Webgazer ended");
 
@@ -601,4 +610,118 @@ async function deleteDatabase() {
     } catch (error) {
         console.error('Error deleting EyeGaze database:', error);
     }
+}
+function createFloatingDialog() {
+    // Create a container for the floating dialog
+    const dialogContainer = document.createElement('div');
+    dialogContainer.id = 'floating-dialog-container';
+
+    // Add styles to the container
+    dialogContainer.style.position = 'fixed';
+    dialogContainer.style.top = '0';
+    dialogContainer.style.left = '50%';
+    dialogContainer.style.transform = 'translateX(-50%)';
+    dialogContainer.style.background = 'white';
+    dialogContainer.style.border = '1px solid #ccc';
+    dialogContainer.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
+    dialogContainer.style.zIndex = '10000';
+    dialogContainer.style.display = 'flex';
+    dialogContainer.style.justifyContent = 'space-between';
+    dialogContainer.style.alignItems = 'center';
+    dialogContainer.style.padding = '10px';
+    dialogContainer.style.borderRadius = '5px';
+
+    // Create a timer element
+    const timerElement = document.createElement('div');
+    timerElement.id = 'timer';
+    timerElement.textContent = '00:00';
+
+    // Add styles to the timer element
+    timerElement.style.fontSize = '16px';
+    timerElement.style.marginRight = '10px'; // Added margin to space from the button
+
+    // Create a button element
+    const buttonElement = document.createElement('button');
+    buttonElement.id = 'action-button';
+    buttonElement.textContent = 'Start Task';
+
+    // Add styles to the button element
+    buttonElement.style.padding = '8px 16px';
+    buttonElement.style.backgroundColor = '#4CAF50'; // Green background color for Start Task
+    buttonElement.style.color = 'white';
+    buttonElement.style.border = 'none';
+    buttonElement.style.borderRadius = '5px';
+    buttonElement.style.cursor = 'pointer';
+
+    // Append the timer and button elements to the container
+    dialogContainer.appendChild(timerElement);
+    dialogContainer.appendChild(buttonElement);
+
+    // Append the container to the body
+    document.body.appendChild(dialogContainer);
+
+    // Function to update the timer (you can customize the logic)
+    function updateTimer() {
+        let seconds = 0;
+
+        // Update the timer every second
+        const timerInterval = setInterval(() => {
+            seconds++;
+            const minutes = Math.floor(seconds / 60);
+            const formattedSeconds = seconds % 60;
+
+            // Update the timer text content
+            timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${formattedSeconds.toString().padStart(2, '0')}`;
+        }, 1000);
+
+        // Function to stop the timer (you can call this when needed)
+        function stopTimer() {
+            clearInterval(timerInterval);
+        }
+
+        return stopTimer;
+    }
+
+    // Function to handle button click
+    function handleButtonClick() {
+        const actionButton = document.getElementById('action-button');
+        let stopTimerFunction;
+
+        actionButton.addEventListener('click', () => {
+
+            if (actionButton.textContent === 'Start Task') {
+                // Change button text to 'Stop Task'
+                actionButton.textContent = 'Stop Task';
+                actionButton.style.backgroundColor = '#FF0000'; // Red background color for Stop Task
+
+                var hostname = window.location.hostname;
+                sessionStorage.setItem('ExtensionURL', hostname);
+
+                if (!webgazerInitialized) {
+                    initGazer();
+                    webgazerInitialized = true;
+                }
+
+                setTimeout(removeOverlay,500);
+                setTimeout(setDBstore,500);
+
+                // Start or resume the timer
+                stopTimerFunction = updateTimer();
+            } else {
+                // Change button text to 'Start Task'
+                actionButton.textContent = 'Start Task';
+                actionButton.style.backgroundColor = '#4CAF50'; // Green background color for Start Task
+
+                // Stop the timer
+                if (stopTimerFunction) {
+                    stopTimerFunction();
+                }
+
+                endGazer();
+            }
+        });
+    }
+
+    // Call the function to handle button click
+    handleButtonClick();
 }

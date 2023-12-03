@@ -1,45 +1,19 @@
-var button = document.getElementById('startTrackingBtn');
-var rollnoInput = document.getElementById('rollnoInput');
-
-// Add a click event listener to the button
-button.addEventListener('click', function () {
-
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-        var activeTab = tabs[0];
-
-         // Toggle tracking state in localStorage
-         var trackingState = localStorage.getItem('trackingState');
-         if (trackingState === 'enabled') {
-             localStorage.setItem('trackingState', 'disabled');
-            chrome.tabs.sendMessage(activeTab.id, { message: 'disabledWebgazer' });
-         } else {
-            localStorage.setItem('trackingState', 'enabled');
-            chrome.tabs.sendMessage(activeTab.id, { message: 'enabledWebgazer' });
-         }
-
-         updateTrackingButton();
-
-    });
-});
-
-function updateTrackingButton() {
-    var trackingState = localStorage.getItem('trackingState');
-    if (trackingState === 'enabled') {
-        button.style.backgroundColor = 'red';
-        button.textContent = 'Stop Tracking';
-    } else {
-        button.style.backgroundColor = '#4CAF50';
-        button.textContent = 'Start Tracking';
-    }
-}
-
-// Initialize button appearance
-updateTrackingButton();
-
 var startCalibration = document.getElementById('startCalibrationBtn');
+var contentDiv = document.getElementById('content');
 
-// Add a click event listener to the button
+// Add a click event listener to the Start Calibration button
 startCalibration.addEventListener('click', function () {
+    // Update the content of the div with "Started Calibration"
+    contentDiv.textContent = 'Started Calibration';
+
+    contentDiv.classList.add('show');
+
+    // Clear the content after 5 seconds
+    setTimeout(function () {
+        contentDiv.textContent = '';
+        contentDiv.classList.remove('show');
+    }, 2000);
+
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
         var activeTab = tabs[0];
         chrome.tabs.sendMessage(activeTab.id, { message: 'enableCalibration' });
@@ -48,6 +22,8 @@ startCalibration.addEventListener('click', function () {
 
 // Save button click event
 var saveBtn = document.getElementById('saveBtn');
+var rollnoInput = document.getElementById('rollnoInput');
+
 saveBtn.addEventListener('click', function () {
     var rollnoValue = rollnoInput.value;
     if (rollnoValue) {
@@ -56,5 +32,16 @@ saveBtn.addEventListener('click', function () {
             var activeTab = tabs[0];
             chrome.tabs.sendMessage(activeTab.id, { message: 'saveRollNo', rollno: rollnoValue });
         });
+
+        // Update the content of the div with "Saved RollNo"
+        contentDiv.textContent = 'Saved RollNo';
+
+        contentDiv.classList.add('show');
+
+        // Clear the content after 5 seconds
+        setTimeout(function () {
+            contentDiv.textContent = '';
+            contentDiv.classList.remove('show');
+        }, 2000);
     }
 });
