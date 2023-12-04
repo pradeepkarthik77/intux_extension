@@ -104,7 +104,7 @@ function simulateClick(x, y) {
     }
 }
 
-function goUntilMidTop(iteration,direction,limit,container,elem,currentValue)
+function moveTarget(iteration,direction,limit,container,elem,currentValue)
 {
     var newvalue = currentValue;
 
@@ -187,91 +187,91 @@ function goUntilMidTop(iteration,direction,limit,container,elem,currentValue)
         {
             // setTimeout(onStopCalibration,3000);
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
             })
         }
 
         if(iteration == 2)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"left",container.offsetWidth*(0.75),container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"left",container.offsetWidth*(0.75),container,elem,getCenterCoordinates(elem).x);
             })
         }
 
         if(iteration == 3)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"left",container.offsetWidth-50,container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"left",container.offsetWidth-50,container,elem,getCenterCoordinates(elem).x);
             })
         }
 
         else if(iteration == 4)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"bottom",container.offsetHeight/2,container,elem,getCenterCoordinates(elem).y);
+                moveTarget(iteration+1,"bottom",container.offsetHeight/2,container,elem,getCenterCoordinates(elem).y);
             })
         }
 
         else if(iteration == 5)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"right",container.offsetWidth*(0.75),container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"right",container.offsetWidth*(0.75),container,elem,getCenterCoordinates(elem).x);
             })
         }
 
         else if(iteration == 6)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"right",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"right",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
             })
         }
 
         else if(iteration == 7)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"right",container.offsetWidth/4,container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"right",container.offsetWidth/4,container,elem,getCenterCoordinates(elem).x);
             })
         }
 
         else if(iteration == 8)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"right",50,container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"right",50,container,elem,getCenterCoordinates(elem).x);
             })
         }
 
         else if(iteration == 9)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"bottom",container.offsetHeight-50,container,elem,getCenterCoordinates(elem).y);
+                moveTarget(iteration+1,"bottom",container.offsetHeight-50,container,elem,getCenterCoordinates(elem).y);
             })
         }
 
         else if(iteration == 10)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"left",container.offsetWidth/4,container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"left",container.offsetWidth/4,container,elem,getCenterCoordinates(elem).x);
             })
         }
 
         else if(iteration == 11)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
             })
         }
 
         else if(iteration == 12)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"left",container.offsetWidth*(0.75),container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"left",container.offsetWidth*(0.75),container,elem,getCenterCoordinates(elem).x);
             })
         }
 
         else if(iteration == 13)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"left",container.offsetWidth-50,container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"left",container.offsetWidth-50,container,elem,getCenterCoordinates(elem).x);
             })
         }
         else if(iteration == 14)
@@ -357,11 +357,11 @@ function startCalibration()
         
         }, 50);
 
-        delay(3000).then(()=>{goUntilMidTop(1,"left",container.offsetWidth/4,container,calibrator,getCenterCoordinates(calibrator).x)});
+        delay(3000).then(()=>{moveTarget(1,"left",container.offsetWidth/4,container,calibrator,getCenterCoordinates(calibrator).x)});
 
     });
 
-    // delay(5000).then(()=>{goUntilMidTop(0,"left",getCenterCoordinates(calibrator).x,container,calibrator,getCenterCoordinates(calibrator).x);})
+    // delay(5000).then(()=>{moveTarget(0,"left",getCenterCoordinates(calibrator).x,container,calibrator,getCenterCoordinates(calibrator).x);})
 }
 
 function createCalibrationDialog() {
