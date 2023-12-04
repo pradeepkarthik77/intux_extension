@@ -300,7 +300,6 @@ function createCalibration()
     overlayDiv.style.height = '100%';
     overlayDiv.style.background = 'rgba(0, 0, 0, 0.5)'; // Semi-transparent black background
     overlayDiv.style.zIndex = '9999'; // Ensure the overlay is on top of other elements
-
     
     webgazer.clearData();
 
