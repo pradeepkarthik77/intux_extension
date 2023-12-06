@@ -4,43 +4,43 @@ runs = 0;
 
 var webgazerInitialized = false;
 
-if(sessionStorage.getItem("ExtensionURL") == window.location.hostname)
-{
-    console.log("Proceeding to continue");
-    if (!webgazerInitialized) {
-        setTimeout(initGazer,1000);
-        webgazerInitialized = true;
-    }
-    setTimeout(removeOverlay,500);
-    setTimeout(setDBstore,500);
-}
+// if(sessionStorage.getItem("ExtensionURL") == window.location.hostname)
+// {
+//     console.log("Proceeding to continue");
+//     if (!webgazerInitialized) {
+//         setTimeout(initGazer,1000);
+//         webgazerInitialized = true;
+//     }
+//     setTimeout(removeOverlay,500);
+//     setTimeout(setDBstore,500);
+// }
 
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
-        if (request.message === 'enabledWebgazer') {
+        // if (request.message === 'enabledWebgazer') {
 
-            var hostname = window.location.hostname;
-            sessionStorage.setItem('ExtensionURL', hostname);
+        //     var hostname = window.location.hostname;
+        //     sessionStorage.setItem('ExtensionURL', hostname);
 
-            if (!webgazerInitialized) {
-                initGazer();
-                webgazerInitialized = true;
-            }
+        //     if (!webgazerInitialized) {
+        //         initGazer();
+        //         webgazerInitialized = true;
+        //     }
 
-            setTimeout(removeOverlay,500);
-            setTimeout(setDBstore,500);
-            // createCalibration();
-        }
-        else if(request.message === 'enableCalibration')
+        //     setTimeout(removeOverlay,500);
+        //     setTimeout(setDBstore,500);
+        //     // createCalibration();
+        // }
+        if(request.message === 'enableCalibration')
         {
             var hostname = window.location.hostname;
             sessionStorage.setItem('ExtensionURL', hostname);
 
             createCalibration();
         }
-        else if(request.message === 'disabledWebgazer') {
-            endGazer();
-        }
+        // else if(request.message === 'disabledWebgazer') {
+        //     endGazer();
+        // }
         else if(request.message === 'saveRollNo')
         {
             localStorage.setItem('rollNo',request.rollno);
@@ -53,8 +53,6 @@ function initGazer() {
 
             webgazer.setRegression('ridge')
             .begin();
-
-            console.log("Ridge regression");
 
             webgazer.showVideoPreview(true) /* shows all video previews */
             .showPredictionPoints(true) /* shows a square every 100 milliseconds where current prediction is */
@@ -80,9 +78,6 @@ function simulateClick(x, y) {
     // Find the element at the specified coordinates
     const element = document.elementFromPoint(x, y);
 
-
-    console.log("Called me");
-
     // Check if the element is found
     if (element) {
         // Simulate 10 clicks with intervals
@@ -101,15 +96,15 @@ function simulateClick(x, y) {
                 element.dispatchEvent(clickEvent);
 
                 // Log information about the simulated click
-                console.log(`Simulated click ${i + 1} on coordinates:`, { x, y });
+                // console.log(`Simulated click ${i + 1} on coordinates:`, { x, y });
             }, 50);
         }
     } else {
-        console.log('No element found at coordinates:', { x, y });
+        // console.log('No element found at coordinates:', { x, y });
     }
 }
 
-function goUntilMidTop(iteration,direction,limit,container,elem,currentValue)
+function moveTarget(iteration,direction,limit,container,elem,currentValue)
 {
     var newvalue = currentValue;
 
@@ -190,97 +185,93 @@ function goUntilMidTop(iteration,direction,limit,container,elem,currentValue)
 
         if(iteration == 1)
         {
-            delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
-            })
+            setTimeout(onStopCalibration,3000);
+            // delay(customTime).then(()=>{
+            //     moveTarget(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
+            // })
         }
 
         if(iteration == 2)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"left",container.offsetWidth*(0.75),container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"left",container.offsetWidth*(0.75),container,elem,getCenterCoordinates(elem).x);
             })
         }
 
         if(iteration == 3)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"left",container.offsetWidth-50,container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"left",container.offsetWidth-50,container,elem,getCenterCoordinates(elem).x);
             })
         }
-
-        //above code is until first line
-
 
         else if(iteration == 4)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"bottom",container.offsetHeight/2,container,elem,getCenterCoordinates(elem).y);
+                moveTarget(iteration+1,"bottom",container.offsetHeight/2,container,elem,getCenterCoordinates(elem).y);
             })
         }
 
         else if(iteration == 5)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"right",container.offsetWidth*(0.75),container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"right",container.offsetWidth*(0.75),container,elem,getCenterCoordinates(elem).x);
             })
         }
 
         else if(iteration == 6)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"right",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"right",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
             })
         }
 
         else if(iteration == 7)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"right",container.offsetWidth/4,container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"right",container.offsetWidth/4,container,elem,getCenterCoordinates(elem).x);
             })
         }
 
         else if(iteration == 8)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"right",50,container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"right",50,container,elem,getCenterCoordinates(elem).x);
             })
         }
-
-        //above code for 5 point calibration in line 2
 
         else if(iteration == 9)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"bottom",container.offsetHeight-50,container,elem,getCenterCoordinates(elem).y);
+                moveTarget(iteration+1,"bottom",container.offsetHeight-50,container,elem,getCenterCoordinates(elem).y);
             })
         }
 
         else if(iteration == 10)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"left",container.offsetWidth/4,container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"left",container.offsetWidth/4,container,elem,getCenterCoordinates(elem).x);
             })
         }
 
         else if(iteration == 11)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
             })
         }
 
         else if(iteration == 12)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"left",container.offsetWidth*(0.75),container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"left",container.offsetWidth*(0.75),container,elem,getCenterCoordinates(elem).x);
             })
         }
 
         else if(iteration == 13)
         {
             delay(customTime).then(()=>{
-                goUntilMidTop(iteration+1,"left",container.offsetWidth-50,container,elem,getCenterCoordinates(elem).x);
+                moveTarget(iteration+1,"left",container.offsetWidth-50,container,elem,getCenterCoordinates(elem).x);
             })
         }
         else if(iteration == 14)
@@ -309,7 +300,6 @@ function createCalibration()
     overlayDiv.style.height = '100%';
     overlayDiv.style.background = 'rgba(0, 0, 0, 0.5)'; // Semi-transparent black background
     overlayDiv.style.zIndex = '9999'; // Ensure the overlay is on top of other elements
-
     
     webgazer.clearData();
 
@@ -366,12 +356,64 @@ function startCalibration()
         
         }, 50);
 
-        delay(3000).then(()=>{goUntilMidTop(1,"left",container.offsetWidth/4,container,calibrator,getCenterCoordinates(calibrator).x)});
+        delay(3000).then(()=>{moveTarget(1,"left",container.offsetWidth/4,container,calibrator,getCenterCoordinates(calibrator).x)});
 
     });
 
-    // delay(5000).then(()=>{goUntilMidTop(0,"left",getCenterCoordinates(calibrator).x,container,calibrator,getCenterCoordinates(calibrator).x);})
+    // delay(5000).then(()=>{moveTarget(0,"left",getCenterCoordinates(calibrator).x,container,calibrator,getCenterCoordinates(calibrator).x);})
 }
+
+async function createClickOverlay() {
+    // Create the overlay div
+    const overlayDiv = document.createElement('div');
+
+    overlayDiv.id = 'click-listener-div';
+  
+    // Set styles for the overlay to cover the entire screen
+    overlayDiv.style.position = 'fixed';
+    overlayDiv.style.top = '0';
+    overlayDiv.style.left = '0';
+    overlayDiv.style.width = '100%';
+    overlayDiv.style.height = '100%';
+    overlayDiv.style.backgroundColor = 'transparent'; // Set the background color as needed
+    overlayDiv.style.pointerEvents = 'auto'; // Make the overlay div non-blocking for clicks
+    overlayDiv.style.zIndex = '10000';
+  
+    // Append the overlay div to the body of the document
+    document.body.appendChild(overlayDiv);
+
+    var db = await openDatabase('EyeGaze');
+  
+    // Add click event listener to the overlay div
+    overlayDiv.addEventListener('click',async function (event) {
+      // Get the x, y coordinates of the click event
+      const x = event.clientX;
+      const y = event.clientY;
+  
+      console.log(`Clicked at coordinates: (${x}, ${y})`);
+
+      overlayDiv.style.pointerEvents = 'none';
+  
+      const underlyingElement = document.elementFromPoint(x, y);
+  
+      if (underlyingElement) {
+        underlyingElement.click();
+        // overlayDiv.style.pointerEvents = 'auto';
+      }
+  
+      setTimeout(function () {
+        overlayDiv.style.pointerEvents = 'auto';
+      }, 100);
+
+      ClickStore = await openStore(db, 'ClickStore');
+
+      let date = new Date();
+  
+      let time = date.getTime();
+
+      storeDataInStore(ClickStore, { timestamp: time, x: x, y: y });
+    });
+  }
 
 function createCalibrationDialog() {
     // Create a modal dialog
@@ -470,12 +512,35 @@ function removeOverlay() {
 async function setDBstore() {
     
     var db = await openDatabase('EyeGaze');
-    var date = new Date();
     var gazePredictionStore;
+    var ClickStore;
+
+    // document.addEventListener('click',async function(event) {
+    //     // Handle the click event
+    //     const clickCoordinates = {
+    //     x: event.clientX,
+    //     y: event.clientY
+    //     };
+
+    //     ClickStore = await openStore(db, 'ClickStore');
+
+    //     let date = new Date();
+    
+    //     let time = date.getTime();
+
+    //     console.log(clickCoordinates.x,clickCoordinates.y);
+
+    //     storeDataInStore(ClickStore, { timestamp: time, x: clickCoordinates.x, y: clickCoordinates.y });
+
+    // });
 
     webgazer.setGazeListener(async function(data, clock) {
+
+        console.log(data);
         
         gazePredictionStore = await openStore(db, 'GazePrediction');
+        
+        let date = new Date();
     
         let time = date.getTime();
 
@@ -486,7 +551,7 @@ async function setDBstore() {
 
 function openDatabase(databaseName) {
     return new Promise((resolve, reject) => {
-        const request = indexedDB.open(databaseName, 1);
+        const request = indexedDB.open(databaseName, 2); // Increment the version number
 
         request.onerror = function(event) {
             reject(`Error opening database: ${event.target.error}`);
@@ -500,11 +565,21 @@ function openDatabase(databaseName) {
         request.onupgradeneeded = function(event) {
             const db = event.target.result;
 
-            const gazePredictionStore = db.createObjectStore('GazePrediction', { autoIncrement: true });
-            gazePredictionStore.createIndex('timestamp', 'timestamp', { unique: false });
+            // Create or upgrade the existing object store
+            if (!db.objectStoreNames.contains('GazePrediction')) {
+                const gazePredictionStore = db.createObjectStore('GazePrediction', { autoIncrement: true });
+                gazePredictionStore.createIndex('timestamp', 'timestamp', { unique: false });
+            }
+
+            // Add the ClickStore object store
+            if (!db.objectStoreNames.contains('ClickStore')) {
+                const clickStore = db.createObjectStore('ClickStore', { autoIncrement: true });
+                clickStore.createIndex('clickTimestamp', 'clickTimestamp', { unique: false });
+            }
         };
     });
 }
+
 
 function openStore(db, storeName) {
     return new Promise((resolve, reject) => {
@@ -545,7 +620,7 @@ function readAllDataFromStore(store) {
     });
 }
 
-async function uploadDataToBackend(allData) {
+async function uploadDataToBackend(gazeData,clickData) {
     const url = 'http://localhost:5000/uploadData'; // Replace with your actual backend endpoint
 
     try {
@@ -554,7 +629,7 @@ async function uploadDataToBackend(allData) {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({data: allData,rollNo: localStorage.getItem('rollNo')}),
+            body: JSON.stringify({gazeData: gazeData,rollNo: localStorage.getItem('rollNo'),clickData: clickData}),
         });
 
         if (!response.ok) {
@@ -571,16 +646,23 @@ async function uploadDataToBackend(allData) {
 async function endGazer() {
     webgazer.end();
 
-    alert("Webgazer ended");
+    alert("Tracking has Ended");
 
     const db = await openDatabase('EyeGaze');
-    const gazePredictionStore = await openStore(db, 'GazePrediction');
 
-    const allData = await readAllDataFromStore(gazePredictionStore);
+    // Open a transaction that includes both GazePrediction and ClickStore
+    const transaction = db.transaction(['GazePrediction', 'ClickStore'], 'readwrite');
 
-    await uploadDataToBackend(allData);
+    const gazePredictionStore = transaction.objectStore('GazePrediction');
+    const clickStore = transaction.objectStore('ClickStore');
 
-    console.log('All data from GazePrediction store:', allData);
+    const gazeData = await readAllDataFromStore(gazePredictionStore);
+    const clickData = await readAllDataFromStore(clickStore);
+
+    await uploadDataToBackend(gazeData,clickData);
+
+    console.log('All data from GazePrediction store:', gazeData);
+    console.log('All data from ClickStore:', clickData);
 
     await deleteDatabase();
 }
@@ -704,6 +786,7 @@ function createFloatingDialog() {
 
                 setTimeout(removeOverlay,500);
                 setTimeout(setDBstore,500);
+                setTimeout(createClickOverlay,500);
 
                 // Start or resume the timer
                 stopTimerFunction = updateTimer();
@@ -722,6 +805,5 @@ function createFloatingDialog() {
         });
     }
 
-    // Call the function to handle button click
     handleButtonClick();
 }
