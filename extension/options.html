@@ -1,28 +1,126 @@
-<!-- options.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extension Options</title>
-    <style>
-        /* Add your styles here */
-    </style>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Post Task Survey</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Light grey background color */
+    }
+
+    form {
+    width: 70%; /* Increased form width */
+    max-width: 600px; /* Increased max-width for larger screens */
+    padding: 30px; /* Increased padding for better spacing */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    background-color: #f8f8f8;
+    margin-top: 30px; /* Increased margin-top for better separation */
+    }
+
+    h1 {
+    margin-top: 20px;
+    font-size: 24px; /* Increased title font size */
+    }
+
+    label {
+    display: block;
+    margin-bottom: 20px; /* Increased margin-bottom for better spacing */
+    font-weight: bold;
+    font-size: 16px; /* Increased label font size */
+    }
+
+    input[type="radio"],
+    input[type="range"] {
+    margin-right: 10px; /* Increased margin-right for better spacing */
+    width: auto; /* Adjusted width for radio buttons */
+    }
+
+    input[type="range"] {
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px; /* Increased margin-top for better spacing */
+    }
+
+    span {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px; /* Increased margin-top for better spacing */
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px; /* Increased span font size */
+    }
+
+    button {
+    display: block;
+    margin-top: 30px; /* Increased margin-top for better separation */
+    padding: 15px; /* Increased padding for larger button */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px; /* Increased border-radius for rounded corners */
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px; /* Increased button font size */
+    transition: background-color 0.3s ease; /* Added transition effect */
+    }
+
+    button:hover {
+    background-color: #45a049; /* Darker color on hover */
+    }
+
+    button:active {
+    background-color: #3e8e41; /* Darker color on click */
+    }
+</style>
 </head>
 <body>
-    <h1>Extension Options</h1>
 
-    <form id="optionsForm">
-        <!-- Add your form elements here -->
-        <label for="option1">Option 1:</label>
-        <input type="text" id="option1" name="option1"><br>
+<h1>Post Task Survey</h1>
 
-        <!-- Add more options as needed -->
+<form id="feedbackForm">
+    <label>
+    Q1. Were you able to complete the given task? 
+    <input type="radio" name="q1" value="yes"> Yes
+    <input type="radio" name="q1" value="no"> No
+    </label>
 
-        <input type="submit" value="Save">
-    </form>
+    <label>
+    Q2. How difficult would you rate the task?  (With 1 being easy and 5 being very difficult)
+    <input id="q2slide" type="range" name="q2" min="1" max="5" step="1" value="3">
+    <span id="q2Value">3</span>
+    </label>
 
-    <script src="options.js"></script>
+    <label>
+    Q3. Have you performed this task before? 
+    <input type="radio" name="q3" value="yes"> Yes
+    <input type="radio" name="q3" value="no"> No
+    <input type="radio" name="q3" value="maybe"> Maybe
+    </label>
+
+    <label>
+    Q4. Were you able to navigate to the subsequent steps seamlessly? (With 1 being with utmost ease and 5 being with utmost difficulty)
+    <input id="q4slide" type="range" name="q4" min="1" max="5" step="1" value="3">
+    <span id="q4Value">3</span>
+    </label>
+
+    <label>
+    Q5. How relevant do you think the completed task is to the overall goal of the website? (With 1 being highly irrelevant and 5 being highly relevant)
+    <br/>
+    <input id="q5slide" type="range" name="q5" min="1" max="5" step="1" value="3">
+    <span id="q5Value">3</span>
+    </label>
+
+    <button type="button" id="submitbtn">Submit</button>
+</form>
+<script src="options.js"></script>
 </body>
 </html>
