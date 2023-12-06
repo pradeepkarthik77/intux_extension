@@ -35,7 +35,6 @@ chrome.runtime.onMessage.addListener(
         {
             var hostname = window.location.hostname;
             sessionStorage.setItem('ExtensionURL', hostname);
-
             createCalibration();
         }
         // else if(request.message === 'disabledWebgazer') {
@@ -535,8 +534,6 @@ async function setDBstore() {
     // });
 
     webgazer.setGazeListener(async function(data, clock) {
-
-        console.log(data);
         
         gazePredictionStore = await openStore(db, 'GazePrediction');
         
@@ -643,6 +640,52 @@ async function uploadDataToBackend(gazeData,clickData) {
     }
 }
 
+async function startForm() {
+    // Get screen sizes
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+
+    const rollNo = localStorage.getItem('rollNo');
+
+    if (rollNo != null) {
+        // Count the number of records in the 'ClickStore' object store
+        const db = await openDatabase('EyeGaze');
+        const clickStore = await openStore(db, 'ClickStore');
+        const clickCount = await getCountFromStore(clickStore);
+
+        // Send data to options page
+        chrome.runtime.sendMessage({
+            action: 'openOptionsPage',
+            data: {
+                rollNo: rollNo,
+                screenWidth: screenWidth,
+                screenHeight: screenHeight,
+                clickCount: clickCount
+            },
+        });
+    } else {
+        console.log("Enter proper rollNo");
+        alert('Enter a proper rollNo before starting the task');
+    }
+}
+
+async function getCountFromStore(store) {
+    return new Promise((resolve, reject) => {
+        const request = store.count();
+
+        request.onerror = function (event) {
+            reject(`Error counting records in store: ${event.target.error}`);
+        };
+
+        request.onsuccess = function (event) {
+            const count = event.target.result;
+            resolve(count);
+        };
+    });
+}
+
+
+
 async function endGazer() {
     webgazer.end();
 
@@ -663,6 +706,8 @@ async function endGazer() {
 
     console.log('All data from GazePrediction store:', gazeData);
     console.log('All data from ClickStore:', clickData);
+
+    await startForm();
 
     await deleteDatabase();
 }
@@ -715,7 +760,7 @@ function createFloatingDialog() {
 
     // Create a timer element
     const timerElement = document.createElement('div');
-    timerElement.id = 'timer';
+    timerElement.id = 'task-timer';
     timerElement.textContent = '00:00';
 
     // Add styles to the timer element
