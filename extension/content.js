@@ -185,10 +185,10 @@ function moveTarget(iteration,direction,limit,container,elem,currentValue)
 
         if(iteration == 1)
         {
-            // setTimeout(onStopCalibration,3000);
-            delay(customTime).then(()=>{
-                moveTarget(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
-            })
+            setTimeout(onStopCalibration,3000);
+            // delay(customTime).then(()=>{
+            //     moveTarget(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
+            // })
         }
 
         if(iteration == 2)
@@ -314,17 +314,17 @@ function createCalibration()
     createImage();
     createCalibrationDialog();
     
-    // overlayDiv.addEventListener('click', function(event) {
-    //         // Handle the click event
-    //         const clickCoordinates = {
-    //         x: event.clientX,
-    //         y: event.clientY
-    //         };
+    overlayDiv.addEventListener('click', function(event) {
+            // Handle the click event
+            const clickCoordinates = {
+            x: event.clientX,
+            y: event.clientY
+            };
     
-    //         // Perform any necessary actions, such as updating the model
-    //         console.log('Clicked on coordinates:', clickCoordinates);
+            // Perform any necessary actions, such as updating the model
+            console.log('Clicked on coordinates:', clickCoordinates);
 
-    // });
+    });
 }
 
 
@@ -362,6 +362,58 @@ function startCalibration()
 
     // delay(5000).then(()=>{moveTarget(0,"left",getCenterCoordinates(calibrator).x,container,calibrator,getCenterCoordinates(calibrator).x);})
 }
+
+async function createClickOverlay() {
+    // Create the overlay div
+    const overlayDiv = document.createElement('div');
+
+    overlayDiv.id = 'click-listener-div';
+  
+    // Set styles for the overlay to cover the entire screen
+    overlayDiv.style.position = 'fixed';
+    overlayDiv.style.top = '0';
+    overlayDiv.style.left = '0';
+    overlayDiv.style.width = '100%';
+    overlayDiv.style.height = '100%';
+    overlayDiv.style.backgroundColor = 'transparent'; // Set the background color as needed
+    overlayDiv.style.pointerEvents = 'auto'; // Make the overlay div non-blocking for clicks
+    overlayDiv.style.zIndex = '10000';
+  
+    // Append the overlay div to the body of the document
+    document.body.appendChild(overlayDiv);
+
+    var db = await openDatabase('EyeGaze');
+  
+    // Add click event listener to the overlay div
+    overlayDiv.addEventListener('click',async function (event) {
+      // Get the x, y coordinates of the click event
+      const x = event.clientX;
+      const y = event.clientY;
+  
+      console.log(`Clicked at coordinates: (${x}, ${y})`);
+
+      overlayDiv.style.pointerEvents = 'none';
+  
+      const underlyingElement = document.elementFromPoint(x, y);
+  
+      if (underlyingElement) {
+        underlyingElement.click();
+        // overlayDiv.style.pointerEvents = 'auto';
+      }
+  
+      setTimeout(function () {
+        overlayDiv.style.pointerEvents = 'auto';
+      }, 100);
+
+      ClickStore = await openStore(db, 'ClickStore');
+
+      let date = new Date();
+  
+      let time = date.getTime();
+
+      storeDataInStore(ClickStore, { timestamp: time, x: x, y: y });
+    });
+  }
 
 function createCalibrationDialog() {
     // Create a modal dialog
@@ -463,24 +515,28 @@ async function setDBstore() {
     var gazePredictionStore;
     var ClickStore;
 
-    document.addEventListener('click',async function(event) {
-        // Handle the click event
-        const clickCoordinates = {
-        x: event.clientX,
-        y: event.clientY
-        };
+    // document.addEventListener('click',async function(event) {
+    //     // Handle the click event
+    //     const clickCoordinates = {
+    //     x: event.clientX,
+    //     y: event.clientY
+    //     };
 
-        ClickStore = await openStore(db, 'ClickStore');
+    //     ClickStore = await openStore(db, 'ClickStore');
 
-        let date = new Date();
+    //     let date = new Date();
     
-        let time = date.getTime();
+    //     let time = date.getTime();
 
-        storeDataInStore(ClickStore, { timestamp: time, x: clickCoordinates.x, y: clickCoordinates.y });
+    //     console.log(clickCoordinates.x,clickCoordinates.y);
 
-    });
+    //     storeDataInStore(ClickStore, { timestamp: time, x: clickCoordinates.x, y: clickCoordinates.y });
+
+    // });
 
     webgazer.setGazeListener(async function(data, clock) {
+
+        console.log(data);
         
         gazePredictionStore = await openStore(db, 'GazePrediction');
         
@@ -730,6 +786,7 @@ function createFloatingDialog() {
 
                 setTimeout(removeOverlay,500);
                 setTimeout(setDBstore,500);
+                setTimeout(createClickOverlay,500);
 
                 // Start or resume the timer
                 stopTimerFunction = updateTimer();

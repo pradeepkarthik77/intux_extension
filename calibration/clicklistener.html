@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click Event Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    button {
+      padding: 10px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    #container {
+      border: 2px solid #333;
+      padding: 10px;
+    }
+
+    #nestedElement {
+      background-color: #eee;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="button1">Click me!</button>
+  <button id="button2">Click me too!</button>
+
+  <div id="container">
+    <p>This is a nested element:</p>
+    <div id="nestedElement">
+      <p>Nested content goes here.</p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('click',async function(event) {
+        // Handle the click event
+        const clickCoordinates = {
+        x: event.clientX,
+        y: event.clientY
+        };
+
+        console.log(clickCoordinates);
+    });
+
+    document.getElementById('button1').onclick = function() {
+      console.log('Button 1 clicked!');
+    };
+
+    document.getElementById('button2').onclick = function() {
+      console.log('Button 2 clicked!');
+    };
+  </script>
+
+</body>
+</html>
