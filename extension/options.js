@@ -47,7 +47,7 @@ function submitForm() {
 
     console.log(jsonData)
     // Adjust the endpoint URL to your backend
-    const endpointURL = 'http://localhost:5000';
+    const endpointURL = 'http://localhost:5000/metaData';
 
     // Perform a POST request to the backend
     fetch(endpointURL, {
@@ -61,6 +61,7 @@ function submitForm() {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
+            alert("Data Submitted Successfully. You can Close this tab");
             console.log('Data submitted successfully');
             // You can perform additional actions after successful submission
         })

@@ -702,7 +702,7 @@ async function endGazer() {
     const gazeData = await readAllDataFromStore(gazePredictionStore);
     const clickData = await readAllDataFromStore(clickStore);
 
-    // await uploadDataToBackend(gazeData,clickData);
+    await uploadDataToBackend(gazeData,clickData);
 
     console.log('All data from GazePrediction store:', gazeData);
     console.log('All data from ClickStore:', clickData);
