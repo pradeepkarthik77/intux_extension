@@ -69,9 +69,10 @@ app.post('/metaData',async (req, res) => {
     const q3 = req.body.q3;
     const q4 = req.body.q4;
     const q5 = req.body.q5;
-    const clickCount = req.body.clicCount;
+    const clickCount = req.body.clickCount;
     const screenHeight = req.body.screenHeight;
     const screenWidth = req.body.screenWidth;
+    const timeTaken = req.body.timeTaken;
 
     console.log("Received Metadata request");
 
@@ -81,7 +82,7 @@ app.post('/metaData',async (req, res) => {
 
     var MetaCollection = await MetaDB.collection(rollNo);
 
-    await MetaCollection.insertOne({rollNo: rollNo,q1:q1,q2:q2,q3:q3,q4:q4,q5:q5,clickCount: clickCount,screenHeight: screenHeight,screenWidth: screenWidth});
+    await MetaCollection.insertOne({rollNo: rollNo,q1:q1,q2:q2,q3:q3,q4:q4,q5:q5,clickCount: clickCount,screenHeight: screenHeight,screenWidth: screenWidth,timeTaken: timeTaken});
     
 });
 

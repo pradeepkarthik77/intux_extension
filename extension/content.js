@@ -644,6 +644,7 @@ async function startForm() {
     // Get screen sizes
     const screenWidth = window.innerWidth;
     const screenHeight = window.innerHeight;
+    const timeTaken = document.getElementById('task-timer').textContent;
 
     const rollNo = localStorage.getItem('rollNo');
 
@@ -660,7 +661,8 @@ async function startForm() {
                 rollNo: rollNo,
                 screenWidth: screenWidth,
                 screenHeight: screenHeight,
-                clickCount: clickCount
+                clickCount: clickCount,
+                timeTaken: timeTaken
             },
         });
     } else {
