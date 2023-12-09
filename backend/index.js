@@ -1,7 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const MongoClient = require('mongodb').MongoClient
+const MongoClient = require('mongodb').MongoClient;
+const config = require("./config.json");
 
 const app = express();
 const port = 5000;
@@ -9,7 +10,7 @@ const port = 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
-uri = "mongodb://localhost:27017"
+uri = config.MONGO_URI;
 
 const client = new MongoClient(uri);
 
