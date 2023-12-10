@@ -640,7 +640,7 @@ async function uploadDataToBackend(gazeData,clickData) {
     }
 }
 
-async function startForm() {
+async function startForm(gazeData,clickData) {
     // Get screen sizes
     const screenWidth = window.innerWidth;
     const screenHeight = window.innerHeight;
