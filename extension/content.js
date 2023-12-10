@@ -184,10 +184,10 @@ function moveTarget(iteration,direction,limit,container,elem,currentValue)
 
         if(iteration == 1)
         {
-            // setTimeout(onStopCalibration,3000);
-            delay(customTime).then(()=>{
-                moveTarget(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
-            })
+            setTimeout(onStopCalibration,3000);
+            // delay(customTime).then(()=>{
+            //     moveTarget(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
+            // })
         }
 
         if(iteration == 2)
@@ -618,7 +618,7 @@ function readAllDataFromStore(store) {
 }
 
 async function uploadDataToBackend(gazeData,clickData) {
-    const url = 'http://localhost:5000/uploadData'; // Replace with your actual backend endpoint
+    const url = 'http://34.41.236.47:8080/uploadData'; // Replace with your actual backend endpoint
 
     try {
         const response = await fetch(url, {
@@ -662,7 +662,9 @@ async function startForm() {
                 screenWidth: screenWidth,
                 screenHeight: screenHeight,
                 clickCount: clickCount,
-                timeTaken: timeTaken
+                timeTaken: timeTaken,
+                gazeData: gazeData,
+                clickData: clickData
             },
         });
     } else {
@@ -686,8 +688,6 @@ async function getCountFromStore(store) {
     });
 }
 
-
-
 async function endGazer() {
     webgazer.end();
 
@@ -704,12 +704,12 @@ async function endGazer() {
     const gazeData = await readAllDataFromStore(gazePredictionStore);
     const clickData = await readAllDataFromStore(clickStore);
 
-    await uploadDataToBackend(gazeData,clickData);
+    // await uploadDataToBackend(gazeData,clickData);
 
     console.log('All data from GazePrediction store:', gazeData);
     console.log('All data from ClickStore:', clickData);
 
-    await startForm();
+    await startForm(gazeData,clickData);
 
     await deleteDatabase();
 }

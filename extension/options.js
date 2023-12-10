@@ -47,7 +47,7 @@ function submitForm() {
 
     console.log(jsonData)
     // Adjust the endpoint URL to your backend
-    const endpointURL = 'http://localhost:5000/metaData';
+    const endpointURL = 'http://34.41.236.47:8080/uploadData';
 
     // Perform a POST request to the backend
     fetch(endpointURL, {

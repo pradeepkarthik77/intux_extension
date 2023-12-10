@@ -5,7 +5,7 @@ const MongoClient = require('mongodb').MongoClient;
 const config = require("./config.json");
 
 const app = express();
-const port = 5000;
+const port = 8080;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -42,6 +42,15 @@ app.post('/uploadData',async (req, res) => {
     const gazeData = req.body.gazeData;
     const clickData = req.body.clickData;
     const rollNo = req.body.rollNo;
+    const q1 = req.body.q1;
+    const q2 = req.body.q2;
+    const q3 = req.body.q3;
+    const q4 = req.body.q4;
+    const q5 = req.body.q5;
+    const clickCount = req.body.clickCount;
+    const screenHeight = req.body.screenHeight;
+    const screenWidth = req.body.screenWidth;
+    const timeTaken = req.body.timeTaken;
 
     console.log("Received request");
 
@@ -49,9 +58,13 @@ app.post('/uploadData',async (req, res) => {
 
     await createCollection(GazeDB,rollNo);
     await createCollection(ClickDB,rollNo);
+    await createCollection(MetaDB,rollNo);
 
     var GazeCollection = await GazeDB.collection(rollNo);
     var ClickCollection = await ClickDB.collection(rollNo);
+    var MetaCollection = await MetaDB.collection(rollNo);
+
+    await MetaCollection.insertOne({rollNo: rollNo,q1:q1,q2:q2,q3:q3,q4:q4,q5:q5,clickCount: clickCount,screenHeight: screenHeight,screenWidth: screenWidth,timeTaken: timeTaken});
 
     gazeData.forEach((eyegaze, index) => {
         const result = GazeCollection.insertOne(eyegaze);
@@ -63,29 +76,14 @@ app.post('/uploadData',async (req, res) => {
     
 });
 
-app.post('/metaData',async (req, res) => {
-    const rollNo = req.body.rollNo;
-    const q1 = req.body.q1;
-    const q2 = req.body.q2;
-    const q3 = req.body.q3;
-    const q4 = req.body.q4;
-    const q5 = req.body.q5;
-    const clickCount = req.body.clickCount;
-    const screenHeight = req.body.screenHeight;
-    const screenWidth = req.body.screenWidth;
-    const timeTaken = req.body.timeTaken;
-
-    console.log("Received Metadata request");
-
-    res.json({ message: 'Data received successfully' });
-
-    await createCollection(MetaDB,rollNo);
-
-    var MetaCollection = await MetaDB.collection(rollNo);
-
-    await MetaCollection.insertOne({rollNo: rollNo,q1:q1,q2:q2,q3:q3,q4:q4,q5:q5,clickCount: clickCount,screenHeight: screenHeight,screenWidth: screenWidth,timeTaken: timeTaken});
+// app.post('/metaData',async (req, res) => {
     
-});
+
+//     console.log("Received Metadata request");
+
+//     res.json({ message: 'Data received successfully' });
+
+// });
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
