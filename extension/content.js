@@ -184,10 +184,10 @@ function moveTarget(iteration,direction,limit,container,elem,currentValue)
 
         if(iteration == 1)
         {
-            setTimeout(onStopCalibration,3000);
-            // delay(customTime).then(()=>{
-            //     moveTarget(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
-            // })
+            // setTimeout(onStopCalibration,3000);  
+            delay(customTime).then(()=>{
+                moveTarget(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
+            })
         }
 
         if(iteration == 2)
