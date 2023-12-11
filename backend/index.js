@@ -66,13 +66,15 @@ app.post('/uploadData',async (req, res) => {
 
     await MetaCollection.insertOne({rollNo: rollNo,q1:q1,q2:q2,q3:q3,q4:q4,q5:q5,clickCount: clickCount,screenHeight: screenHeight,screenWidth: screenWidth,timeTaken: timeTaken});
 
-    gazeData.forEach((eyegaze, index) => {
-        const result = GazeCollection.insertOne(eyegaze);
+    gazeData.forEach(async (eyegaze, index) => {
+        const result = await GazeCollection.insertOne(eyegaze);
     });
 
-    clickData.forEach((click,index) => {
-        const result = ClickCollection.insertOne(click);
+    clickData.forEach(async (click,index) => {
+        const result = await ClickCollection.insertOne(click);
     });
+
+    console.log("Done");
     
 });
 
