@@ -422,10 +422,10 @@ function createCalibrationDialog() {
         <h2 id="calibration-heading" style="text-align: center;">Instructions</h2>
         <div id="calibration-instructions">
             <ul style="font-size: 1.2em;">
-                <li>Click Start Calibration After you see a red prediction point in your screen.</li>
+                <li>Click on Start Calibration after you see prediction points overlay on your face in the video.</li>
                 <li>Make sure to look at the target and not blink when it is rotating.</li>
                 <li>Make sure to not intercept clicks on the screen once calibration has started</li>
-                <!-- Add more instructions as needed -->
+                <li>It is advisied to sit in a well-lit environment and have the light source in front of your face.</li>
             </ul>
         </div>
         <button id="start-calibration-btn">Begin Calibration</button>
@@ -434,7 +434,7 @@ function createCalibrationDialog() {
     // Add styles to the modal dialog
     dialog.style.position = 'fixed';
     dialog.style.width = '500px';
-    dialog.style.height = '300px';
+    dialog.style.height = '350px';
     dialog.style.top = '50%';
     dialog.style.left = '50%';
     dialog.style.transform = 'translate(-50%, -50%)';
@@ -618,7 +618,7 @@ function readAllDataFromStore(store) {
 }
 
 async function uploadDataToBackend(gazeData,clickData) {
-    const url = 'http://34.41.236.47:8080/uploadData'; // Replace with your actual backend endpoint
+    const url = 'http://146.148.46.216:8080/uploadData'; // Replace with your actual backend endpoint
 
     try {
         const response = await fetch(url, {
