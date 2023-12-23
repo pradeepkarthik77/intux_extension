@@ -4,6 +4,8 @@ runs = 0;
 
 var webgazerInitialized = false;
 
+var stopTimerFunction;
+
 // if(sessionStorage.getItem("ExtensionURL") == window.location.hostname)
 // {
 //     console.log("Proceeding to continue");
@@ -184,10 +186,10 @@ function moveTarget(iteration,direction,limit,container,elem,currentValue)
 
         if(iteration == 1)
         {
-            // setTimeout(onStopCalibration,3000);  
-            delay(customTime).then(()=>{
-                moveTarget(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
-            })
+            setTimeout(onStopCalibration,3000);  
+            // delay(customTime).then(()=>{
+            //     moveTarget(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
+            // })
         }
 
         if(iteration == 2)
@@ -814,12 +816,16 @@ function createFloatingDialog() {
     // Function to handle button click
     function handleButtonClick() {
         const actionButton = document.getElementById('action-button');
-        let stopTimerFunction;
+        
 
         actionButton.addEventListener('click', () => {
 
             if (actionButton.textContent === 'Start Task') {
                 // Change button text to 'Stop Task'
+
+                
+                chrome.runtime.sendMessage({ name: 'initiateRecording' });
+
                 actionButton.textContent = 'Stop Task';
                 actionButton.style.backgroundColor = '#FF0000'; // Red background color for Stop Task
 
@@ -830,17 +836,20 @@ function createFloatingDialog() {
                     initGazer();
                     webgazerInitialized = true;
                 }
-
+            
                 setTimeout(removeOverlay,500);
                 setTimeout(setDBstore,500);
                 setTimeout(createClickOverlay,500);
-
+            
                 // Start or resume the timer
                 stopTimerFunction = updateTimer();
+
             } else {
                 // Change button text to 'Start Task'
                 actionButton.textContent = 'Start Task';
                 actionButton.style.backgroundColor = '#4CAF50'; // Green background color for Start Task
+
+                chrome.runtime.sendMessage({ name: 'stopRecording' });
 
                 // Stop the timer
                 if (stopTimerFunction) {
