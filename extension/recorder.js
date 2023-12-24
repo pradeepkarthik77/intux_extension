@@ -10,6 +10,26 @@ chrome.runtime.onMessage.addListener((message) => {
   }
 });
 
+async function saveRecording(blob, rollNo) {
+  console.log('Saving recording blob')
+  const formData = new FormData();
+  formData.append('recording', blob);
+  formData.append('rollNo', rollNo);
+
+
+  await fetch('http://localhost:8080/saveRecording', {
+    method: 'POST',
+    body: formData,
+  })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Recording saved:', data);
+    })
+    .catch(error => {
+      console.error('Error saving recording:', error);
+    });
+}
+
 function startRecording(currentTabId,rollNo) {
   // Prompt user to choose screen or window
   chrome.desktopCapture.chooseDesktopMedia(
@@ -39,18 +59,19 @@ function startRecording(currentTabId,rollNo) {
 
         mediaRecorder.onstop = async function (e) {
           const blobFile = new Blob(chunks, { type: "video/webm" });
-          const url = URL.createObjectURL(blobFile);
+          await saveRecording(blobFile,rollNo);
+          // const url = URL.createObjectURL(blobFile);
 
-          // Stop all tracks of stream
-          stream.getTracks().forEach(track => track.stop());
+          // // Stop all tracks of stream
+          // stream.getTracks().forEach(track => track.stop());
 
-          const downloadLink = document.createElement('a');
-          // Set the anchor's attributes
-          downloadLink.href = url;
-          downloadLink.download = `${rollNo}.mp4`; // Specify the desired filename
+          // const downloadLink = document.createElement('a');
+          // // Set the anchor's attributes
+          // downloadLink.href = url;
+          // downloadLink.download = `${rollNo}.mp4`; // Specify the desired filename
 
-          // Programmatically trigger a click event on the anchor to initiate the download
-          downloadLink.click();
+          // // Programmatically trigger a click event on the anchor to initiate the download
+          // downloadLink.click();
           window.close();
         };
 

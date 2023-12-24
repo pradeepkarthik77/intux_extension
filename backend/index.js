@@ -3,6 +3,9 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 const config = require("./config.json");
+const admin = require('firebase-admin');
+const multer = require('multer');
+const serviceAccount = require('./serviceAccountKey.json');
 
 const app = express();
 const port = 8080;
@@ -36,6 +39,34 @@ async function createCollection(db,rollNo)
     await deleteCollection(db,rollNo);
     await db.createCollection(rollNo);
 }
+
+
+app.post('/saveRecording', upload.single('recording'), async (req, res) => {
+    try {
+        console.log('In Server Saving recording')
+        const rollNo = req.body.rollNo;
+
+        const fileRef = storage.bucket().file(`recordings/${rollNo}.webm`);
+        await fileRef.save(req.file.buffer);
+
+        // Get the download URL of the uploaded file
+        const fileUrl = await fileRef.getSignedUrl({ action: 'read', expires: '03-09-2491' });
+
+        // You can also store additional metadata if needed
+        const metadata = {
+            contentType: req.file.mimetype,
+            // Add more metadata properties as needed
+        };
+
+        await fileRef.setMetadata(metadata);
+
+        res.json({ success: true, fileUrl: fileUrl[0] });
+    } catch (error) {
+        console.error("error in server wjile save recording", error);
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
 
 
 app.post('/uploadData',async (req, res) => {
