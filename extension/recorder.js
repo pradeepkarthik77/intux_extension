@@ -3,14 +3,14 @@ var chunks = [];
 
 chrome.runtime.onMessage.addListener((message) => {
   if (message.name == 'startRecording') {
-    startRecording(message.body.currentTab.id)
+    startRecording(message.body.currentTab.id,message.body.rollNo)
   }
   if (message.name == 'stopRecording') {
     stopRecording();
   }
 });
 
-function startRecording(currentTabId) {
+function startRecording(currentTabId,rollNo) {
   // Prompt user to choose screen or window
   chrome.desktopCapture.chooseDesktopMedia(
     ['screen', 'window'],
@@ -47,7 +47,7 @@ function startRecording(currentTabId) {
           const downloadLink = document.createElement('a');
           // Set the anchor's attributes
           downloadLink.href = url;
-          downloadLink.download = 'demo.mp4'; // Specify the desired filename
+          downloadLink.download = `${rollNo}.mp4`; // Specify the desired filename
 
           // Programmatically trigger a click event on the anchor to initiate the download
           downloadLink.click();

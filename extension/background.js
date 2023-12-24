@@ -17,7 +17,7 @@ chrome.runtime.onInstalled.addListener(function () {
     // Your logic on extension installed or updated, if needed
 });
 
-const startRecording = async () => {
+const startRecording = async (rollNo) => {
   await chrome.tabs.query({'active': true, 'lastFocusedWindow': true, 'currentWindow': true}, async function (tabs) {
     // Get current tab to focus on it after start recording on recording screen tab
     const currentTab = tabs[0];
@@ -38,6 +38,7 @@ const startRecording = async () => {
           name: 'startRecording',
           body: {
             currentTab: currentTab,
+            rollNo: rollNo
           },
         });
       }
@@ -48,6 +49,6 @@ const startRecording = async () => {
 // Listen for startRecording message from popup.js
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.name === 'initiateRecording') {
-    startRecording();
+    startRecording(request.rollNo);
   }
 });

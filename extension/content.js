@@ -817,7 +817,7 @@ function createFloatingDialog() {
                 // Change button text to 'Stop Task'
 
                 
-                chrome.runtime.sendMessage({ name: 'initiateRecording' });
+                chrome.runtime.sendMessage({ name: 'initiateRecording',rollNo:  localStorage.getItem('rollNo')});
 
                 actionButton.textContent = 'Stop Task';
                 actionButton.style.backgroundColor = '#FF0000'; // Red background color for Stop Task
