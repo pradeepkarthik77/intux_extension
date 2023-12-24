@@ -658,8 +658,6 @@ async function getCountFromStore(store) {
 async function endGazer() {
     webgazer.end();
 
-    alert("Tracking has Ended");
-
     const db = await openDatabase('EyeGaze');
 
     // Open a transaction that includes both GazePrediction and ClickStore
