@@ -24,9 +24,11 @@ async function saveRecording(blob, rollNo) {
     .then(response => response.json())
     .then(data => {
       console.log('Recording saved:', data);
+      return data
     })
     .catch(error => {
       console.error('Error saving recording:', error);
+      return error.message
     });
 }
 
@@ -59,7 +61,9 @@ function startRecording(currentTabId,rollNo) {
 
         mediaRecorder.onstop = async function (e) {
           const blobFile = new Blob(chunks, { type: "video/webm" });
-          await saveRecording(blobFile,rollNo);
+          const recordRes= await saveRecording(blobFile,rollNo);
+          // await chrome.tabs.sendMessage(currentTabId, { message: "VideoURL", fileLink: recordRes });
+
           // const url = URL.createObjectURL(blobFile);
 
           // // Stop all tracks of stream

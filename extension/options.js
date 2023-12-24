@@ -28,9 +28,15 @@ document.addEventListener('DOMContentLoaded', function () {
 //     });
 // });
 
-function submitForm() {
+async function submitForm() {
     const form = document.getElementById('feedbackForm');
     const formData = new FormData(form);
+    // await chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+    //     if (message.message === "VideoURL") {
+    //         console.log("VideoURL", message.fileLink);
+
+    //     }
+    // });
 
     // Convert FormData to JSON
     const jsonData = {};

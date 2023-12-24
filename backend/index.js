@@ -12,8 +12,15 @@ const port = 8080;
 
 app.use(cors());
 app.use(bodyParser.json());
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    storageBucket: 'intuxforyou.appspot.com', //Firebase Storage bucket name
+});
 
-uri = config.MONGO_LOCAL;
+const storage = admin.storage();
+const upload = multer();
+
+uri = config.MONGO_URI;
 
 const client = new MongoClient(uri);
 
