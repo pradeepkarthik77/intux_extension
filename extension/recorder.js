@@ -52,12 +52,12 @@ function startRecording(currentTabId) {
           // Programmatically trigger a click event on the anchor to initiate the download
           downloadLink.click();
           window.close();
-
-          // Send a message to the previous tab
-          chrome.tabs.sendMessage(currentTabId, { message: 'userSelectionOver' });
         };
 
         mediaRecorder.start();
+
+        chrome.tabs.sendMessage(currentTabId, { message: "screenShared" });
+
       }).finally(async () => {
         // After all setup, focus on the previous tab (where the recording was requested)
         await chrome.tabs.update(currentTabId, { active: true, selected: true });

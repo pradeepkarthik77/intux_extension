@@ -4,8 +4,6 @@ runs = 0;
 
 var webgazerInitialized = false;
 
-var stopTimerFunction;
-
 // if(sessionStorage.getItem("ExtensionURL") == window.location.hostname)
 // {
 //     console.log("Proceeding to continue");
@@ -16,39 +14,6 @@ var stopTimerFunction;
 //     setTimeout(removeOverlay,500);
 //     setTimeout(setDBstore,500);
 // }
-
-chrome.runtime.onMessage.addListener(
-    function (request, sender, sendResponse) {
-        // if (request.message === 'enabledWebgazer') {
-
-        //     var hostname = window.location.hostname;
-        //     sessionStorage.setItem('ExtensionURL', hostname);
-
-        //     if (!webgazerInitialized) {
-        //         initGazer();
-        //         webgazerInitialized = true;
-        //     }
-
-        //     setTimeout(removeOverlay,500);
-        //     setTimeout(setDBstore,500);
-        //     // createCalibration();
-        // }
-        if(request.message === 'enableCalibration')
-        {
-            var hostname = window.location.hostname;
-            sessionStorage.setItem('ExtensionURL', hostname);
-            createCalibration();
-        }
-        // else if(request.message === 'disabledWebgazer') {
-        //     endGazer();
-        // }
-        else if(request.message === 'saveRollNo')
-        {
-            localStorage.setItem('rollNo',request.rollno);
-            console.log("saved value "+request.rollno);
-        }
-    }
-);
 
 function initGazer() {
 
@@ -742,6 +707,57 @@ async function deleteDatabase() {
         console.error('Error deleting EyeGaze database:', error);
     }
 }
+
+function updateTimer() {
+    let seconds = 0;
+
+    let timerElement = document.getElementById('task-timer');
+
+    // Update the timer every second
+    const timerInterval = setInterval(() => {
+        seconds++;
+        const minutes = Math.floor(seconds / 60);
+        const formattedSeconds = seconds % 60;
+
+        // Update the timer text content
+        timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${formattedSeconds.toString().padStart(2, '0')}`;
+    }, 1000);
+
+    // Function to stop the timer (you can call this when needed)
+    function stopTimer() {
+        clearInterval(timerInterval);
+    }
+
+    return stopTimer;
+}
+
+var stopTimerFunction;
+
+function startTask()
+{
+    if (!webgazerInitialized) {
+        initGazer();
+        webgazerInitialized = true;
+    }
+
+    setTimeout(removeOverlay,500);
+    setTimeout(setDBstore,500);
+    setTimeout(createClickOverlay,500);
+
+    // Start or resume the timer
+    stopTimerFunction = updateTimer();
+}
+
+function stopTask()
+{
+    // Stop the timer
+    if (stopTimerFunction) {
+        stopTimerFunction();
+    }
+
+    endGazer();
+}
+
 function createFloatingDialog() {
     // Create a container for the floating dialog
     const dialogContainer = document.createElement('div');
@@ -791,32 +807,9 @@ function createFloatingDialog() {
     // Append the container to the body
     document.body.appendChild(dialogContainer);
 
-    // Function to update the timer (you can customize the logic)
-    function updateTimer() {
-        let seconds = 0;
-
-        // Update the timer every second
-        const timerInterval = setInterval(() => {
-            seconds++;
-            const minutes = Math.floor(seconds / 60);
-            const formattedSeconds = seconds % 60;
-
-            // Update the timer text content
-            timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${formattedSeconds.toString().padStart(2, '0')}`;
-        }, 1000);
-
-        // Function to stop the timer (you can call this when needed)
-        function stopTimer() {
-            clearInterval(timerInterval);
-        }
-
-        return stopTimer;
-    }
-
     // Function to handle button click
     function handleButtonClick() {
         const actionButton = document.getElementById('action-button');
-        
 
         actionButton.addEventListener('click', () => {
 
@@ -832,18 +825,6 @@ function createFloatingDialog() {
                 var hostname = window.location.hostname;
                 sessionStorage.setItem('ExtensionURL', hostname);
 
-                if (!webgazerInitialized) {
-                    initGazer();
-                    webgazerInitialized = true;
-                }
-            
-                setTimeout(removeOverlay,500);
-                setTimeout(setDBstore,500);
-                setTimeout(createClickOverlay,500);
-            
-                // Start or resume the timer
-                stopTimerFunction = updateTimer();
-
             } else {
                 // Change button text to 'Start Task'
                 actionButton.textContent = 'Start Task';
@@ -851,15 +832,33 @@ function createFloatingDialog() {
 
                 chrome.runtime.sendMessage({ name: 'stopRecording' });
 
-                // Stop the timer
-                if (stopTimerFunction) {
-                    stopTimerFunction();
-                }
-
-                endGazer();
+                stopTask();
             }
         });
     }
 
     handleButtonClick();
 }
+
+chrome.runtime.onMessage.addListener(
+    function (request, sender, sendResponse) {
+        if(request.message === 'enableCalibration')
+        {
+            var hostname = window.location.hostname;
+            sessionStorage.setItem('ExtensionURL', hostname);
+            createCalibration();
+        }
+        // else if(request.message === 'disabledWebgazer') {
+        //     endGazer();
+        // }
+        else if(request.message === 'saveRollNo')
+        {
+            localStorage.setItem('rollNo',request.rollno);
+            console.log("saved value "+request.rollno);
+        }
+        else if(request.message === 'screenShared')
+        {
+            startTask();
+        }
+    }
+);
