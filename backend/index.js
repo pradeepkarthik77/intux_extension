@@ -114,29 +114,29 @@ app.post('/uploadData',async (req, res) => {
         const result = await ClickCollection.insertOne(click);
     });
 
-    try {
-        console.log('In Server Saving recording')
+    // try {
+    //     console.log('In Server Saving recording')
 
-        const fileRef = storage.bucket().file(`recordings/${rollNo}.webm`);
-        await fileRef.save(req.file.buffer);
+    //     const fileRef = storage.bucket().file(`recordings/${rollNo}.webm`);
+    //     await fileRef.save(req.file.buffer);
 
-        // Get the download URL of the uploaded file
-        const fileUrl = await fileRef.getSignedUrl({ action: 'read', expires: '03-09-2491' });
+    //     // Get the download URL of the uploaded file
+    //     const fileUrl = await fileRef.getSignedUrl({ action: 'read', expires: '03-09-2491' });
 
-        // You can also store additional metadata if needed
-        const metadata = {
-            contentType: req.file.mimetype,
-            // Add more metadata properties as needed
-        };
+    //     // You can also store additional metadata if needed
+    //     const metadata = {
+    //         contentType: req.file.mimetype,
+    //         // Add more metadata properties as needed
+    //     };
 
-        await fileRef.setMetadata(metadata);
-        console.log("fileURl", fileUrl[0] )
+    //     await fileRef.setMetadata(metadata);
+    //     console.log("fileURl", fileUrl[0] )
 
-        res.json({ success: true, fileUrl: fileUrl[0] });
-    } catch (error) {
-        console.error("error in server wjile save recording", error);
-        res.status(500).json({ success: false, error: error.message });
-    }
+    //     res.json({ success: true, fileUrl: fileUrl[0] });
+    // } catch (error) {
+    //     console.error("error in server wjile save recording", error);
+    //     res.status(500).json({ success: false, error: error.message });
+    // }
 
     console.log("Done");
     
