@@ -298,6 +298,7 @@ function startCalibration()
 { 
     var container = document.getElementById('calibration-overlay');
     var calibrator = document.getElementById('calibration-image');
+    document.body.style.cursor = 'none';
 
     delay(5000).then(()=>{
 
@@ -389,6 +390,7 @@ function createCalibrationDialog() {
         <h2 id="calibration-heading" style="text-align: center;">Instructions</h2>
         <div id="calibration-instructions">
             <ul style="font-size: 1.2em;">
+                <li><b>TASK: Check Your Attendance And Marks For Current Semester</b></li>
                 <li>Click on Start Calibration after you see prediction points overlay on your face in the video.</li>
                 <li>Make sure to look at the target and not blink when it is rotating.</li>
                 <li>Make sure to not intercept clicks on the screen once calibration has started</li>
@@ -461,6 +463,7 @@ function createImage() {
 
 function onStopCalibration()
 {
+    document.body.style.cursor = 'auto';
     setTimeout(removeOverlay,3000);
     setTimeout(createFloatingDialog,3000);
 }
