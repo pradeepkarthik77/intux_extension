@@ -756,6 +756,21 @@ function stopTask()
     endGazer();
 }
 
+function enterFullScreen()
+{
+  var doc = window.document;
+  var docEl = doc.documentElement;
+
+  var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+  var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+
+  if (!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+    requestFullScreen.call(docEl);
+  } else {
+    cancelFullScreen.call(doc);
+  }
+}
+
 function createFloatingDialog() {
     // Create a container for the floating dialog
     const dialogContainer = document.createElement('div');
@@ -831,6 +846,8 @@ function createFloatingDialog() {
                 chrome.runtime.sendMessage({ name: 'stopRecording' });
 
                 stopTask();
+
+                actionButton.disabled = true;
             }
         });
     }
@@ -844,6 +861,7 @@ chrome.runtime.onMessage.addListener(
         {
             var hostname = window.location.hostname;
             sessionStorage.setItem('ExtensionURL', hostname);
+            enterFullScreen();
             createCalibration();
         }
         // else if(request.message === 'disabledWebgazer') {
