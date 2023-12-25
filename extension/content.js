@@ -861,7 +861,6 @@ chrome.runtime.onMessage.addListener(
         {
             var hostname = window.location.hostname;
             sessionStorage.setItem('ExtensionURL', hostname);
-            enterFullScreen();
             createCalibration();
         }
         // else if(request.message === 'disabledWebgazer') {
@@ -874,6 +873,7 @@ chrome.runtime.onMessage.addListener(
         }
         else if(request.message === 'screenShared')
         {
+            enterFullScreen();
             startTask();
         }
     }
