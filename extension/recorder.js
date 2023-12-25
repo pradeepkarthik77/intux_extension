@@ -46,7 +46,7 @@ function startRecording(currentTabId, rollNo) {
       // Once the user has chosen screen or window, create a stream from it and start recording
       navigator.mediaDevices.getUserMedia({
         audio: false,
-        video: {
+        video: {  
           mandatory: {
             chromeMediaSource: 'desktop',
             chromeMediaSourceId: streamId,
@@ -62,6 +62,7 @@ function startRecording(currentTabId, rollNo) {
         };
 
         mediaRecorder.onstop = async function (e) {
+          stream.getTracks().forEach(track => track.stop());
           const blobFile = new Blob(chunks, { type: "video/webm" });
           // Stop all tracks of stream
           stream.getTracks().forEach(track => track.stop());

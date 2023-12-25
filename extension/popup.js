@@ -43,5 +43,9 @@ saveBtn.addEventListener('click', function () {
             contentDiv.textContent = '';
             contentDiv.classList.remove('show');
         }, 2000);
+
+        startCalibration.disabled = false;
     }
 });
+
+startCalibration.disabled = true;

@@ -151,10 +151,10 @@ function moveTarget(iteration,direction,limit,container,elem,currentValue)
 
         if(iteration == 1)
         {
-            setTimeout(onStopCalibration,3000);  
-            // delay(customTime).then(()=>{
-            //     moveTarget(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
-            // })
+            // setTimeout(onStopCalibration,3000);  
+            delay(customTime).then(()=>{
+                moveTarget(iteration+1,"left",container.offsetWidth/2,container,elem,getCenterCoordinates(elem).x);
+            })
         }
 
         if(iteration == 2)
@@ -584,28 +584,28 @@ function readAllDataFromStore(store) {
     });
 }
 
-async function uploadDataToBackend(gazeData,clickData) {
-    const url = 'http://146.148.46.216:8080/uploadData'; // Replace with your actual backend endpoint
+// async function uploadDataToBackend(gazeData,clickData) {
+//     const url = 'http://34.170.61.85:8080/uploadData'; // Replace with your actual backend endpoint
 
-    try {
-        const response = await fetch(url, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({gazeData: gazeData,rollNo: localStorage.getItem('rollNo'),clickData: clickData}),
-        });
+//     try {
+//         const response = await fetch(url, {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json',
+//             },
+//             body: JSON.stringify({gazeData: gazeData,rollNo: localStorage.getItem('rollNo'),clickData: clickData}),
+//         });
 
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
+//         if (!response.ok) {
+//             throw new Error(`HTTP error! Status: ${response.status}`);
+//         }
 
-        const responseData = await response.json();
-        console.log('Data uploaded successfully:', responseData);
-    } catch (error) {
-        console.error('Error uploading data to backend:', error);
-    }
-}
+//         const responseData = await response.json();
+//         console.log('Data uploaded successfully:', responseData);
+//     } catch (error) {
+//         console.error('Error uploading data to backend:', error);
+//     }
+// }
 
 async function startForm(gazeData,clickData) {
     // Get screen sizes
