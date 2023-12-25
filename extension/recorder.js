@@ -3,7 +3,7 @@ var chunks = [];
 
 chrome.runtime.onMessage.addListener((message) => {
   if (message.name == 'startRecording') {
-    startRecording(message.body.currentTab.id,message.body.rollNo)
+    startRecording(message.body.currentTab.id, message.body.rollNo)
   }
   if (message.name == 'stopRecording') {
     stopRecording();
@@ -17,22 +17,24 @@ async function saveRecording(blob, rollNo) {
   formData.append('rollNo', rollNo);
 
 
-  await fetch('http://localhost:8080/saveRecording', {
-    method: 'POST',
-    body: formData,
-  })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Recording saved:', data);
-      return data
-    })
-    .catch(error => {
-      console.error('Error saving recording:', error);
-      return error.message
+  try {
+    const response = await fetch('http://localhost:8080/saveRecording', {
+      method: 'POST',
+      body: formData,
     });
+
+    const responseData = await response.json();
+
+    console.log("1st video response:", responseData);
+
+    return responseData; // Return the response from the function
+  } catch (error) {
+    console.error('Error saving recording:', error);
+    throw error; // Re-throw the error so the caller can handle it if needed
+  }
 }
 
-function startRecording(currentTabId,rollNo) {
+function startRecording(currentTabId, rollNo) {
   // Prompt user to choose screen or window
   chrome.desktopCapture.chooseDesktopMedia(
     ['screen', 'window'],
@@ -61,13 +63,14 @@ function startRecording(currentTabId,rollNo) {
 
         mediaRecorder.onstop = async function (e) {
           const blobFile = new Blob(chunks, { type: "video/webm" });
-          const recordRes= await saveRecording(blobFile,rollNo);
-          // await chrome.tabs.sendMessage(currentTabId, { message: "VideoURL", fileLink: recordRes });
+          // Stop all tracks of stream
+          stream.getTracks().forEach(track => track.stop());
+          const recordRes = await saveRecording(blobFile, rollNo);
+          console.log("recordRes: ", recordRes)
+          chrome.runtime.sendMessage({ message: "VideoURL", response: recordRes });
 
           // const url = URL.createObjectURL(blobFile);
 
-          // // Stop all tracks of stream
-          // stream.getTracks().forEach(track => track.stop());
 
           // const downloadLink = document.createElement('a');
           // // Set the anchor's attributes

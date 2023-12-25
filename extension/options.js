@@ -1,11 +1,16 @@
 var optionsPageData;
+var submitButton
+var videoUrl
 
 document.addEventListener('DOMContentLoaded', function () {
     chrome.storage.local.get(['optionsPageData'], function (result) {
+         submitButton = document.getElementById('submitbtn');
         const data = result.optionsPageData;
         optionsPageData = data;
     });
 });
+
+
 
 // // Add event listeners for range inputs
 // document.addEventListener('DOMContentLoaded', function () {
@@ -28,15 +33,20 @@ document.addEventListener('DOMContentLoaded', function () {
 //     });
 // });
 
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+    if (message.message === "VideoURL") {
+        console.log("VideoURL response", message.response);
+        videoUrl= message.response.fileUrl
+        submitButton.removeAttribute('disabled');
+
+    }
+});
+
+
 async function submitForm() {
     const form = document.getElementById('feedbackForm');
     const formData = new FormData(form);
-    // await chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
-    //     if (message.message === "VideoURL") {
-    //         console.log("VideoURL", message.fileLink);
-
-    //     }
-    // });
+    
 
     // Convert FormData to JSON
     const jsonData = {};

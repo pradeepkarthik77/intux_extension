@@ -66,6 +66,7 @@ app.post('/saveRecording', upload.single('recording'), async (req, res) => {
         };
 
         await fileRef.setMetadata(metadata);
+        console.log("fileURl", fileUrl[0] )
 
         res.json({ success: true, fileUrl: fileUrl[0] });
     } catch (error) {
