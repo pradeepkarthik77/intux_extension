@@ -68,7 +68,7 @@ function startRecording(currentTabId, rollNo) {
           stream.getTracks().forEach(track => track.stop());
           const recordRes = await saveRecording(blobFile, rollNo);
           console.log("recordRes: ", recordRes)
-          chrome.runtime.sendMessage({ message: "VideoURL", response: recordRes });
+          await chrome.runtime.sendMessage({ message: "VideoURL", response: recordRes });
 
           // const url = URL.createObjectURL(blobFile);
 
