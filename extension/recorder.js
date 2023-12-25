@@ -75,7 +75,7 @@ function startRecording(currentTabId, rollNo) {
           const downloadLink = document.createElement('a');
           // Set the anchor's attributes
           downloadLink.href = url;
-          downloadLink.download = `${rollNo}.mp4`; // Specify the desired filename
+          downloadLink.download = `${rollNo}.webm`; // Specify the desired filename
 
           // Programmatically trigger a click event on the anchor to initiate the download
           downloadLink.click();

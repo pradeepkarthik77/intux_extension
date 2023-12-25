@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
 // Add event listeners for range inputs
 document.addEventListener('DOMContentLoaded', function () {
     const q2 = document.getElementById('q2slide');

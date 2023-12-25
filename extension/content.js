@@ -402,7 +402,7 @@ function createCalibrationDialog() {
     // Add styles to the modal dialog
     dialog.style.position = 'fixed';
     dialog.style.width = '500px';
-    dialog.style.height = '350px';
+    dialog.style.height = '400px';
     dialog.style.top = '50%';
     dialog.style.left = '50%';
     dialog.style.transform = 'translate(-50%, -50%)';
