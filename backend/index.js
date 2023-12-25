@@ -3,12 +3,22 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 const config = require("./config.json");
+const admin = require('firebase-admin');
+const multer = require('multer');
+const serviceAccount = require('./serviceAccountKey.json');
 
 const app = express();
 const port = 8080;
 
 app.use(cors());
 app.use(bodyParser.json());
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    storageBucket: 'intuxforyou.appspot.com', //Firebase Storage bucket name
+});
+
+const storage = admin.storage();
+const upload = multer();
 
 uri = config.MONGO_URI;
 
@@ -38,6 +48,35 @@ async function createCollection(db,rollNo)
 }
 
 
+app.post('/saveRecording', upload.single('recording'), async (req, res) => {
+    try {
+        console.log('In Server Saving recording')
+        const rollNo = req.body.rollNo;
+
+        const fileRef = storage.bucket().file(`recordings/${rollNo}.webm`);
+        await fileRef.save(req.file.buffer);
+
+        // Get the download URL of the uploaded file
+        const fileUrl = await fileRef.getSignedUrl({ action: 'read', expires: '03-09-2491' });
+
+        // You can also store additional metadata if needed
+        const metadata = {
+            contentType: req.file.mimetype,
+            // Add more metadata properties as needed
+        };
+
+        await fileRef.setMetadata(metadata);
+        console.log("fileURl", fileUrl[0] )
+
+        res.json({ success: true, fileUrl: fileUrl[0] });
+    } catch (error) {
+        console.error("error in server wjile save recording", error);
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+
+
 app.post('/uploadData',async (req, res) => {
     const gazeData = req.body.gazeData;
     const clickData = req.body.clickData;
@@ -47,6 +86,7 @@ app.post('/uploadData',async (req, res) => {
     const q3 = req.body.q3;
     const q4 = req.body.q4;
     const q5 = req.body.q5;
+    const videoURL = req.body.videoURL;
     const clickCount = req.body.clickCount;
     const screenHeight = req.body.screenHeight;
     const screenWidth = req.body.screenWidth;
@@ -73,6 +113,30 @@ app.post('/uploadData',async (req, res) => {
     clickData.forEach(async (click,index) => {
         const result = await ClickCollection.insertOne(click);
     });
+
+    // try {
+    //     console.log('In Server Saving recording')
+
+    //     const fileRef = storage.bucket().file(`recordings/${rollNo}.webm`);
+    //     await fileRef.save(req.file.buffer);
+
+    //     // Get the download URL of the uploaded file
+    //     const fileUrl = await fileRef.getSignedUrl({ action: 'read', expires: '03-09-2491' });
+
+    //     // You can also store additional metadata if needed
+    //     const metadata = {
+    //         contentType: req.file.mimetype,
+    //         // Add more metadata properties as needed
+    //     };
+
+    //     await fileRef.setMetadata(metadata);
+    //     console.log("fileURl", fileUrl[0] )
+
+    //     res.json({ success: true, fileUrl: fileUrl[0] });
+    // } catch (error) {
+    //     console.error("error in server wjile save recording", error);
+    //     res.status(500).json({ success: false, error: error.message });
+    // }
 
     console.log("Done");
     

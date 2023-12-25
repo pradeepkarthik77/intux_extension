@@ -27,6 +27,7 @@ var rollnoInput = document.getElementById('rollnoInput');
 saveBtn.addEventListener('click', function () {
     var rollnoValue = rollnoInput.value;
     if (rollnoValue) {
+        rollnoValue = rollnoValue.toUpperCase();
         // Send the rollno value as a message to the active tab
         chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
             var activeTab = tabs[0];
@@ -43,5 +44,9 @@ saveBtn.addEventListener('click', function () {
             contentDiv.textContent = '';
             contentDiv.classList.remove('show');
         }, 2000);
+
+        startCalibration.disabled = false;
     }
 });
+
+startCalibration.disabled = true;

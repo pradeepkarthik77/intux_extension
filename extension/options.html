@@ -80,6 +80,17 @@
     button:active {
     background-color: #3e8e41; /* Darker color on click */
     }
+
+    #submitbtn:disabled {
+        background-color: #ccc; /* Grey background for disabled state */
+        cursor: not-allowed; /* Change cursor to indicate it's not clickable */
+        }
+
+        #submitbtn:enabled {
+            background-color: #4CAF50; /* Green background for enabled state */
+            cursor: pointer; /* Change cursor back to default */
+        }
+
 </style>
 </head>
 <body>
@@ -118,7 +129,7 @@
     <input id="q5slide" type="range" name="q5" min="1" max="5" step="1" value="3">
     <span id="q5Value">3</span>
     </label>
-
+    <p id="videoStatus">Video is Uploading Please Wait...</p>
     <button type="button" id="submitbtn">Submit</button>
 </form>
 <script src="options.js"></script>

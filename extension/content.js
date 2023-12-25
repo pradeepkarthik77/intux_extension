@@ -15,39 +15,6 @@ var webgazerInitialized = false;
 //     setTimeout(setDBstore,500);
 // }
 
-chrome.runtime.onMessage.addListener(
-    function (request, sender, sendResponse) {
-        // if (request.message === 'enabledWebgazer') {
-
-        //     var hostname = window.location.hostname;
-        //     sessionStorage.setItem('ExtensionURL', hostname);
-
-        //     if (!webgazerInitialized) {
-        //         initGazer();
-        //         webgazerInitialized = true;
-        //     }
-
-        //     setTimeout(removeOverlay,500);
-        //     setTimeout(setDBstore,500);
-        //     // createCalibration();
-        // }
-        if(request.message === 'enableCalibration')
-        {
-            var hostname = window.location.hostname;
-            sessionStorage.setItem('ExtensionURL', hostname);
-            createCalibration();
-        }
-        // else if(request.message === 'disabledWebgazer') {
-        //     endGazer();
-        // }
-        else if(request.message === 'saveRollNo')
-        {
-            localStorage.setItem('rollNo',request.rollno);
-            console.log("saved value "+request.rollno);
-        }
-    }
-);
-
 function initGazer() {
 
             webgazer.setRegression('ridge')
@@ -422,6 +389,7 @@ function createCalibrationDialog() {
         <h2 id="calibration-heading" style="text-align: center;">Instructions</h2>
         <div id="calibration-instructions">
             <ul style="font-size: 1.2em;">
+                <li><b>TASK: Check Your Attendance And Marks For Current Semester</b></li>
                 <li>Click on Start Calibration after you see prediction points overlay on your face in the video.</li>
                 <li>Make sure to look at the target and not blink when it is rotating.</li>
                 <li>Make sure to not intercept clicks on the screen once calibration has started</li>
@@ -434,7 +402,7 @@ function createCalibrationDialog() {
     // Add styles to the modal dialog
     dialog.style.position = 'fixed';
     dialog.style.width = '500px';
-    dialog.style.height = '350px';
+    dialog.style.height = '400px';
     dialog.style.top = '50%';
     dialog.style.left = '50%';
     dialog.style.transform = 'translate(-50%, -50%)';
@@ -617,28 +585,28 @@ function readAllDataFromStore(store) {
     });
 }
 
-async function uploadDataToBackend(gazeData,clickData) {
-    const url = 'http://146.148.46.216:8080/uploadData'; // Replace with your actual backend endpoint
+// async function uploadDataToBackend(gazeData,clickData) {
+//     const url = 'http://34.170.61.85:8080/uploadData'; // Replace with your actual backend endpoint
 
-    try {
-        const response = await fetch(url, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({gazeData: gazeData,rollNo: localStorage.getItem('rollNo'),clickData: clickData}),
-        });
+//     try {
+//         const response = await fetch(url, {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json',
+//             },
+//             body: JSON.stringify({gazeData: gazeData,rollNo: localStorage.getItem('rollNo'),clickData: clickData}),
+//         });
 
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
+//         if (!response.ok) {
+//             throw new Error(`HTTP error! Status: ${response.status}`);
+//         }
 
-        const responseData = await response.json();
-        console.log('Data uploaded successfully:', responseData);
-    } catch (error) {
-        console.error('Error uploading data to backend:', error);
-    }
-}
+//         const responseData = await response.json();
+//         console.log('Data uploaded successfully:', responseData);
+//     } catch (error) {
+//         console.error('Error uploading data to backend:', error);
+//     }
+// }
 
 async function startForm(gazeData,clickData) {
     // Get screen sizes
@@ -691,8 +659,6 @@ async function getCountFromStore(store) {
 async function endGazer() {
     webgazer.end();
 
-    alert("Tracking has Ended");
-
     const db = await openDatabase('EyeGaze');
 
     // Open a transaction that includes both GazePrediction and ClickStore
@@ -740,6 +706,72 @@ async function deleteDatabase() {
         console.error('Error deleting EyeGaze database:', error);
     }
 }
+
+function updateTimer() {
+    let seconds = 0;
+
+    let timerElement = document.getElementById('task-timer');
+
+    // Update the timer every second
+    const timerInterval = setInterval(() => {
+        seconds++;
+        const minutes = Math.floor(seconds / 60);
+        const formattedSeconds = seconds % 60;
+
+        // Update the timer text content
+        timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${formattedSeconds.toString().padStart(2, '0')}`;
+    }, 1000);
+
+    // Function to stop the timer (you can call this when needed)
+    function stopTimer() {
+        clearInterval(timerInterval);
+    }
+
+    return stopTimer;
+}
+
+var stopTimerFunction;
+
+function startTask()
+{
+    if (!webgazerInitialized) {
+        initGazer();
+        webgazerInitialized = true;
+    }
+
+    setTimeout(removeOverlay,500);
+    setTimeout(setDBstore,500);
+    setTimeout(createClickOverlay,500);
+
+    // Start or resume the timer
+    stopTimerFunction = updateTimer();
+}
+
+function stopTask()
+{
+    // Stop the timer
+    if (stopTimerFunction) {
+        stopTimerFunction();
+    }
+
+    endGazer();
+}
+
+function enterFullScreen()
+{
+  var doc = window.document;
+  var docEl = doc.documentElement;
+
+  var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+  var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+
+  if (!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+    requestFullScreen.call(docEl);
+  } else {
+    cancelFullScreen.call(doc);
+  }
+}
+
 function createFloatingDialog() {
     // Create a container for the floating dialog
     const dialogContainer = document.createElement('div');
@@ -789,68 +821,61 @@ function createFloatingDialog() {
     // Append the container to the body
     document.body.appendChild(dialogContainer);
 
-    // Function to update the timer (you can customize the logic)
-    function updateTimer() {
-        let seconds = 0;
-
-        // Update the timer every second
-        const timerInterval = setInterval(() => {
-            seconds++;
-            const minutes = Math.floor(seconds / 60);
-            const formattedSeconds = seconds % 60;
-
-            // Update the timer text content
-            timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${formattedSeconds.toString().padStart(2, '0')}`;
-        }, 1000);
-
-        // Function to stop the timer (you can call this when needed)
-        function stopTimer() {
-            clearInterval(timerInterval);
-        }
-
-        return stopTimer;
-    }
-
     // Function to handle button click
     function handleButtonClick() {
         const actionButton = document.getElementById('action-button');
-        let stopTimerFunction;
 
         actionButton.addEventListener('click', () => {
 
             if (actionButton.textContent === 'Start Task') {
                 // Change button text to 'Stop Task'
+
+                
+                chrome.runtime.sendMessage({ name: 'initiateRecording',rollNo:  localStorage.getItem('rollNo')});
+
                 actionButton.textContent = 'Stop Task';
                 actionButton.style.backgroundColor = '#FF0000'; // Red background color for Stop Task
 
                 var hostname = window.location.hostname;
                 sessionStorage.setItem('ExtensionURL', hostname);
 
-                if (!webgazerInitialized) {
-                    initGazer();
-                    webgazerInitialized = true;
-                }
-
-                setTimeout(removeOverlay,500);
-                setTimeout(setDBstore,500);
-                setTimeout(createClickOverlay,500);
-
-                // Start or resume the timer
-                stopTimerFunction = updateTimer();
             } else {
                 // Change button text to 'Start Task'
                 actionButton.textContent = 'Start Task';
                 actionButton.style.backgroundColor = '#4CAF50'; // Green background color for Start Task
 
-                // Stop the timer
-                if (stopTimerFunction) {
-                    stopTimerFunction();
-                }
+                chrome.runtime.sendMessage({ name: 'stopRecording' });
 
-                endGazer();
+                stopTask();
+
+                actionButton.disabled = true;
             }
         });
     }
 
     handleButtonClick();
 }
+
+chrome.runtime.onMessage.addListener(
+    function (request, sender, sendResponse) {
+        if(request.message === 'enableCalibration')
+        {
+            var hostname = window.location.hostname;
+            sessionStorage.setItem('ExtensionURL', hostname);
+            createCalibration();
+        }
+        // else if(request.message === 'disabledWebgazer') {
+        //     endGazer();
+        // }
+        else if(request.message === 'saveRollNo')
+        {
+            localStorage.setItem('rollNo',request.rollno);
+            console.log("saved value "+request.rollno);
+        }
+        else if(request.message === 'screenShared')
+        {
+            enterFullScreen();
+            startTask();
+        }
+    }
+);

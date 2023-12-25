@@ -1,11 +1,15 @@
 var optionsPageData;
+var submitButton
+var videoUrl
 
 document.addEventListener('DOMContentLoaded', function () {
     chrome.storage.local.get(['optionsPageData'], function (result) {
+         submitButton = document.getElementById('submitbtn');
         const data = result.optionsPageData;
         optionsPageData = data;
     });
 });
+
 
 // Add event listeners for range inputs
 document.addEventListener('DOMContentLoaded', function () {
@@ -28,9 +32,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-function submitForm() {
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+    if (message.message === "VideoURL") {
+        console.log("VideoURL response", message.response);
+        videoUrl= message.response.fileUrl;
+        // submitButton.removeAttribute('disabled');
+        // document.getElementById('videoStatus').style.display = "none";
+    }
+});
+
+
+async function submitForm() {
     const form = document.getElementById('feedbackForm');
     const formData = new FormData(form);
+    
 
     // Convert FormData to JSON
     const jsonData = {};
@@ -45,9 +60,12 @@ function submitForm() {
         }
     }
 
+    // jsonData["videoURL"] = videoUrl;
+
     console.log(jsonData)
+    
     // Adjust the endpoint URL to your backend
-    const endpointURL = 'http://34.136.65.224:8080/uploadData';
+    const endpointURL = 'http://34.170.61.85:8080/uploadData';
 
     // Perform a POST request to the backend
     fetch(endpointURL, {
