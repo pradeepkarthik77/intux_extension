@@ -298,7 +298,6 @@ function startCalibration()
 { 
     var container = document.getElementById('calibration-overlay');
     var calibrator = document.getElementById('calibration-image');
-    document.body.style.cursor = 'none';
 
     delay(5000).then(()=>{
 
@@ -463,7 +462,6 @@ function createImage() {
 
 function onStopCalibration()
 {
-    document.body.style.cursor = 'auto';
     setTimeout(removeOverlay,3000);
     setTimeout(createFloatingDialog,3000);
 }

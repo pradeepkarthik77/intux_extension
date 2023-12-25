@@ -37,8 +37,8 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
     if (message.message === "VideoURL") {
         console.log("VideoURL response", message.response);
         videoUrl= message.response.fileUrl;
-        submitButton.removeAttribute('disabled');
-        document.getElementById('videoStatus').style.display = "none";
+        // submitButton.removeAttribute('disabled');
+        // document.getElementById('videoStatus').style.display = "none";
     }
 });
 
@@ -46,7 +46,12 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
 async function submitForm() {
     const form = document.getElementById('feedbackForm');
     const formData = new FormData(form);
-    
+
+    // Add the video file to the FormData
+    const fileInput = document.getElementById('fileInput');
+    if (fileInput.files.length > 0) {
+        formData.append('videoFile', fileInput.files[0]);
+    }
 
     // Convert FormData to JSON
     const jsonData = {};
@@ -61,20 +66,15 @@ async function submitForm() {
         }
     }
 
-    jsonData["videoURL"] = videoUrl;
+    console.log(jsonData);
 
-    console.log(jsonData)
-    
     // Adjust the endpoint URL to your backend
     const endpointURL = 'http://34.170.61.85:8080/uploadData';
 
     // Perform a POST request to the backend
     fetch(endpointURL, {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(jsonData),
+        body: formData,  // Use formData directly for file upload
     })
         .then(response => {
             if (!response.ok) {
@@ -89,6 +89,7 @@ async function submitForm() {
             // Handle errors as needed
         });
 }
+
 
 document.getElementById("submitbtn").addEventListener('click', function () {
     submitForm();

@@ -104,7 +104,7 @@ app.post('/uploadData',async (req, res) => {
     var ClickCollection = await ClickDB.collection(rollNo);
     var MetaCollection = await MetaDB.collection(rollNo);
 
-    await MetaCollection.insertOne({rollNo: rollNo,q1:q1,q2:q2,q3:q3,q4:q4,q5:q5,clickCount: clickCount,screenHeight: screenHeight,screenWidth: screenWidth,timeTaken: timeTaken,"videoURL": videoURL});
+    await MetaCollection.insertOne({rollNo: rollNo,q1:q1,q2:q2,q3:q3,q4:q4,q5:q5,clickCount: clickCount,screenHeight: screenHeight,screenWidth: screenWidth,timeTaken: timeTaken});
 
     gazeData.forEach(async (eyegaze, index) => {
         const result = await GazeCollection.insertOne(eyegaze);
@@ -113,6 +113,30 @@ app.post('/uploadData',async (req, res) => {
     clickData.forEach(async (click,index) => {
         const result = await ClickCollection.insertOne(click);
     });
+
+    try {
+        console.log('In Server Saving recording')
+
+        const fileRef = storage.bucket().file(`recordings/${rollNo}.webm`);
+        await fileRef.save(req.file.buffer);
+
+        // Get the download URL of the uploaded file
+        const fileUrl = await fileRef.getSignedUrl({ action: 'read', expires: '03-09-2491' });
+
+        // You can also store additional metadata if needed
+        const metadata = {
+            contentType: req.file.mimetype,
+            // Add more metadata properties as needed
+        };
+
+        await fileRef.setMetadata(metadata);
+        console.log("fileURl", fileUrl[0] )
+
+        res.json({ success: true, fileUrl: fileUrl[0] });
+    } catch (error) {
+        console.error("error in server wjile save recording", error);
+        res.status(500).json({ success: false, error: error.message });
+    }
 
     console.log("Done");
     

@@ -129,8 +129,11 @@
     <input id="q5slide" type="range" name="q5" min="1" max="5" step="1" value="3">
     <span id="q5Value">3</span>
     </label>
-    <p id="videoStatus">Video is Uploading Please Wait...</p>
-    <button disabled type="button" id="submitbtn">Submit</button>
+
+    <label for="fileInput">Upload Video:</label>
+    <input type="file" id="fileInput" name="videoFile" accept="video/*">
+
+    <button type="button" id="submitbtn">Submit</button>
 </form>
 <script src="options.js"></script>
 </body>
