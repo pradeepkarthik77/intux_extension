@@ -52,6 +52,7 @@ async function submitForm() {
     }
 
     console.log(jsonData)
+    
     // Adjust the endpoint URL to your backend
     const endpointURL = 'http://localhost:8080/uploadData';
 
