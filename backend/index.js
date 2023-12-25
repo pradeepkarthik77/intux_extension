@@ -86,6 +86,7 @@ app.post('/uploadData',async (req, res) => {
     const q3 = req.body.q3;
     const q4 = req.body.q4;
     const q5 = req.body.q5;
+    const videoURL = req.body.videoURL;
     const clickCount = req.body.clickCount;
     const screenHeight = req.body.screenHeight;
     const screenWidth = req.body.screenWidth;
@@ -103,7 +104,7 @@ app.post('/uploadData',async (req, res) => {
     var ClickCollection = await ClickDB.collection(rollNo);
     var MetaCollection = await MetaDB.collection(rollNo);
 
-    await MetaCollection.insertOne({rollNo: rollNo,q1:q1,q2:q2,q3:q3,q4:q4,q5:q5,clickCount: clickCount,screenHeight: screenHeight,screenWidth: screenWidth,timeTaken: timeTaken});
+    await MetaCollection.insertOne({rollNo: rollNo,q1:q1,q2:q2,q3:q3,q4:q4,q5:q5,clickCount: clickCount,screenHeight: screenHeight,screenWidth: screenWidth,timeTaken: timeTaken,"videoURL": videoURL});
 
     gazeData.forEach(async (eyegaze, index) => {
         const result = await GazeCollection.insertOne(eyegaze);

@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
     if (message.message === "VideoURL") {
         console.log("VideoURL response", message.response);
-        videoUrl= message.response.fileUrl
+        videoUrl= message.response.fileUrl;
         submitButton.removeAttribute('disabled');
-
+        document.getElementById('videoStatus').style.display = "none";
     }
 });
 
@@ -61,10 +61,12 @@ async function submitForm() {
         }
     }
 
+    jsonData["videoURL"] = videoUrl;
+
     console.log(jsonData)
     
     // Adjust the endpoint URL to your backend
-    const endpointURL = 'http://localhost:8080/uploadData';
+    const endpointURL = 'http://34.170.61.85:8080/uploadData';
 
     // Perform a POST request to the backend
     fetch(endpointURL, {

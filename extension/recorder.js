@@ -18,7 +18,7 @@ async function saveRecording(blob, rollNo) {
 
 
   try {
-    const response = await fetch('http://localhost:8080/saveRecording', {
+    const response = await fetch('http://34.170.61.85:8080/saveRecording', {
       method: 'POST',
       body: formData,
     });
