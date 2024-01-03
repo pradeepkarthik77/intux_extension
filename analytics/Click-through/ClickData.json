@@ -1,0 +1,6799 @@
+[{
+  "_id": "6589a3fe25073fa4a330035c",
+  "timestamp": {
+    "$numberLong": "1703519184404"
+  },
+  "x": 442,
+  "y": 189,
+  "rollNo": "CB.EN.U4CSE20421",
+  "normalizedTimestamp": 44948,
+  "normalizedX": 0.3166189111747851,
+  "normalizedY": 0.24076433121019108
+},{
+  "_id": "6589a3fe25073fa4a3300357",
+  "timestamp": {
+    "$numberLong": "1703519149241"
+  },
+  "x": 400,
+  "y": 219,
+  "rollNo": "CB.EN.U4CSE20421",
+  "normalizedTimestamp": 9785,
+  "normalizedX": 0.28653295128939826,
+  "normalizedY": 0.2789808917197452
+},{
+  "_id": "6589a3fe25073fa4a330035a",
+  "timestamp": {
+    "$numberLong": "1703519159486"
+  },
+  "x": 541,
+  "y": 261,
+  "rollNo": "CB.EN.U4CSE20421",
+  "normalizedTimestamp": 20030,
+  "normalizedX": 0.3875358166189112,
+  "normalizedY": 0.332484076433121
+},{
+  "_id": "6589a3fe25073fa4a3300359",
+  "timestamp": {
+    "$numberLong": "1703519153412"
+  },
+  "x": 364,
+  "y": 450,
+  "rollNo": "CB.EN.U4CSE20421",
+  "normalizedTimestamp": 13956,
+  "normalizedX": 0.2607449856733524,
+  "normalizedY": 0.5732484076433121
+},{
+  "_id": "6589a3fe25073fa4a3300356",
+  "timestamp": {
+    "$numberLong": "1703519144415"
+  },
+  "x": 116,
+  "y": 278,
+  "rollNo": "CB.EN.U4CSE20421",
+  "normalizedTimestamp": 4959,
+  "normalizedX": 0.0830945558739255,
+  "normalizedY": 0.354140127388535
+},{
+  "_id": "6589a3fe25073fa4a3300354",
+  "timestamp": {
+    "$numberLong": "1703519139456"
+  },
+  "x": 21,
+  "y": 71,
+  "rollNo": "CB.EN.U4CSE20421",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.01504297994269341,
+  "normalizedY": 0.09044585987261146
+},{
+  "_id": "6589a3fe25073fa4a330035d",
+  "timestamp": {
+    "$numberLong": "1703519186575"
+  },
+  "x": 407,
+  "y": 392,
+  "rollNo": "CB.EN.U4CSE20421",
+  "normalizedTimestamp": 47119,
+  "normalizedX": 0.2915472779369627,
+  "normalizedY": 0.49936305732484076
+},{
+  "_id": "6589a3fe25073fa4a3300355",
+  "timestamp": {
+    "$numberLong": "1703519142486"
+  },
+  "x": 133,
+  "y": 237,
+  "rollNo": "CB.EN.U4CSE20421",
+  "normalizedTimestamp": 3030,
+  "normalizedX": 0.09527220630372493,
+  "normalizedY": 0.3019108280254777
+},{
+  "_id": "6589a3fe25073fa4a3300358",
+  "timestamp": {
+    "$numberLong": "1703519150594"
+  },
+  "x": 423,
+  "y": 226,
+  "rollNo": "CB.EN.U4CSE20421",
+  "normalizedTimestamp": 11138,
+  "normalizedX": 0.3030085959885387,
+  "normalizedY": 0.2878980891719745
+},{
+  "_id": "6589a3fe25073fa4a330035e",
+  "timestamp": {
+    "$numberLong": "1703519208728"
+  },
+  "x": 743,
+  "y": 26,
+  "rollNo": "CB.EN.U4CSE20421",
+  "normalizedTimestamp": 69272,
+  "normalizedX": 0.5322349570200573,
+  "normalizedY": 0.033121019108280254
+},{
+  "_id": "6589a3fe25073fa4a330035b",
+  "timestamp": {
+    "$numberLong": "1703519180151"
+  },
+  "x": 114,
+  "y": 315,
+  "rollNo": "CB.EN.U4CSE20421",
+  "normalizedTimestamp": 40695,
+  "normalizedX": 0.08166189111747851,
+  "normalizedY": 0.4012738853503185
+},{
+  "_id": "658928126a3610f95ee3d8f2",
+  "timestamp": {
+    "$numberLong": "1703487381931"
+  },
+  "x": 384,
+  "y": 332,
+  "rollNo": "CB.EN.U4EEE23044",
+  "normalizedTimestamp": 21801,
+  "normalizedX": 0.27507163323782235,
+  "normalizedY": 0.47092198581560285
+},{
+  "_id": "658928126a3610f95ee3d8ee",
+  "timestamp": {
+    "$numberLong": "1703487366370"
+  },
+  "x": 102,
+  "y": 152,
+  "rollNo": "CB.EN.U4EEE23044",
+  "normalizedTimestamp": 6240,
+  "normalizedX": 0.07306590257879657,
+  "normalizedY": 0.21560283687943263
+},{
+  "_id": "658928126a3610f95ee3d8f4",
+  "timestamp": {
+    "$numberLong": "1703487411178"
+  },
+  "x": 104,
+  "y": 80,
+  "rollNo": "CB.EN.U4EEE23044",
+  "normalizedTimestamp": 51048,
+  "normalizedX": 0.07449856733524356,
+  "normalizedY": 0.11347517730496454
+},{
+  "_id": "658928126a3610f95ee3d8ed",
+  "timestamp": {
+    "$numberLong": "1703487362699"
+  },
+  "x": 101,
+  "y": 152,
+  "rollNo": "CB.EN.U4EEE23044",
+  "normalizedTimestamp": 2569,
+  "normalizedX": 0.07234957020057306,
+  "normalizedY": 0.21560283687943263
+},{
+  "_id": "658928126a3610f95ee3d8f7",
+  "timestamp": {
+    "$numberLong": "1703487443041"
+  },
+  "x": 721,
+  "y": 17,
+  "rollNo": "CB.EN.U4EEE23044",
+  "normalizedTimestamp": 82911,
+  "normalizedX": 0.5164756446991404,
+  "normalizedY": 0.024113475177304965
+},{
+  "_id": "658928126a3610f95ee3d8f3",
+  "timestamp": {
+    "$numberLong": "1703487391523"
+  },
+  "x": 545,
+  "y": 254,
+  "rollNo": "CB.EN.U4EEE23044",
+  "normalizedTimestamp": 31393,
+  "normalizedX": 0.39040114613180515,
+  "normalizedY": 0.36028368794326243
+},{
+  "_id": "658928126a3610f95ee3d8f1",
+  "timestamp": {
+    "$numberLong": "1703487380256"
+  },
+  "x": 415,
+  "y": 230,
+  "rollNo": "CB.EN.U4EEE23044",
+  "normalizedTimestamp": 20126,
+  "normalizedX": 0.29727793696275073,
+  "normalizedY": 0.3262411347517731
+},{
+  "_id": "658928126a3610f95ee3d8f5",
+  "timestamp": {
+    "$numberLong": "1703487420225"
+  },
+  "x": 461,
+  "y": 73,
+  "rollNo": "CB.EN.U4EEE23044",
+  "normalizedTimestamp": 60095,
+  "normalizedX": 0.3302292263610315,
+  "normalizedY": 0.10354609929078014
+},{
+  "_id": "658928126a3610f95ee3d8f0",
+  "timestamp": {
+    "$numberLong": "1703487379044"
+  },
+  "x": 441,
+  "y": 242,
+  "rollNo": "CB.EN.U4EEE23044",
+  "normalizedTimestamp": 18914,
+  "normalizedX": 0.3159025787965616,
+  "normalizedY": 0.3432624113475177
+},{
+  "_id": "658928126a3610f95ee3d8f6",
+  "timestamp": {
+    "$numberLong": "1703487421770"
+  },
+  "x": 424,
+  "y": 176,
+  "rollNo": "CB.EN.U4EEE23044",
+  "normalizedTimestamp": 61640,
+  "normalizedX": 0.3037249283667622,
+  "normalizedY": 0.24964539007092199
+},{
+  "_id": "658928126a3610f95ee3d8ef",
+  "timestamp": {
+    "$numberLong": "1703487377464"
+  },
+  "x": 768,
+  "y": 222,
+  "rollNo": "CB.EN.U4EEE23044",
+  "normalizedTimestamp": 17334,
+  "normalizedX": 0.5501432664756447,
+  "normalizedY": 0.3148936170212766
+},{
+  "_id": "658928126a3610f95ee3d8ec",
+  "timestamp": {
+    "$numberLong": "1703487360130"
+  },
+  "x": 25,
+  "y": 75,
+  "rollNo": "CB.EN.U4EEE23044",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.01790830945558739,
+  "normalizedY": 0.10638297872340426
+},{
+  "_id": "6589595e1b192458f364cce0",
+  "timestamp": {
+    "$numberLong": "1703499863873"
+  },
+  "x": 22,
+  "y": 67,
+  "rollNo": "CB.EN.U4CSE22011",
+  "normalizedTimestamp": 1869,
+  "normalizedX": 0.014322916666666666,
+  "normalizedY": 0.0775462962962963
+},{
+  "_id": "6589595e1b192458f364ccdf",
+  "timestamp": {
+    "$numberLong": "1703499862004"
+  },
+  "x": 11,
+  "y": 68,
+  "rollNo": "CB.EN.U4CSE22011",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.007161458333333333,
+  "normalizedY": 0.0787037037037037
+},{
+  "_id": "6589595e1b192458f364cce1",
+  "timestamp": {
+    "$numberLong": "1703499865633"
+  },
+  "x": 108,
+  "y": 285,
+  "rollNo": "CB.EN.U4CSE22011",
+  "normalizedTimestamp": 3629,
+  "normalizedX": 0.0703125,
+  "normalizedY": 0.3298611111111111
+},{
+  "_id": "6589595e1b192458f364cce2",
+  "timestamp": {
+    "$numberLong": "1703499880498"
+  },
+  "x": 409,
+  "y": 220,
+  "rollNo": "CB.EN.U4CSE22011",
+  "normalizedTimestamp": 18494,
+  "normalizedX": 0.2662760416666667,
+  "normalizedY": 0.25462962962962965
+},{
+  "_id": "6589595e1b192458f364cce3",
+  "timestamp": {
+    "$numberLong": "1703499881538"
+  },
+  "x": 409,
+  "y": 220,
+  "rollNo": "CB.EN.U4CSE22011",
+  "normalizedTimestamp": 19534,
+  "normalizedX": 0.2662760416666667,
+  "normalizedY": 0.25462962962962965
+},{
+  "_id": "6589595e1b192458f364cce4",
+  "timestamp": {
+    "$numberLong": "1703499883785"
+  },
+  "x": 371,
+  "y": 465,
+  "rollNo": "CB.EN.U4CSE22011",
+  "normalizedTimestamp": 21781,
+  "normalizedX": 0.24153645833333334,
+  "normalizedY": 0.5381944444444444
+},{
+  "_id": "6589595e1b192458f364cce5",
+  "timestamp": {
+    "$numberLong": "1703499891082"
+  },
+  "x": 432,
+  "y": 220,
+  "rollNo": "CB.EN.U4CSE22011",
+  "normalizedTimestamp": 29078,
+  "normalizedX": 0.28125,
+  "normalizedY": 0.25462962962962965
+},{
+  "_id": "6589595e1b192458f364cce8",
+  "timestamp": {
+    "$numberLong": "1703499896887"
+  },
+  "x": 395,
+  "y": 429,
+  "rollNo": "CB.EN.U4CSE22011",
+  "normalizedTimestamp": 34883,
+  "normalizedX": 0.2571614583333333,
+  "normalizedY": 0.4965277777777778
+},{
+  "_id": "6589595e1b192458f364cce7",
+  "timestamp": {
+    "$numberLong": "1703499895298"
+  },
+  "x": 444,
+  "y": 231,
+  "rollNo": "CB.EN.U4CSE22011",
+  "normalizedTimestamp": 33294,
+  "normalizedX": 0.2890625,
+  "normalizedY": 0.2673611111111111
+},{
+  "_id": "6589595e1b192458f364cce9",
+  "timestamp": {
+    "$numberLong": "1703499905926"
+  },
+  "x": 553,
+  "y": 265,
+  "rollNo": "CB.EN.U4CSE22011",
+  "normalizedTimestamp": 43922,
+  "normalizedX": 0.3600260416666667,
+  "normalizedY": 0.30671296296296297
+},{
+  "_id": "6589595e1b192458f364ccea",
+  "timestamp": {
+    "$numberLong": "1703499925960"
+  },
+  "x": 122,
+  "y": 356,
+  "rollNo": "CB.EN.U4CSE22011",
+  "normalizedTimestamp": 63956,
+  "normalizedX": 0.07942708333333333,
+  "normalizedY": 0.41203703703703703
+},{
+  "_id": "6589595e1b192458f364cceb",
+  "timestamp": {
+    "$numberLong": "1703499933428"
+  },
+  "x": 509,
+  "y": 196,
+  "rollNo": "CB.EN.U4CSE22011",
+  "normalizedTimestamp": 71424,
+  "normalizedX": 0.3313802083333333,
+  "normalizedY": 0.22685185185185186
+},{
+  "_id": "6589595e1b192458f364ccec",
+  "timestamp": {
+    "$numberLong": "1703499935251"
+  },
+  "x": 452,
+  "y": 365,
+  "rollNo": "CB.EN.U4CSE22011",
+  "normalizedTimestamp": 73247,
+  "normalizedX": 0.2942708333333333,
+  "normalizedY": 0.4224537037037037
+},{
+  "_id": "6589595e1b192458f364cced",
+  "timestamp": {
+    "$numberLong": "1703499954243"
+  },
+  "x": 799,
+  "y": 24,
+  "rollNo": "CB.EN.U4CSE22011",
+  "normalizedTimestamp": 92239,
+  "normalizedX": 0.5201822916666666,
+  "normalizedY": 0.027777777777777776
+},{
+  "_id": "6589595e1b192458f364cce6",
+  "timestamp": {
+    "$numberLong": "1703499893514"
+  },
+  "x": 444,
+  "y": 231,
+  "rollNo": "CB.EN.U4CSE22011",
+  "normalizedTimestamp": 31510,
+  "normalizedX": 0.2890625,
+  "normalizedY": 0.2673611111111111
+},{
+  "_id": "65894cb5ece61eb9e9bfad10",
+  "timestamp": {
+    "$numberLong": "1703496795533"
+  },
+  "x": 413,
+  "y": 230,
+  "rollNo": "CB.EN.U4CSE21014",
+  "normalizedTimestamp": 10286,
+  "normalizedX": 0.29584527220630374,
+  "normalizedY": 0.34328358208955223
+},{
+  "_id": "65894cb5ece61eb9e9bfad11",
+  "timestamp": {
+    "$numberLong": "1703496798964"
+  },
+  "x": 383,
+  "y": 230,
+  "rollNo": "CB.EN.U4CSE21014",
+  "normalizedTimestamp": 13717,
+  "normalizedX": 0.27435530085959886,
+  "normalizedY": 0.34328358208955223
+},{
+  "_id": "65894cb5ece61eb9e9bfad0f",
+  "timestamp": {
+    "$numberLong": "1703496787342"
+  },
+  "x": 106,
+  "y": 154,
+  "rollNo": "CB.EN.U4CSE21014",
+  "normalizedTimestamp": 2095,
+  "normalizedX": 0.07593123209169055,
+  "normalizedY": 0.2298507462686567
+},{
+  "_id": "65894cb5ece61eb9e9bfad0e",
+  "timestamp": {
+    "$numberLong": "1703496785247"
+  },
+  "x": 26,
+  "y": 75,
+  "rollNo": "CB.EN.U4CSE21014",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.01862464183381089,
+  "normalizedY": 0.11194029850746269
+},{
+  "_id": "65894cb5ece61eb9e9bfad12",
+  "timestamp": {
+    "$numberLong": "1703496805223"
+  },
+  "x": 378,
+  "y": 302,
+  "rollNo": "CB.EN.U4CSE21014",
+  "normalizedTimestamp": 19976,
+  "normalizedX": 0.2707736389684814,
+  "normalizedY": 0.4507462686567164
+},{
+  "_id": "65894cb5ece61eb9e9bfad13",
+  "timestamp": {
+    "$numberLong": "1703496810542"
+  },
+  "x": 513,
+  "y": 261,
+  "rollNo": "CB.EN.U4CSE21014",
+  "normalizedTimestamp": 25295,
+  "normalizedX": 0.3674785100286533,
+  "normalizedY": 0.3895522388059702
+},{
+  "_id": "65894cb5ece61eb9e9bfad14",
+  "timestamp": {
+    "$numberLong": "1703496823789"
+  },
+  "x": 92,
+  "y": 141,
+  "rollNo": "CB.EN.U4CSE21014",
+  "normalizedTimestamp": 38542,
+  "normalizedX": 0.0659025787965616,
+  "normalizedY": 0.21044776119402986
+},{
+  "_id": "65894cb5ece61eb9e9bfad16",
+  "timestamp": {
+    "$numberLong": "1703496832534"
+  },
+  "x": 437,
+  "y": 138,
+  "rollNo": "CB.EN.U4CSE21014",
+  "normalizedTimestamp": 47287,
+  "normalizedX": 0.3130372492836676,
+  "normalizedY": 0.20597014925373133
+},{
+  "_id": "65894cb5ece61eb9e9bfad15",
+  "timestamp": {
+    "$numberLong": "1703496830838"
+  },
+  "x": 437,
+  "y": 137,
+  "rollNo": "CB.EN.U4CSE21014",
+  "normalizedTimestamp": 45591,
+  "normalizedX": 0.3130372492836676,
+  "normalizedY": 0.2044776119402985
+},{
+  "_id": "65894cb5ece61eb9e9bfad17",
+  "timestamp": {
+    "$numberLong": "1703496834721"
+  },
+  "x": 394,
+  "y": 368,
+  "rollNo": "CB.EN.U4CSE21014",
+  "normalizedTimestamp": 49474,
+  "normalizedX": 0.2822349570200573,
+  "normalizedY": 0.5492537313432836
+},{
+  "_id": "65894cb5ece61eb9e9bfad18",
+  "timestamp": {
+    "$numberLong": "1703496848336"
+  },
+  "x": 716,
+  "y": 38,
+  "rollNo": "CB.EN.U4CSE21014",
+  "normalizedTimestamp": 63089,
+  "normalizedX": 0.5128939828080229,
+  "normalizedY": 0.056716417910447764
+},{
+  "_id": "6589299be2953f4e4248c886",
+  "timestamp": {
+    "$numberLong": "1703487737869"
+  },
+  "x": 23,
+  "y": 79,
+  "rollNo": "CB.EN.U4EEE23121",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.0164756446991404,
+  "normalizedY": 0.11205673758865248
+},{
+  "_id": "6589299be2953f4e4248c887",
+  "timestamp": {
+    "$numberLong": "1703487740767"
+  },
+  "x": 98,
+  "y": 150,
+  "rollNo": "CB.EN.U4EEE23121",
+  "normalizedTimestamp": 2898,
+  "normalizedX": 0.07020057306590258,
+  "normalizedY": 0.2127659574468085
+},{
+  "_id": "6589299be2953f4e4248c888",
+  "timestamp": {
+    "$numberLong": "1703487762801"
+  },
+  "x": 423,
+  "y": 232,
+  "rollNo": "CB.EN.U4EEE23121",
+  "normalizedTimestamp": 24932,
+  "normalizedX": 0.3030085959885387,
+  "normalizedY": 0.32907801418439714
+},{
+  "_id": "6589299be2953f4e4248c889",
+  "timestamp": {
+    "$numberLong": "1703487766222"
+  },
+  "x": 434,
+  "y": 220,
+  "rollNo": "CB.EN.U4EEE23121",
+  "normalizedTimestamp": 28353,
+  "normalizedX": 0.3108882521489971,
+  "normalizedY": 0.3120567375886525
+},{
+  "_id": "6589299be2953f4e4248c88a",
+  "timestamp": {
+    "$numberLong": "1703487767750"
+  },
+  "x": 370,
+  "y": 331,
+  "rollNo": "CB.EN.U4EEE23121",
+  "normalizedTimestamp": 29881,
+  "normalizedX": 0.26504297994269344,
+  "normalizedY": 0.4695035460992908
+},{
+  "_id": "6589299be2953f4e4248c88b",
+  "timestamp": {
+    "$numberLong": "1703487769788"
+  },
+  "x": 358,
+  "y": 338,
+  "rollNo": "CB.EN.U4EEE23121",
+  "normalizedTimestamp": 31919,
+  "normalizedX": 0.25644699140401145,
+  "normalizedY": 0.4794326241134752
+},{
+  "_id": "6589299be2953f4e4248c88c",
+  "timestamp": {
+    "$numberLong": "1703487772352"
+  },
+  "x": 358,
+  "y": 338,
+  "rollNo": "CB.EN.U4EEE23121",
+  "normalizedTimestamp": 34483,
+  "normalizedX": 0.25644699140401145,
+  "normalizedY": 0.4794326241134752
+},{
+  "_id": "6589299be2953f4e4248c88e",
+  "timestamp": {
+    "$numberLong": "1703487782782"
+  },
+  "x": 554,
+  "y": 251,
+  "rollNo": "CB.EN.U4EEE23121",
+  "normalizedTimestamp": 44913,
+  "normalizedX": 0.3968481375358166,
+  "normalizedY": 0.35602836879432626
+},{
+  "_id": "6589299be2953f4e4248c88d",
+  "timestamp": {
+    "$numberLong": "1703487775202"
+  },
+  "x": 579,
+  "y": 257,
+  "rollNo": "CB.EN.U4EEE23121",
+  "normalizedTimestamp": 37333,
+  "normalizedX": 0.414756446991404,
+  "normalizedY": 0.3645390070921986
+},{
+  "_id": "6589299be2953f4e4248c88f",
+  "timestamp": {
+    "$numberLong": "1703487783912"
+  },
+  "x": 554,
+  "y": 251,
+  "rollNo": "CB.EN.U4EEE23121",
+  "normalizedTimestamp": 46043,
+  "normalizedX": 0.3968481375358166,
+  "normalizedY": 0.35602836879432626
+},{
+  "_id": "6589299be2953f4e4248c890",
+  "timestamp": {
+    "$numberLong": "1703487785113"
+  },
+  "x": 554,
+  "y": 251,
+  "rollNo": "CB.EN.U4EEE23121",
+  "normalizedTimestamp": 47244,
+  "normalizedX": 0.3968481375358166,
+  "normalizedY": 0.35602836879432626
+},{
+  "_id": "6589299be2953f4e4248c891",
+  "timestamp": {
+    "$numberLong": "1703487804392"
+  },
+  "x": 84,
+  "y": 73,
+  "rollNo": "CB.EN.U4EEE23121",
+  "normalizedTimestamp": 66523,
+  "normalizedX": 0.06017191977077364,
+  "normalizedY": 0.10354609929078014
+},{
+  "_id": "6589299be2953f4e4248c892",
+  "timestamp": {
+    "$numberLong": "1703487810166"
+  },
+  "x": 522,
+  "y": 81,
+  "rollNo": "CB.EN.U4EEE23121",
+  "normalizedTimestamp": 72297,
+  "normalizedX": 0.37392550143266473,
+  "normalizedY": 0.1148936170212766
+},{
+  "_id": "6589299be2953f4e4248c893",
+  "timestamp": {
+    "$numberLong": "1703487812093"
+  },
+  "x": 431,
+  "y": 193,
+  "rollNo": "CB.EN.U4EEE23121",
+  "normalizedTimestamp": 74224,
+  "normalizedX": 0.30873925501432664,
+  "normalizedY": 0.27375886524822696
+},{
+  "_id": "6589299be2953f4e4248c894",
+  "timestamp": {
+    "$numberLong": "1703487827935"
+  },
+  "x": 730,
+  "y": 33,
+  "rollNo": "CB.EN.U4EEE23121",
+  "normalizedTimestamp": 90066,
+  "normalizedX": 0.5229226361031518,
+  "normalizedY": 0.04680851063829787
+},{
+  "_id": "6589a2ce25073fa4a32fff0c",
+  "timestamp": {
+    "$numberLong": "1703518836951"
+  },
+  "x": 377,
+  "y": 226,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 27919,
+  "normalizedX": 0.2700573065902579,
+  "normalizedY": 0.2878980891719745
+},{
+  "_id": "6589a2ce25073fa4a32fff04",
+  "timestamp": {
+    "$numberLong": "1703518814045"
+  },
+  "x": 109,
+  "y": 286,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 5013,
+  "normalizedX": 0.07808022922636103,
+  "normalizedY": 0.3643312101910828
+},{
+  "_id": "6589a2ce25073fa4a32fff08",
+  "timestamp": {
+    "$numberLong": "1703518824321"
+  },
+  "x": 384,
+  "y": 389,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 15289,
+  "normalizedX": 0.27507163323782235,
+  "normalizedY": 0.49554140127388535
+},{
+  "_id": "6589a2ce25073fa4a32fff0d",
+  "timestamp": {
+    "$numberLong": "1703518838856"
+  },
+  "x": 446,
+  "y": 301,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 29824,
+  "normalizedX": 0.3194842406876791,
+  "normalizedY": 0.3834394904458599
+},{
+  "_id": "6589a2ce25073fa4a32fff0a",
+  "timestamp": {
+    "$numberLong": "1703518829271"
+  },
+  "x": 424,
+  "y": 234,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 20239,
+  "normalizedX": 0.3037249283667622,
+  "normalizedY": 0.2980891719745223
+},{
+  "_id": "6589a2ce25073fa4a32fff13",
+  "timestamp": {
+    "$numberLong": "1703518886391"
+  },
+  "x": 451,
+  "y": 187,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 77359,
+  "normalizedX": 0.3230659025787966,
+  "normalizedY": 0.23821656050955414
+},{
+  "_id": "6589a2ce25073fa4a32fff09",
+  "timestamp": {
+    "$numberLong": "1703518828454"
+  },
+  "x": 424,
+  "y": 234,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 19422,
+  "normalizedX": 0.3037249283667622,
+  "normalizedY": 0.2980891719745223
+},{
+  "_id": "6589a2ce25073fa4a32fff0b",
+  "timestamp": {
+    "$numberLong": "1703518831295"
+  },
+  "x": 441,
+  "y": 299,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 22263,
+  "normalizedX": 0.3159025787965616,
+  "normalizedY": 0.38089171974522296
+},{
+  "_id": "6589a2ce25073fa4a32fff07",
+  "timestamp": {
+    "$numberLong": "1703518822349"
+  },
+  "x": 445,
+  "y": 475,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 13317,
+  "normalizedX": 0.31876790830945556,
+  "normalizedY": 0.6050955414012739
+},{
+  "_id": "6589a2ce25073fa4a32fff05",
+  "timestamp": {
+    "$numberLong": "1703518818637"
+  },
+  "x": 423,
+  "y": 226,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 9605,
+  "normalizedX": 0.3030085959885387,
+  "normalizedY": 0.2878980891719745
+},{
+  "_id": "6589a2ce25073fa4a32fff06",
+  "timestamp": {
+    "$numberLong": "1703518820554"
+  },
+  "x": 423,
+  "y": 226,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 11522,
+  "normalizedX": 0.3030085959885387,
+  "normalizedY": 0.2878980891719745
+},{
+  "_id": "6589a2ce25073fa4a32fff10",
+  "timestamp": {
+    "$numberLong": "1703518846399"
+  },
+  "x": 385,
+  "y": 226,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 37367,
+  "normalizedX": 0.27578796561604585,
+  "normalizedY": 0.2878980891719745
+},{
+  "_id": "6589a2ce25073fa4a32fff14",
+  "timestamp": {
+    "$numberLong": "1703518888174"
+  },
+  "x": 413,
+  "y": 386,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 79142,
+  "normalizedX": 0.29584527220630374,
+  "normalizedY": 0.49171974522292994
+},{
+  "_id": "6589a2ce25073fa4a32fff02",
+  "timestamp": {
+    "$numberLong": "1703518809032"
+  },
+  "x": 34,
+  "y": 69,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.024355300859598854,
+  "normalizedY": 0.08789808917197452
+},{
+  "_id": "6589a2ce25073fa4a32fff0e",
+  "timestamp": {
+    "$numberLong": "1703518840819"
+  },
+  "x": 352,
+  "y": 349,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 31787,
+  "normalizedX": 0.2521489971346705,
+  "normalizedY": 0.4445859872611465
+},{
+  "_id": "6589a2ce25073fa4a32fff11",
+  "timestamp": {
+    "$numberLong": "1703518855021"
+  },
+  "x": 507,
+  "y": 263,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 45989,
+  "normalizedX": 0.3631805157593123,
+  "normalizedY": 0.33503184713375794
+},{
+  "_id": "6589a2ce25073fa4a32fff03",
+  "timestamp": {
+    "$numberLong": "1703518811474"
+  },
+  "x": 122,
+  "y": 236,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 2442,
+  "normalizedX": 0.08739255014326648,
+  "normalizedY": 0.3006369426751592
+},{
+  "_id": "6589a2ce25073fa4a32fff0f",
+  "timestamp": {
+    "$numberLong": "1703518845034"
+  },
+  "x": 385,
+  "y": 226,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 36002,
+  "normalizedX": 0.27578796561604585,
+  "normalizedY": 0.2878980891719745
+},{
+  "_id": "6589a2ce25073fa4a32fff12",
+  "timestamp": {
+    "$numberLong": "1703518881804"
+  },
+  "x": 98,
+  "y": 314,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 72772,
+  "normalizedX": 0.07020057306590258,
+  "normalizedY": 0.4
+},{
+  "_id": "6589a2ce25073fa4a32fff15",
+  "timestamp": {
+    "$numberLong": "1703518904632"
+  },
+  "x": 695,
+  "y": 32,
+  "rollNo": "CB.EN.U4CSE20402",
+  "normalizedTimestamp": 95600,
+  "normalizedX": 0.4978510028653295,
+  "normalizedY": 0.04076433121019108
+},{
+  "_id": "65899ff525073fa4a32ff955",
+  "timestamp": {
+    "$numberLong": "1703518123895"
+  },
+  "x": 106,
+  "y": 310,
+  "rollNo": "CB.EN.U4CSE20436",
+  "normalizedTimestamp": 4007,
+  "normalizedX": 0.06901041666666667,
+  "normalizedY": 0.3587962962962963
+},{
+  "_id": "65899ff525073fa4a32ff954",
+  "timestamp": {
+    "$numberLong": "1703518122104"
+  },
+  "x": 115,
+  "y": 277,
+  "rollNo": "CB.EN.U4CSE20436",
+  "normalizedTimestamp": 2216,
+  "normalizedX": 0.07486979166666667,
+  "normalizedY": 0.32060185185185186
+},{
+  "_id": "65899ff525073fa4a32ff956",
+  "timestamp": {
+    "$numberLong": "1703518128054"
+  },
+  "x": 462,
+  "y": 228,
+  "rollNo": "CB.EN.U4CSE20436",
+  "normalizedTimestamp": 8166,
+  "normalizedX": 0.30078125,
+  "normalizedY": 0.2638888888888889
+},{
+  "_id": "65899ff525073fa4a32ff953",
+  "timestamp": {
+    "$numberLong": "1703518119888"
+  },
+  "x": 24,
+  "y": 84,
+  "rollNo": "CB.EN.U4CSE20436",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.015625,
+  "normalizedY": 0.09722222222222222
+},{
+  "_id": "65899ff525073fa4a32ff957",
+  "timestamp": {
+    "$numberLong": "1703518128808"
+  },
+  "x": 462,
+  "y": 228,
+  "rollNo": "CB.EN.U4CSE20436",
+  "normalizedTimestamp": 8920,
+  "normalizedX": 0.30078125,
+  "normalizedY": 0.2638888888888889
+},{
+  "_id": "65899ff525073fa4a32ff958",
+  "timestamp": {
+    "$numberLong": "1703518131374"
+  },
+  "x": 464,
+  "y": 381,
+  "rollNo": "CB.EN.U4CSE20436",
+  "normalizedTimestamp": 11486,
+  "normalizedX": 0.3020833333333333,
+  "normalizedY": 0.4409722222222222
+},{
+  "_id": "65899ff525073fa4a32ff959",
+  "timestamp": {
+    "$numberLong": "1703518132240"
+  },
+  "x": 463,
+  "y": 376,
+  "rollNo": "CB.EN.U4CSE20436",
+  "normalizedTimestamp": 12352,
+  "normalizedX": 0.3014322916666667,
+  "normalizedY": 0.4351851851851852
+},{
+  "_id": "65899ff525073fa4a32ff95c",
+  "timestamp": {
+    "$numberLong": "1703518140517"
+  },
+  "x": 468,
+  "y": 486,
+  "rollNo": "CB.EN.U4CSE20436",
+  "normalizedTimestamp": 20629,
+  "normalizedX": 0.3046875,
+  "normalizedY": 0.5625
+},{
+  "_id": "65899ff525073fa4a32ff95e",
+  "timestamp": {
+    "$numberLong": "1703518147704"
+  },
+  "x": 560,
+  "y": 261,
+  "rollNo": "CB.EN.U4CSE20436",
+  "normalizedTimestamp": 27816,
+  "normalizedX": 0.3645833333333333,
+  "normalizedY": 0.3020833333333333
+},{
+  "_id": "65899ff525073fa4a32ff95a",
+  "timestamp": {
+    "$numberLong": "1703518135049"
+  },
+  "x": 463,
+  "y": 338,
+  "rollNo": "CB.EN.U4CSE20436",
+  "normalizedTimestamp": 15161,
+  "normalizedX": 0.3014322916666667,
+  "normalizedY": 0.3912037037037037
+},{
+  "_id": "65899ff525073fa4a32ff95b",
+  "timestamp": {
+    "$numberLong": "1703518136818"
+  },
+  "x": 468,
+  "y": 486,
+  "rollNo": "CB.EN.U4CSE20436",
+  "normalizedTimestamp": 16930,
+  "normalizedX": 0.3046875,
+  "normalizedY": 0.5625
+},{
+  "_id": "65899ff525073fa4a32ff95d",
+  "timestamp": {
+    "$numberLong": "1703518145016"
+  },
+  "x": 560,
+  "y": 261,
+  "rollNo": "CB.EN.U4CSE20436",
+  "normalizedTimestamp": 25128,
+  "normalizedX": 0.3645833333333333,
+  "normalizedY": 0.3020833333333333
+},{
+  "_id": "65899ff525073fa4a32ff95f",
+  "timestamp": {
+    "$numberLong": "1703518162954"
+  },
+  "x": 60,
+  "y": 365,
+  "rollNo": "CB.EN.U4CSE20436",
+  "normalizedTimestamp": 43066,
+  "normalizedX": 0.0390625,
+  "normalizedY": 0.4224537037037037
+},{
+  "_id": "65899ff525073fa4a32ff960",
+  "timestamp": {
+    "$numberLong": "1703518167124"
+  },
+  "x": 530,
+  "y": 196,
+  "rollNo": "CB.EN.U4CSE20436",
+  "normalizedTimestamp": 47236,
+  "normalizedX": 0.3450520833333333,
+  "normalizedY": 0.22685185185185186
+},{
+  "_id": "65899ff525073fa4a32ff961",
+  "timestamp": {
+    "$numberLong": "1703518169137"
+  },
+  "x": 428,
+  "y": 452,
+  "rollNo": "CB.EN.U4CSE20436",
+  "normalizedTimestamp": 49249,
+  "normalizedX": 0.2786458333333333,
+  "normalizedY": 0.5231481481481481
+},{
+  "_id": "65899ff525073fa4a32ff962",
+  "timestamp": {
+    "$numberLong": "1703518182134"
+  },
+  "x": 773,
+  "y": 30,
+  "rollNo": "CB.EN.U4CSE20436",
+  "normalizedTimestamp": 62246,
+  "normalizedX": 0.5032552083333334,
+  "normalizedY": 0.034722222222222224
+},{
+  "_id": "658929abe2953f4e4248cb10",
+  "timestamp": {
+    "$numberLong": "1703487734641"
+  },
+  "x": 18,
+  "y": 82,
+  "rollNo": "CB.EN.U4EEE23128",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.01171875,
+  "normalizedY": 0.1105121293800539
+},{
+  "_id": "658929abe2953f4e4248cb13",
+  "timestamp": {
+    "$numberLong": "1703487744005"
+  },
+  "x": 414,
+  "y": 222,
+  "rollNo": "CB.EN.U4EEE23128",
+  "normalizedTimestamp": 9364,
+  "normalizedX": 0.26953125,
+  "normalizedY": 0.2991913746630728
+},{
+  "_id": "658929abe2953f4e4248cb11",
+  "timestamp": {
+    "$numberLong": "1703487736789"
+  },
+  "x": 184,
+  "y": 282,
+  "rollNo": "CB.EN.U4EEE23128",
+  "normalizedTimestamp": 2148,
+  "normalizedX": 0.11979166666666667,
+  "normalizedY": 0.38005390835579517
+},{
+  "_id": "658929abe2953f4e4248cb12",
+  "timestamp": {
+    "$numberLong": "1703487739510"
+  },
+  "x": 117,
+  "y": 313,
+  "rollNo": "CB.EN.U4EEE23128",
+  "normalizedTimestamp": 4869,
+  "normalizedX": 0.076171875,
+  "normalizedY": 0.42183288409703507
+},{
+  "_id": "658929abe2953f4e4248cb15",
+  "timestamp": {
+    "$numberLong": "1703487747438"
+  },
+  "x": 408,
+  "y": 340,
+  "rollNo": "CB.EN.U4EEE23128",
+  "normalizedTimestamp": 12797,
+  "normalizedX": 0.265625,
+  "normalizedY": 0.4582210242587601
+},{
+  "_id": "658929abe2953f4e4248cb14",
+  "timestamp": {
+    "$numberLong": "1703487745143"
+  },
+  "x": 414,
+  "y": 222,
+  "rollNo": "CB.EN.U4EEE23128",
+  "normalizedTimestamp": 10502,
+  "normalizedX": 0.26953125,
+  "normalizedY": 0.2991913746630728
+},{
+  "_id": "658929abe2953f4e4248cb16",
+  "timestamp": {
+    "$numberLong": "1703487752097"
+  },
+  "x": 583,
+  "y": 260,
+  "rollNo": "CB.EN.U4EEE23128",
+  "normalizedTimestamp": 17456,
+  "normalizedX": 0.3795572916666667,
+  "normalizedY": 0.3504043126684636
+},{
+  "_id": "658929abe2953f4e4248cb17",
+  "timestamp": {
+    "$numberLong": "1703487791717"
+  },
+  "x": 96,
+  "y": 355,
+  "rollNo": "CB.EN.U4EEE23128",
+  "normalizedTimestamp": 57076,
+  "normalizedX": 0.0625,
+  "normalizedY": 0.4784366576819407
+},{
+  "_id": "658929abe2953f4e4248cb18",
+  "timestamp": {
+    "$numberLong": "1703487795935"
+  },
+  "x": 514,
+  "y": 187,
+  "rollNo": "CB.EN.U4EEE23128",
+  "normalizedTimestamp": 61294,
+  "normalizedX": 0.3346354166666667,
+  "normalizedY": 0.25202156334231807
+},{
+  "_id": "658929abe2953f4e4248cb1a",
+  "timestamp": {
+    "$numberLong": "1703487805331"
+  },
+  "x": 554,
+  "y": 195,
+  "rollNo": "CB.EN.U4EEE23128",
+  "normalizedTimestamp": 70690,
+  "normalizedX": 0.3606770833333333,
+  "normalizedY": 0.2628032345013477
+},{
+  "_id": "658929abe2953f4e4248cb19",
+  "timestamp": {
+    "$numberLong": "1703487800505"
+  },
+  "x": 388,
+  "y": 295,
+  "rollNo": "CB.EN.U4EEE23128",
+  "normalizedTimestamp": 65864,
+  "normalizedX": 0.2526041666666667,
+  "normalizedY": 0.3975741239892183
+},{
+  "_id": "658929abe2953f4e4248cb1b",
+  "timestamp": {
+    "$numberLong": "1703487825942"
+  },
+  "x": 786,
+  "y": 29,
+  "rollNo": "CB.EN.U4EEE23128",
+  "normalizedTimestamp": 91301,
+  "normalizedX": 0.51171875,
+  "normalizedY": 0.03908355795148248
+},{
+  "_id": "6589505eece61eb9e9bfb6c2",
+  "timestamp": {
+    "$numberLong": "1703497737879"
+  },
+  "x": 101,
+  "y": 141,
+  "rollNo": "CB.EN.U4CSE21015",
+  "normalizedTimestamp": 46706,
+  "normalizedX": 0.07234957020057306,
+  "normalizedY": 0.17961783439490445
+},{
+  "_id": "6589505eece61eb9e9bfb6c0",
+  "timestamp": {
+    "$numberLong": "1703497718519"
+  },
+  "x": 534,
+  "y": 214,
+  "rollNo": "CB.EN.U4CSE21015",
+  "normalizedTimestamp": 27346,
+  "normalizedX": 0.3825214899713467,
+  "normalizedY": 0.27261146496815286
+},{
+  "_id": "6589505eece61eb9e9bfb6bd",
+  "timestamp": {
+    "$numberLong": "1703497707206"
+  },
+  "x": 430,
+  "y": 222,
+  "rollNo": "CB.EN.U4CSE21015",
+  "normalizedTimestamp": 16033,
+  "normalizedX": 0.30802292263610315,
+  "normalizedY": 0.28280254777070063
+},{
+  "_id": "6589505eece61eb9e9bfb6be",
+  "timestamp": {
+    "$numberLong": "1703497710371"
+  },
+  "x": 373,
+  "y": 405,
+  "rollNo": "CB.EN.U4CSE21015",
+  "normalizedTimestamp": 19198,
+  "normalizedX": 0.2671919770773639,
+  "normalizedY": 0.5159235668789809
+},{
+  "_id": "6589505eece61eb9e9bfb6ba",
+  "timestamp": {
+    "$numberLong": "1703497693720"
+  },
+  "x": 101,
+  "y": 145,
+  "rollNo": "CB.EN.U4CSE21015",
+  "normalizedTimestamp": 2547,
+  "normalizedX": 0.07234957020057306,
+  "normalizedY": 0.18471337579617833
+},{
+  "_id": "6589505eece61eb9e9bfb6c4",
+  "timestamp": {
+    "$numberLong": "1703497750199"
+  },
+  "x": 405,
+  "y": 374,
+  "rollNo": "CB.EN.U4CSE21015",
+  "normalizedTimestamp": 59026,
+  "normalizedX": 0.29011461318051573,
+  "normalizedY": 0.4764331210191083
+},{
+  "_id": "6589505eece61eb9e9bfb6bf",
+  "timestamp": {
+    "$numberLong": "1703497715758"
+  },
+  "x": 674,
+  "y": 178,
+  "rollNo": "CB.EN.U4CSE21015",
+  "normalizedTimestamp": 24585,
+  "normalizedX": 0.4828080229226361,
+  "normalizedY": 0.2267515923566879
+},{
+  "_id": "6589505eece61eb9e9bfb6c3",
+  "timestamp": {
+    "$numberLong": "1703497746363"
+  },
+  "x": 522,
+  "y": 138,
+  "rollNo": "CB.EN.U4CSE21015",
+  "normalizedTimestamp": 55190,
+  "normalizedX": 0.37392550143266473,
+  "normalizedY": 0.17579617834394903
+},{
+  "_id": "6589505eece61eb9e9bfb6b9",
+  "timestamp": {
+    "$numberLong": "1703497691173"
+  },
+  "x": 19,
+  "y": 64,
+  "rollNo": "CB.EN.U4CSE21015",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.013610315186246419,
+  "normalizedY": 0.08152866242038216
+},{
+  "_id": "6589505eece61eb9e9bfb6c5",
+  "timestamp": {
+    "$numberLong": "1703497766057"
+  },
+  "x": 717,
+  "y": 30,
+  "rollNo": "CB.EN.U4CSE21015",
+  "normalizedTimestamp": 74884,
+  "normalizedX": 0.5136103151862464,
+  "normalizedY": 0.03821656050955414
+},{
+  "_id": "6589505eece61eb9e9bfb6bb",
+  "timestamp": {
+    "$numberLong": "1703497697785"
+  },
+  "x": 102,
+  "y": 153,
+  "rollNo": "CB.EN.U4CSE21015",
+  "normalizedTimestamp": 6612,
+  "normalizedX": 0.07306590257879657,
+  "normalizedY": 0.19490445859872613
+},{
+  "_id": "6589505eece61eb9e9bfb6bc",
+  "timestamp": {
+    "$numberLong": "1703497706045"
+  },
+  "x": 430,
+  "y": 222,
+  "rollNo": "CB.EN.U4CSE21015",
+  "normalizedTimestamp": 14872,
+  "normalizedX": 0.30802292263610315,
+  "normalizedY": 0.28280254777070063
+},{
+  "_id": "6589505eece61eb9e9bfb6c1",
+  "timestamp": {
+    "$numberLong": "1703497720003"
+  },
+  "x": 528,
+  "y": 208,
+  "rollNo": "CB.EN.U4CSE21015",
+  "normalizedTimestamp": 28830,
+  "normalizedX": 0.37822349570200575,
+  "normalizedY": 0.26496815286624203
+},{
+  "_id": "65892b2ae2953f4e4248cdee",
+  "timestamp": {
+    "$numberLong": "1703488158777"
+  },
+  "x": 427,
+  "y": 227,
+  "rollNo": "CB.EN.U4EEE23125",
+  "normalizedTimestamp": 17819,
+  "normalizedX": 0.30587392550143266,
+  "normalizedY": 0.3219858156028369
+},{
+  "_id": "65892b2ae2953f4e4248cdf0",
+  "timestamp": {
+    "$numberLong": "1703488162792"
+  },
+  "x": 360,
+  "y": 336,
+  "rollNo": "CB.EN.U4EEE23125",
+  "normalizedTimestamp": 21834,
+  "normalizedX": 0.25787965616045844,
+  "normalizedY": 0.4765957446808511
+},{
+  "_id": "65892b2ae2953f4e4248cded",
+  "timestamp": {
+    "$numberLong": "1703488155667"
+  },
+  "x": 413,
+  "y": 227,
+  "rollNo": "CB.EN.U4EEE23125",
+  "normalizedTimestamp": 14709,
+  "normalizedX": 0.29584527220630374,
+  "normalizedY": 0.3219858156028369
+},{
+  "_id": "65892b2ae2953f4e4248cdf3",
+  "timestamp": {
+    "$numberLong": "1703488175820"
+  },
+  "x": 873,
+  "y": 225,
+  "rollNo": "CB.EN.U4EEE23125",
+  "normalizedTimestamp": 34862,
+  "normalizedX": 0.6253581661891118,
+  "normalizedY": 0.3191489361702128
+},{
+  "_id": "65892b2ae2953f4e4248cdea",
+  "timestamp": {
+    "$numberLong": "1703488140958"
+  },
+  "x": 18,
+  "y": 81,
+  "rollNo": "CB.EN.U4EEE23125",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.012893982808022923,
+  "normalizedY": 0.1148936170212766
+},{
+  "_id": "65892b2ae2953f4e4248cdef",
+  "timestamp": {
+    "$numberLong": "1703488160562"
+  },
+  "x": 360,
+  "y": 336,
+  "rollNo": "CB.EN.U4EEE23125",
+  "normalizedTimestamp": 19604,
+  "normalizedX": 0.25787965616045844,
+  "normalizedY": 0.4765957446808511
+},{
+  "_id": "65892b2ae2953f4e4248cdf6",
+  "timestamp": {
+    "$numberLong": "1703488200327"
+  },
+  "x": 80,
+  "y": 123,
+  "rollNo": "CB.EN.U4EEE23125",
+  "normalizedTimestamp": 59369,
+  "normalizedX": 0.05730659025787966,
+  "normalizedY": 0.17446808510638298
+},{
+  "_id": "65892b2ae2953f4e4248cdf5",
+  "timestamp": {
+    "$numberLong": "1703488179383"
+  },
+  "x": 573,
+  "y": 259,
+  "rollNo": "CB.EN.U4EEE23125",
+  "normalizedTimestamp": 38425,
+  "normalizedX": 0.41045845272206305,
+  "normalizedY": 0.36737588652482267
+},{
+  "_id": "65892b2ae2953f4e4248cdf2",
+  "timestamp": {
+    "$numberLong": "1703488166104"
+  },
+  "x": 360,
+  "y": 336,
+  "rollNo": "CB.EN.U4EEE23125",
+  "normalizedTimestamp": 25146,
+  "normalizedX": 0.25787965616045844,
+  "normalizedY": 0.4765957446808511
+},{
+  "_id": "65892b2ae2953f4e4248cdf8",
+  "timestamp": {
+    "$numberLong": "1703488211662"
+  },
+  "x": 424,
+  "y": 221,
+  "rollNo": "CB.EN.U4EEE23125",
+  "normalizedTimestamp": 70704,
+  "normalizedX": 0.3037249283667622,
+  "normalizedY": 0.31347517730496455
+},{
+  "_id": "65892b2ae2953f4e4248cdf4",
+  "timestamp": {
+    "$numberLong": "1703488177385"
+  },
+  "x": 757,
+  "y": 334,
+  "rollNo": "CB.EN.U4EEE23125",
+  "normalizedTimestamp": 36427,
+  "normalizedX": 0.5422636103151862,
+  "normalizedY": 0.47375886524822697
+},{
+  "_id": "65892b2ae2953f4e4248cdeb",
+  "timestamp": {
+    "$numberLong": "1703488145969"
+  },
+  "x": 106,
+  "y": 155,
+  "rollNo": "CB.EN.U4EEE23125",
+  "normalizedTimestamp": 5011,
+  "normalizedX": 0.07593123209169055,
+  "normalizedY": 0.2198581560283688
+},{
+  "_id": "65892b2ae2953f4e4248cdf9",
+  "timestamp": {
+    "$numberLong": "1703488234762"
+  },
+  "x": 725,
+  "y": 32,
+  "rollNo": "CB.EN.U4EEE23125",
+  "normalizedTimestamp": 93804,
+  "normalizedX": 0.5193409742120344,
+  "normalizedY": 0.04539007092198582
+},{
+  "_id": "65892b2ae2953f4e4248cdf7",
+  "timestamp": {
+    "$numberLong": "1703488210081"
+  },
+  "x": 491,
+  "y": 123,
+  "rollNo": "CB.EN.U4EEE23125",
+  "normalizedTimestamp": 69123,
+  "normalizedX": 0.3517191977077364,
+  "normalizedY": 0.17446808510638298
+},{
+  "_id": "65892b2ae2953f4e4248cdec",
+  "timestamp": {
+    "$numberLong": "1703488154313"
+  },
+  "x": 429,
+  "y": 219,
+  "rollNo": "CB.EN.U4EEE23125",
+  "normalizedTimestamp": 13355,
+  "normalizedX": 0.30730659025787965,
+  "normalizedY": 0.31063829787234043
+},{
+  "_id": "65892b2ae2953f4e4248cdf1",
+  "timestamp": {
+    "$numberLong": "1703488165141"
+  },
+  "x": 360,
+  "y": 336,
+  "rollNo": "CB.EN.U4EEE23125",
+  "normalizedTimestamp": 24183,
+  "normalizedX": 0.25787965616045844,
+  "normalizedY": 0.4765957446808511
+},{
+  "_id": "65895895d7441a0c0effe2e3",
+  "timestamp": {
+    "$numberLong": "1703499819378"
+  },
+  "x": 155,
+  "y": 146,
+  "rollNo": "CB.EN.U4CSE22301",
+  "normalizedTimestamp": 2043,
+  "normalizedX": 0.11103151862464183,
+  "normalizedY": 0.21791044776119403
+},{
+  "_id": "65895895d7441a0c0effe2e2",
+  "timestamp": {
+    "$numberLong": "1703499817335"
+  },
+  "x": 18,
+  "y": 69,
+  "rollNo": "CB.EN.U4CSE22301",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.012893982808022923,
+  "normalizedY": 0.10298507462686567
+},{
+  "_id": "65895895d7441a0c0effe2e4",
+  "timestamp": {
+    "$numberLong": "1703499826763"
+  },
+  "x": 400,
+  "y": 221,
+  "rollNo": "CB.EN.U4CSE22301",
+  "normalizedTimestamp": 9428,
+  "normalizedX": 0.28653295128939826,
+  "normalizedY": 0.32985074626865674
+},{
+  "_id": "65895895d7441a0c0effe2ea",
+  "timestamp": {
+    "$numberLong": "1703499857600"
+  },
+  "x": 525,
+  "y": 194,
+  "rollNo": "CB.EN.U4CSE22301",
+  "normalizedTimestamp": 40265,
+  "normalizedX": 0.37607449856733527,
+  "normalizedY": 0.28955223880597014
+},{
+  "_id": "65895895d7441a0c0effe2e6",
+  "timestamp": {
+    "$numberLong": "1703499829146"
+  },
+  "x": 362,
+  "y": 431,
+  "rollNo": "CB.EN.U4CSE22301",
+  "normalizedTimestamp": 11811,
+  "normalizedX": 0.2593123209169054,
+  "normalizedY": 0.6432835820895523
+},{
+  "_id": "65895895d7441a0c0effe2e8",
+  "timestamp": {
+    "$numberLong": "1703499849691"
+  },
+  "x": 131,
+  "y": 114,
+  "rollNo": "CB.EN.U4CSE22301",
+  "normalizedTimestamp": 32356,
+  "normalizedX": 0.09383954154727794,
+  "normalizedY": 0.1701492537313433
+},{
+  "_id": "65895895d7441a0c0effe2e7",
+  "timestamp": {
+    "$numberLong": "1703499832994"
+  },
+  "x": 515,
+  "y": 269,
+  "rollNo": "CB.EN.U4CSE22301",
+  "normalizedTimestamp": 15659,
+  "normalizedX": 0.36891117478510027,
+  "normalizedY": 0.4014925373134328
+},{
+  "_id": "65895895d7441a0c0effe2e5",
+  "timestamp": {
+    "$numberLong": "1703499827657"
+  },
+  "x": 400,
+  "y": 221,
+  "rollNo": "CB.EN.U4CSE22301",
+  "normalizedTimestamp": 10322,
+  "normalizedX": 0.28653295128939826,
+  "normalizedY": 0.32985074626865674
+},{
+  "_id": "65895895d7441a0c0effe2e9",
+  "timestamp": {
+    "$numberLong": "1703499856460"
+  },
+  "x": 485,
+  "y": 193,
+  "rollNo": "CB.EN.U4CSE22301",
+  "normalizedTimestamp": 39125,
+  "normalizedX": 0.34742120343839544,
+  "normalizedY": 0.2880597014925373
+},{
+  "_id": "65895895d7441a0c0effe2ec",
+  "timestamp": {
+    "$numberLong": "1703499860743"
+  },
+  "x": 521,
+  "y": 196,
+  "rollNo": "CB.EN.U4CSE22301",
+  "normalizedTimestamp": 43408,
+  "normalizedX": 0.37320916905444124,
+  "normalizedY": 0.29253731343283584
+},{
+  "_id": "65895895d7441a0c0effe2ed",
+  "timestamp": {
+    "$numberLong": "1703499862150"
+  },
+  "x": 437,
+  "y": 360,
+  "rollNo": "CB.EN.U4CSE22301",
+  "normalizedTimestamp": 44815,
+  "normalizedX": 0.3130372492836676,
+  "normalizedY": 0.5373134328358209
+},{
+  "_id": "65895895d7441a0c0effe2eb",
+  "timestamp": {
+    "$numberLong": "1703499859268"
+  },
+  "x": 521,
+  "y": 195,
+  "rollNo": "CB.EN.U4CSE22301",
+  "normalizedTimestamp": 41933,
+  "normalizedX": 0.37320916905444124,
+  "normalizedY": 0.291044776119403
+},{
+  "_id": "65895895d7441a0c0effe2ee",
+  "timestamp": {
+    "$numberLong": "1703499884322"
+  },
+  "x": 726,
+  "y": 27,
+  "rollNo": "CB.EN.U4CSE22301",
+  "normalizedTimestamp": 66987,
+  "normalizedX": 0.5200573065902578,
+  "normalizedY": 0.04029850746268657
+},{
+  "_id": "6589a1e025073fa4a32ffbe7",
+  "timestamp": {
+    "$numberLong": "1703518607780"
+  },
+  "x": 376,
+  "y": 453,
+  "rollNo": "CB.EN.U4CSE20447",
+  "normalizedTimestamp": 17218,
+  "normalizedX": 0.2693409742120344,
+  "normalizedY": 0.5770700636942675
+},{
+  "_id": "6589a1e025073fa4a32ffbe2",
+  "timestamp": {
+    "$numberLong": "1703518593041"
+  },
+  "x": 74,
+  "y": 222,
+  "rollNo": "CB.EN.U4CSE20447",
+  "normalizedTimestamp": 2479,
+  "normalizedX": 0.05300859598853868,
+  "normalizedY": 0.28280254777070063
+},{
+  "_id": "6589a1e025073fa4a32ffbe6",
+  "timestamp": {
+    "$numberLong": "1703518603879"
+  },
+  "x": 410,
+  "y": 220,
+  "rollNo": "CB.EN.U4CSE20447",
+  "normalizedTimestamp": 13317,
+  "normalizedX": 0.29369627507163326,
+  "normalizedY": 0.2802547770700637
+},{
+  "_id": "6589a1e025073fa4a32ffbe8",
+  "timestamp": {
+    "$numberLong": "1703518615489"
+  },
+  "x": 517,
+  "y": 257,
+  "rollNo": "CB.EN.U4CSE20447",
+  "normalizedTimestamp": 24927,
+  "normalizedX": 0.37034383954154726,
+  "normalizedY": 0.3273885350318471
+},{
+  "_id": "6589a1e025073fa4a32ffbeb",
+  "timestamp": {
+    "$numberLong": "1703518649587"
+  },
+  "x": 410,
+  "y": 392,
+  "rollNo": "CB.EN.U4CSE20447",
+  "normalizedTimestamp": 59025,
+  "normalizedX": 0.29369627507163326,
+  "normalizedY": 0.49936305732484076
+},{
+  "_id": "6589a1e025073fa4a32ffbea",
+  "timestamp": {
+    "$numberLong": "1703518647740"
+  },
+  "x": 445,
+  "y": 192,
+  "rollNo": "CB.EN.U4CSE20447",
+  "normalizedTimestamp": 57178,
+  "normalizedX": 0.31876790830945556,
+  "normalizedY": 0.2445859872611465
+},{
+  "_id": "6589a1e025073fa4a32ffbe9",
+  "timestamp": {
+    "$numberLong": "1703518643064"
+  },
+  "x": 98,
+  "y": 312,
+  "rollNo": "CB.EN.U4CSE20447",
+  "normalizedTimestamp": 52502,
+  "normalizedX": 0.07020057306590258,
+  "normalizedY": 0.3974522292993631
+},{
+  "_id": "6589a1e025073fa4a32ffbe5",
+  "timestamp": {
+    "$numberLong": "1703518601908"
+  },
+  "x": 410,
+  "y": 220,
+  "rollNo": "CB.EN.U4CSE20447",
+  "normalizedTimestamp": 11346,
+  "normalizedX": 0.29369627507163326,
+  "normalizedY": 0.2802547770700637
+},{
+  "_id": "6589a1e025073fa4a32ffbe1",
+  "timestamp": {
+    "$numberLong": "1703518590562"
+  },
+  "x": 24,
+  "y": 61,
+  "rollNo": "CB.EN.U4CSE20447",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.017191977077363897,
+  "normalizedY": 0.07770700636942675
+},{
+  "_id": "6589a1e025073fa4a32ffbec",
+  "timestamp": {
+    "$numberLong": "1703518669230"
+  },
+  "x": 683,
+  "y": 23,
+  "rollNo": "CB.EN.U4CSE20447",
+  "normalizedTimestamp": 78668,
+  "normalizedX": 0.4892550143266476,
+  "normalizedY": 0.02929936305732484
+},{
+  "_id": "6589a1e025073fa4a32ffbe3",
+  "timestamp": {
+    "$numberLong": "1703518594578"
+  },
+  "x": 74,
+  "y": 222,
+  "rollNo": "CB.EN.U4CSE20447",
+  "normalizedTimestamp": 4016,
+  "normalizedX": 0.05300859598853868,
+  "normalizedY": 0.28280254777070063
+},{
+  "_id": "6589a1e025073fa4a32ffbe4",
+  "timestamp": {
+    "$numberLong": "1703518597601"
+  },
+  "x": 72,
+  "y": 277,
+  "rollNo": "CB.EN.U4CSE20447",
+  "normalizedTimestamp": 7039,
+  "normalizedX": 0.05157593123209169,
+  "normalizedY": 0.35286624203821654
+},{
+  "_id": "6589603abb96723e282d4be5",
+  "timestamp": {
+    "$numberLong": "1703501724643"
+  },
+  "x": 21,
+  "y": 79,
+  "rollNo": "CB.EN.U4CSE22312",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.01504297994269341,
+  "normalizedY": 0.11791044776119403
+},{
+  "_id": "6589603abb96723e282d4be6",
+  "timestamp": {
+    "$numberLong": "1703501732158"
+  },
+  "x": 70,
+  "y": 155,
+  "rollNo": "CB.EN.U4CSE22312",
+  "normalizedTimestamp": 7515,
+  "normalizedX": 0.050143266475644696,
+  "normalizedY": 0.23134328358208955
+},{
+  "_id": "6589603abb96723e282d4be7",
+  "timestamp": {
+    "$numberLong": "1703501736051"
+  },
+  "x": 184,
+  "y": 288,
+  "rollNo": "CB.EN.U4CSE22312",
+  "normalizedTimestamp": 11408,
+  "normalizedX": 0.1318051575931232,
+  "normalizedY": 0.4298507462686567
+},{
+  "_id": "6589603abb96723e282d4be8",
+  "timestamp": {
+    "$numberLong": "1703501738947"
+  },
+  "x": 109,
+  "y": 309,
+  "rollNo": "CB.EN.U4CSE22312",
+  "normalizedTimestamp": 14304,
+  "normalizedX": 0.07808022922636103,
+  "normalizedY": 0.46119402985074626
+},{
+  "_id": "6589603abb96723e282d4bea",
+  "timestamp": {
+    "$numberLong": "1703501746457"
+  },
+  "x": 425,
+  "y": 232,
+  "rollNo": "CB.EN.U4CSE22312",
+  "normalizedTimestamp": 21814,
+  "normalizedX": 0.3044412607449857,
+  "normalizedY": 0.34626865671641793
+},{
+  "_id": "6589603abb96723e282d4be9",
+  "timestamp": {
+    "$numberLong": "1703501744617"
+  },
+  "x": 425,
+  "y": 232,
+  "rollNo": "CB.EN.U4CSE22312",
+  "normalizedTimestamp": 19974,
+  "normalizedX": 0.3044412607449857,
+  "normalizedY": 0.34626865671641793
+},{
+  "_id": "6589603abb96723e282d4bec",
+  "timestamp": {
+    "$numberLong": "1703501755379"
+  },
+  "x": 533,
+  "y": 262,
+  "rollNo": "CB.EN.U4CSE22312",
+  "normalizedTimestamp": 30736,
+  "normalizedX": 0.3818051575931232,
+  "normalizedY": 0.39104477611940297
+},{
+  "_id": "6589603abb96723e282d4bed",
+  "timestamp": {
+    "$numberLong": "1703501774250"
+  },
+  "x": 75,
+  "y": 248,
+  "rollNo": "CB.EN.U4CSE22312",
+  "normalizedTimestamp": 49607,
+  "normalizedX": 0.053724928366762174,
+  "normalizedY": 0.3701492537313433
+},{
+  "_id": "6589603abb96723e282d4bef",
+  "timestamp": {
+    "$numberLong": "1703501787158"
+  },
+  "x": 392,
+  "y": 365,
+  "rollNo": "CB.EN.U4CSE22312",
+  "normalizedTimestamp": 62515,
+  "normalizedX": 0.2808022922636103,
+  "normalizedY": 0.5447761194029851
+},{
+  "_id": "6589603abb96723e282d4bee",
+  "timestamp": {
+    "$numberLong": "1703501783444"
+  },
+  "x": 430,
+  "y": 189,
+  "rollNo": "CB.EN.U4CSE22312",
+  "normalizedTimestamp": 58801,
+  "normalizedX": 0.30802292263610315,
+  "normalizedY": 0.282089552238806
+},{
+  "_id": "6589603abb96723e282d4bf0",
+  "timestamp": {
+    "$numberLong": "1703501804080"
+  },
+  "x": 712,
+  "y": 24,
+  "rollNo": "CB.EN.U4CSE22312",
+  "normalizedTimestamp": 79437,
+  "normalizedX": 0.5100286532951289,
+  "normalizedY": 0.03582089552238806
+},{
+  "_id": "6589603abb96723e282d4beb",
+  "timestamp": {
+    "$numberLong": "1703501749143"
+  },
+  "x": 362,
+  "y": 424,
+  "rollNo": "CB.EN.U4CSE22312",
+  "normalizedTimestamp": 24500,
+  "normalizedX": 0.2593123209169054,
+  "normalizedY": 0.6328358208955224
+},{
+  "_id": "658924b06a3610f95ee3cfec",
+  "timestamp": {
+    "$numberLong": "1703486518903"
+  },
+  "x": 24,
+  "y": 77,
+  "rollNo": "CB.EN.U4EEE23022",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.015625,
+  "normalizedY": 0.10377358490566038
+},{
+  "_id": "658924b06a3610f95ee3cfed",
+  "timestamp": {
+    "$numberLong": "1703486519976"
+  },
+  "x": 24,
+  "y": 77,
+  "rollNo": "CB.EN.U4EEE23022",
+  "normalizedTimestamp": 1073,
+  "normalizedX": 0.015625,
+  "normalizedY": 0.10377358490566038
+},{
+  "_id": "658924b06a3610f95ee3cff1",
+  "timestamp": {
+    "$numberLong": "1703486530699"
+  },
+  "x": 432,
+  "y": 216,
+  "rollNo": "CB.EN.U4EEE23022",
+  "normalizedTimestamp": 11796,
+  "normalizedX": 0.28125,
+  "normalizedY": 0.29110512129380056
+},{
+  "_id": "658924b06a3610f95ee3cfee",
+  "timestamp": {
+    "$numberLong": "1703486523124"
+  },
+  "x": 104,
+  "y": 280,
+  "rollNo": "CB.EN.U4EEE23022",
+  "normalizedTimestamp": 4221,
+  "normalizedX": 0.06770833333333333,
+  "normalizedY": 0.37735849056603776
+},{
+  "_id": "658924b06a3610f95ee3cfef",
+  "timestamp": {
+    "$numberLong": "1703486524954"
+  },
+  "x": 104,
+  "y": 305,
+  "rollNo": "CB.EN.U4EEE23022",
+  "normalizedTimestamp": 6051,
+  "normalizedX": 0.06770833333333333,
+  "normalizedY": 0.4110512129380054
+},{
+  "_id": "658924b06a3610f95ee3cff0",
+  "timestamp": {
+    "$numberLong": "1703486529775"
+  },
+  "x": 432,
+  "y": 216,
+  "rollNo": "CB.EN.U4EEE23022",
+  "normalizedTimestamp": 10872,
+  "normalizedX": 0.28125,
+  "normalizedY": 0.29110512129380056
+},{
+  "_id": "658924b06a3610f95ee3cff2",
+  "timestamp": {
+    "$numberLong": "1703486532925"
+  },
+  "x": 459,
+  "y": 227,
+  "rollNo": "CB.EN.U4EEE23022",
+  "normalizedTimestamp": 14022,
+  "normalizedX": 0.298828125,
+  "normalizedY": 0.3059299191374663
+},{
+  "_id": "658924b06a3610f95ee3cff3",
+  "timestamp": {
+    "$numberLong": "1703486534410"
+  },
+  "x": 459,
+  "y": 227,
+  "rollNo": "CB.EN.U4EEE23022",
+  "normalizedTimestamp": 15507,
+  "normalizedX": 0.298828125,
+  "normalizedY": 0.3059299191374663
+},{
+  "_id": "658924b06a3610f95ee3cff4",
+  "timestamp": {
+    "$numberLong": "1703486536130"
+  },
+  "x": 375,
+  "y": 338,
+  "rollNo": "CB.EN.U4EEE23022",
+  "normalizedTimestamp": 17227,
+  "normalizedX": 0.244140625,
+  "normalizedY": 0.4555256064690027
+},{
+  "_id": "658924b06a3610f95ee3cff5",
+  "timestamp": {
+    "$numberLong": "1703486541036"
+  },
+  "x": 517,
+  "y": 252,
+  "rollNo": "CB.EN.U4EEE23022",
+  "normalizedTimestamp": 22133,
+  "normalizedX": 0.3365885416666667,
+  "normalizedY": 0.33962264150943394
+},{
+  "_id": "658924b06a3610f95ee3cff6",
+  "timestamp": {
+    "$numberLong": "1703486542519"
+  },
+  "x": 517,
+  "y": 252,
+  "rollNo": "CB.EN.U4EEE23022",
+  "normalizedTimestamp": 23616,
+  "normalizedX": 0.3365885416666667,
+  "normalizedY": 0.33962264150943394
+},{
+  "_id": "658924b06a3610f95ee3cff8",
+  "timestamp": {
+    "$numberLong": "1703486558488"
+  },
+  "x": 440,
+  "y": 187,
+  "rollNo": "CB.EN.U4EEE23022",
+  "normalizedTimestamp": 39585,
+  "normalizedX": 0.2864583333333333,
+  "normalizedY": 0.25202156334231807
+},{
+  "_id": "658924b06a3610f95ee3cff7",
+  "timestamp": {
+    "$numberLong": "1703486555122"
+  },
+  "x": 77,
+  "y": 159,
+  "rollNo": "CB.EN.U4EEE23022",
+  "normalizedTimestamp": 36219,
+  "normalizedX": 0.050130208333333336,
+  "normalizedY": 0.21428571428571427
+},{
+  "_id": "658924b06a3610f95ee3cffb",
+  "timestamp": {
+    "$numberLong": "1703486561908"
+  },
+  "x": 413,
+  "y": 300,
+  "rollNo": "CB.EN.U4EEE23022",
+  "normalizedTimestamp": 43005,
+  "normalizedX": 0.2688802083333333,
+  "normalizedY": 0.40431266846361186
+},{
+  "_id": "658924b06a3610f95ee3cff9",
+  "timestamp": {
+    "$numberLong": "1703486559317"
+  },
+  "x": 440,
+  "y": 187,
+  "rollNo": "CB.EN.U4EEE23022",
+  "normalizedTimestamp": 40414,
+  "normalizedX": 0.2864583333333333,
+  "normalizedY": 0.25202156334231807
+},{
+  "_id": "658924b06a3610f95ee3cffc",
+  "timestamp": {
+    "$numberLong": "1703486575810"
+  },
+  "x": 788,
+  "y": 23,
+  "rollNo": "CB.EN.U4EEE23022",
+  "normalizedTimestamp": 56907,
+  "normalizedX": 0.5130208333333334,
+  "normalizedY": 0.03099730458221024
+},{
+  "_id": "658924b06a3610f95ee3cffa",
+  "timestamp": {
+    "$numberLong": "1703486560740"
+  },
+  "x": 413,
+  "y": 300,
+  "rollNo": "CB.EN.U4EEE23022",
+  "normalizedTimestamp": 41837,
+  "normalizedX": 0.2688802083333333,
+  "normalizedY": 0.40431266846361186
+},{
+  "_id": "6589500bece61eb9e9bfb413",
+  "timestamp": {
+    "$numberLong": "1703497637457"
+  },
+  "x": 456,
+  "y": 219,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 16940,
+  "normalizedX": 0.296875,
+  "normalizedY": 0.2534722222222222
+},{
+  "_id": "6589500bece61eb9e9bfb41b",
+  "timestamp": {
+    "$numberLong": "1703497671828"
+  },
+  "x": 107,
+  "y": 358,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 51311,
+  "normalizedX": 0.06966145833333333,
+  "normalizedY": 0.41435185185185186
+},{
+  "_id": "6589500bece61eb9e9bfb411",
+  "timestamp": {
+    "$numberLong": "1703497634532"
+  },
+  "x": 456,
+  "y": 219,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 14015,
+  "normalizedX": 0.296875,
+  "normalizedY": 0.2534722222222222
+},{
+  "_id": "6589500bece61eb9e9bfb416",
+  "timestamp": {
+    "$numberLong": "1703497641782"
+  },
+  "x": 454,
+  "y": 221,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 21265,
+  "normalizedX": 0.2955729166666667,
+  "normalizedY": 0.25578703703703703
+},{
+  "_id": "6589500bece61eb9e9bfb40c",
+  "timestamp": {
+    "$numberLong": "1703497620517"
+  },
+  "x": 27,
+  "y": 136,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.017578125,
+  "normalizedY": 0.1574074074074074
+},{
+  "_id": "6589500bece61eb9e9bfb412",
+  "timestamp": {
+    "$numberLong": "1703497636196"
+  },
+  "x": 456,
+  "y": 219,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 15679,
+  "normalizedX": 0.296875,
+  "normalizedY": 0.2534722222222222
+},{
+  "_id": "6589500bece61eb9e9bfb419",
+  "timestamp": {
+    "$numberLong": "1703497650222"
+  },
+  "x": 377,
+  "y": 339,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 29705,
+  "normalizedX": 0.24544270833333334,
+  "normalizedY": 0.3923611111111111
+},{
+  "_id": "6589500bece61eb9e9bfb40e",
+  "timestamp": {
+    "$numberLong": "1703497626792"
+  },
+  "x": 205,
+  "y": 275,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 6275,
+  "normalizedX": 0.13346354166666666,
+  "normalizedY": 0.31828703703703703
+},{
+  "_id": "6589500bece61eb9e9bfb415",
+  "timestamp": {
+    "$numberLong": "1703497639975"
+  },
+  "x": 456,
+  "y": 219,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 19458,
+  "normalizedX": 0.296875,
+  "normalizedY": 0.2534722222222222
+},{
+  "_id": "6589500bece61eb9e9bfb40d",
+  "timestamp": {
+    "$numberLong": "1703497624702"
+  },
+  "x": 19,
+  "y": 75,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 4185,
+  "normalizedX": 0.012369791666666666,
+  "normalizedY": 0.08680555555555555
+},{
+  "_id": "6589500bece61eb9e9bfb414",
+  "timestamp": {
+    "$numberLong": "1703497638374"
+  },
+  "x": 456,
+  "y": 219,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 17857,
+  "normalizedX": 0.296875,
+  "normalizedY": 0.2534722222222222
+},{
+  "_id": "6589500bece61eb9e9bfb40f",
+  "timestamp": {
+    "$numberLong": "1703497628274"
+  },
+  "x": 93,
+  "y": 324,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 7757,
+  "normalizedX": 0.060546875,
+  "normalizedY": 0.375
+},{
+  "_id": "6589500bece61eb9e9bfb418",
+  "timestamp": {
+    "$numberLong": "1703497647860"
+  },
+  "x": 392,
+  "y": 338,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 27343,
+  "normalizedX": 0.2552083333333333,
+  "normalizedY": 0.3912037037037037
+},{
+  "_id": "6589500bece61eb9e9bfb410",
+  "timestamp": {
+    "$numberLong": "1703497632223"
+  },
+  "x": 436,
+  "y": 219,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 11706,
+  "normalizedX": 0.2838541666666667,
+  "normalizedY": 0.2534722222222222
+},{
+  "_id": "6589500bece61eb9e9bfb417",
+  "timestamp": {
+    "$numberLong": "1703497645699"
+  },
+  "x": 469,
+  "y": 370,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 25182,
+  "normalizedX": 0.3053385416666667,
+  "normalizedY": 0.42824074074074076
+},{
+  "_id": "6589500bece61eb9e9bfb41a",
+  "timestamp": {
+    "$numberLong": "1703497654184"
+  },
+  "x": 545,
+  "y": 260,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 33667,
+  "normalizedX": 0.3548177083333333,
+  "normalizedY": 0.30092592592592593
+},{
+  "_id": "6589500bece61eb9e9bfb41f",
+  "timestamp": {
+    "$numberLong": "1703497695122"
+  },
+  "x": 826,
+  "y": 30,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 74605,
+  "normalizedX": 0.5377604166666666,
+  "normalizedY": 0.034722222222222224
+},{
+  "_id": "6589500bece61eb9e9bfb41e",
+  "timestamp": {
+    "$numberLong": "1703497678912"
+  },
+  "x": 388,
+  "y": 427,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 58395,
+  "normalizedX": 0.2526041666666667,
+  "normalizedY": 0.49421296296296297
+},{
+  "_id": "6589500bece61eb9e9bfb41c",
+  "timestamp": {
+    "$numberLong": "1703497672733"
+  },
+  "x": 92,
+  "y": 359,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 52216,
+  "normalizedX": 0.059895833333333336,
+  "normalizedY": 0.41550925925925924
+},{
+  "_id": "6589500bece61eb9e9bfb41d",
+  "timestamp": {
+    "$numberLong": "1703497676735"
+  },
+  "x": 451,
+  "y": 196,
+  "rollNo": "CB.EN.U4CSE21635",
+  "normalizedTimestamp": 56218,
+  "normalizedX": 0.2936197916666667,
+  "normalizedY": 0.22685185185185186
+},{
+  "_id": "65896029bb96723e282d4a95",
+  "timestamp": {
+    "$numberLong": "1703501573260"
+  },
+  "x": 24,
+  "y": 73,
+  "rollNo": "CB.EN.U4CSE22443",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.015625,
+  "normalizedY": 0.08449074074074074
+},{
+  "_id": "65896029bb96723e282d4a96",
+  "timestamp": {
+    "$numberLong": "1703501579393"
+  },
+  "x": 210,
+  "y": 281,
+  "rollNo": "CB.EN.U4CSE22443",
+  "normalizedTimestamp": 6133,
+  "normalizedX": 0.13671875,
+  "normalizedY": 0.32523148148148145
+},{
+  "_id": "65896029bb96723e282d4a97",
+  "timestamp": {
+    "$numberLong": "1703501582445"
+  },
+  "x": 68,
+  "y": 309,
+  "rollNo": "CB.EN.U4CSE22443",
+  "normalizedTimestamp": 9185,
+  "normalizedX": 0.044270833333333336,
+  "normalizedY": 0.3576388888888889
+},{
+  "_id": "65896029bb96723e282d4a98",
+  "timestamp": {
+    "$numberLong": "1703501586980"
+  },
+  "x": 417,
+  "y": 231,
+  "rollNo": "CB.EN.U4CSE22443",
+  "normalizedTimestamp": 13720,
+  "normalizedX": 0.271484375,
+  "normalizedY": 0.2673611111111111
+},{
+  "_id": "65896029bb96723e282d4a9b",
+  "timestamp": {
+    "$numberLong": "1703501593995"
+  },
+  "x": 355,
+  "y": 435,
+  "rollNo": "CB.EN.U4CSE22443",
+  "normalizedTimestamp": 20735,
+  "normalizedX": 0.23111979166666666,
+  "normalizedY": 0.5034722222222222
+},{
+  "_id": "65896029bb96723e282d4a99",
+  "timestamp": {
+    "$numberLong": "1703501588352"
+  },
+  "x": 404,
+  "y": 228,
+  "rollNo": "CB.EN.U4CSE22443",
+  "normalizedTimestamp": 15092,
+  "normalizedX": 0.2630208333333333,
+  "normalizedY": 0.2638888888888889
+},{
+  "_id": "65896029bb96723e282d4a9a",
+  "timestamp": {
+    "$numberLong": "1703501589944"
+  },
+  "x": 454,
+  "y": 231,
+  "rollNo": "CB.EN.U4CSE22443",
+  "normalizedTimestamp": 16684,
+  "normalizedX": 0.2955729166666667,
+  "normalizedY": 0.2673611111111111
+},{
+  "_id": "65896029bb96723e282d4a9c",
+  "timestamp": {
+    "$numberLong": "1703501595549"
+  },
+  "x": 355,
+  "y": 435,
+  "rollNo": "CB.EN.U4CSE22443",
+  "normalizedTimestamp": 22289,
+  "normalizedX": 0.23111979166666666,
+  "normalizedY": 0.5034722222222222
+},{
+  "_id": "65896029bb96723e282d4a9e",
+  "timestamp": {
+    "$numberLong": "1703501616828"
+  },
+  "x": 53,
+  "y": 358,
+  "rollNo": "CB.EN.U4CSE22443",
+  "normalizedTimestamp": 43568,
+  "normalizedX": 0.034505208333333336,
+  "normalizedY": 0.41435185185185186
+},{
+  "_id": "65896029bb96723e282d4a9d",
+  "timestamp": {
+    "$numberLong": "1703501599570"
+  },
+  "x": 551,
+  "y": 257,
+  "rollNo": "CB.EN.U4CSE22443",
+  "normalizedTimestamp": 26310,
+  "normalizedX": 0.3587239583333333,
+  "normalizedY": 0.2974537037037037
+},{
+  "_id": "65896029bb96723e282d4a9f",
+  "timestamp": {
+    "$numberLong": "1703501621313"
+  },
+  "x": 424,
+  "y": 197,
+  "rollNo": "CB.EN.U4CSE22443",
+  "normalizedTimestamp": 48053,
+  "normalizedX": 0.2760416666666667,
+  "normalizedY": 0.22800925925925927
+},{
+  "_id": "65896029bb96723e282d4aa0",
+  "timestamp": {
+    "$numberLong": "1703501622154"
+  },
+  "x": 424,
+  "y": 197,
+  "rollNo": "CB.EN.U4CSE22443",
+  "normalizedTimestamp": 48894,
+  "normalizedX": 0.2760416666666667,
+  "normalizedY": 0.22800925925925927
+},{
+  "_id": "65896029bb96723e282d4aa1",
+  "timestamp": {
+    "$numberLong": "1703501623378"
+  },
+  "x": 402,
+  "y": 364,
+  "rollNo": "CB.EN.U4CSE22443",
+  "normalizedTimestamp": 50118,
+  "normalizedX": 0.26171875,
+  "normalizedY": 0.4212962962962963
+},{
+  "_id": "65896029bb96723e282d4aa2",
+  "timestamp": {
+    "$numberLong": "1703501644835"
+  },
+  "x": 773,
+  "y": 22,
+  "rollNo": "CB.EN.U4CSE22443",
+  "normalizedTimestamp": 71575,
+  "normalizedX": 0.5032552083333334,
+  "normalizedY": 0.02546296296296296
+},{
+  "_id": "65899b7825073fa4a32fefcf",
+  "timestamp": {
+    "$numberLong": "1703516953626"
+  },
+  "x": 20,
+  "y": 80,
+  "rollNo": "CB.EN.U4CSE20435",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.013020833333333334,
+  "normalizedY": 0.09259259259259259
+},{
+  "_id": "65899b7825073fa4a32fefd0",
+  "timestamp": {
+    "$numberLong": "1703516957424"
+  },
+  "x": 212,
+  "y": 277,
+  "rollNo": "CB.EN.U4CSE20435",
+  "normalizedTimestamp": 3798,
+  "normalizedX": 0.13802083333333334,
+  "normalizedY": 0.32060185185185186
+},{
+  "_id": "65899b7825073fa4a32fefd1",
+  "timestamp": {
+    "$numberLong": "1703516958876"
+  },
+  "x": 94,
+  "y": 305,
+  "rollNo": "CB.EN.U4CSE20435",
+  "normalizedTimestamp": 5250,
+  "normalizedX": 0.061197916666666664,
+  "normalizedY": 0.35300925925925924
+},{
+  "_id": "65899b7825073fa4a32fefd3",
+  "timestamp": {
+    "$numberLong": "1703516966224"
+  },
+  "x": 451,
+  "y": 228,
+  "rollNo": "CB.EN.U4CSE20435",
+  "normalizedTimestamp": 12598,
+  "normalizedX": 0.2936197916666667,
+  "normalizedY": 0.2638888888888889
+},{
+  "_id": "65899b7825073fa4a32fefd2",
+  "timestamp": {
+    "$numberLong": "1703516962942"
+  },
+  "x": 445,
+  "y": 224,
+  "rollNo": "CB.EN.U4CSE20435",
+  "normalizedTimestamp": 9316,
+  "normalizedX": 0.2897135416666667,
+  "normalizedY": 0.25925925925925924
+},{
+  "_id": "65899b7825073fa4a32fefd4",
+  "timestamp": {
+    "$numberLong": "1703516970830"
+  },
+  "x": 468,
+  "y": 384,
+  "rollNo": "CB.EN.U4CSE20435",
+  "normalizedTimestamp": 17204,
+  "normalizedX": 0.3046875,
+  "normalizedY": 0.4444444444444444
+},{
+  "_id": "65899b7825073fa4a32fefd5",
+  "timestamp": {
+    "$numberLong": "1703516973676"
+  },
+  "x": 468,
+  "y": 326,
+  "rollNo": "CB.EN.U4CSE20435",
+  "normalizedTimestamp": 20050,
+  "normalizedX": 0.3046875,
+  "normalizedY": 0.3773148148148148
+},{
+  "_id": "65899b7825073fa4a32fefd6",
+  "timestamp": {
+    "$numberLong": "1703516976053"
+  },
+  "x": 461,
+  "y": 414,
+  "rollNo": "CB.EN.U4CSE20435",
+  "normalizedTimestamp": 22427,
+  "normalizedX": 0.3001302083333333,
+  "normalizedY": 0.4791666666666667
+},{
+  "_id": "65899b7825073fa4a32fefd8",
+  "timestamp": {
+    "$numberLong": "1703516982337"
+  },
+  "x": 545,
+  "y": 255,
+  "rollNo": "CB.EN.U4CSE20435",
+  "normalizedTimestamp": 28711,
+  "normalizedX": 0.3548177083333333,
+  "normalizedY": 0.2951388888888889
+},{
+  "_id": "65899b7825073fa4a32fefd7",
+  "timestamp": {
+    "$numberLong": "1703516977987"
+  },
+  "x": 372,
+  "y": 340,
+  "rollNo": "CB.EN.U4CSE20435",
+  "normalizedTimestamp": 24361,
+  "normalizedX": 0.2421875,
+  "normalizedY": 0.39351851851851855
+},{
+  "_id": "65899b7825073fa4a32fefd9",
+  "timestamp": {
+    "$numberLong": "1703516983374"
+  },
+  "x": 545,
+  "y": 255,
+  "rollNo": "CB.EN.U4CSE20435",
+  "normalizedTimestamp": 29748,
+  "normalizedX": 0.3548177083333333,
+  "normalizedY": 0.2951388888888889
+},{
+  "_id": "65899b7825073fa4a32fefdc",
+  "timestamp": {
+    "$numberLong": "1703517005216"
+  },
+  "x": 571,
+  "y": 408,
+  "rollNo": "CB.EN.U4CSE20435",
+  "normalizedTimestamp": 51590,
+  "normalizedX": 0.3717447916666667,
+  "normalizedY": 0.4722222222222222
+},{
+  "_id": "65899b7825073fa4a32fefda",
+  "timestamp": {
+    "$numberLong": "1703516994496"
+  },
+  "x": 76,
+  "y": 359,
+  "rollNo": "CB.EN.U4CSE20435",
+  "normalizedTimestamp": 40870,
+  "normalizedX": 0.049479166666666664,
+  "normalizedY": 0.41550925925925924
+},{
+  "_id": "65899b7825073fa4a32fefdb",
+  "timestamp": {
+    "$numberLong": "1703516998480"
+  },
+  "x": 512,
+  "y": 184,
+  "rollNo": "CB.EN.U4CSE20435",
+  "normalizedTimestamp": 44854,
+  "normalizedX": 0.3333333333333333,
+  "normalizedY": 0.21296296296296297
+},{
+  "_id": "65899b7825073fa4a32fefde",
+  "timestamp": {
+    "$numberLong": "1703517023951"
+  },
+  "x": 776,
+  "y": 35,
+  "rollNo": "CB.EN.U4CSE20435",
+  "normalizedTimestamp": 70325,
+  "normalizedX": 0.5052083333333334,
+  "normalizedY": 0.04050925925925926
+},{
+  "_id": "65899b7825073fa4a32fefdd",
+  "timestamp": {
+    "$numberLong": "1703517008071"
+  },
+  "x": 406,
+  "y": 416,
+  "rollNo": "CB.EN.U4CSE20435",
+  "normalizedTimestamp": 54445,
+  "normalizedX": 0.2643229166666667,
+  "normalizedY": 0.48148148148148145
+},{
+  "_id": "65895a971b192458f364ceab",
+  "timestamp": {
+    "$numberLong": "1703500336948"
+  },
+  "x": 89,
+  "y": 313,
+  "rollNo": "CB.EN.U4CSE22356",
+  "normalizedTimestamp": 13877,
+  "normalizedX": 0.06375358166189111,
+  "normalizedY": 0.4671641791044776
+},{
+  "_id": "65895a971b192458f364cea7",
+  "timestamp": {
+    "$numberLong": "1703500325982"
+  },
+  "x": 20,
+  "y": 81,
+  "rollNo": "CB.EN.U4CSE22356",
+  "normalizedTimestamp": 2911,
+  "normalizedX": 0.014326647564469915,
+  "normalizedY": 0.1208955223880597
+},{
+  "_id": "65895a971b192458f364cead",
+  "timestamp": {
+    "$numberLong": "1703500345870"
+  },
+  "x": 402,
+  "y": 184,
+  "rollNo": "CB.EN.U4CSE22356",
+  "normalizedTimestamp": 22799,
+  "normalizedX": 0.28796561604584525,
+  "normalizedY": 0.2746268656716418
+},{
+  "_id": "65895a971b192458f364cea6",
+  "timestamp": {
+    "$numberLong": "1703500323071"
+  },
+  "x": 23,
+  "y": 90,
+  "rollNo": "CB.EN.U4CSE22356",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.0164756446991404,
+  "normalizedY": 0.13432835820895522
+},{
+  "_id": "65895a971b192458f364ceac",
+  "timestamp": {
+    "$numberLong": "1703500344889"
+  },
+  "x": 402,
+  "y": 184,
+  "rollNo": "CB.EN.U4CSE22356",
+  "normalizedTimestamp": 21818,
+  "normalizedX": 0.28796561604584525,
+  "normalizedY": 0.2746268656716418
+},{
+  "_id": "65895a971b192458f364ceaa",
+  "timestamp": {
+    "$numberLong": "1703500334942"
+  },
+  "x": 210,
+  "y": 267,
+  "rollNo": "CB.EN.U4CSE22356",
+  "normalizedTimestamp": 11871,
+  "normalizedX": 0.1504297994269341,
+  "normalizedY": 0.39850746268656717
+},{
+  "_id": "65895a971b192458f364cea8",
+  "timestamp": {
+    "$numberLong": "1703500329644"
+  },
+  "x": 209,
+  "y": 353,
+  "rollNo": "CB.EN.U4CSE22356",
+  "normalizedTimestamp": 6573,
+  "normalizedX": 0.1497134670487106,
+  "normalizedY": 0.5268656716417911
+},{
+  "_id": "65895a971b192458f364cea9",
+  "timestamp": {
+    "$numberLong": "1703500332425"
+  },
+  "x": 210,
+  "y": 274,
+  "rollNo": "CB.EN.U4CSE22356",
+  "normalizedTimestamp": 9354,
+  "normalizedX": 0.1504297994269341,
+  "normalizedY": 0.408955223880597
+},{
+  "_id": "65895a971b192458f364ceae",
+  "timestamp": {
+    "$numberLong": "1703500348117"
+  },
+  "x": 368,
+  "y": 381,
+  "rollNo": "CB.EN.U4CSE22356",
+  "normalizedTimestamp": 25046,
+  "normalizedX": 0.2636103151862464,
+  "normalizedY": 0.5686567164179105
+},{
+  "_id": "65895a971b192458f364ceaf",
+  "timestamp": {
+    "$numberLong": "1703500354700"
+  },
+  "x": 732,
+  "y": 177,
+  "rollNo": "CB.EN.U4CSE22356",
+  "normalizedTimestamp": 31629,
+  "normalizedX": 0.5243553008595988,
+  "normalizedY": 0.26417910447761195
+},{
+  "_id": "65895a971b192458f364ceb0",
+  "timestamp": {
+    "$numberLong": "1703500356329"
+  },
+  "x": 553,
+  "y": 224,
+  "rollNo": "CB.EN.U4CSE22356",
+  "normalizedTimestamp": 33258,
+  "normalizedX": 0.3961318051575931,
+  "normalizedY": 0.33432835820895523
+},{
+  "_id": "65895a971b192458f364ceb1",
+  "timestamp": {
+    "$numberLong": "1703500378446"
+  },
+  "x": 66,
+  "y": 79,
+  "rollNo": "CB.EN.U4CSE22356",
+  "normalizedTimestamp": 55375,
+  "normalizedX": 0.04727793696275072,
+  "normalizedY": 0.11791044776119403
+},{
+  "_id": "65895a971b192458f364ceb2",
+  "timestamp": {
+    "$numberLong": "1703500380312"
+  },
+  "x": 123,
+  "y": 89,
+  "rollNo": "CB.EN.U4CSE22356",
+  "normalizedTimestamp": 57241,
+  "normalizedX": 0.08810888252148998,
+  "normalizedY": 0.1328358208955224
+},{
+  "_id": "65895a971b192458f364ceb3",
+  "timestamp": {
+    "$numberLong": "1703500386498"
+  },
+  "x": 471,
+  "y": 149,
+  "rollNo": "CB.EN.U4CSE22356",
+  "normalizedTimestamp": 63427,
+  "normalizedX": 0.33739255014326647,
+  "normalizedY": 0.22238805970149253
+},{
+  "_id": "65895a971b192458f364ceb5",
+  "timestamp": {
+    "$numberLong": "1703500390414"
+  },
+  "x": 410,
+  "y": 311,
+  "rollNo": "CB.EN.U4CSE22356",
+  "normalizedTimestamp": 67343,
+  "normalizedX": 0.29369627507163326,
+  "normalizedY": 0.46417910447761196
+},{
+  "_id": "65895a971b192458f364ceb4",
+  "timestamp": {
+    "$numberLong": "1703500387616"
+  },
+  "x": 471,
+  "y": 151,
+  "rollNo": "CB.EN.U4CSE22356",
+  "normalizedTimestamp": 64545,
+  "normalizedX": 0.33739255014326647,
+  "normalizedY": 0.2253731343283582
+},{
+  "_id": "65895a971b192458f364ceb6",
+  "timestamp": {
+    "$numberLong": "1703500411101"
+  },
+  "x": 687,
+  "y": 23,
+  "rollNo": "CB.EN.U4CSE22356",
+  "normalizedTimestamp": 88030,
+  "normalizedX": 0.49212034383954156,
+  "normalizedY": 0.034328358208955224
+},{
+  "_id": "65899a6325073fa4a32fed08",
+  "timestamp": {
+    "$numberLong": "1703516608920"
+  },
+  "x": 30,
+  "y": 252,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 7731,
+  "normalizedX": 0.01953125,
+  "normalizedY": 0.2916666666666667
+},{
+  "_id": "65899a6325073fa4a32fed11",
+  "timestamp": {
+    "$numberLong": "1703516627808"
+  },
+  "x": 23,
+  "y": 252,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 26619,
+  "normalizedX": 0.014973958333333334,
+  "normalizedY": 0.2916666666666667
+},{
+  "_id": "65899a6325073fa4a32fed13",
+  "timestamp": {
+    "$numberLong": "1703516631373"
+  },
+  "x": 23,
+  "y": 253,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 30184,
+  "normalizedX": 0.014973958333333334,
+  "normalizedY": 0.29282407407407407
+},{
+  "_id": "65899a6325073fa4a32fed14",
+  "timestamp": {
+    "$numberLong": "1703516634597"
+  },
+  "x": 22,
+  "y": 206,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 33408,
+  "normalizedX": 0.014322916666666666,
+  "normalizedY": 0.23842592592592593
+},{
+  "_id": "65899a6325073fa4a32fed1b",
+  "timestamp": {
+    "$numberLong": "1703516653379"
+  },
+  "x": 388,
+  "y": 403,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 52190,
+  "normalizedX": 0.2526041666666667,
+  "normalizedY": 0.4664351851851852
+},{
+  "_id": "65899a6325073fa4a32fed07",
+  "timestamp": {
+    "$numberLong": "1703516606439"
+  },
+  "x": 25,
+  "y": 255,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 5250,
+  "normalizedX": 0.016276041666666668,
+  "normalizedY": 0.2951388888888889
+},{
+  "_id": "65899a6325073fa4a32fed0c",
+  "timestamp": {
+    "$numberLong": "1703516615499"
+  },
+  "x": 20,
+  "y": 248,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 14310,
+  "normalizedX": 0.013020833333333334,
+  "normalizedY": 0.28703703703703703
+},{
+  "_id": "65899a6325073fa4a32fed0f",
+  "timestamp": {
+    "$numberLong": "1703516620812"
+  },
+  "x": 75,
+  "y": 281,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 19623,
+  "normalizedX": 0.048828125,
+  "normalizedY": 0.32523148148148145
+},{
+  "_id": "65899a6325073fa4a32fed1d",
+  "timestamp": {
+    "$numberLong": "1703516664299"
+  },
+  "x": 92,
+  "y": 352,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 63110,
+  "normalizedX": 0.059895833333333336,
+  "normalizedY": 0.4074074074074074
+},{
+  "_id": "65899a6325073fa4a32fed10",
+  "timestamp": {
+    "$numberLong": "1703516625242"
+  },
+  "x": 24,
+  "y": 253,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 24053,
+  "normalizedX": 0.015625,
+  "normalizedY": 0.29282407407407407
+},{
+  "_id": "65899a6325073fa4a32fed12",
+  "timestamp": {
+    "$numberLong": "1703516629577"
+  },
+  "x": 25,
+  "y": 250,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 28388,
+  "normalizedX": 0.016276041666666668,
+  "normalizedY": 0.28935185185185186
+},{
+  "_id": "65899a6325073fa4a32fed05",
+  "timestamp": {
+    "$numberLong": "1703516602449"
+  },
+  "x": 24,
+  "y": 245,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 1260,
+  "normalizedX": 0.015625,
+  "normalizedY": 0.2835648148148148
+},{
+  "_id": "65899a6325073fa4a32fed18",
+  "timestamp": {
+    "$numberLong": "1703516646906"
+  },
+  "x": 469,
+  "y": 220,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 45717,
+  "normalizedX": 0.3053385416666667,
+  "normalizedY": 0.25462962962962965
+},{
+  "_id": "65899a6325073fa4a32fed1a",
+  "timestamp": {
+    "$numberLong": "1703516650591"
+  },
+  "x": 462,
+  "y": 376,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 49402,
+  "normalizedX": 0.30078125,
+  "normalizedY": 0.4351851851851852
+},{
+  "_id": "65899a6325073fa4a32fed1c",
+  "timestamp": {
+    "$numberLong": "1703516656968"
+  },
+  "x": 569,
+  "y": 266,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 55779,
+  "normalizedX": 0.3704427083333333,
+  "normalizedY": 0.30787037037037035
+},{
+  "_id": "65899a6325073fa4a32fed17",
+  "timestamp": {
+    "$numberLong": "1703516641980"
+  },
+  "x": 85,
+  "y": 308,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 40791,
+  "normalizedX": 0.055338541666666664,
+  "normalizedY": 0.35648148148148145
+},{
+  "_id": "65899a6325073fa4a32fed0b",
+  "timestamp": {
+    "$numberLong": "1703516613756"
+  },
+  "x": 28,
+  "y": 254,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 12567,
+  "normalizedX": 0.018229166666666668,
+  "normalizedY": 0.29398148148148145
+},{
+  "_id": "65899a6325073fa4a32fed0a",
+  "timestamp": {
+    "$numberLong": "1703516612562"
+  },
+  "x": 28,
+  "y": 254,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 11373,
+  "normalizedX": 0.018229166666666668,
+  "normalizedY": 0.29398148148148145
+},{
+  "_id": "65899a6325073fa4a32fed0d",
+  "timestamp": {
+    "$numberLong": "1703516617216"
+  },
+  "x": 20,
+  "y": 247,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 16027,
+  "normalizedX": 0.013020833333333334,
+  "normalizedY": 0.28587962962962965
+},{
+  "_id": "65899a6325073fa4a32fed20",
+  "timestamp": {
+    "$numberLong": "1703516674650"
+  },
+  "x": 428,
+  "y": 409,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 73461,
+  "normalizedX": 0.2786458333333333,
+  "normalizedY": 0.47337962962962965
+},{
+  "_id": "65899a6325073fa4a32fed15",
+  "timestamp": {
+    "$numberLong": "1703516636360"
+  },
+  "x": 25,
+  "y": 75,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 35171,
+  "normalizedX": 0.016276041666666668,
+  "normalizedY": 0.08680555555555555
+},{
+  "_id": "65899a6325073fa4a32fed16",
+  "timestamp": {
+    "$numberLong": "1703516639388"
+  },
+  "x": 219,
+  "y": 424,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 38199,
+  "normalizedX": 0.142578125,
+  "normalizedY": 0.49074074074074076
+},{
+  "_id": "65899a6325073fa4a32fed1f",
+  "timestamp": {
+    "$numberLong": "1703516672132"
+  },
+  "x": 564,
+  "y": 387,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 70943,
+  "normalizedX": 0.3671875,
+  "normalizedY": 0.4479166666666667
+},{
+  "_id": "65899a6325073fa4a32fed0e",
+  "timestamp": {
+    "$numberLong": "1703516618973"
+  },
+  "x": 16,
+  "y": 249,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 17784,
+  "normalizedX": 0.010416666666666666,
+  "normalizedY": 0.2881944444444444
+},{
+  "_id": "65899a6325073fa4a32fed06",
+  "timestamp": {
+    "$numberLong": "1703516604017"
+  },
+  "x": 26,
+  "y": 250,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 2828,
+  "normalizedX": 0.016927083333333332,
+  "normalizedY": 0.28935185185185186
+},{
+  "_id": "65899a6325073fa4a32fed09",
+  "timestamp": {
+    "$numberLong": "1703516610572"
+  },
+  "x": 30,
+  "y": 252,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 9383,
+  "normalizedX": 0.01953125,
+  "normalizedY": 0.2916666666666667
+},{
+  "_id": "65899a6325073fa4a32fed21",
+  "timestamp": {
+    "$numberLong": "1703516689523"
+  },
+  "x": 776,
+  "y": 36,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 88334,
+  "normalizedX": 0.5052083333333334,
+  "normalizedY": 0.041666666666666664
+},{
+  "_id": "65899a6325073fa4a32fed1e",
+  "timestamp": {
+    "$numberLong": "1703516669667"
+  },
+  "x": 488,
+  "y": 200,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 68478,
+  "normalizedX": 0.3177083333333333,
+  "normalizedY": 0.23148148148148148
+},{
+  "_id": "65899a6325073fa4a32fed19",
+  "timestamp": {
+    "$numberLong": "1703516648032"
+  },
+  "x": 457,
+  "y": 224,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 46843,
+  "normalizedX": 0.2975260416666667,
+  "normalizedY": 0.25925925925925924
+},{
+  "_id": "65899a6325073fa4a32fed04",
+  "timestamp": {
+    "$numberLong": "1703516601189"
+  },
+  "x": 23,
+  "y": 212,
+  "rollNo": "CB.EN.U4CSE20403",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.014973958333333334,
+  "normalizedY": 0.24537037037037038
+},{
+  "_id": "65895e426eba2be0aa117dbc",
+  "timestamp": {
+    "$numberLong": "1703501268239"
+  },
+  "x": 19,
+  "y": 69,
+  "rollNo": "CB.EN.U4CSE22437",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.012369791666666666,
+  "normalizedY": 0.0798611111111111
+},{
+  "_id": "65895e426eba2be0aa117dbd",
+  "timestamp": {
+    "$numberLong": "1703501270183"
+  },
+  "x": 81,
+  "y": 284,
+  "rollNo": "CB.EN.U4CSE22437",
+  "normalizedTimestamp": 1944,
+  "normalizedX": 0.052734375,
+  "normalizedY": 0.3287037037037037
+},{
+  "_id": "65895e426eba2be0aa117dc0",
+  "timestamp": {
+    "$numberLong": "1703501275725"
+  },
+  "x": 215,
+  "y": 268,
+  "rollNo": "CB.EN.U4CSE22437",
+  "normalizedTimestamp": 7486,
+  "normalizedX": 0.13997395833333334,
+  "normalizedY": 0.3101851851851852
+},{
+  "_id": "65895e426eba2be0aa117dbf",
+  "timestamp": {
+    "$numberLong": "1703501274076"
+  },
+  "x": 152,
+  "y": 268,
+  "rollNo": "CB.EN.U4CSE22437",
+  "normalizedTimestamp": 5837,
+  "normalizedX": 0.09895833333333333,
+  "normalizedY": 0.3101851851851852
+},{
+  "_id": "65895e426eba2be0aa117dbe",
+  "timestamp": {
+    "$numberLong": "1703501272042"
+  },
+  "x": 86,
+  "y": 269,
+  "rollNo": "CB.EN.U4CSE22437",
+  "normalizedTimestamp": 3803,
+  "normalizedX": 0.055989583333333336,
+  "normalizedY": 0.3113425925925926
+},{
+  "_id": "65895e426eba2be0aa117dc1",
+  "timestamp": {
+    "$numberLong": "1703501277360"
+  },
+  "x": 207,
+  "y": 269,
+  "rollNo": "CB.EN.U4CSE22437",
+  "normalizedTimestamp": 9121,
+  "normalizedX": 0.134765625,
+  "normalizedY": 0.3113425925925926
+},{
+  "_id": "65895e426eba2be0aa117dc2",
+  "timestamp": {
+    "$numberLong": "1703501280071"
+  },
+  "x": 124,
+  "y": 313,
+  "rollNo": "CB.EN.U4CSE22437",
+  "normalizedTimestamp": 11832,
+  "normalizedX": 0.08072916666666667,
+  "normalizedY": 0.36226851851851855
+},{
+  "_id": "65895e426eba2be0aa117dc3",
+  "timestamp": {
+    "$numberLong": "1703501283941"
+  },
+  "x": 97,
+  "y": 308,
+  "rollNo": "CB.EN.U4CSE22437",
+  "normalizedTimestamp": 15702,
+  "normalizedX": 0.06315104166666667,
+  "normalizedY": 0.35648148148148145
+},{
+  "_id": "65895e426eba2be0aa117dc4",
+  "timestamp": {
+    "$numberLong": "1703501288047"
+  },
+  "x": 450,
+  "y": 221,
+  "rollNo": "CB.EN.U4CSE22437",
+  "normalizedTimestamp": 19808,
+  "normalizedX": 0.29296875,
+  "normalizedY": 0.25578703703703703
+},{
+  "_id": "65895e426eba2be0aa117dc5",
+  "timestamp": {
+    "$numberLong": "1703501289025"
+  },
+  "x": 450,
+  "y": 221,
+  "rollNo": "CB.EN.U4CSE22437",
+  "normalizedTimestamp": 20786,
+  "normalizedX": 0.29296875,
+  "normalizedY": 0.25578703703703703
+},{
+  "_id": "65895e426eba2be0aa117dc6",
+  "timestamp": {
+    "$numberLong": "1703501290326"
+  },
+  "x": 376,
+  "y": 440,
+  "rollNo": "CB.EN.U4CSE22437",
+  "normalizedTimestamp": 22087,
+  "normalizedX": 0.24479166666666666,
+  "normalizedY": 0.5092592592592593
+},{
+  "_id": "65895e426eba2be0aa117dc7",
+  "timestamp": {
+    "$numberLong": "1703501295065"
+  },
+  "x": 588,
+  "y": 264,
+  "rollNo": "CB.EN.U4CSE22437",
+  "normalizedTimestamp": 26826,
+  "normalizedX": 0.3828125,
+  "normalizedY": 0.3055555555555556
+},{
+  "_id": "65895e426eba2be0aa117dc9",
+  "timestamp": {
+    "$numberLong": "1703501313707"
+  },
+  "x": 513,
+  "y": 197,
+  "rollNo": "CB.EN.U4CSE22437",
+  "normalizedTimestamp": 45468,
+  "normalizedX": 0.333984375,
+  "normalizedY": 0.22800925925925927
+},{
+  "_id": "65895e426eba2be0aa117dc8",
+  "timestamp": {
+    "$numberLong": "1703501307919"
+  },
+  "x": 60,
+  "y": 356,
+  "rollNo": "CB.EN.U4CSE22437",
+  "normalizedTimestamp": 39680,
+  "normalizedX": 0.0390625,
+  "normalizedY": 0.41203703703703703
+},{
+  "_id": "65895e426eba2be0aa117dca",
+  "timestamp": {
+    "$numberLong": "1703501315880"
+  },
+  "x": 406,
+  "y": 340,
+  "rollNo": "CB.EN.U4CSE22437",
+  "normalizedTimestamp": 47641,
+  "normalizedX": 0.2643229166666667,
+  "normalizedY": 0.39351851851851855
+},{
+  "_id": "65895e426eba2be0aa117dcb",
+  "timestamp": {
+    "$numberLong": "1703501326355"
+  },
+  "x": 554,
+  "y": 189,
+  "rollNo": "CB.EN.U4CSE22437",
+  "normalizedTimestamp": 58116,
+  "normalizedX": 0.3606770833333333,
+  "normalizedY": 0.21875
+},{
+  "_id": "65895e426eba2be0aa117dcd",
+  "timestamp": {
+    "$numberLong": "1703501328925"
+  },
+  "x": 436,
+  "y": 372,
+  "rollNo": "CB.EN.U4CSE22437",
+  "normalizedTimestamp": 60686,
+  "normalizedX": 0.2838541666666667,
+  "normalizedY": 0.4305555555555556
+},{
+  "_id": "65895e426eba2be0aa117dcc",
+  "timestamp": {
+    "$numberLong": "1703501327759"
+  },
+  "x": 554,
+  "y": 191,
+  "rollNo": "CB.EN.U4CSE22437",
+  "normalizedTimestamp": 59520,
+  "normalizedX": 0.3606770833333333,
+  "normalizedY": 0.22106481481481483
+},{
+  "_id": "65895e426eba2be0aa117dce",
+  "timestamp": {
+    "$numberLong": "1703501340350"
+  },
+  "x": 809,
+  "y": 22,
+  "rollNo": "CB.EN.U4CSE22437",
+  "normalizedTimestamp": 72111,
+  "normalizedX": 0.5266927083333334,
+  "normalizedY": 0.02546296296296296
+},{
+  "_id": "658953b83bf8512eed089f60",
+  "timestamp": {
+    "$numberLong": "1703498564369"
+  },
+  "x": 112,
+  "y": 271,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 4193,
+  "normalizedX": 0.07291666666666667,
+  "normalizedY": 0.3136574074074074
+},{
+  "_id": "658953b83bf8512eed089f5e",
+  "timestamp": {
+    "$numberLong": "1703498560176"
+  },
+  "x": 22,
+  "y": 74,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.014322916666666666,
+  "normalizedY": 0.08564814814814815
+},{
+  "_id": "658953b83bf8512eed089f5f",
+  "timestamp": {
+    "$numberLong": "1703498562768"
+  },
+  "x": 108,
+  "y": 281,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 2592,
+  "normalizedX": 0.0703125,
+  "normalizedY": 0.32523148148148145
+},{
+  "_id": "658953b83bf8512eed089f63",
+  "timestamp": {
+    "$numberLong": "1703498572887"
+  },
+  "x": 457,
+  "y": 225,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 12711,
+  "normalizedX": 0.2975260416666667,
+  "normalizedY": 0.2604166666666667
+},{
+  "_id": "658953b83bf8512eed089f61",
+  "timestamp": {
+    "$numberLong": "1703498566395"
+  },
+  "x": 100,
+  "y": 320,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 6219,
+  "normalizedX": 0.06510416666666667,
+  "normalizedY": 0.37037037037037035
+},{
+  "_id": "658953b83bf8512eed089f62",
+  "timestamp": {
+    "$numberLong": "1703498570701"
+  },
+  "x": 448,
+  "y": 217,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 10525,
+  "normalizedX": 0.2916666666666667,
+  "normalizedY": 0.2511574074074074
+},{
+  "_id": "658953b83bf8512eed089f65",
+  "timestamp": {
+    "$numberLong": "1703498577699"
+  },
+  "x": 464,
+  "y": 335,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 17523,
+  "normalizedX": 0.3020833333333333,
+  "normalizedY": 0.38773148148148145
+},{
+  "_id": "658953b83bf8512eed089f6a",
+  "timestamp": {
+    "$numberLong": "1703498589472"
+  },
+  "x": 852,
+  "y": 228,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 29296,
+  "normalizedX": 0.5546875,
+  "normalizedY": 0.2638888888888889
+},{
+  "_id": "658953b83bf8512eed089f6d",
+  "timestamp": {
+    "$numberLong": "1703498598987"
+  },
+  "x": 89,
+  "y": 398,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 38811,
+  "normalizedX": 0.057942708333333336,
+  "normalizedY": 0.46064814814814814
+},{
+  "_id": "658953b83bf8512eed089f64",
+  "timestamp": {
+    "$numberLong": "1703498573742"
+  },
+  "x": 457,
+  "y": 225,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 13566,
+  "normalizedX": 0.2975260416666667,
+  "normalizedY": 0.2604166666666667
+},{
+  "_id": "658953b83bf8512eed089f68",
+  "timestamp": {
+    "$numberLong": "1703498583489"
+  },
+  "x": 367,
+  "y": 320,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 23313,
+  "normalizedX": 0.23893229166666666,
+  "normalizedY": 0.37037037037037035
+},{
+  "_id": "658953b83bf8512eed089f66",
+  "timestamp": {
+    "$numberLong": "1703498579398"
+  },
+  "x": 464,
+  "y": 330,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 19222,
+  "normalizedX": 0.3020833333333333,
+  "normalizedY": 0.3819444444444444
+},{
+  "_id": "658953b83bf8512eed089f6b",
+  "timestamp": {
+    "$numberLong": "1703498591321"
+  },
+  "x": 557,
+  "y": 255,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 31145,
+  "normalizedX": 0.3626302083333333,
+  "normalizedY": 0.2951388888888889
+},{
+  "_id": "658953b83bf8512eed089f69",
+  "timestamp": {
+    "$numberLong": "1703498587870"
+  },
+  "x": 724,
+  "y": 228,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 27694,
+  "normalizedX": 0.4713541666666667,
+  "normalizedY": 0.2638888888888889
+},{
+  "_id": "658953b83bf8512eed089f67",
+  "timestamp": {
+    "$numberLong": "1703498582130"
+  },
+  "x": 367,
+  "y": 320,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 21954,
+  "normalizedX": 0.23893229166666666,
+  "normalizedY": 0.37037037037037035
+},{
+  "_id": "658953b83bf8512eed089f6c",
+  "timestamp": {
+    "$numberLong": "1703498592172"
+  },
+  "x": 557,
+  "y": 255,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 31996,
+  "normalizedX": 0.3626302083333333,
+  "normalizedY": 0.2951388888888889
+},{
+  "_id": "658953b83bf8512eed089f70",
+  "timestamp": {
+    "$numberLong": "1703498608369"
+  },
+  "x": 436,
+  "y": 433,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 48193,
+  "normalizedX": 0.2838541666666667,
+  "normalizedY": 0.5011574074074074
+},{
+  "_id": "658953b83bf8512eed089f6f",
+  "timestamp": {
+    "$numberLong": "1703498606796"
+  },
+  "x": 523,
+  "y": 201,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 46620,
+  "normalizedX": 0.3404947916666667,
+  "normalizedY": 0.2326388888888889
+},{
+  "_id": "658953b83bf8512eed089f71",
+  "timestamp": {
+    "$numberLong": "1703498635158"
+  },
+  "x": 792,
+  "y": 36,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 74982,
+  "normalizedX": 0.515625,
+  "normalizedY": 0.041666666666666664
+},{
+  "_id": "658953b83bf8512eed089f6e",
+  "timestamp": {
+    "$numberLong": "1703498602677"
+  },
+  "x": 95,
+  "y": 357,
+  "rollNo": "CB.EN.U4CSE21060",
+  "normalizedTimestamp": 42501,
+  "normalizedX": 0.061848958333333336,
+  "normalizedY": 0.4131944444444444
+},{
+  "_id": "658953ea3bf8512eed08a13d",
+  "timestamp": {
+    "$numberLong": "1703498628548"
+  },
+  "x": 516,
+  "y": 261,
+  "rollNo": "CB.EN.U4CSE21002",
+  "normalizedTimestamp": 30013,
+  "normalizedX": 0.36962750716332377,
+  "normalizedY": 0.332484076433121
+},{
+  "_id": "658953ea3bf8512eed08a13b",
+  "timestamp": {
+    "$numberLong": "1703498618295"
+  },
+  "x": 360,
+  "y": 460,
+  "rollNo": "CB.EN.U4CSE21002",
+  "normalizedTimestamp": 19760,
+  "normalizedX": 0.25787965616045844,
+  "normalizedY": 0.5859872611464968
+},{
+  "_id": "658953ea3bf8512eed08a139",
+  "timestamp": {
+    "$numberLong": "1703498613545"
+  },
+  "x": 426,
+  "y": 230,
+  "rollNo": "CB.EN.U4CSE21002",
+  "normalizedTimestamp": 15010,
+  "normalizedX": 0.30515759312320917,
+  "normalizedY": 0.2929936305732484
+},{
+  "_id": "658953ea3bf8512eed08a138",
+  "timestamp": {
+    "$numberLong": "1703498604845"
+  },
+  "x": 51,
+  "y": 155,
+  "rollNo": "CB.EN.U4CSE21002",
+  "normalizedTimestamp": 6310,
+  "normalizedX": 0.036532951289398284,
+  "normalizedY": 0.19745222929936307
+},{
+  "_id": "658953ea3bf8512eed08a13c",
+  "timestamp": {
+    "$numberLong": "1703498625855"
+  },
+  "x": 525,
+  "y": 268,
+  "rollNo": "CB.EN.U4CSE21002",
+  "normalizedTimestamp": 27320,
+  "normalizedX": 0.37607449856733527,
+  "normalizedY": 0.3414012738853503
+},{
+  "_id": "658953ea3bf8512eed08a136",
+  "timestamp": {
+    "$numberLong": "1703498598535"
+  },
+  "x": 27,
+  "y": 93,
+  "rollNo": "CB.EN.U4CSE21002",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.019340974212034383,
+  "normalizedY": 0.11847133757961784
+},{
+  "_id": "658953ea3bf8512eed08a137",
+  "timestamp": {
+    "$numberLong": "1703498600138"
+  },
+  "x": 20,
+  "y": 86,
+  "rollNo": "CB.EN.U4CSE21002",
+  "normalizedTimestamp": 1603,
+  "normalizedX": 0.014326647564469915,
+  "normalizedY": 0.10955414012738854
+},{
+  "_id": "658953ea3bf8512eed08a13f",
+  "timestamp": {
+    "$numberLong": "1703498652666"
+  },
+  "x": 72,
+  "y": 195,
+  "rollNo": "CB.EN.U4CSE21002",
+  "normalizedTimestamp": 54131,
+  "normalizedX": 0.05157593123209169,
+  "normalizedY": 0.2484076433121019
+},{
+  "_id": "658953ea3bf8512eed08a13a",
+  "timestamp": {
+    "$numberLong": "1703498616767"
+  },
+  "x": 360,
+  "y": 460,
+  "rollNo": "CB.EN.U4CSE21002",
+  "normalizedTimestamp": 18232,
+  "normalizedX": 0.25787965616045844,
+  "normalizedY": 0.5859872611464968
+},{
+  "_id": "658953ea3bf8512eed08a13e",
+  "timestamp": {
+    "$numberLong": "1703498630424"
+  },
+  "x": 516,
+  "y": 261,
+  "rollNo": "CB.EN.U4CSE21002",
+  "normalizedTimestamp": 31889,
+  "normalizedX": 0.36962750716332377,
+  "normalizedY": 0.332484076433121
+},{
+  "_id": "658953ea3bf8512eed08a140",
+  "timestamp": {
+    "$numberLong": "1703498661194"
+  },
+  "x": 451,
+  "y": 191,
+  "rollNo": "CB.EN.U4CSE21002",
+  "normalizedTimestamp": 62659,
+  "normalizedX": 0.3230659025787966,
+  "normalizedY": 0.24331210191082803
+},{
+  "_id": "658953ea3bf8512eed08a141",
+  "timestamp": {
+    "$numberLong": "1703498662845"
+  },
+  "x": 501,
+  "y": 193,
+  "rollNo": "CB.EN.U4CSE21002",
+  "normalizedTimestamp": 64310,
+  "normalizedX": 0.35888252148997135,
+  "normalizedY": 0.24585987261146497
+},{
+  "_id": "658953ea3bf8512eed08a142",
+  "timestamp": {
+    "$numberLong": "1703498666893"
+  },
+  "x": 380,
+  "y": 427,
+  "rollNo": "CB.EN.U4CSE21002",
+  "normalizedTimestamp": 68358,
+  "normalizedX": 0.2722063037249284,
+  "normalizedY": 0.5439490445859873
+},{
+  "_id": "658953ea3bf8512eed08a143",
+  "timestamp": {
+    "$numberLong": "1703498683330"
+  },
+  "x": 738,
+  "y": 26,
+  "rollNo": "CB.EN.U4CSE21002",
+  "normalizedTimestamp": 84795,
+  "normalizedX": 0.5286532951289399,
+  "normalizedY": 0.033121019108280254
+},{
+  "_id": "6589526a3bf8512eed089cdc",
+  "timestamp": {
+    "$numberLong": "1703498249501"
+  },
+  "x": 25,
+  "y": 246,
+  "rollNo": "CB.EN.U4CSE21045",
+  "normalizedTimestamp": 2343,
+  "normalizedX": 0.016276041666666668,
+  "normalizedY": 0.2847222222222222
+},{
+  "_id": "6589526a3bf8512eed089ce1",
+  "timestamp": {
+    "$numberLong": "1703498263834"
+  },
+  "x": 413,
+  "y": 232,
+  "rollNo": "CB.EN.U4CSE21045",
+  "normalizedTimestamp": 16676,
+  "normalizedX": 0.2688802083333333,
+  "normalizedY": 0.26851851851851855
+},{
+  "_id": "6589526a3bf8512eed089ce6",
+  "timestamp": {
+    "$numberLong": "1703498275074"
+  },
+  "x": 357,
+  "y": 436,
+  "rollNo": "CB.EN.U4CSE21045",
+  "normalizedTimestamp": 27916,
+  "normalizedX": 0.232421875,
+  "normalizedY": 0.5046296296296297
+},{
+  "_id": "6589526a3bf8512eed089ce4",
+  "timestamp": {
+    "$numberLong": "1703498271644"
+  },
+  "x": 464,
+  "y": 336,
+  "rollNo": "CB.EN.U4CSE21045",
+  "normalizedTimestamp": 24486,
+  "normalizedX": 0.3020833333333333,
+  "normalizedY": 0.3888888888888889
+},{
+  "_id": "6589526a3bf8512eed089cdd",
+  "timestamp": {
+    "$numberLong": "1703498252387"
+  },
+  "x": 24,
+  "y": 253,
+  "rollNo": "CB.EN.U4CSE21045",
+  "normalizedTimestamp": 5229,
+  "normalizedX": 0.015625,
+  "normalizedY": 0.29282407407407407
+},{
+  "_id": "6589526a3bf8512eed089cdb",
+  "timestamp": {
+    "$numberLong": "1703498247158"
+  },
+  "x": 24,
+  "y": 254,
+  "rollNo": "CB.EN.U4CSE21045",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.015625,
+  "normalizedY": 0.29398148148148145
+},{
+  "_id": "6589526a3bf8512eed089ce9",
+  "timestamp": {
+    "$numberLong": "1703498297264"
+  },
+  "x": 98,
+  "y": 357,
+  "rollNo": "CB.EN.U4CSE21045",
+  "normalizedTimestamp": 50106,
+  "normalizedX": 0.06380208333333333,
+  "normalizedY": 0.4131944444444444
+},{
+  "_id": "6589526a3bf8512eed089ce0",
+  "timestamp": {
+    "$numberLong": "1703498261289"
+  },
+  "x": 155,
+  "y": 328,
+  "rollNo": "CB.EN.U4CSE21045",
+  "normalizedTimestamp": 14131,
+  "normalizedX": 0.10091145833333333,
+  "normalizedY": 0.37962962962962965
+},{
+  "_id": "6589526a3bf8512eed089cea",
+  "timestamp": {
+    "$numberLong": "1703498300321"
+  },
+  "x": 411,
+  "y": 195,
+  "rollNo": "CB.EN.U4CSE21045",
+  "normalizedTimestamp": 53163,
+  "normalizedX": 0.267578125,
+  "normalizedY": 0.22569444444444445
+},{
+  "_id": "6589526a3bf8512eed089ceb",
+  "timestamp": {
+    "$numberLong": "1703498302286"
+  },
+  "x": 409,
+  "y": 421,
+  "rollNo": "CB.EN.U4CSE21045",
+  "normalizedTimestamp": 55128,
+  "normalizedX": 0.2662760416666667,
+  "normalizedY": 0.48726851851851855
+},{
+  "_id": "6589526a3bf8512eed089cec",
+  "timestamp": {
+    "$numberLong": "1703498315766"
+  },
+  "x": 779,
+  "y": 27,
+  "rollNo": "CB.EN.U4CSE21045",
+  "normalizedTimestamp": 68608,
+  "normalizedX": 0.5071614583333334,
+  "normalizedY": 0.03125
+},{
+  "_id": "6589526a3bf8512eed089ce8",
+  "timestamp": {
+    "$numberLong": "1703498280992"
+  },
+  "x": 578,
+  "y": 252,
+  "rollNo": "CB.EN.U4CSE21045",
+  "normalizedTimestamp": 33834,
+  "normalizedX": 0.3763020833333333,
+  "normalizedY": 0.2916666666666667
+},{
+  "_id": "6589526a3bf8512eed089ce3",
+  "timestamp": {
+    "$numberLong": "1703498267464"
+  },
+  "x": 419,
+  "y": 231,
+  "rollNo": "CB.EN.U4CSE21045",
+  "normalizedTimestamp": 20306,
+  "normalizedX": 0.2727864583333333,
+  "normalizedY": 0.2673611111111111
+},{
+  "_id": "6589526a3bf8512eed089ce5",
+  "timestamp": {
+    "$numberLong": "1703498273986"
+  },
+  "x": 357,
+  "y": 436,
+  "rollNo": "CB.EN.U4CSE21045",
+  "normalizedTimestamp": 26828,
+  "normalizedX": 0.232421875,
+  "normalizedY": 0.5046296296296297
+},{
+  "_id": "6589526a3bf8512eed089cdf",
+  "timestamp": {
+    "$numberLong": "1703498259195"
+  },
+  "x": 23,
+  "y": 76,
+  "rollNo": "CB.EN.U4CSE21045",
+  "normalizedTimestamp": 12037,
+  "normalizedX": 0.014973958333333334,
+  "normalizedY": 0.08796296296296297
+},{
+  "_id": "6589526a3bf8512eed089ce2",
+  "timestamp": {
+    "$numberLong": "1703498266472"
+  },
+  "x": 413,
+  "y": 232,
+  "rollNo": "CB.EN.U4CSE21045",
+  "normalizedTimestamp": 19314,
+  "normalizedX": 0.2688802083333333,
+  "normalizedY": 0.26851851851851855
+},{
+  "_id": "6589526a3bf8512eed089ce7",
+  "timestamp": {
+    "$numberLong": "1703498277128"
+  },
+  "x": 357,
+  "y": 436,
+  "rollNo": "CB.EN.U4CSE21045",
+  "normalizedTimestamp": 29970,
+  "normalizedX": 0.232421875,
+  "normalizedY": 0.5046296296296297
+},{
+  "_id": "6589526a3bf8512eed089cde",
+  "timestamp": {
+    "$numberLong": "1703498254304"
+  },
+  "x": 24,
+  "y": 133,
+  "rollNo": "CB.EN.U4CSE21045",
+  "normalizedTimestamp": 7146,
+  "normalizedX": 0.015625,
+  "normalizedY": 0.15393518518518517
+},{
+  "_id": "658923796a3610f95ee3cc04",
+  "timestamp": {
+    "$numberLong": "1703486220547"
+  },
+  "x": 21,
+  "y": 54,
+  "rollNo": "CB.EN.U4EEE23107",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.01504297994269341,
+  "normalizedY": 0.06878980891719745
+},{
+  "_id": "658923796a3610f95ee3cc05",
+  "timestamp": {
+    "$numberLong": "1703486224191"
+  },
+  "x": 92,
+  "y": 120,
+  "rollNo": "CB.EN.U4EEE23107",
+  "normalizedTimestamp": 3644,
+  "normalizedX": 0.0659025787965616,
+  "normalizedY": 0.15286624203821655
+},{
+  "_id": "658923796a3610f95ee3cc06",
+  "timestamp": {
+    "$numberLong": "1703486232773"
+  },
+  "x": 424,
+  "y": 232,
+  "rollNo": "CB.EN.U4EEE23107",
+  "normalizedTimestamp": 12226,
+  "normalizedX": 0.3037249283667622,
+  "normalizedY": 0.29554140127388534
+},{
+  "_id": "658923796a3610f95ee3cc07",
+  "timestamp": {
+    "$numberLong": "1703486234588"
+  },
+  "x": 366,
+  "y": 339,
+  "rollNo": "CB.EN.U4EEE23107",
+  "normalizedTimestamp": 14041,
+  "normalizedX": 0.2621776504297994,
+  "normalizedY": 0.4318471337579618
+},{
+  "_id": "658923796a3610f95ee3cc08",
+  "timestamp": {
+    "$numberLong": "1703486239585"
+  },
+  "x": 503,
+  "y": 256,
+  "rollNo": "CB.EN.U4EEE23107",
+  "normalizedTimestamp": 19038,
+  "normalizedX": 0.36031518624641834,
+  "normalizedY": 0.32611464968152865
+},{
+  "_id": "658923796a3610f95ee3cc09",
+  "timestamp": {
+    "$numberLong": "1703486258122"
+  },
+  "x": 86,
+  "y": 196,
+  "rollNo": "CB.EN.U4EEE23107",
+  "normalizedTimestamp": 37575,
+  "normalizedX": 0.06160458452722063,
+  "normalizedY": 0.24968152866242038
+},{
+  "_id": "658923796a3610f95ee3cc0a",
+  "timestamp": {
+    "$numberLong": "1703486275769"
+  },
+  "x": 447,
+  "y": 195,
+  "rollNo": "CB.EN.U4EEE23107",
+  "normalizedTimestamp": 55222,
+  "normalizedX": 0.3202005730659026,
+  "normalizedY": 0.2484076433121019
+},{
+  "_id": "658923796a3610f95ee3cc0c",
+  "timestamp": {
+    "$numberLong": "1703486311465"
+  },
+  "x": 742,
+  "y": 29,
+  "rollNo": "CB.EN.U4EEE23107",
+  "normalizedTimestamp": 90918,
+  "normalizedX": 0.5315186246418339,
+  "normalizedY": 0.03694267515923567
+},{
+  "_id": "658923796a3610f95ee3cc0b",
+  "timestamp": {
+    "$numberLong": "1703486277561"
+  },
+  "x": 401,
+  "y": 305,
+  "rollNo": "CB.EN.U4EEE23107",
+  "normalizedTimestamp": 57014,
+  "normalizedX": 0.28724928366762176,
+  "normalizedY": 0.3885350318471338
+},{
+  "_id": "65899a5225073fa4a32fea32",
+  "timestamp": {
+    "$numberLong": "1703516674110"
+  },
+  "x": 69,
+  "y": 267,
+  "rollNo": "CB.EN.U4CSE20449",
+  "normalizedTimestamp": 75750,
+  "normalizedX": 0.0494269340974212,
+  "normalizedY": 0.39850746268656717
+},{
+  "_id": "65899a5225073fa4a32fea2a",
+  "timestamp": {
+    "$numberLong": "1703516620164"
+  },
+  "x": 73,
+  "y": 280,
+  "rollNo": "CB.EN.U4CSE20449",
+  "normalizedTimestamp": 21804,
+  "normalizedX": 0.052292263610315186,
+  "normalizedY": 0.417910447761194
+},{
+  "_id": "65899a5225073fa4a32fea2b",
+  "timestamp": {
+    "$numberLong": "1703516626136"
+  },
+  "x": 384,
+  "y": 233,
+  "rollNo": "CB.EN.U4CSE20449",
+  "normalizedTimestamp": 27776,
+  "normalizedX": 0.27507163323782235,
+  "normalizedY": 0.34776119402985073
+},{
+  "_id": "65899a5225073fa4a32fea2c",
+  "timestamp": {
+    "$numberLong": "1703516629510"
+  },
+  "x": 437,
+  "y": 227,
+  "rollNo": "CB.EN.U4CSE20449",
+  "normalizedTimestamp": 31150,
+  "normalizedX": 0.3130372492836676,
+  "normalizedY": 0.33880597014925373
+},{
+  "_id": "65899a5225073fa4a32fea37",
+  "timestamp": {
+    "$numberLong": "1703516696833"
+  },
+  "x": 385,
+  "y": 312,
+  "rollNo": "CB.EN.U4CSE20449",
+  "normalizedTimestamp": 98473,
+  "normalizedX": 0.27578796561604585,
+  "normalizedY": 0.46567164179104475
+},{
+  "_id": "65899a5225073fa4a32fea35",
+  "timestamp": {
+    "$numberLong": "1703516687365"
+  },
+  "x": 79,
+  "y": 318,
+  "rollNo": "CB.EN.U4CSE20449",
+  "normalizedTimestamp": 89005,
+  "normalizedX": 0.05659025787965616,
+  "normalizedY": 0.4746268656716418
+},{
+  "_id": "65899a5225073fa4a32fea28",
+  "timestamp": {
+    "$numberLong": "1703516613882"
+  },
+  "x": 120,
+  "y": 251,
+  "rollNo": "CB.EN.U4CSE20449",
+  "normalizedTimestamp": 15522,
+  "normalizedX": 0.08595988538681948,
+  "normalizedY": 0.3746268656716418
+},{
+  "_id": "65899a5225073fa4a32fea2e",
+  "timestamp": {
+    "$numberLong": "1703516640580"
+  },
+  "x": 360,
+  "y": 454,
+  "rollNo": "CB.EN.U4CSE20449",
+  "normalizedTimestamp": 42220,
+  "normalizedX": 0.25787965616045844,
+  "normalizedY": 0.6776119402985075
+},{
+  "_id": "65899a5225073fa4a32fea2d",
+  "timestamp": {
+    "$numberLong": "1703516639186"
+  },
+  "x": 360,
+  "y": 454,
+  "rollNo": "CB.EN.U4CSE20449",
+  "normalizedTimestamp": 40826,
+  "normalizedX": 0.25787965616045844,
+  "normalizedY": 0.6776119402985075
+},{
+  "_id": "65899a5225073fa4a32fea31",
+  "timestamp": {
+    "$numberLong": "1703516649995"
+  },
+  "x": 526,
+  "y": 254,
+  "rollNo": "CB.EN.U4CSE20449",
+  "normalizedTimestamp": 51635,
+  "normalizedX": 0.37679083094555876,
+  "normalizedY": 0.37910447761194027
+},{
+  "_id": "65899a5225073fa4a32fea36",
+  "timestamp": {
+    "$numberLong": "1703516694457"
+  },
+  "x": 527,
+  "y": 190,
+  "rollNo": "CB.EN.U4CSE20449",
+  "normalizedTimestamp": 96097,
+  "normalizedX": 0.37750716332378226,
+  "normalizedY": 0.2835820895522388
+},{
+  "_id": "65899a5225073fa4a32fea27",
+  "timestamp": {
+    "$numberLong": "1703516598360"
+  },
+  "x": 11,
+  "y": 70,
+  "rollNo": "CB.EN.U4CSE20449",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.007879656160458453,
+  "normalizedY": 0.1044776119402985
+},{
+  "_id": "65899a5225073fa4a32fea33",
+  "timestamp": {
+    "$numberLong": "1703516677339"
+  },
+  "x": 401,
+  "y": 258,
+  "rollNo": "CB.EN.U4CSE20449",
+  "normalizedTimestamp": 78979,
+  "normalizedX": 0.28724928366762176,
+  "normalizedY": 0.3850746268656716
+},{
+  "_id": "65899a5225073fa4a32fea30",
+  "timestamp": {
+    "$numberLong": "1703516648559"
+  },
+  "x": 526,
+  "y": 254,
+  "rollNo": "CB.EN.U4CSE20449",
+  "normalizedTimestamp": 50199,
+  "normalizedX": 0.37679083094555876,
+  "normalizedY": 0.37910447761194027
+},{
+  "_id": "65899a5225073fa4a32fea34",
+  "timestamp": {
+    "$numberLong": "1703516680701"
+  },
+  "x": 527,
+  "y": 259,
+  "rollNo": "CB.EN.U4CSE20449",
+  "normalizedTimestamp": 82341,
+  "normalizedX": 0.37750716332378226,
+  "normalizedY": 0.38656716417910447
+},{
+  "_id": "65899a5225073fa4a32fea38",
+  "timestamp": {
+    "$numberLong": "1703516709751"
+  },
+  "x": 706,
+  "y": 26,
+  "rollNo": "CB.EN.U4CSE20449",
+  "normalizedTimestamp": 111391,
+  "normalizedX": 0.505730659025788,
+  "normalizedY": 0.03880597014925373
+},{
+  "_id": "65899a5225073fa4a32fea29",
+  "timestamp": {
+    "$numberLong": "1703516615347"
+  },
+  "x": 132,
+  "y": 248,
+  "rollNo": "CB.EN.U4CSE20449",
+  "normalizedTimestamp": 16987,
+  "normalizedX": 0.09455587392550144,
+  "normalizedY": 0.3701492537313433
+},{
+  "_id": "65899a5225073fa4a32fea2f",
+  "timestamp": {
+    "$numberLong": "1703516645663"
+  },
+  "x": 722,
+  "y": 223,
+  "rollNo": "CB.EN.U4CSE20449",
+  "normalizedTimestamp": 47303,
+  "normalizedX": 0.5171919770773639,
+  "normalizedY": 0.3328358208955224
+},{
+  "_id": "658928036a3610f95ee3d79b",
+  "timestamp": {
+    "$numberLong": "1703487333914"
+  },
+  "x": 19,
+  "y": 82,
+  "rollNo": "CB.EN.U4EEE23135",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.012369791666666666,
+  "normalizedY": 0.09490740740740741
+},{
+  "_id": "658928036a3610f95ee3d79f",
+  "timestamp": {
+    "$numberLong": "1703487345069"
+  },
+  "x": 368,
+  "y": 411,
+  "rollNo": "CB.EN.U4EEE23135",
+  "normalizedTimestamp": 11155,
+  "normalizedX": 0.23958333333333334,
+  "normalizedY": 0.4756944444444444
+},{
+  "_id": "658928036a3610f95ee3d79e",
+  "timestamp": {
+    "$numberLong": "1703487343505"
+  },
+  "x": 420,
+  "y": 222,
+  "rollNo": "CB.EN.U4EEE23135",
+  "normalizedTimestamp": 9591,
+  "normalizedX": 0.2734375,
+  "normalizedY": 0.2569444444444444
+},{
+  "_id": "658928036a3610f95ee3d79c",
+  "timestamp": {
+    "$numberLong": "1703487336418"
+  },
+  "x": 82,
+  "y": 284,
+  "rollNo": "CB.EN.U4EEE23135",
+  "normalizedTimestamp": 2504,
+  "normalizedX": 0.053385416666666664,
+  "normalizedY": 0.3287037037037037
+},{
+  "_id": "658928036a3610f95ee3d7a4",
+  "timestamp": {
+    "$numberLong": "1703487391045"
+  },
+  "x": 408,
+  "y": 198,
+  "rollNo": "CB.EN.U4EEE23135",
+  "normalizedTimestamp": 57131,
+  "normalizedX": 0.265625,
+  "normalizedY": 0.22916666666666666
+},{
+  "_id": "658928036a3610f95ee3d7a1",
+  "timestamp": {
+    "$numberLong": "1703487350379"
+  },
+  "x": 388,
+  "y": 340,
+  "rollNo": "CB.EN.U4EEE23135",
+  "normalizedTimestamp": 16465,
+  "normalizedX": 0.2526041666666667,
+  "normalizedY": 0.39351851851851855
+},{
+  "_id": "658928036a3610f95ee3d7a6",
+  "timestamp": {
+    "$numberLong": "1703487428454"
+  },
+  "x": 780,
+  "y": 24,
+  "rollNo": "CB.EN.U4EEE23135",
+  "normalizedTimestamp": 94540,
+  "normalizedX": 0.5078125,
+  "normalizedY": 0.027777777777777776
+},{
+  "_id": "658928036a3610f95ee3d7a0",
+  "timestamp": {
+    "$numberLong": "1703487348111"
+  },
+  "x": 410,
+  "y": 229,
+  "rollNo": "CB.EN.U4EEE23135",
+  "normalizedTimestamp": 14197,
+  "normalizedX": 0.2669270833333333,
+  "normalizedY": 0.2650462962962963
+},{
+  "_id": "658928036a3610f95ee3d7a5",
+  "timestamp": {
+    "$numberLong": "1703487392733"
+  },
+  "x": 405,
+  "y": 294,
+  "rollNo": "CB.EN.U4EEE23135",
+  "normalizedTimestamp": 58819,
+  "normalizedX": 0.263671875,
+  "normalizedY": 0.3402777777777778
+},{
+  "_id": "658928036a3610f95ee3d7a3",
+  "timestamp": {
+    "$numberLong": "1703487386238"
+  },
+  "x": 62,
+  "y": 360,
+  "rollNo": "CB.EN.U4EEE23135",
+  "normalizedTimestamp": 52324,
+  "normalizedX": 0.040364583333333336,
+  "normalizedY": 0.4166666666666667
+},{
+  "_id": "658928036a3610f95ee3d79d",
+  "timestamp": {
+    "$numberLong": "1703487338211"
+  },
+  "x": 81,
+  "y": 309,
+  "rollNo": "CB.EN.U4EEE23135",
+  "normalizedTimestamp": 4297,
+  "normalizedX": 0.052734375,
+  "normalizedY": 0.3576388888888889
+},{
+  "_id": "658928036a3610f95ee3d7a2",
+  "timestamp": {
+    "$numberLong": "1703487355067"
+  },
+  "x": 568,
+  "y": 264,
+  "rollNo": "CB.EN.U4EEE23135",
+  "normalizedTimestamp": 21153,
+  "normalizedX": 0.3697916666666667,
+  "normalizedY": 0.3055555555555556
+},{
+  "_id": "658926106a3610f95ee3d28f",
+  "timestamp": {
+    "$numberLong": "1703486872893"
+  },
+  "x": 192,
+  "y": 107,
+  "rollNo": "CB.EN.U4EEE23137",
+  "normalizedTimestamp": 1783,
+  "normalizedX": 0.13753581661891118,
+  "normalizedY": 0.15177304964539007
+},{
+  "_id": "658926106a3610f95ee3d290",
+  "timestamp": {
+    "$numberLong": "1703486874438"
+  },
+  "x": 22,
+  "y": 88,
+  "rollNo": "CB.EN.U4EEE23137",
+  "normalizedTimestamp": 3328,
+  "normalizedX": 0.015759312320916905,
+  "normalizedY": 0.12482269503546099
+},{
+  "_id": "658926106a3610f95ee3d28e",
+  "timestamp": {
+    "$numberLong": "1703486871110"
+  },
+  "x": 179,
+  "y": 110,
+  "rollNo": "CB.EN.U4EEE23137",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.12822349570200572,
+  "normalizedY": 0.15602836879432624
+},{
+  "_id": "658926106a3610f95ee3d291",
+  "timestamp": {
+    "$numberLong": "1703486875636"
+  },
+  "x": 21,
+  "y": 71,
+  "rollNo": "CB.EN.U4EEE23137",
+  "normalizedTimestamp": 4526,
+  "normalizedX": 0.01504297994269341,
+  "normalizedY": 0.10070921985815603
+},{
+  "_id": "658926106a3610f95ee3d295",
+  "timestamp": {
+    "$numberLong": "1703486895130"
+  },
+  "x": 426,
+  "y": 225,
+  "rollNo": "CB.EN.U4EEE23137",
+  "normalizedTimestamp": 24020,
+  "normalizedX": 0.30515759312320917,
+  "normalizedY": 0.3191489361702128
+},{
+  "_id": "658926106a3610f95ee3d298",
+  "timestamp": {
+    "$numberLong": "1703486903093"
+  },
+  "x": 561,
+  "y": 262,
+  "rollNo": "CB.EN.U4EEE23137",
+  "normalizedTimestamp": 31983,
+  "normalizedX": 0.40186246418338106,
+  "normalizedY": 0.37163120567375885
+},{
+  "_id": "658926106a3610f95ee3d293",
+  "timestamp": {
+    "$numberLong": "1703486890496"
+  },
+  "x": 433,
+  "y": 222,
+  "rollNo": "CB.EN.U4EEE23137",
+  "normalizedTimestamp": 19386,
+  "normalizedX": 0.31017191977077363,
+  "normalizedY": 0.3148936170212766
+},{
+  "_id": "658926106a3610f95ee3d296",
+  "timestamp": {
+    "$numberLong": "1703486896987"
+  },
+  "x": 375,
+  "y": 336,
+  "rollNo": "CB.EN.U4EEE23137",
+  "normalizedTimestamp": 25877,
+  "normalizedX": 0.2686246418338109,
+  "normalizedY": 0.4765957446808511
+},{
+  "_id": "658926106a3610f95ee3d292",
+  "timestamp": {
+    "$numberLong": "1703486879092"
+  },
+  "x": 110,
+  "y": 153,
+  "rollNo": "CB.EN.U4EEE23137",
+  "normalizedTimestamp": 7982,
+  "normalizedX": 0.07879656160458452,
+  "normalizedY": 0.2170212765957447
+},{
+  "_id": "658926106a3610f95ee3d294",
+  "timestamp": {
+    "$numberLong": "1703486893502"
+  },
+  "x": 403,
+  "y": 230,
+  "rollNo": "CB.EN.U4EEE23137",
+  "normalizedTimestamp": 22392,
+  "normalizedX": 0.28868194842406875,
+  "normalizedY": 0.3262411347517731
+},{
+  "_id": "658926106a3610f95ee3d297",
+  "timestamp": {
+    "$numberLong": "1703486898598"
+  },
+  "x": 514,
+  "y": 256,
+  "rollNo": "CB.EN.U4EEE23137",
+  "normalizedTimestamp": 27488,
+  "normalizedX": 0.3681948424068768,
+  "normalizedY": 0.36312056737588655
+},{
+  "_id": "658926106a3610f95ee3d29a",
+  "timestamp": {
+    "$numberLong": "1703486933037"
+  },
+  "x": 483,
+  "y": 164,
+  "rollNo": "CB.EN.U4EEE23137",
+  "normalizedTimestamp": 61927,
+  "normalizedX": 0.3459885386819484,
+  "normalizedY": 0.2326241134751773
+},{
+  "_id": "658926106a3610f95ee3d299",
+  "timestamp": {
+    "$numberLong": "1703486927083"
+  },
+  "x": 91,
+  "y": 166,
+  "rollNo": "CB.EN.U4EEE23137",
+  "normalizedTimestamp": 55973,
+  "normalizedX": 0.0651862464183381,
+  "normalizedY": 0.23546099290780143
+},{
+  "_id": "658926106a3610f95ee3d29b",
+  "timestamp": {
+    "$numberLong": "1703486934488"
+  },
+  "x": 437,
+  "y": 285,
+  "rollNo": "CB.EN.U4EEE23137",
+  "normalizedTimestamp": 63378,
+  "normalizedX": 0.3130372492836676,
+  "normalizedY": 0.40425531914893614
+},{
+  "_id": "658926106a3610f95ee3d29c",
+  "timestamp": {
+    "$numberLong": "1703486950734"
+  },
+  "x": 717,
+  "y": 25,
+  "rollNo": "CB.EN.U4EEE23137",
+  "normalizedTimestamp": 79624,
+  "normalizedX": 0.5136103151862464,
+  "normalizedY": 0.03546099290780142
+},{
+  "_id": "65895d2224b9afb2a77b21b7",
+  "timestamp": {
+    "$numberLong": "1703500804815"
+  },
+  "x": 21,
+  "y": 74,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.013671875,
+  "normalizedY": 0.08564814814814815
+},{
+  "_id": "65895d2224b9afb2a77b21b8",
+  "timestamp": {
+    "$numberLong": "1703500808991"
+  },
+  "x": 210,
+  "y": 279,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 4176,
+  "normalizedX": 0.13671875,
+  "normalizedY": 0.3229166666666667
+},{
+  "_id": "65895d2224b9afb2a77b21b9",
+  "timestamp": {
+    "$numberLong": "1703500811250"
+  },
+  "x": 75,
+  "y": 306,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 6435,
+  "normalizedX": 0.048828125,
+  "normalizedY": 0.3541666666666667
+},{
+  "_id": "65895d2224b9afb2a77b21ba",
+  "timestamp": {
+    "$numberLong": "1703500816844"
+  },
+  "x": 457,
+  "y": 214,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 12029,
+  "normalizedX": 0.2975260416666667,
+  "normalizedY": 0.24768518518518517
+},{
+  "_id": "65895d2224b9afb2a77b21bb",
+  "timestamp": {
+    "$numberLong": "1703500818102"
+  },
+  "x": 454,
+  "y": 226,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 13287,
+  "normalizedX": 0.2955729166666667,
+  "normalizedY": 0.26157407407407407
+},{
+  "_id": "65895d2224b9afb2a77b21bc",
+  "timestamp": {
+    "$numberLong": "1703500820484"
+  },
+  "x": 456,
+  "y": 227,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 15669,
+  "normalizedX": 0.296875,
+  "normalizedY": 0.26273148148148145
+},{
+  "_id": "65895d2224b9afb2a77b21bd",
+  "timestamp": {
+    "$numberLong": "1703500821851"
+  },
+  "x": 456,
+  "y": 227,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 17036,
+  "normalizedX": 0.296875,
+  "normalizedY": 0.26273148148148145
+},{
+  "_id": "65895d2224b9afb2a77b21be",
+  "timestamp": {
+    "$numberLong": "1703500823464"
+  },
+  "x": 456,
+  "y": 226,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 18649,
+  "normalizedX": 0.296875,
+  "normalizedY": 0.26157407407407407
+},{
+  "_id": "65895d2224b9afb2a77b21bf",
+  "timestamp": {
+    "$numberLong": "1703500824850"
+  },
+  "x": 456,
+  "y": 226,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 20035,
+  "normalizedX": 0.296875,
+  "normalizedY": 0.26157407407407407
+},{
+  "_id": "65895d2224b9afb2a77b21c0",
+  "timestamp": {
+    "$numberLong": "1703500826612"
+  },
+  "x": 372,
+  "y": 430,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 21797,
+  "normalizedX": 0.2421875,
+  "normalizedY": 0.4976851851851852
+},{
+  "_id": "65895d2224b9afb2a77b21c1",
+  "timestamp": {
+    "$numberLong": "1703500827913"
+  },
+  "x": 359,
+  "y": 430,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 23098,
+  "normalizedX": 0.23372395833333334,
+  "normalizedY": 0.4976851851851852
+},{
+  "_id": "65895d2224b9afb2a77b21c2",
+  "timestamp": {
+    "$numberLong": "1703500828942"
+  },
+  "x": 359,
+  "y": 430,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 24127,
+  "normalizedX": 0.23372395833333334,
+  "normalizedY": 0.4976851851851852
+},{
+  "_id": "65895d2224b9afb2a77b21c4",
+  "timestamp": {
+    "$numberLong": "1703500836061"
+  },
+  "x": 581,
+  "y": 266,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 31246,
+  "normalizedX": 0.3782552083333333,
+  "normalizedY": 0.30787037037037035
+},{
+  "_id": "65895d2224b9afb2a77b21c3",
+  "timestamp": {
+    "$numberLong": "1703500833891"
+  },
+  "x": 581,
+  "y": 257,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 29076,
+  "normalizedX": 0.3782552083333333,
+  "normalizedY": 0.2974537037037037
+},{
+  "_id": "65895d2224b9afb2a77b21c5",
+  "timestamp": {
+    "$numberLong": "1703500838015"
+  },
+  "x": 818,
+  "y": 224,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 33200,
+  "normalizedX": 0.5325520833333334,
+  "normalizedY": 0.25925925925925924
+},{
+  "_id": "65895d2224b9afb2a77b21c6",
+  "timestamp": {
+    "$numberLong": "1703500850856"
+  },
+  "x": 66,
+  "y": 357,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 46041,
+  "normalizedX": 0.04296875,
+  "normalizedY": 0.4131944444444444
+},{
+  "_id": "65895d2224b9afb2a77b21c8",
+  "timestamp": {
+    "$numberLong": "1703500857417"
+  },
+  "x": 484,
+  "y": 204,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 52602,
+  "normalizedX": 0.3151041666666667,
+  "normalizedY": 0.2361111111111111
+},{
+  "_id": "65895d2224b9afb2a77b21c9",
+  "timestamp": {
+    "$numberLong": "1703500858992"
+  },
+  "x": 402,
+  "y": 361,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 54177,
+  "normalizedX": 0.26171875,
+  "normalizedY": 0.41782407407407407
+},{
+  "_id": "65895d2224b9afb2a77b21c7",
+  "timestamp": {
+    "$numberLong": "1703500856306"
+  },
+  "x": 473,
+  "y": 204,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 51491,
+  "normalizedX": 0.3079427083333333,
+  "normalizedY": 0.2361111111111111
+},{
+  "_id": "65895d2224b9afb2a77b21ca",
+  "timestamp": {
+    "$numberLong": "1703500879002"
+  },
+  "x": 783,
+  "y": 25,
+  "rollNo": "CB.EN.U4CSE22308",
+  "normalizedTimestamp": 74187,
+  "normalizedX": 0.509765625,
+  "normalizedY": 0.028935185185185185
+},{
+  "_id": "6589a37025073fa4a33000fa",
+  "timestamp": {
+    "$numberLong": "1703518548848"
+  },
+  "x": 98,
+  "y": 273,
+  "rollNo": "CB.EN.U4CSE20429",
+  "normalizedTimestamp": 4433,
+  "normalizedX": 0.06380208333333333,
+  "normalizedY": 0.3159722222222222
+},{
+  "_id": "6589a37025073fa4a3300101",
+  "timestamp": {
+    "$numberLong": "1703519064128"
+  },
+  "x": 494,
+  "y": 195,
+  "rollNo": "CB.EN.U4CSE20429",
+  "normalizedTimestamp": 519713,
+  "normalizedX": 0.3216145833333333,
+  "normalizedY": 0.22569444444444445
+},{
+  "_id": "6589a37025073fa4a33000f9",
+  "timestamp": {
+    "$numberLong": "1703518544415"
+  },
+  "x": 28,
+  "y": 80,
+  "rollNo": "CB.EN.U4CSE20429",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.018229166666666668,
+  "normalizedY": 0.09259259259259259
+},{
+  "_id": "6589a37025073fa4a33000fc",
+  "timestamp": {
+    "$numberLong": "1703519037448"
+  },
+  "x": 419,
+  "y": 214,
+  "rollNo": "CB.EN.U4CSE20429",
+  "normalizedTimestamp": 493033,
+  "normalizedX": 0.2727864583333333,
+  "normalizedY": 0.24768518518518517
+},{
+  "_id": "6589a37025073fa4a3300100",
+  "timestamp": {
+    "$numberLong": "1703519059886"
+  },
+  "x": 68,
+  "y": 355,
+  "rollNo": "CB.EN.U4CSE20429",
+  "normalizedTimestamp": 515471,
+  "normalizedX": 0.044270833333333336,
+  "normalizedY": 0.41087962962962965
+},{
+  "_id": "6589a37025073fa4a33000fd",
+  "timestamp": {
+    "$numberLong": "1703519040322"
+  },
+  "x": 108,
+  "y": 317,
+  "rollNo": "CB.EN.U4CSE20429",
+  "normalizedTimestamp": 495907,
+  "normalizedX": 0.0703125,
+  "normalizedY": 0.36689814814814814
+},{
+  "_id": "6589a37025073fa4a3300102",
+  "timestamp": {
+    "$numberLong": "1703519066031"
+  },
+  "x": 440,
+  "y": 408,
+  "rollNo": "CB.EN.U4CSE20429",
+  "normalizedTimestamp": 521616,
+  "normalizedX": 0.2864583333333333,
+  "normalizedY": 0.4722222222222222
+},{
+  "_id": "6589a37025073fa4a33000fe",
+  "timestamp": {
+    "$numberLong": "1703519044472"
+  },
+  "x": 415,
+  "y": 211,
+  "rollNo": "CB.EN.U4CSE20429",
+  "normalizedTimestamp": 500057,
+  "normalizedX": 0.2701822916666667,
+  "normalizedY": 0.24421296296296297
+},{
+  "_id": "6589a37025073fa4a33000fb",
+  "timestamp": {
+    "$numberLong": "1703519032128"
+  },
+  "x": 80,
+  "y": 316,
+  "rollNo": "CB.EN.U4CSE20429",
+  "normalizedTimestamp": 487713,
+  "normalizedX": 0.052083333333333336,
+  "normalizedY": 0.36574074074074076
+},{
+  "_id": "6589a37025073fa4a3300103",
+  "timestamp": {
+    "$numberLong": "1703519067733"
+  },
+  "x": 420,
+  "y": 336,
+  "rollNo": "CB.EN.U4CSE20429",
+  "normalizedTimestamp": 523318,
+  "normalizedX": 0.2734375,
+  "normalizedY": 0.3888888888888889
+},{
+  "_id": "6589a37025073fa4a33000ff",
+  "timestamp": {
+    "$numberLong": "1703519045582"
+  },
+  "x": 409,
+  "y": 219,
+  "rollNo": "CB.EN.U4CSE20429",
+  "normalizedTimestamp": 501167,
+  "normalizedX": 0.2662760416666667,
+  "normalizedY": 0.2534722222222222
+},{
+  "_id": "6589a37025073fa4a3300104",
+  "timestamp": {
+    "$numberLong": "1703519078038"
+  },
+  "x": 782,
+  "y": 29,
+  "rollNo": "CB.EN.U4CSE20429",
+  "normalizedTimestamp": 533623,
+  "normalizedX": 0.5091145833333334,
+  "normalizedY": 0.03356481481481482
+},{
+  "_id": "65894e31ece61eb9e9bfb139",
+  "timestamp": {
+    "$numberLong": "1703497100526"
+  },
+  "x": 22,
+  "y": 66,
+  "rollNo": "CB.EN.U4CSE21050",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.014322916666666666,
+  "normalizedY": 0.0763888888888889
+},{
+  "_id": "65894e31ece61eb9e9bfb13f",
+  "timestamp": {
+    "$numberLong": "1703497120937"
+  },
+  "x": 553,
+  "y": 259,
+  "rollNo": "CB.EN.U4CSE21050",
+  "normalizedTimestamp": 20411,
+  "normalizedX": 0.3600260416666667,
+  "normalizedY": 0.29976851851851855
+},{
+  "_id": "65894e31ece61eb9e9bfb13d",
+  "timestamp": {
+    "$numberLong": "1703497114126"
+  },
+  "x": 388,
+  "y": 227,
+  "rollNo": "CB.EN.U4CSE21050",
+  "normalizedTimestamp": 13600,
+  "normalizedX": 0.2526041666666667,
+  "normalizedY": 0.26273148148148145
+},{
+  "_id": "65894e31ece61eb9e9bfb13c",
+  "timestamp": {
+    "$numberLong": "1703497109379"
+  },
+  "x": 89,
+  "y": 310,
+  "rollNo": "CB.EN.U4CSE21050",
+  "normalizedTimestamp": 8853,
+  "normalizedX": 0.057942708333333336,
+  "normalizedY": 0.3587962962962963
+},{
+  "_id": "65894e31ece61eb9e9bfb140",
+  "timestamp": {
+    "$numberLong": "1703497137530"
+  },
+  "x": 80,
+  "y": 349,
+  "rollNo": "CB.EN.U4CSE21050",
+  "normalizedTimestamp": 37004,
+  "normalizedX": 0.052083333333333336,
+  "normalizedY": 0.4039351851851852
+},{
+  "_id": "65894e31ece61eb9e9bfb13a",
+  "timestamp": {
+    "$numberLong": "1703497105898"
+  },
+  "x": 136,
+  "y": 278,
+  "rollNo": "CB.EN.U4CSE21050",
+  "normalizedTimestamp": 5372,
+  "normalizedX": 0.08854166666666667,
+  "normalizedY": 0.32175925925925924
+},{
+  "_id": "65894e31ece61eb9e9bfb13b",
+  "timestamp": {
+    "$numberLong": "1703497107750"
+  },
+  "x": 132,
+  "y": 263,
+  "rollNo": "CB.EN.U4CSE21050",
+  "normalizedTimestamp": 7224,
+  "normalizedX": 0.0859375,
+  "normalizedY": 0.30439814814814814
+},{
+  "_id": "65894e31ece61eb9e9bfb13e",
+  "timestamp": {
+    "$numberLong": "1703497116704"
+  },
+  "x": 366,
+  "y": 459,
+  "rollNo": "CB.EN.U4CSE21050",
+  "normalizedTimestamp": 16178,
+  "normalizedX": 0.23828125,
+  "normalizedY": 0.53125
+},{
+  "_id": "65894e31ece61eb9e9bfb141",
+  "timestamp": {
+    "$numberLong": "1703497142290"
+  },
+  "x": 429,
+  "y": 199,
+  "rollNo": "CB.EN.U4CSE21050",
+  "normalizedTimestamp": 41764,
+  "normalizedX": 0.279296875,
+  "normalizedY": 0.23032407407407407
+},{
+  "_id": "65894e31ece61eb9e9bfb143",
+  "timestamp": {
+    "$numberLong": "1703497173750"
+  },
+  "x": 796,
+  "y": 31,
+  "rollNo": "CB.EN.U4CSE21050",
+  "normalizedTimestamp": 73224,
+  "normalizedX": 0.5182291666666666,
+  "normalizedY": 0.03587962962962963
+},{
+  "_id": "65894e31ece61eb9e9bfb142",
+  "timestamp": {
+    "$numberLong": "1703497144736"
+  },
+  "x": 424,
+  "y": 411,
+  "rollNo": "CB.EN.U4CSE21050",
+  "normalizedTimestamp": 44210,
+  "normalizedX": 0.2760416666666667,
+  "normalizedY": 0.4756944444444444
+},{
+  "_id": "65895acb1b192458f364d238",
+  "timestamp": {
+    "$numberLong": "1703500376814"
+  },
+  "x": 81,
+  "y": 266,
+  "rollNo": "CB.EN.U4CSE22351",
+  "normalizedTimestamp": 8967,
+  "normalizedX": 0.052734375,
+  "normalizedY": 0.30787037037037035
+},{
+  "_id": "65895acb1b192458f364d23f",
+  "timestamp": {
+    "$numberLong": "1703500417958"
+  },
+  "x": 82,
+  "y": 159,
+  "rollNo": "CB.EN.U4CSE22351",
+  "normalizedTimestamp": 50111,
+  "normalizedX": 0.053385416666666664,
+  "normalizedY": 0.1840277777777778
+},{
+  "_id": "65895acb1b192458f364d23a",
+  "timestamp": {
+    "$numberLong": "1703500384689"
+  },
+  "x": 416,
+  "y": 224,
+  "rollNo": "CB.EN.U4CSE22351",
+  "normalizedTimestamp": 16842,
+  "normalizedX": 0.2708333333333333,
+  "normalizedY": 0.25925925925925924
+},{
+  "_id": "65895acb1b192458f364d241",
+  "timestamp": {
+    "$numberLong": "1703500424567"
+  },
+  "x": 428,
+  "y": 197,
+  "rollNo": "CB.EN.U4CSE22351",
+  "normalizedTimestamp": 56720,
+  "normalizedX": 0.2786458333333333,
+  "normalizedY": 0.22800925925925927
+},{
+  "_id": "65895acb1b192458f364d23b",
+  "timestamp": {
+    "$numberLong": "1703500386268"
+  },
+  "x": 416,
+  "y": 224,
+  "rollNo": "CB.EN.U4CSE22351",
+  "normalizedTimestamp": 18421,
+  "normalizedX": 0.2708333333333333,
+  "normalizedY": 0.25925925925925924
+},{
+  "_id": "65895acb1b192458f364d235",
+  "timestamp": {
+    "$numberLong": "1703500367847"
+  },
+  "x": 16,
+  "y": 80,
+  "rollNo": "CB.EN.U4CSE22351",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.010416666666666666,
+  "normalizedY": 0.09259259259259259
+},{
+  "_id": "65895acb1b192458f364d237",
+  "timestamp": {
+    "$numberLong": "1703500374926"
+  },
+  "x": 80,
+  "y": 262,
+  "rollNo": "CB.EN.U4CSE22351",
+  "normalizedTimestamp": 7079,
+  "normalizedX": 0.052083333333333336,
+  "normalizedY": 0.30324074074074076
+},{
+  "_id": "65895acb1b192458f364d239",
+  "timestamp": {
+    "$numberLong": "1703500378643"
+  },
+  "x": 80,
+  "y": 316,
+  "rollNo": "CB.EN.U4CSE22351",
+  "normalizedTimestamp": 10796,
+  "normalizedX": 0.052083333333333336,
+  "normalizedY": 0.36574074074074076
+},{
+  "_id": "65895acb1b192458f364d242",
+  "timestamp": {
+    "$numberLong": "1703500426003"
+  },
+  "x": 412,
+  "y": 190,
+  "rollNo": "CB.EN.U4CSE22351",
+  "normalizedTimestamp": 58156,
+  "normalizedX": 0.2682291666666667,
+  "normalizedY": 0.2199074074074074
+},{
+  "_id": "65895acb1b192458f364d23e",
+  "timestamp": {
+    "$numberLong": "1703500396757"
+  },
+  "x": 546,
+  "y": 260,
+  "rollNo": "CB.EN.U4CSE22351",
+  "normalizedTimestamp": 28910,
+  "normalizedX": 0.35546875,
+  "normalizedY": 0.30092592592592593
+},{
+  "_id": "65895acb1b192458f364d245",
+  "timestamp": {
+    "$numberLong": "1703500441702"
+  },
+  "x": 204,
+  "y": 73,
+  "rollNo": "CB.EN.U4CSE22351",
+  "normalizedTimestamp": 73855,
+  "normalizedX": 0.1328125,
+  "normalizedY": 0.08449074074074074
+},{
+  "_id": "65895acb1b192458f364d240",
+  "timestamp": {
+    "$numberLong": "1703500422856"
+  },
+  "x": 430,
+  "y": 185,
+  "rollNo": "CB.EN.U4CSE22351",
+  "normalizedTimestamp": 55009,
+  "normalizedX": 0.2799479166666667,
+  "normalizedY": 0.21412037037037038
+},{
+  "_id": "65895acb1b192458f364d23c",
+  "timestamp": {
+    "$numberLong": "1703500388419"
+  },
+  "x": 370,
+  "y": 432,
+  "rollNo": "CB.EN.U4CSE22351",
+  "normalizedTimestamp": 20572,
+  "normalizedX": 0.24088541666666666,
+  "normalizedY": 0.5
+},{
+  "_id": "65895acb1b192458f364d236",
+  "timestamp": {
+    "$numberLong": "1703500372577"
+  },
+  "x": 83,
+  "y": 280,
+  "rollNo": "CB.EN.U4CSE22351",
+  "normalizedTimestamp": 4730,
+  "normalizedX": 0.054036458333333336,
+  "normalizedY": 0.32407407407407407
+},{
+  "_id": "65895acb1b192458f364d23d",
+  "timestamp": {
+    "$numberLong": "1703500393390"
+  },
+  "x": 546,
+  "y": 260,
+  "rollNo": "CB.EN.U4CSE22351",
+  "normalizedTimestamp": 25543,
+  "normalizedX": 0.35546875,
+  "normalizedY": 0.30092592592592593
+},{
+  "_id": "65895acb1b192458f364d243",
+  "timestamp": {
+    "$numberLong": "1703500427531"
+  },
+  "x": 412,
+  "y": 190,
+  "rollNo": "CB.EN.U4CSE22351",
+  "normalizedTimestamp": 59684,
+  "normalizedX": 0.2682291666666667,
+  "normalizedY": 0.2199074074074074
+},{
+  "_id": "65895acb1b192458f364d246",
+  "timestamp": {
+    "$numberLong": "1703500443983"
+  },
+  "x": 780,
+  "y": 25,
+  "rollNo": "CB.EN.U4CSE22351",
+  "normalizedTimestamp": 76136,
+  "normalizedX": 0.5078125,
+  "normalizedY": 0.028935185185185185
+},{
+  "_id": "65895acb1b192458f364d244",
+  "timestamp": {
+    "$numberLong": "1703500429787"
+  },
+  "x": 395,
+  "y": 367,
+  "rollNo": "CB.EN.U4CSE22351",
+  "normalizedTimestamp": 61940,
+  "normalizedX": 0.2571614583333333,
+  "normalizedY": 0.42476851851851855
+},{
+  "_id": "658951f33bf8512eed089a5a",
+  "timestamp": {
+    "$numberLong": "1703498067015"
+  },
+  "x": 21,
+  "y": 75,
+  "rollNo": "CB.EN.U4CSE21054",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.01504297994269341,
+  "normalizedY": 0.11194029850746269
+},{
+  "_id": "658951f33bf8512eed089a5b",
+  "timestamp": {
+    "$numberLong": "1703498069856"
+  },
+  "x": 171,
+  "y": 158,
+  "rollNo": "CB.EN.U4CSE21054",
+  "normalizedTimestamp": 2841,
+  "normalizedX": 0.12249283667621777,
+  "normalizedY": 0.23582089552238805
+},{
+  "_id": "658951f33bf8512eed089a5c",
+  "timestamp": {
+    "$numberLong": "1703498075563"
+  },
+  "x": 150,
+  "y": 154,
+  "rollNo": "CB.EN.U4CSE21054",
+  "normalizedTimestamp": 8548,
+  "normalizedX": 0.10744985673352435,
+  "normalizedY": 0.2298507462686567
+},{
+  "_id": "658951f33bf8512eed089a5d",
+  "timestamp": {
+    "$numberLong": "1703498080234"
+  },
+  "x": 102,
+  "y": 153,
+  "rollNo": "CB.EN.U4CSE21054",
+  "normalizedTimestamp": 13219,
+  "normalizedX": 0.07306590257879657,
+  "normalizedY": 0.22835820895522388
+},{
+  "_id": "658951f33bf8512eed089a5e",
+  "timestamp": {
+    "$numberLong": "1703498084099"
+  },
+  "x": 80,
+  "y": 150,
+  "rollNo": "CB.EN.U4CSE21054",
+  "normalizedTimestamp": 17084,
+  "normalizedX": 0.05730659025787966,
+  "normalizedY": 0.22388059701492538
+},{
+  "_id": "658951f33bf8512eed089a5f",
+  "timestamp": {
+    "$numberLong": "1703498095043"
+  },
+  "x": 439,
+  "y": 233,
+  "rollNo": "CB.EN.U4CSE21054",
+  "normalizedTimestamp": 28028,
+  "normalizedX": 0.3144699140401146,
+  "normalizedY": 0.34776119402985073
+},{
+  "_id": "658951f33bf8512eed089a60",
+  "timestamp": {
+    "$numberLong": "1703498096688"
+  },
+  "x": 395,
+  "y": 231,
+  "rollNo": "CB.EN.U4CSE21054",
+  "normalizedTimestamp": 29673,
+  "normalizedX": 0.2829512893982808,
+  "normalizedY": 0.3447761194029851
+},{
+  "_id": "658951f33bf8512eed089a61",
+  "timestamp": {
+    "$numberLong": "1703498100378"
+  },
+  "x": 443,
+  "y": 380,
+  "rollNo": "CB.EN.U4CSE21054",
+  "normalizedTimestamp": 33363,
+  "normalizedX": 0.3173352435530086,
+  "normalizedY": 0.5671641791044776
+},{
+  "_id": "658951f33bf8512eed089a62",
+  "timestamp": {
+    "$numberLong": "1703498101985"
+  },
+  "x": 438,
+  "y": 363,
+  "rollNo": "CB.EN.U4CSE21054",
+  "normalizedTimestamp": 34970,
+  "normalizedX": 0.3137535816618911,
+  "normalizedY": 0.5417910447761194
+},{
+  "_id": "658951f33bf8512eed089a63",
+  "timestamp": {
+    "$numberLong": "1703498103694"
+  },
+  "x": 445,
+  "y": 376,
+  "rollNo": "CB.EN.U4CSE21054",
+  "normalizedTimestamp": 36679,
+  "normalizedX": 0.31876790830945556,
+  "normalizedY": 0.5611940298507463
+},{
+  "_id": "658951f33bf8512eed089a64",
+  "timestamp": {
+    "$numberLong": "1703498105318"
+  },
+  "x": 348,
+  "y": 414,
+  "rollNo": "CB.EN.U4CSE21054",
+  "normalizedTimestamp": 38303,
+  "normalizedX": 0.2492836676217765,
+  "normalizedY": 0.6179104477611941
+},{
+  "_id": "658951f33bf8512eed089a65",
+  "timestamp": {
+    "$numberLong": "1703498117557"
+  },
+  "x": 549,
+  "y": 256,
+  "rollNo": "CB.EN.U4CSE21054",
+  "normalizedTimestamp": 50542,
+  "normalizedX": 0.39326647564469913,
+  "normalizedY": 0.382089552238806
+},{
+  "_id": "658951f33bf8512eed089a66",
+  "timestamp": {
+    "$numberLong": "1703498137556"
+  },
+  "x": 370,
+  "y": 192,
+  "rollNo": "CB.EN.U4CSE21054",
+  "normalizedTimestamp": 70541,
+  "normalizedX": 0.26504297994269344,
+  "normalizedY": 0.2865671641791045
+},{
+  "_id": "658951f33bf8512eed089a67",
+  "timestamp": {
+    "$numberLong": "1703498139329"
+  },
+  "x": 93,
+  "y": 153,
+  "rollNo": "CB.EN.U4CSE21054",
+  "normalizedTimestamp": 72314,
+  "normalizedX": 0.0666189111747851,
+  "normalizedY": 0.22835820895522388
+},{
+  "_id": "658951f33bf8512eed089a68",
+  "timestamp": {
+    "$numberLong": "1703498140397"
+  },
+  "x": 91,
+  "y": 156,
+  "rollNo": "CB.EN.U4CSE21054",
+  "normalizedTimestamp": 73382,
+  "normalizedX": 0.0651862464183381,
+  "normalizedY": 0.23283582089552238
+},{
+  "_id": "658951f33bf8512eed089a6a",
+  "timestamp": {
+    "$numberLong": "1703498150940"
+  },
+  "x": 445,
+  "y": 381,
+  "rollNo": "CB.EN.U4CSE21054",
+  "normalizedTimestamp": 83925,
+  "normalizedX": 0.31876790830945556,
+  "normalizedY": 0.5686567164179105
+},{
+  "_id": "658951f33bf8512eed089a6b",
+  "timestamp": {
+    "$numberLong": "1703498152802"
+  },
+  "x": 442,
+  "y": 379,
+  "rollNo": "CB.EN.U4CSE21054",
+  "normalizedTimestamp": 85787,
+  "normalizedX": 0.3166189111747851,
+  "normalizedY": 0.5656716417910448
+},{
+  "_id": "658951f33bf8512eed089a6c",
+  "timestamp": {
+    "$numberLong": "1703498170420"
+  },
+  "x": 716,
+  "y": 25,
+  "rollNo": "CB.EN.U4CSE21054",
+  "normalizedTimestamp": 103405,
+  "normalizedX": 0.5128939828080229,
+  "normalizedY": 0.03731343283582089
+},{
+  "_id": "658951f33bf8512eed089a69",
+  "timestamp": {
+    "$numberLong": "1703498148988"
+  },
+  "x": 500,
+  "y": 198,
+  "rollNo": "CB.EN.U4CSE21054",
+  "normalizedTimestamp": 81973,
+  "normalizedX": 0.35816618911174786,
+  "normalizedY": 0.2955223880597015
+},{
+  "_id": "65894de7ece61eb9e9bfae51",
+  "timestamp": {
+    "$numberLong": "1703497100255"
+  },
+  "x": 34,
+  "y": 80,
+  "rollNo": "CB.EN.U4CSE21020",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.024355300859598854,
+  "normalizedY": 0.10191082802547771
+},{
+  "_id": "65894de7ece61eb9e9bfae52",
+  "timestamp": {
+    "$numberLong": "1703497102778"
+  },
+  "x": 103,
+  "y": 154,
+  "rollNo": "CB.EN.U4CSE21020",
+  "normalizedTimestamp": 2523,
+  "normalizedX": 0.07378223495702006,
+  "normalizedY": 0.1961783439490446
+},{
+  "_id": "65894de7ece61eb9e9bfae54",
+  "timestamp": {
+    "$numberLong": "1703497115538"
+  },
+  "x": 421,
+  "y": 229,
+  "rollNo": "CB.EN.U4CSE21020",
+  "normalizedTimestamp": 15283,
+  "normalizedX": 0.3015759312320917,
+  "normalizedY": 0.2917197452229299
+},{
+  "_id": "65894de7ece61eb9e9bfae53",
+  "timestamp": {
+    "$numberLong": "1703497111893"
+  },
+  "x": 435,
+  "y": 226,
+  "rollNo": "CB.EN.U4CSE21020",
+  "normalizedTimestamp": 11638,
+  "normalizedX": 0.3116045845272206,
+  "normalizedY": 0.2878980891719745
+},{
+  "_id": "65894de7ece61eb9e9bfae56",
+  "timestamp": {
+    "$numberLong": "1703497120631"
+  },
+  "x": 367,
+  "y": 340,
+  "rollNo": "CB.EN.U4CSE21020",
+  "normalizedTimestamp": 20376,
+  "normalizedX": 0.2628939828080229,
+  "normalizedY": 0.43312101910828027
+},{
+  "_id": "65894de7ece61eb9e9bfae55",
+  "timestamp": {
+    "$numberLong": "1703497119372"
+  },
+  "x": 367,
+  "y": 340,
+  "rollNo": "CB.EN.U4CSE21020",
+  "normalizedTimestamp": 19117,
+  "normalizedX": 0.2628939828080229,
+  "normalizedY": 0.43312101910828027
+},{
+  "_id": "65894de7ece61eb9e9bfae57",
+  "timestamp": {
+    "$numberLong": "1703497128183"
+  },
+  "x": 493,
+  "y": 256,
+  "rollNo": "CB.EN.U4CSE21020",
+  "normalizedTimestamp": 27928,
+  "normalizedX": 0.3531518624641834,
+  "normalizedY": 0.32611464968152865
+},{
+  "_id": "65894de7ece61eb9e9bfae58",
+  "timestamp": {
+    "$numberLong": "1703497142790"
+  },
+  "x": 91,
+  "y": 194,
+  "rollNo": "CB.EN.U4CSE21020",
+  "normalizedTimestamp": 42535,
+  "normalizedX": 0.0651862464183381,
+  "normalizedY": 0.24713375796178344
+},{
+  "_id": "65894de7ece61eb9e9bfae5a",
+  "timestamp": {
+    "$numberLong": "1703497153072"
+  },
+  "x": 504,
+  "y": 194,
+  "rollNo": "CB.EN.U4CSE21020",
+  "normalizedTimestamp": 52817,
+  "normalizedX": 0.36103151862464183,
+  "normalizedY": 0.24713375796178344
+},{
+  "_id": "65894de7ece61eb9e9bfae5b",
+  "timestamp": {
+    "$numberLong": "1703497155360"
+  },
+  "x": 408,
+  "y": 425,
+  "rollNo": "CB.EN.U4CSE21020",
+  "normalizedTimestamp": 55105,
+  "normalizedX": 0.2922636103151863,
+  "normalizedY": 0.5414012738853503
+},{
+  "_id": "65894de7ece61eb9e9bfae59",
+  "timestamp": {
+    "$numberLong": "1703497144188"
+  },
+  "x": 91,
+  "y": 194,
+  "rollNo": "CB.EN.U4CSE21020",
+  "normalizedTimestamp": 43933,
+  "normalizedX": 0.0651862464183381,
+  "normalizedY": 0.24713375796178344
+},{
+  "_id": "65894de7ece61eb9e9bfae5c",
+  "timestamp": {
+    "$numberLong": "1703497169661"
+  },
+  "x": 722,
+  "y": 26,
+  "rollNo": "CB.EN.U4CSE21020",
+  "normalizedTimestamp": 69406,
+  "normalizedX": 0.5171919770773639,
+  "normalizedY": 0.033121019108280254
+},{
+  "_id": "65899e7725073fa4a32ff748",
+  "timestamp": {
+    "$numberLong": "1703517672341"
+  },
+  "x": 85,
+  "y": 307,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 6594,
+  "normalizedX": 0.055338541666666664,
+  "normalizedY": 0.35532407407407407
+},{
+  "_id": "65899e7725073fa4a32ff747",
+  "timestamp": {
+    "$numberLong": "1703517670106"
+  },
+  "x": 186,
+  "y": 282,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 4359,
+  "normalizedX": 0.12109375,
+  "normalizedY": 0.3263888888888889
+},{
+  "_id": "65899e7725073fa4a32ff746",
+  "timestamp": {
+    "$numberLong": "1703517665747"
+  },
+  "x": 28,
+  "y": 80,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.018229166666666668,
+  "normalizedY": 0.09259259259259259
+},{
+  "_id": "65899e7725073fa4a32ff749",
+  "timestamp": {
+    "$numberLong": "1703517675714"
+  },
+  "x": 113,
+  "y": 312,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 9967,
+  "normalizedX": 0.07356770833333333,
+  "normalizedY": 0.3611111111111111
+},{
+  "_id": "65899e7725073fa4a32ff74a",
+  "timestamp": {
+    "$numberLong": "1703517679116"
+  },
+  "x": 109,
+  "y": 320,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 13369,
+  "normalizedX": 0.07096354166666667,
+  "normalizedY": 0.37037037037037035
+},{
+  "_id": "65899e7725073fa4a32ff74b",
+  "timestamp": {
+    "$numberLong": "1703517681186"
+  },
+  "x": 120,
+  "y": 317,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 15439,
+  "normalizedX": 0.078125,
+  "normalizedY": 0.36689814814814814
+},{
+  "_id": "65899e7725073fa4a32ff74c",
+  "timestamp": {
+    "$numberLong": "1703517684775"
+  },
+  "x": 427,
+  "y": 215,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 19028,
+  "normalizedX": 0.2779947916666667,
+  "normalizedY": 0.2488425925925926
+},{
+  "_id": "65899e7725073fa4a32ff74d",
+  "timestamp": {
+    "$numberLong": "1703517686325"
+  },
+  "x": 460,
+  "y": 229,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 20578,
+  "normalizedX": 0.2994791666666667,
+  "normalizedY": 0.2650462962962963
+},{
+  "_id": "65899e7725073fa4a32ff751",
+  "timestamp": {
+    "$numberLong": "1703517694177"
+  },
+  "x": 392,
+  "y": 444,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 28430,
+  "normalizedX": 0.2552083333333333,
+  "normalizedY": 0.5138888888888888
+},{
+  "_id": "65899e7725073fa4a32ff750",
+  "timestamp": {
+    "$numberLong": "1703517692950"
+  },
+  "x": 392,
+  "y": 444,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 27203,
+  "normalizedX": 0.2552083333333333,
+  "normalizedY": 0.5138888888888888
+},{
+  "_id": "65899e7725073fa4a32ff753",
+  "timestamp": {
+    "$numberLong": "1703517700875"
+  },
+  "x": 703,
+  "y": 224,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 35128,
+  "normalizedX": 0.4576822916666667,
+  "normalizedY": 0.25925925925925924
+},{
+  "_id": "65899e7725073fa4a32ff754",
+  "timestamp": {
+    "$numberLong": "1703517703067"
+  },
+  "x": 561,
+  "y": 264,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 37320,
+  "normalizedX": 0.365234375,
+  "normalizedY": 0.3055555555555556
+},{
+  "_id": "65899e7725073fa4a32ff74f",
+  "timestamp": {
+    "$numberLong": "1703517691686"
+  },
+  "x": 467,
+  "y": 368,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 25939,
+  "normalizedX": 0.3040364583333333,
+  "normalizedY": 0.42592592592592593
+},{
+  "_id": "65899e7725073fa4a32ff74e",
+  "timestamp": {
+    "$numberLong": "1703517687539"
+  },
+  "x": 460,
+  "y": 229,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 21792,
+  "normalizedX": 0.2994791666666667,
+  "normalizedY": 0.2650462962962963
+},{
+  "_id": "65899e7725073fa4a32ff752",
+  "timestamp": {
+    "$numberLong": "1703517695954"
+  },
+  "x": 395,
+  "y": 452,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 30207,
+  "normalizedX": 0.2571614583333333,
+  "normalizedY": 0.5231481481481481
+},{
+  "_id": "65899e7725073fa4a32ff757",
+  "timestamp": {
+    "$numberLong": "1703517717908"
+  },
+  "x": 552,
+  "y": 186,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 52161,
+  "normalizedX": 0.359375,
+  "normalizedY": 0.2152777777777778
+},{
+  "_id": "65899e7725073fa4a32ff756",
+  "timestamp": {
+    "$numberLong": "1703517714172"
+  },
+  "x": 80,
+  "y": 348,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 48425,
+  "normalizedX": 0.052083333333333336,
+  "normalizedY": 0.4027777777777778
+},{
+  "_id": "65899e7725073fa4a32ff755",
+  "timestamp": {
+    "$numberLong": "1703517711193"
+  },
+  "x": 85,
+  "y": 319,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 45446,
+  "normalizedX": 0.055338541666666664,
+  "normalizedY": 0.36921296296296297
+},{
+  "_id": "65899e7725073fa4a32ff758",
+  "timestamp": {
+    "$numberLong": "1703517718749"
+  },
+  "x": 552,
+  "y": 186,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 53002,
+  "normalizedX": 0.359375,
+  "normalizedY": 0.2152777777777778
+},{
+  "_id": "65899e7725073fa4a32ff759",
+  "timestamp": {
+    "$numberLong": "1703517720140"
+  },
+  "x": 495,
+  "y": 360,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 54393,
+  "normalizedX": 0.322265625,
+  "normalizedY": 0.4166666666666667
+},{
+  "_id": "65899e7725073fa4a32ff75a",
+  "timestamp": {
+    "$numberLong": "1703517740218"
+  },
+  "x": 784,
+  "y": 32,
+  "rollNo": "CB.EN.U4CSE20425",
+  "normalizedTimestamp": 74471,
+  "normalizedX": 0.5104166666666666,
+  "normalizedY": 0.037037037037037035
+},{
+  "_id": "6589aa37615c956939765626",
+  "timestamp": {
+    "$numberLong": "1703520730958"
+  },
+  "x": 20,
+  "y": 77,
+  "rollNo": "CB.EN.U4CSE21023",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.014326647564469915,
+  "normalizedY": 0.0980891719745223
+},{
+  "_id": "6589aa37615c956939765628",
+  "timestamp": {
+    "$numberLong": "1703520736008"
+  },
+  "x": 93,
+  "y": 272,
+  "rollNo": "CB.EN.U4CSE21023",
+  "normalizedTimestamp": 5050,
+  "normalizedX": 0.0666189111747851,
+  "normalizedY": 0.3464968152866242
+},{
+  "_id": "6589aa37615c95693976562a",
+  "timestamp": {
+    "$numberLong": "1703520743708"
+  },
+  "x": 373,
+  "y": 450,
+  "rollNo": "CB.EN.U4CSE21023",
+  "normalizedTimestamp": 12750,
+  "normalizedX": 0.2671919770773639,
+  "normalizedY": 0.5732484076433121
+},{
+  "_id": "6589aa37615c956939765629",
+  "timestamp": {
+    "$numberLong": "1703520740701"
+  },
+  "x": 384,
+  "y": 221,
+  "rollNo": "CB.EN.U4CSE21023",
+  "normalizedTimestamp": 9743,
+  "normalizedX": 0.27507163323782235,
+  "normalizedY": 0.28152866242038216
+},{
+  "_id": "6589aa37615c956939765627",
+  "timestamp": {
+    "$numberLong": "1703520733208"
+  },
+  "x": 110,
+  "y": 237,
+  "rollNo": "CB.EN.U4CSE21023",
+  "normalizedTimestamp": 2250,
+  "normalizedX": 0.07879656160458452,
+  "normalizedY": 0.3019108280254777
+},{
+  "_id": "6589aa37615c95693976562b",
+  "timestamp": {
+    "$numberLong": "1703520748355"
+  },
+  "x": 509,
+  "y": 255,
+  "rollNo": "CB.EN.U4CSE21023",
+  "normalizedTimestamp": 17397,
+  "normalizedX": 0.3646131805157593,
+  "normalizedY": 0.3248407643312102
+},{
+  "_id": "6589aa37615c95693976562c",
+  "timestamp": {
+    "$numberLong": "1703520766543"
+  },
+  "x": 81,
+  "y": 320,
+  "rollNo": "CB.EN.U4CSE21023",
+  "normalizedTimestamp": 35585,
+  "normalizedX": 0.058022922636103154,
+  "normalizedY": 0.40764331210191085
+},{
+  "_id": "6589aa37615c95693976562e",
+  "timestamp": {
+    "$numberLong": "1703520776490"
+  },
+  "x": 466,
+  "y": 185,
+  "rollNo": "CB.EN.U4CSE21023",
+  "normalizedTimestamp": 45532,
+  "normalizedX": 0.333810888252149,
+  "normalizedY": 0.2356687898089172
+},{
+  "_id": "6589aa37615c95693976562d",
+  "timestamp": {
+    "$numberLong": "1703520772194"
+  },
+  "x": 490,
+  "y": 200,
+  "rollNo": "CB.EN.U4CSE21023",
+  "normalizedTimestamp": 41236,
+  "normalizedX": 0.3510028653295129,
+  "normalizedY": 0.25477707006369427
+},{
+  "_id": "6589aa37615c95693976562f",
+  "timestamp": {
+    "$numberLong": "1703520779772"
+  },
+  "x": 408,
+  "y": 413,
+  "rollNo": "CB.EN.U4CSE21023",
+  "normalizedTimestamp": 48814,
+  "normalizedX": 0.2922636103151863,
+  "normalizedY": 0.5261146496815287
+},{
+  "_id": "6589aa37615c956939765630",
+  "timestamp": {
+    "$numberLong": "1703520798559"
+  },
+  "x": 712,
+  "y": 26,
+  "rollNo": "CB.EN.U4CSE21023",
+  "normalizedTimestamp": 67601,
+  "normalizedX": 0.5100286532951289,
+  "normalizedY": 0.033121019108280254
+},{
+  "_id": "65895750d7441a0c0effde74",
+  "timestamp": {
+    "$numberLong": "1703499489222"
+  },
+  "x": 22,
+  "y": 78,
+  "rollNo": "CB.EN.U4CSE22304",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.015759312320916905,
+  "normalizedY": 0.11641791044776119
+},{
+  "_id": "65895750d7441a0c0effde75",
+  "timestamp": {
+    "$numberLong": "1703499490711"
+  },
+  "x": 82,
+  "y": 169,
+  "rollNo": "CB.EN.U4CSE22304",
+  "normalizedTimestamp": 1489,
+  "normalizedX": 0.05873925501432665,
+  "normalizedY": 0.25223880597014925
+},{
+  "_id": "65895750d7441a0c0effde76",
+  "timestamp": {
+    "$numberLong": "1703499493240"
+  },
+  "x": 86,
+  "y": 152,
+  "rollNo": "CB.EN.U4CSE22304",
+  "normalizedTimestamp": 4018,
+  "normalizedX": 0.06160458452722063,
+  "normalizedY": 0.22686567164179106
+},{
+  "_id": "65895750d7441a0c0effde77",
+  "timestamp": {
+    "$numberLong": "1703499499453"
+  },
+  "x": 402,
+  "y": 220,
+  "rollNo": "CB.EN.U4CSE22304",
+  "normalizedTimestamp": 10231,
+  "normalizedX": 0.28796561604584525,
+  "normalizedY": 0.3283582089552239
+},{
+  "_id": "65895750d7441a0c0effde79",
+  "timestamp": {
+    "$numberLong": "1703499503835"
+  },
+  "x": 355,
+  "y": 420,
+  "rollNo": "CB.EN.U4CSE22304",
+  "normalizedTimestamp": 14613,
+  "normalizedX": 0.25429799426934097,
+  "normalizedY": 0.6268656716417911
+},{
+  "_id": "65895750d7441a0c0effde78",
+  "timestamp": {
+    "$numberLong": "1703499501144"
+  },
+  "x": 400,
+  "y": 225,
+  "rollNo": "CB.EN.U4CSE22304",
+  "normalizedTimestamp": 11922,
+  "normalizedX": 0.28653295128939826,
+  "normalizedY": 0.3358208955223881
+},{
+  "_id": "65895750d7441a0c0effde7a",
+  "timestamp": {
+    "$numberLong": "1703499504839"
+  },
+  "x": 355,
+  "y": 420,
+  "rollNo": "CB.EN.U4CSE22304",
+  "normalizedTimestamp": 15617,
+  "normalizedX": 0.25429799426934097,
+  "normalizedY": 0.6268656716417911
+},{
+  "_id": "65895750d7441a0c0effde7b",
+  "timestamp": {
+    "$numberLong": "1703499506736"
+  },
+  "x": 355,
+  "y": 420,
+  "rollNo": "CB.EN.U4CSE22304",
+  "normalizedTimestamp": 17514,
+  "normalizedX": 0.25429799426934097,
+  "normalizedY": 0.6268656716417911
+},{
+  "_id": "65895750d7441a0c0effde7d",
+  "timestamp": {
+    "$numberLong": "1703499532439"
+  },
+  "x": 63,
+  "y": 120,
+  "rollNo": "CB.EN.U4CSE22304",
+  "normalizedTimestamp": 43217,
+  "normalizedX": 0.04512893982808023,
+  "normalizedY": 0.1791044776119403
+},{
+  "_id": "65895750d7441a0c0effde7c",
+  "timestamp": {
+    "$numberLong": "1703499513044"
+  },
+  "x": 497,
+  "y": 262,
+  "rollNo": "CB.EN.U4CSE22304",
+  "normalizedTimestamp": 23822,
+  "normalizedX": 0.3560171919770774,
+  "normalizedY": 0.39104477611940297
+},{
+  "_id": "65895750d7441a0c0effde7e",
+  "timestamp": {
+    "$numberLong": "1703499540438"
+  },
+  "x": 389,
+  "y": 126,
+  "rollNo": "CB.EN.U4CSE22304",
+  "normalizedTimestamp": 51216,
+  "normalizedX": 0.2786532951289398,
+  "normalizedY": 0.1880597014925373
+},{
+  "_id": "65895750d7441a0c0effde7f",
+  "timestamp": {
+    "$numberLong": "1703499541337"
+  },
+  "x": 389,
+  "y": 126,
+  "rollNo": "CB.EN.U4CSE22304",
+  "normalizedTimestamp": 52115,
+  "normalizedX": 0.2786532951289398,
+  "normalizedY": 0.1880597014925373
+},{
+  "_id": "65895750d7441a0c0effde80",
+  "timestamp": {
+    "$numberLong": "1703499543214"
+  },
+  "x": 378,
+  "y": 296,
+  "rollNo": "CB.EN.U4CSE22304",
+  "normalizedTimestamp": 53992,
+  "normalizedX": 0.2707736389684814,
+  "normalizedY": 0.4417910447761194
+},{
+  "_id": "65895750d7441a0c0effde81",
+  "timestamp": {
+    "$numberLong": "1703499562990"
+  },
+  "x": 738,
+  "y": 29,
+  "rollNo": "CB.EN.U4CSE22304",
+  "normalizedTimestamp": 73768,
+  "normalizedX": 0.5286532951289399,
+  "normalizedY": 0.04328358208955224
+},{
+  "_id": "65899b8d25073fa4a32ff266",
+  "timestamp": {
+    "$numberLong": "1703516933079"
+  },
+  "x": 24,
+  "y": 208,
+  "rollNo": "CB.EN.U4CSE20431",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.017191977077363897,
+  "normalizedY": 0.26496815286624203
+},{
+  "_id": "65899b8d25073fa4a32ff267",
+  "timestamp": {
+    "$numberLong": "1703516935064"
+  },
+  "x": 26,
+  "y": 74,
+  "rollNo": "CB.EN.U4CSE20431",
+  "normalizedTimestamp": 1985,
+  "normalizedX": 0.01862464183381089,
+  "normalizedY": 0.09426751592356689
+},{
+  "_id": "65899b8d25073fa4a32ff26b",
+  "timestamp": {
+    "$numberLong": "1703516944969"
+  },
+  "x": 432,
+  "y": 224,
+  "rollNo": "CB.EN.U4CSE20431",
+  "normalizedTimestamp": 11890,
+  "normalizedX": 0.30945558739255014,
+  "normalizedY": 0.28535031847133757
+},{
+  "_id": "65899b8d25073fa4a32ff26a",
+  "timestamp": {
+    "$numberLong": "1703516943708"
+  },
+  "x": 432,
+  "y": 224,
+  "rollNo": "CB.EN.U4CSE20431",
+  "normalizedTimestamp": 10629,
+  "normalizedX": 0.30945558739255014,
+  "normalizedY": 0.28535031847133757
+},{
+  "_id": "65899b8d25073fa4a32ff268",
+  "timestamp": {
+    "$numberLong": "1703516937263"
+  },
+  "x": 104,
+  "y": 283,
+  "rollNo": "CB.EN.U4CSE20431",
+  "normalizedTimestamp": 4184,
+  "normalizedX": 0.07449856733524356,
+  "normalizedY": 0.36050955414012736
+},{
+  "_id": "65899b8d25073fa4a32ff269",
+  "timestamp": {
+    "$numberLong": "1703516941449"
+  },
+  "x": 416,
+  "y": 228,
+  "rollNo": "CB.EN.U4CSE20431",
+  "normalizedTimestamp": 8370,
+  "normalizedX": 0.2979942693409742,
+  "normalizedY": 0.29044585987261146
+},{
+  "_id": "65899b8d25073fa4a32ff26c",
+  "timestamp": {
+    "$numberLong": "1703516947629"
+  },
+  "x": 372,
+  "y": 289,
+  "rollNo": "CB.EN.U4CSE20431",
+  "normalizedTimestamp": 14550,
+  "normalizedX": 0.2664756446991404,
+  "normalizedY": 0.3681528662420382
+},{
+  "_id": "65899b8d25073fa4a32ff26d",
+  "timestamp": {
+    "$numberLong": "1703516948596"
+  },
+  "x": 353,
+  "y": 368,
+  "rollNo": "CB.EN.U4CSE20431",
+  "normalizedTimestamp": 15517,
+  "normalizedX": 0.252865329512894,
+  "normalizedY": 0.46878980891719746
+},{
+  "_id": "65899b8d25073fa4a32ff26f",
+  "timestamp": {
+    "$numberLong": "1703516951030"
+  },
+  "x": 353,
+  "y": 368,
+  "rollNo": "CB.EN.U4CSE20431",
+  "normalizedTimestamp": 17951,
+  "normalizedX": 0.252865329512894,
+  "normalizedY": 0.46878980891719746
+},{
+  "_id": "65899b8d25073fa4a32ff272",
+  "timestamp": {
+    "$numberLong": "1703516957908"
+  },
+  "x": 1082,
+  "y": 252,
+  "rollNo": "CB.EN.U4CSE20431",
+  "normalizedTimestamp": 24829,
+  "normalizedX": 0.7750716332378224,
+  "normalizedY": 0.32101910828025476
+},{
+  "_id": "65899b8d25073fa4a32ff270",
+  "timestamp": {
+    "$numberLong": "1703516954862"
+  },
+  "x": 724,
+  "y": 135,
+  "rollNo": "CB.EN.U4CSE20431",
+  "normalizedTimestamp": 21783,
+  "normalizedX": 0.5186246418338109,
+  "normalizedY": 0.17197452229299362
+},{
+  "_id": "65899b8d25073fa4a32ff271",
+  "timestamp": {
+    "$numberLong": "1703516956221"
+  },
+  "x": 724,
+  "y": 135,
+  "rollNo": "CB.EN.U4CSE20431",
+  "normalizedTimestamp": 23142,
+  "normalizedX": 0.5186246418338109,
+  "normalizedY": 0.17197452229299362
+},{
+  "_id": "65899b8d25073fa4a32ff26e",
+  "timestamp": {
+    "$numberLong": "1703516950166"
+  },
+  "x": 353,
+  "y": 368,
+  "rollNo": "CB.EN.U4CSE20431",
+  "normalizedTimestamp": 17087,
+  "normalizedX": 0.252865329512894,
+  "normalizedY": 0.46878980891719746
+},{
+  "_id": "65899b8d25073fa4a32ff275",
+  "timestamp": {
+    "$numberLong": "1703516992271"
+  },
+  "x": 86,
+  "y": 248,
+  "rollNo": "CB.EN.U4CSE20431",
+  "normalizedTimestamp": 59192,
+  "normalizedX": 0.06160458452722063,
+  "normalizedY": 0.3159235668789809
+},{
+  "_id": "65899b8d25073fa4a32ff277",
+  "timestamp": {
+    "$numberLong": "1703516997960"
+  },
+  "x": 376,
+  "y": 321,
+  "rollNo": "CB.EN.U4CSE20431",
+  "normalizedTimestamp": 64881,
+  "normalizedX": 0.2693409742120344,
+  "normalizedY": 0.4089171974522293
+},{
+  "_id": "65899b8d25073fa4a32ff278",
+  "timestamp": {
+    "$numberLong": "1703517014011"
+  },
+  "x": 719,
+  "y": 29,
+  "rollNo": "CB.EN.U4CSE20431",
+  "normalizedTimestamp": 80932,
+  "normalizedX": 0.5150429799426934,
+  "normalizedY": 0.03694267515923567
+},{
+  "_id": "65899b8d25073fa4a32ff276",
+  "timestamp": {
+    "$numberLong": "1703516996123"
+  },
+  "x": 485,
+  "y": 126,
+  "rollNo": "CB.EN.U4CSE20431",
+  "normalizedTimestamp": 63044,
+  "normalizedX": 0.34742120343839544,
+  "normalizedY": 0.16050955414012738
+},{
+  "_id": "65899b8d25073fa4a32ff274",
+  "timestamp": {
+    "$numberLong": "1703516962758"
+  },
+  "x": 516,
+  "y": 170,
+  "rollNo": "CB.EN.U4CSE20431",
+  "normalizedTimestamp": 29679,
+  "normalizedX": 0.36962750716332377,
+  "normalizedY": 0.21656050955414013
+},{
+  "_id": "65899b8d25073fa4a32ff273",
+  "timestamp": {
+    "$numberLong": "1703516958805"
+  },
+  "x": 516,
+  "y": 170,
+  "rollNo": "CB.EN.U4CSE20431",
+  "normalizedTimestamp": 25726,
+  "normalizedX": 0.36962750716332377,
+  "normalizedY": 0.21656050955414013
+},{
+  "_id": "65895791d7441a0c0effe193",
+  "timestamp": {
+    "$numberLong": "1703499556270"
+  },
+  "x": 365,
+  "y": 432,
+  "rollNo": "CB.EN.U4CSE22323",
+  "normalizedTimestamp": 23369,
+  "normalizedX": 0.23763020833333334,
+  "normalizedY": 0.5
+},{
+  "_id": "65895791d7441a0c0effe191",
+  "timestamp": {
+    "$numberLong": "1703499552079"
+  },
+  "x": 421,
+  "y": 225,
+  "rollNo": "CB.EN.U4CSE22323",
+  "normalizedTimestamp": 19178,
+  "normalizedX": 0.2740885416666667,
+  "normalizedY": 0.2604166666666667
+},{
+  "_id": "65895791d7441a0c0effe194",
+  "timestamp": {
+    "$numberLong": "1703499563337"
+  },
+  "x": 566,
+  "y": 258,
+  "rollNo": "CB.EN.U4CSE22323",
+  "normalizedTimestamp": 30436,
+  "normalizedX": 0.3684895833333333,
+  "normalizedY": 0.2986111111111111
+},{
+  "_id": "65895791d7441a0c0effe190",
+  "timestamp": {
+    "$numberLong": "1703499551006"
+  },
+  "x": 421,
+  "y": 225,
+  "rollNo": "CB.EN.U4CSE22323",
+  "normalizedTimestamp": 18105,
+  "normalizedX": 0.2740885416666667,
+  "normalizedY": 0.2604166666666667
+},{
+  "_id": "65895791d7441a0c0effe195",
+  "timestamp": {
+    "$numberLong": "1703499578271"
+  },
+  "x": 96,
+  "y": 355,
+  "rollNo": "CB.EN.U4CSE22323",
+  "normalizedTimestamp": 45370,
+  "normalizedX": 0.0625,
+  "normalizedY": 0.41087962962962965
+},{
+  "_id": "65895791d7441a0c0effe199",
+  "timestamp": {
+    "$numberLong": "1703499608923"
+  },
+  "x": 800,
+  "y": 31,
+  "rollNo": "CB.EN.U4CSE22323",
+  "normalizedTimestamp": 76022,
+  "normalizedX": 0.5208333333333334,
+  "normalizedY": 0.03587962962962963
+},{
+  "_id": "65895791d7441a0c0effe18d",
+  "timestamp": {
+    "$numberLong": "1703499539892"
+  },
+  "x": 104,
+  "y": 263,
+  "rollNo": "CB.EN.U4CSE22323",
+  "normalizedTimestamp": 6991,
+  "normalizedX": 0.06770833333333333,
+  "normalizedY": 0.30439814814814814
+},{
+  "_id": "65895791d7441a0c0effe197",
+  "timestamp": {
+    "$numberLong": "1703499584744"
+  },
+  "x": 526,
+  "y": 197,
+  "rollNo": "CB.EN.U4CSE22323",
+  "normalizedTimestamp": 51843,
+  "normalizedX": 0.3424479166666667,
+  "normalizedY": 0.22800925925925927
+},{
+  "_id": "65895791d7441a0c0effe192",
+  "timestamp": {
+    "$numberLong": "1703499554062"
+  },
+  "x": 365,
+  "y": 432,
+  "rollNo": "CB.EN.U4CSE22323",
+  "normalizedTimestamp": 21161,
+  "normalizedX": 0.23763020833333334,
+  "normalizedY": 0.5
+},{
+  "_id": "65895791d7441a0c0effe18e",
+  "timestamp": {
+    "$numberLong": "1703499541569"
+  },
+  "x": 109,
+  "y": 312,
+  "rollNo": "CB.EN.U4CSE22323",
+  "normalizedTimestamp": 8668,
+  "normalizedX": 0.07096354166666667,
+  "normalizedY": 0.3611111111111111
+},{
+  "_id": "65895791d7441a0c0effe198",
+  "timestamp": {
+    "$numberLong": "1703499588947"
+  },
+  "x": 392,
+  "y": 363,
+  "rollNo": "CB.EN.U4CSE22323",
+  "normalizedTimestamp": 56046,
+  "normalizedX": 0.2552083333333333,
+  "normalizedY": 0.4201388888888889
+},{
+  "_id": "65895791d7441a0c0effe196",
+  "timestamp": {
+    "$numberLong": "1703499583510"
+  },
+  "x": 526,
+  "y": 197,
+  "rollNo": "CB.EN.U4CSE22323",
+  "normalizedTimestamp": 50609,
+  "normalizedX": 0.3424479166666667,
+  "normalizedY": 0.22800925925925927
+},{
+  "_id": "65895791d7441a0c0effe18b",
+  "timestamp": {
+    "$numberLong": "1703499534883"
+  },
+  "x": 24,
+  "y": 81,
+  "rollNo": "CB.EN.U4CSE22323",
+  "normalizedTimestamp": 1982,
+  "normalizedX": 0.015625,
+  "normalizedY": 0.09375
+},{
+  "_id": "65895791d7441a0c0effe18a",
+  "timestamp": {
+    "$numberLong": "1703499532901"
+  },
+  "x": 24,
+  "y": 81,
+  "rollNo": "CB.EN.U4CSE22323",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.015625,
+  "normalizedY": 0.09375
+},{
+  "_id": "65895791d7441a0c0effe18c",
+  "timestamp": {
+    "$numberLong": "1703499537655"
+  },
+  "x": 97,
+  "y": 279,
+  "rollNo": "CB.EN.U4CSE22323",
+  "normalizedTimestamp": 4754,
+  "normalizedX": 0.06315104166666667,
+  "normalizedY": 0.3229166666666667
+},{
+  "_id": "65895791d7441a0c0effe18f",
+  "timestamp": {
+    "$numberLong": "1703499548198"
+  },
+  "x": 452,
+  "y": 219,
+  "rollNo": "CB.EN.U4CSE22323",
+  "normalizedTimestamp": 15297,
+  "normalizedX": 0.2942708333333333,
+  "normalizedY": 0.2534722222222222
+},{
+  "_id": "658924d06a3610f95ee3d15f",
+  "timestamp": {
+    "$numberLong": "1703486546110"
+  },
+  "x": 85,
+  "y": 152,
+  "rollNo": "CB.EN.U4EEE23119",
+  "normalizedTimestamp": 4910,
+  "normalizedX": 0.06088825214899714,
+  "normalizedY": 0.19363057324840766
+},{
+  "_id": "658924d06a3610f95ee3d161",
+  "timestamp": {
+    "$numberLong": "1703486558250"
+  },
+  "x": 411,
+  "y": 226,
+  "rollNo": "CB.EN.U4EEE23119",
+  "normalizedTimestamp": 17050,
+  "normalizedX": 0.29441260744985676,
+  "normalizedY": 0.2878980891719745
+},{
+  "_id": "658924d06a3610f95ee3d15d",
+  "timestamp": {
+    "$numberLong": "1703486541200"
+  },
+  "x": 22,
+  "y": 76,
+  "rollNo": "CB.EN.U4EEE23119",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.015759312320916905,
+  "normalizedY": 0.09681528662420383
+},{
+  "_id": "658924d06a3610f95ee3d164",
+  "timestamp": {
+    "$numberLong": "1703486587170"
+  },
+  "x": 85,
+  "y": 194,
+  "rollNo": "CB.EN.U4EEE23119",
+  "normalizedTimestamp": 45970,
+  "normalizedX": 0.06088825214899714,
+  "normalizedY": 0.24713375796178344
+},{
+  "_id": "658924d06a3610f95ee3d163",
+  "timestamp": {
+    "$numberLong": "1703486567364"
+  },
+  "x": 521,
+  "y": 258,
+  "rollNo": "CB.EN.U4EEE23119",
+  "normalizedTimestamp": 26164,
+  "normalizedX": 0.37320916905444124,
+  "normalizedY": 0.3286624203821656
+},{
+  "_id": "658924d06a3610f95ee3d15e",
+  "timestamp": {
+    "$numberLong": "1703486543297"
+  },
+  "x": 22,
+  "y": 76,
+  "rollNo": "CB.EN.U4EEE23119",
+  "normalizedTimestamp": 2097,
+  "normalizedX": 0.015759312320916905,
+  "normalizedY": 0.09681528662420383
+},{
+  "_id": "658924d06a3610f95ee3d160",
+  "timestamp": {
+    "$numberLong": "1703486555432"
+  },
+  "x": 411,
+  "y": 226,
+  "rollNo": "CB.EN.U4EEE23119",
+  "normalizedTimestamp": 14232,
+  "normalizedX": 0.29441260744985676,
+  "normalizedY": 0.2878980891719745
+},{
+  "_id": "658924d06a3610f95ee3d166",
+  "timestamp": {
+    "$numberLong": "1703486598118"
+  },
+  "x": 530,
+  "y": 188,
+  "rollNo": "CB.EN.U4EEE23119",
+  "normalizedTimestamp": 56918,
+  "normalizedX": 0.37965616045845274,
+  "normalizedY": 0.2394904458598726
+},{
+  "_id": "658924d06a3610f95ee3d162",
+  "timestamp": {
+    "$numberLong": "1703486560056"
+  },
+  "x": 376,
+  "y": 338,
+  "rollNo": "CB.EN.U4EEE23119",
+  "normalizedTimestamp": 18856,
+  "normalizedX": 0.2693409742120344,
+  "normalizedY": 0.4305732484076433
+},{
+  "_id": "658924d06a3610f95ee3d165",
+  "timestamp": {
+    "$numberLong": "1703486596385"
+  },
+  "x": 530,
+  "y": 188,
+  "rollNo": "CB.EN.U4EEE23119",
+  "normalizedTimestamp": 55185,
+  "normalizedX": 0.37965616045845274,
+  "normalizedY": 0.2394904458598726
+},{
+  "_id": "658924d06a3610f95ee3d167",
+  "timestamp": {
+    "$numberLong": "1703486600520"
+  },
+  "x": 431,
+  "y": 305,
+  "rollNo": "CB.EN.U4EEE23119",
+  "normalizedTimestamp": 59320,
+  "normalizedX": 0.30873925501432664,
+  "normalizedY": 0.3885350318471338
+},{
+  "_id": "658924d06a3610f95ee3d168",
+  "timestamp": {
+    "$numberLong": "1703486627189"
+  },
+  "x": 724,
+  "y": 34,
+  "rollNo": "CB.EN.U4EEE23119",
+  "normalizedTimestamp": 85989,
+  "normalizedX": 0.5186246418338109,
+  "normalizedY": 0.04331210191082802
+},{
+  "_id": "658926156a3610f95ee3d494",
+  "timestamp": {
+    "$numberLong": "1703486884822"
+  },
+  "x": 12,
+  "y": 243,
+  "rollNo": "CB.EN.U4EEE23113",
+  "normalizedTimestamp": 0,
+  "normalizedX": 0.0078125,
+  "normalizedY": 0.3274932614555256
+},{
+  "_id": "658926156a3610f95ee3d495",
+  "timestamp": {
+    "$numberLong": "1703486886785"
+  },
+  "x": 19,
+  "y": 243,
+  "rollNo": "CB.EN.U4EEE23113",
+  "normalizedTimestamp": 1963,
+  "normalizedX": 0.012369791666666666,
+  "normalizedY": 0.3274932614555256
+},{
+  "_id": "658926156a3610f95ee3d496",
+  "timestamp": {
+    "$numberLong": "1703486889127"
+  },
+  "x": 30,
+  "y": 255,
+  "rollNo": "CB.EN.U4EEE23113",
+  "normalizedTimestamp": 4305,
+  "normalizedX": 0.01953125,
+  "normalizedY": 0.3436657681940701
+},{
+  "_id": "658926156a3610f95ee3d499",
+  "timestamp": {
+    "$numberLong": "1703486897353"
+  },
+  "x": 124,
+  "y": 325,
+  "rollNo": "CB.EN.U4EEE23113",
+  "normalizedTimestamp": 12531,
+  "normalizedX": 0.08072916666666667,
+  "normalizedY": 0.4380053908355795
+},{
+  "_id": "658926156a3610f95ee3d49a",
+  "timestamp": {
+    "$numberLong": "1703486902608"
+  },
+  "x": 456,
+  "y": 220,
+  "rollNo": "CB.EN.U4EEE23113",
+  "normalizedTimestamp": 17786,
+  "normalizedX": 0.296875,
+  "normalizedY": 0.29649595687331537
+},{
+  "_id": "658926156a3610f95ee3d49f",
+  "timestamp": {
+    "$numberLong": "1703486931151"
+  },
+  "x": 100,
+  "y": 352,
+  "rollNo": "CB.EN.U4EEE23113",
+  "normalizedTimestamp": 46329,
+  "normalizedX": 0.06510416666666667,
+  "normalizedY": 0.4743935309973046
+},{
+  "_id": "658926156a3610f95ee3d49b",
+  "timestamp": {
+    "$numberLong": "1703486903848"
+  },
+  "x": 456,
+  "y": 220,
+  "rollNo": "CB.EN.U4EEE23113",
+  "normalizedTimestamp": 19026,
+  "normalizedX": 0.296875,
+  "normalizedY": 0.29649595687331537
+},{
+  "_id": "658926156a3610f95ee3d49e",
+  "timestamp": {
+    "$numberLong": "1703486915271"
+  },
+  "x": 560,
+  "y": 255,
+  "rollNo": "CB.EN.U4EEE23113",
+  "normalizedTimestamp": 30449,
+  "normalizedX": 0.3645833333333333,
+  "normalizedY": 0.3436657681940701
+},{
+  "_id": "658926156a3610f95ee3d49d",
+  "timestamp": {
+    "$numberLong": "1703486910917"
+  },
+  "x": 448,
+  "y": 332,
+  "rollNo": "CB.EN.U4EEE23113",
+  "normalizedTimestamp": 26095,
+  "normalizedX": 0.2916666666666667,
+  "normalizedY": 0.4474393530997305
+},{
+  "_id": "658926156a3610f95ee3d4a0",
+  "timestamp": {
+    "$numberLong": "1703486933824"
+  },
+  "x": 100,
+  "y": 352,
+  "rollNo": "CB.EN.U4EEE23113",
+  "normalizedTimestamp": 49002,
+  "normalizedX": 0.06510416666666667,
+  "normalizedY": 0.4743935309973046
+},{
+  "_id": "658926156a3610f95ee3d49c",
+  "timestamp": {
+    "$numberLong": "1703486905887"
+  },
+  "x": 372,
+  "y": 336,
+  "rollNo": "CB.EN.U4EEE23113",
+  "normalizedTimestamp": 21065,
+  "normalizedX": 0.2421875,
+  "normalizedY": 0.4528301886792453
+},{
+  "_id": "658926156a3610f95ee3d498",
+  "timestamp": {
+    "$numberLong": "1703486894740"
+  },
+  "x": 20,
+  "y": 81,
+  "rollNo": "CB.EN.U4EEE23113",
+  "normalizedTimestamp": 9918,
+  "normalizedX": 0.013020833333333334,
+  "normalizedY": 0.1091644204851752
+},{
+  "_id": "658926156a3610f95ee3d4a2",
+  "timestamp": {
+    "$numberLong": "1703486938173"
+  },
+  "x": 428,
+  "y": 297,
+  "rollNo": "CB.EN.U4EEE23113",
+  "normalizedTimestamp": 53351,
+  "normalizedX": 0.2786458333333333,
+  "normalizedY": 0.4002695417789757
+},{
+  "_id": "658926156a3610f95ee3d4a1",
+  "timestamp": {
+    "$numberLong": "1703486936562"
+  },
+  "x": 563,
+  "y": 187,
+  "rollNo": "CB.EN.U4EEE23113",
+  "normalizedTimestamp": 51740,
+  "normalizedX": 0.3665364583333333,
+  "normalizedY": 0.25202156334231807
+},{
+  "_id": "658926156a3610f95ee3d4a3",
+  "timestamp": {
+    "$numberLong": "1703486952108"
+  },
+  "x": 792,
+  "y": 39,
+  "rollNo": "CB.EN.U4EEE23113",
+  "normalizedTimestamp": 67286,
+  "normalizedX": 0.515625,
+  "normalizedY": 0.05256064690026954
+},{
+  "_id": "658926156a3610f95ee3d497",
+  "timestamp": {
+    "$numberLong": "1703486891056"
+  },
+  "x": 30,
+  "y": 255,
+  "rollNo": "CB.EN.U4EEE23113",
+  "normalizedTimestamp": 6234,
+  "normalizedX": 0.01953125,
+  "normalizedY": 0.3436657681940701
+}]
