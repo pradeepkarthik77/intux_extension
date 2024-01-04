@@ -1,473 +1,7 @@
 [{
-  "_id": "6589a2ce25073fa4a32ffbed",
-  "rollNo": "CB.EN.U4CSE20402",
-  "q1": "yes",
-  "q2": "4",
-  "q3": "yes",
-  "q4": "3",
-  "q5": "4",
-  "clickCount": 20,
-  "screenHeight": 785,
-  "screenWidth": 1396,
-  "timeTaken": "01:38"
-},{
-  "_id": "65899a6225073fa4a32fea39",
-  "rollNo": "CB.EN.U4CSE20403",
-  "q1": null,
-  "q2": "2",
-  "q3": null,
-  "q4": "5",
-  "q5": "4",
-  "clickCount": 30,
-  "screenHeight": 864,
-  "screenWidth": 1536,
-  "timeTaken": "01:27"
-},{
-  "_id": "6589a3fd25073fa4a3300105",
-  "rollNo": "CB.EN.U4CSE20421",
-  "q1": "yes",
-  "q2": "1",
-  "q3": "yes",
-  "q4": "2",
-  "q5": "4",
-  "clickCount": 11,
-  "screenHeight": 785,
-  "screenWidth": 1396,
-  "timeTaken": "01:11"
-},{
-  "_id": "65899e7725073fa4a32ff4ea",
-  "rollNo": "CB.EN.U4CSE20425",
-  "q1": "yes",
-  "q2": "1",
-  "q3": "yes",
-  "q4": "3",
-  "q5": "3",
-  "clickCount": 21,
-  "screenHeight": 864,
-  "screenWidth": 1536,
-  "timeTaken": "01:17"
-},{
-  "_id": "6589a37025073fa4a32fff16",
-  "rollNo": "CB.EN.U4CSE20429",
-  "q1": "yes",
-  "q2": "3",
-  "q3": "yes",
-  "q4": "3",
-  "q5": "3",
-  "clickCount": 12,
-  "screenHeight": 864,
-  "screenWidth": 1536,
-  "timeTaken": "00:49"
-},{
-  "_id": "65899b8d25073fa4a32fefdf",
-  "rollNo": "CB.EN.U4CSE20431",
-  "q1": "yes",
-  "q2": "3",
-  "q3": "yes",
-  "q4": "4",
-  "q5": "4",
-  "clickCount": 19,
-  "screenHeight": 785,
-  "screenWidth": 1396,
-  "timeTaken": "01:24"
-},{
-  "_id": "65899b7825073fa4a32fed22",
-  "rollNo": "CB.EN.U4CSE20435",
-  "q1": "yes",
-  "q2": "3",
-  "q3": "yes",
-  "q4": "3",
-  "q5": "3",
-  "clickCount": 16,
-  "screenHeight": 864,
-  "screenWidth": 1536,
-  "timeTaken": "01:12"
-},{
-  "_id": "65899ff525073fa4a32ff75b",
-  "rollNo": "CB.EN.U4CSE20436",
-  "q1": "yes",
-  "q2": "1",
-  "q3": "yes",
-  "q4": "3",
-  "q5": "3",
-  "clickCount": 16,
-  "screenHeight": 864,
-  "screenWidth": 1536,
-  "timeTaken": "01:07"
-},{
-  "_id": "6589a1e025073fa4a32ff963",
-  "rollNo": "CB.EN.U4CSE20447",
-  "q1": "yes",
-  "q2": "1",
-  "q3": "yes",
-  "q4": "2",
-  "q5": "5",
-  "clickCount": 12,
-  "screenHeight": 785,
-  "screenWidth": 1396,
-  "timeTaken": "01:22"
-},{
-  "_id": "65899a5225073fa4a32fe786",
-  "rollNo": "CB.EN.U4CSE20449",
-  "q1": "yes",
-  "q2": "3",
-  "q3": "yes",
-  "q4": "2",
-  "q5": "4",
-  "clickCount": 18,
-  "screenHeight": 670,
-  "screenWidth": 1396,
-  "timeTaken": "01:41"
-},{
-  "_id": "658953e93bf8512eed089f72",
-  "rollNo": "CB.EN.U4CSE21002",
-  "q1": "yes",
-  "q2": "4",
-  "q3": "yes",
-  "q4": "2",
-  "q5": "5",
-  "clickCount": 14,
-  "screenHeight": 785,
-  "screenWidth": 1396,
-  "timeTaken": "01:29"
-},{
-  "_id": "65894cb4ece61eb9e9bfabff",
-  "rollNo": "CB.EN.U4CSE21014",
-  "q1": "yes",
-  "q2": "3",
-  "q3": "yes",
-  "q4": "3",
-  "q5": "3",
-  "clickCount": 11,
-  "screenHeight": 670,
-  "screenWidth": 1396,
-  "timeTaken": "01:08"
-},{
-  "_id": "6589505eece61eb9e9bfb573",
-  "rollNo": "CB.EN.U4CSE21015",
-  "q1": "yes",
-  "q2": "2",
-  "q3": "yes",
-  "q4": "2",
-  "q5": "3",
-  "clickCount": 13,
-  "screenHeight": 785,
-  "screenWidth": 1396,
-  "timeTaken": "01:19"
-},{
-  "_id": "65894de7ece61eb9e9bfad19",
-  "rollNo": "CB.EN.U4CSE21020",
-  "q1": "yes",
-  "q2": "2",
-  "q3": "yes",
-  "q4": "2",
-  "q5": "2",
-  "clickCount": 12,
-  "screenHeight": 785,
-  "screenWidth": 1396,
-  "timeTaken": "01:13"
-},{
-  "_id": "6589aa36615c956939765416",
-  "rollNo": "CB.EN.U4CSE21023",
-  "q1": "yes",
-  "q2": "2",
-  "q3": "yes",
-  "q4": "2",
-  "q5": "4",
-  "clickCount": 11,
-  "screenHeight": 785,
-  "screenWidth": 1396,
-  "timeTaken": "01:10"
-},{
-  "_id": "6589526a3bf8512eed089a6d",
-  "rollNo": "CB.EN.U4CSE21045",
-  "q1": "yes",
-  "q2": "3",
-  "q3": "yes",
-  "q4": "3",
-  "q5": "3",
-  "clickCount": 18,
-  "screenHeight": 864,
-  "screenWidth": 1536,
-  "timeTaken": "01:13"
-},{
-  "_id": "65894e30ece61eb9e9bfae5d",
-  "rollNo": "CB.EN.U4CSE21050",
-  "q1": "yes",
-  "q2": "2",
-  "q3": "yes",
-  "q4": "2",
-  "q5": "3",
-  "clickCount": 11,
-  "screenHeight": 864,
-  "screenWidth": 1536,
-  "timeTaken": "01:18"
-},{
-  "_id": "658951f23bf8512eed0898c5",
-  "rollNo": "CB.EN.U4CSE21054",
-  "q1": "yes",
-  "q2": "2",
-  "q3": "no",
-  "q4": "3",
-  "q5": "3",
-  "clickCount": 19,
-  "screenHeight": 670,
-  "screenWidth": 1396,
-  "timeTaken": "01:47"
-},{
-  "_id": "658953b73bf8512eed089ced",
-  "rollNo": "CB.EN.U4CSE21060",
-  "q1": "yes",
-  "q2": "2",
-  "q3": "yes",
-  "q4": "4",
-  "q5": "4",
-  "clickCount": 20,
-  "screenHeight": 864,
-  "screenWidth": 1536,
-  "timeTaken": "01:17"
-},{
-  "_id": "6589500bece61eb9e9bfb144",
-  "rollNo": "CB.EN.U4CSE21635",
-  "q1": "yes",
-  "q2": "5",
-  "q3": "yes",
-  "q4": "4",
-  "q5": "1",
-  "clickCount": 20,
-  "screenHeight": 864,
-  "screenWidth": 1536,
-  "timeTaken": "01:19"
-},{
-  "_id": "6589595e1b192458f364cb47",
-  "rollNo": "CB.EN.U4CSE22011",
-  "q1": "yes",
-  "q2": "3",
-  "q3": "no",
-  "q4": "3",
-  "q5": "4",
-  "clickCount": 15,
-  "screenHeight": 864,
-  "screenWidth": 1536,
-  "timeTaken": "01:30"
-},{
-  "_id": "65895895d7441a0c0effe19a",
-  "rollNo": "CB.EN.U4CSE22301",
-  "q1": "yes",
-  "q2": "4",
-  "q3": "yes",
-  "q4": "4",
-  "q5": "5",
-  "clickCount": 13,
-  "screenHeight": 670,
-  "screenWidth": 1396,
-  "timeTaken": "01:09"
-},{
-  "_id": "6589574fd7441a0c0effdcf1",
-  "rollNo": "CB.EN.U4CSE22304",
-  "q1": "yes",
-  "q2": "1",
-  "q3": "no",
-  "q4": "1",
-  "q5": "5",
-  "clickCount": 14,
-  "screenHeight": 670,
-  "screenWidth": 1396,
-  "timeTaken": "01:16"
-},{
-  "_id": "65895d2224b9afb2a77b1fbc",
-  "rollNo": "CB.EN.U4CSE22308",
-  "q1": "yes",
-  "q2": "2",
-  "q3": "yes",
-  "q4": "2",
-  "q5": "2",
-  "clickCount": 20,
-  "screenHeight": 864,
-  "screenWidth": 1536,
-  "timeTaken": "01:13"
-},{
-  "_id": "65896039bb96723e282d4aa3",
-  "rollNo": "CB.EN.U4CSE22312",
-  "q1": "yes",
-  "q2": "1",
-  "q3": "no",
-  "q4": "1",
-  "q5": "5",
-  "clickCount": 12,
-  "screenHeight": 670,
-  "screenWidth": 1396,
-  "timeTaken": "01:22"
-},{
-  "_id": "65895790d7441a0c0effe00e",
-  "rollNo": "CB.EN.U4CSE22323",
-  "q1": "yes",
-  "q2": "2",
-  "q3": "yes",
-  "q4": "1",
-  "q5": "5",
-  "clickCount": 16,
-  "screenHeight": 864,
-  "screenWidth": 1536,
-  "timeTaken": "01:18"
-},{
-  "_id": "65895aca1b192458f364d07f",
-  "rollNo": "CB.EN.U4CSE22351",
-  "q1": "yes",
-  "q2": "1",
-  "q3": "no",
-  "q4": "1",
-  "q5": "5",
-  "clickCount": 18,
-  "screenHeight": 864,
-  "screenWidth": 1536,
-  "timeTaken": "01:18"
-},{
-  "_id": "65895a971b192458f364ccee",
-  "rollNo": "CB.EN.U4CSE22356",
-  "q1": "yes",
-  "q2": "1",
-  "q3": "no",
-  "q4": "5",
-  "q5": "4",
-  "clickCount": 17,
-  "screenHeight": 670,
-  "screenWidth": 1396,
-  "timeTaken": "01:33"
-},{
-  "_id": "65895e426eba2be0aa117ba6",
-  "rollNo": "CB.EN.U4CSE22437",
-  "q1": "yes",
-  "q2": "1",
-  "q3": "yes",
-  "q4": "1",
-  "q5": "3",
-  "clickCount": 19,
-  "screenHeight": 864,
-  "screenWidth": 1536,
-  "timeTaken": "01:14"
-},{
-  "_id": "65896029bb96723e282d47ce",
-  "rollNo": "CB.EN.U4CSE22443",
-  "q1": "yes",
-  "q2": "1",
-  "q3": "yes",
-  "q4": "1",
-  "q5": "1",
-  "clickCount": 14,
-  "screenHeight": 864,
-  "screenWidth": 1536,
-  "timeTaken": "01:29"
-},{
-  "_id": "658924b06a3610f95ee3ce05",
-  "rollNo": "CB.EN.U4EEE23022",
-  "q1": null,
-  "q2": "3",
-  "q3": "no",
-  "q4": "3",
-  "q5": "3",
-  "clickCount": 17,
-  "screenHeight": 742,
-  "screenWidth": 1536,
-  "timeTaken": "01:02"
-},{
-  "_id": "658928116a3610f95ee3d7a7",
-  "rollNo": "CB.EN.U4EEE23044",
-  "q1": "yes",
-  "q2": "4",
-  "q3": "no",
-  "q4": "5",
-  "q5": "5",
-  "clickCount": 12,
-  "screenHeight": 705,
-  "screenWidth": 1396,
-  "timeTaken": "01:27"
-},{
-  "_id": "658923796a3610f95ee3caef",
-  "rollNo": "CB.EN.U4EEE23107",
-  "q1": "yes",
-  "q2": "2",
-  "q3": "no",
-  "q4": "2",
-  "q5": "4",
-  "clickCount": 9,
-  "screenHeight": 785,
-  "screenWidth": 1396,
-  "timeTaken": "01:23"
-},{
-  "_id": "658926146a3610f95ee3d29d",
-  "rollNo": "CB.EN.U4EEE23113",
-  "q1": "yes",
-  "q2": "1",
-  "q3": "no",
-  "q4": "1",
-  "q5": "2",
-  "clickCount": 16,
-  "screenHeight": 742,
-  "screenWidth": 1536,
-  "timeTaken": "01:11"
-},{
-  "_id": "658924d06a3610f95ee3cffd",
-  "rollNo": "CB.EN.U4EEE23119",
-  "q1": "yes",
-  "q2": "2",
-  "q3": "no",
-  "q4": "2",
-  "q5": "2",
-  "clickCount": 12,
-  "screenHeight": 785,
-  "screenWidth": 1396,
-  "timeTaken": "01:28"
-},{
-  "_id": "6589299be2953f4e4248c6f5",
-  "rollNo": "CB.EN.U4EEE23121",
-  "q1": "yes",
-  "q2": "1",
-  "q3": "yes",
-  "q4": "3",
-  "q5": "2",
-  "clickCount": 15,
-  "screenHeight": 705,
-  "screenWidth": 1396,
-  "timeTaken": "01:21"
-},{
-  "_id": "65892b2ae2953f4e4248cc8b",
-  "rollNo": "CB.EN.U4EEE23125",
-  "q1": "yes",
-  "q2": "1",
-  "q3": "no",
-  "q4": "1",
-  "q5": "4",
-  "clickCount": 16,
-  "screenHeight": 705,
-  "screenWidth": 1396,
-  "timeTaken": "01:35"
-},{
-  "_id": "658929abe2953f4e4248c895",
-  "rollNo": "CB.EN.U4EEE23128",
-  "q1": "yes",
-  "q2": "1",
-  "q3": "no",
-  "q4": "1",
-  "q5": "5",
-  "clickCount": 12,
-  "screenHeight": 742,
-  "screenWidth": 1536,
-  "timeTaken": "01:29"
-},{
-  "_id": "658928026a3610f95ee3d4a4",
-  "rollNo": "CB.EN.U4EEE23135",
-  "q1": "yes",
-  "q2": "2",
-  "q3": "no",
-  "q4": "1",
-  "q5": "3",
-  "clickCount": 12,
-  "screenHeight": 864,
-  "screenWidth": 1536,
-  "timeTaken": "01:36"
-},{
-  "_id": "658926106a3610f95ee3d169",
+  "_id": {
+    "$oid": "658926106a3610f95ee3d169"
+  },
   "rollNo": "CB.EN.U4EEE23137",
   "q1": "yes",
   "q2": "2",
@@ -477,5 +11,631 @@
   "clickCount": 15,
   "screenHeight": 705,
   "screenWidth": 1396,
-  "timeTaken": "01:20"
+  "timeTaken": "01:20",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "6589aa36615c956939765416"
+  },
+  "rollNo": "CB.EN.U4CSE21023",
+  "q1": "yes",
+  "q2": "2",
+  "q3": "yes",
+  "q4": "2",
+  "q5": "4",
+  "clickCount": 11,
+  "screenHeight": 785,
+  "screenWidth": 1396,
+  "timeTaken": "01:10",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "658953b73bf8512eed089ced"
+  },
+  "rollNo": "CB.EN.U4CSE21060",
+  "q1": "yes",
+  "q2": "2",
+  "q3": "yes",
+  "q4": "4",
+  "q5": "4",
+  "clickCount": 20,
+  "screenHeight": 864,
+  "screenWidth": 1536,
+  "timeTaken": "01:17",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "65895a971b192458f364ccee"
+  },
+  "rollNo": "CB.EN.U4CSE22356",
+  "q1": "yes",
+  "q2": "1",
+  "q3": "no",
+  "q4": "5",
+  "q5": "4",
+  "clickCount": 17,
+  "screenHeight": 670,
+  "screenWidth": 1396,
+  "timeTaken": "01:33",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "65899ff525073fa4a32ff75b"
+  },
+  "rollNo": "CB.EN.U4CSE20436",
+  "q1": "yes",
+  "q2": "1",
+  "q3": "yes",
+  "q4": "3",
+  "q5": "3",
+  "clickCount": 16,
+  "screenHeight": 864,
+  "screenWidth": 1536,
+  "timeTaken": "01:07",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "6589574fd7441a0c0effdcf1"
+  },
+  "rollNo": "CB.EN.U4CSE22304",
+  "q1": "yes",
+  "q2": "1",
+  "q3": "no",
+  "q4": "1",
+  "q5": "5",
+  "clickCount": 14,
+  "screenHeight": 670,
+  "screenWidth": 1396,
+  "timeTaken": "01:16",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "65894e30ece61eb9e9bfae5d"
+  },
+  "rollNo": "CB.EN.U4CSE21050",
+  "q1": "yes",
+  "q2": "2",
+  "q3": "yes",
+  "q4": "2",
+  "q5": "3",
+  "clickCount": 11,
+  "screenHeight": 864,
+  "screenWidth": 1536,
+  "timeTaken": "01:18",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "658928116a3610f95ee3d7a7"
+  },
+  "rollNo": "CB.EN.U4EEE23044",
+  "q1": "yes",
+  "q2": "4",
+  "q3": "no",
+  "q4": "5",
+  "q5": "5",
+  "clickCount": 12,
+  "screenHeight": 705,
+  "screenWidth": 1396,
+  "timeTaken": "01:27",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "6589595e1b192458f364cb47"
+  },
+  "rollNo": "CB.EN.U4CSE22011",
+  "q1": "yes",
+  "q2": "3",
+  "q3": "no",
+  "q4": "3",
+  "q5": "4",
+  "clickCount": 15,
+  "screenHeight": 864,
+  "screenWidth": 1536,
+  "timeTaken": "01:30",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "65899a6225073fa4a32fea39"
+  },
+  "rollNo": "CB.EN.U4CSE20403",
+  "q1": null,
+  "q2": "2",
+  "q3": null,
+  "q4": "5",
+  "q5": "4",
+  "clickCount": 30,
+  "screenHeight": 864,
+  "screenWidth": 1536,
+  "timeTaken": "01:27",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "658953e93bf8512eed089f72"
+  },
+  "rollNo": "CB.EN.U4CSE21002",
+  "q1": "yes",
+  "q2": "4",
+  "q3": "yes",
+  "q4": "2",
+  "q5": "5",
+  "clickCount": 14,
+  "screenHeight": 785,
+  "screenWidth": 1396,
+  "timeTaken": "01:29",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "65895d2224b9afb2a77b1fbc"
+  },
+  "rollNo": "CB.EN.U4CSE22308",
+  "q1": "yes",
+  "q2": "2",
+  "q3": "yes",
+  "q4": "2",
+  "q5": "2",
+  "clickCount": 20,
+  "screenHeight": 864,
+  "screenWidth": 1536,
+  "timeTaken": "01:13",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "65894cb4ece61eb9e9bfabff"
+  },
+  "rollNo": "CB.EN.U4CSE21014",
+  "q1": "yes",
+  "q2": "3",
+  "q3": "yes",
+  "q4": "3",
+  "q5": "3",
+  "clickCount": 11,
+  "screenHeight": 670,
+  "screenWidth": 1396,
+  "timeTaken": "01:08",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "65895aca1b192458f364d07f"
+  },
+  "rollNo": "CB.EN.U4CSE22351",
+  "q1": "yes",
+  "q2": "1",
+  "q3": "no",
+  "q4": "1",
+  "q5": "5",
+  "clickCount": 18,
+  "screenHeight": 864,
+  "screenWidth": 1536,
+  "timeTaken": "01:18",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "6589526a3bf8512eed089a6d"
+  },
+  "rollNo": "CB.EN.U4CSE21045",
+  "q1": "yes",
+  "q2": "3",
+  "q3": "yes",
+  "q4": "3",
+  "q5": "3",
+  "clickCount": 18,
+  "screenHeight": 864,
+  "screenWidth": 1536,
+  "timeTaken": "01:13",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "6589a1e025073fa4a32ff963"
+  },
+  "rollNo": "CB.EN.U4CSE20447",
+  "q1": "yes",
+  "q2": "1",
+  "q3": "yes",
+  "q4": "2",
+  "q5": "5",
+  "clickCount": 12,
+  "screenHeight": 785,
+  "screenWidth": 1396,
+  "timeTaken": "01:22",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "658924b06a3610f95ee3ce05"
+  },
+  "rollNo": "CB.EN.U4EEE23022",
+  "q1": null,
+  "q2": "3",
+  "q3": "no",
+  "q4": "3",
+  "q5": "3",
+  "clickCount": 17,
+  "screenHeight": 742,
+  "screenWidth": 1536,
+  "timeTaken": "01:02",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "6589505eece61eb9e9bfb573"
+  },
+  "rollNo": "CB.EN.U4CSE21015",
+  "q1": "yes",
+  "q2": "2",
+  "q3": "yes",
+  "q4": "2",
+  "q5": "3",
+  "clickCount": 13,
+  "screenHeight": 785,
+  "screenWidth": 1396,
+  "timeTaken": "01:19",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "6589299be2953f4e4248c6f5"
+  },
+  "rollNo": "CB.EN.U4EEE23121",
+  "q1": "yes",
+  "q2": "1",
+  "q3": "yes",
+  "q4": "3",
+  "q5": "2",
+  "clickCount": 15,
+  "screenHeight": 705,
+  "screenWidth": 1396,
+  "timeTaken": "01:21",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "65899e7725073fa4a32ff4ea"
+  },
+  "rollNo": "CB.EN.U4CSE20425",
+  "q1": "yes",
+  "q2": "1",
+  "q3": "yes",
+  "q4": "3",
+  "q5": "3",
+  "clickCount": 21,
+  "screenHeight": 864,
+  "screenWidth": 1536,
+  "timeTaken": "01:17",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "6589500bece61eb9e9bfb144"
+  },
+  "rollNo": "CB.EN.U4CSE21635",
+  "q1": "yes",
+  "q2": "5",
+  "q3": "yes",
+  "q4": "4",
+  "q5": "1",
+  "clickCount": 20,
+  "screenHeight": 864,
+  "screenWidth": 1536,
+  "timeTaken": "01:19",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "65899a5225073fa4a32fe786"
+  },
+  "rollNo": "CB.EN.U4CSE20449",
+  "q1": "yes",
+  "q2": "3",
+  "q3": "yes",
+  "q4": "2",
+  "q5": "4",
+  "clickCount": 18,
+  "screenHeight": 670,
+  "screenWidth": 1396,
+  "timeTaken": "01:41",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "658951f23bf8512eed0898c5"
+  },
+  "rollNo": "CB.EN.U4CSE21054",
+  "q1": "yes",
+  "q2": "2",
+  "q3": "no",
+  "q4": "3",
+  "q5": "3",
+  "clickCount": 19,
+  "screenHeight": 670,
+  "screenWidth": 1396,
+  "timeTaken": "01:47",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "6589a3fd25073fa4a3300105"
+  },
+  "rollNo": "CB.EN.U4CSE20421",
+  "q1": "yes",
+  "q2": "1",
+  "q3": "yes",
+  "q4": "2",
+  "q5": "4",
+  "clickCount": 11,
+  "screenHeight": 785,
+  "screenWidth": 1396,
+  "timeTaken": "01:11",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "658926146a3610f95ee3d29d"
+  },
+  "rollNo": "CB.EN.U4EEE23113",
+  "q1": "yes",
+  "q2": "1",
+  "q3": "no",
+  "q4": "1",
+  "q5": "2",
+  "clickCount": 16,
+  "screenHeight": 742,
+  "screenWidth": 1536,
+  "timeTaken": "01:11",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "65896039bb96723e282d4aa3"
+  },
+  "rollNo": "CB.EN.U4CSE22312",
+  "q1": "yes",
+  "q2": "1",
+  "q3": "no",
+  "q4": "1",
+  "q5": "5",
+  "clickCount": 12,
+  "screenHeight": 670,
+  "screenWidth": 1396,
+  "timeTaken": "01:22",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "658924d06a3610f95ee3cffd"
+  },
+  "rollNo": "CB.EN.U4EEE23119",
+  "q1": "yes",
+  "q2": "2",
+  "q3": "no",
+  "q4": "2",
+  "q5": "2",
+  "clickCount": 12,
+  "screenHeight": 785,
+  "screenWidth": 1396,
+  "timeTaken": "01:28",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "65892b2ae2953f4e4248cc8b"
+  },
+  "rollNo": "CB.EN.U4EEE23125",
+  "q1": "yes",
+  "q2": "1",
+  "q3": "no",
+  "q4": "1",
+  "q5": "4",
+  "clickCount": 16,
+  "screenHeight": 705,
+  "screenWidth": 1396,
+  "timeTaken": "01:35",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "65895790d7441a0c0effe00e"
+  },
+  "rollNo": "CB.EN.U4CSE22323",
+  "q1": "yes",
+  "q2": "2",
+  "q3": "yes",
+  "q4": "1",
+  "q5": "5",
+  "clickCount": 16,
+  "screenHeight": 864,
+  "screenWidth": 1536,
+  "timeTaken": "01:18",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "65895895d7441a0c0effe19a"
+  },
+  "rollNo": "CB.EN.U4CSE22301",
+  "q1": "yes",
+  "q2": "4",
+  "q3": "yes",
+  "q4": "4",
+  "q5": "5",
+  "clickCount": 13,
+  "screenHeight": 670,
+  "screenWidth": 1396,
+  "timeTaken": "01:09",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "65899b8d25073fa4a32fefdf"
+  },
+  "rollNo": "CB.EN.U4CSE20431",
+  "q1": "yes",
+  "q2": "3",
+  "q3": "yes",
+  "q4": "4",
+  "q5": "4",
+  "clickCount": 19,
+  "screenHeight": 785,
+  "screenWidth": 1396,
+  "timeTaken": "01:24",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "658928026a3610f95ee3d4a4"
+  },
+  "rollNo": "CB.EN.U4EEE23135",
+  "q1": "yes",
+  "q2": "2",
+  "q3": "no",
+  "q4": "1",
+  "q5": "3",
+  "clickCount": 12,
+  "screenHeight": 864,
+  "screenWidth": 1536,
+  "timeTaken": "01:36",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "658923796a3610f95ee3caef"
+  },
+  "rollNo": "CB.EN.U4EEE23107",
+  "q1": "yes",
+  "q2": "2",
+  "q3": "no",
+  "q4": "2",
+  "q5": "4",
+  "clickCount": 9,
+  "screenHeight": 785,
+  "screenWidth": 1396,
+  "timeTaken": "01:23",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "65894de7ece61eb9e9bfad19"
+  },
+  "rollNo": "CB.EN.U4CSE21020",
+  "q1": "yes",
+  "q2": "2",
+  "q3": "yes",
+  "q4": "2",
+  "q5": "2",
+  "clickCount": 12,
+  "screenHeight": 785,
+  "screenWidth": 1396,
+  "timeTaken": "01:13",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "658929abe2953f4e4248c895"
+  },
+  "rollNo": "CB.EN.U4EEE23128",
+  "q1": "yes",
+  "q2": "1",
+  "q3": "no",
+  "q4": "1",
+  "q5": "5",
+  "clickCount": 12,
+  "screenHeight": 742,
+  "screenWidth": 1536,
+  "timeTaken": "01:29",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "65895e426eba2be0aa117ba6"
+  },
+  "rollNo": "CB.EN.U4CSE22437",
+  "q1": "yes",
+  "q2": "1",
+  "q3": "yes",
+  "q4": "1",
+  "q5": "3",
+  "clickCount": 19,
+  "screenHeight": 864,
+  "screenWidth": 1536,
+  "timeTaken": "01:14",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "6589a37025073fa4a32fff16"
+  },
+  "rollNo": "CB.EN.U4CSE20429",
+  "q1": "yes",
+  "q2": "3",
+  "q3": "yes",
+  "q4": "3",
+  "q5": "3",
+  "clickCount": 12,
+  "screenHeight": 864,
+  "screenWidth": 1536,
+  "timeTaken": "00:49",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "6589a2ce25073fa4a32ffbed"
+  },
+  "rollNo": "CB.EN.U4CSE20402",
+  "q1": "yes",
+  "q2": "4",
+  "q3": "yes",
+  "q4": "3",
+  "q5": "4",
+  "clickCount": 20,
+  "screenHeight": 785,
+  "screenWidth": 1396,
+  "timeTaken": "01:38",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "65896029bb96723e282d47ce"
+  },
+  "rollNo": "CB.EN.U4CSE22443",
+  "q1": "yes",
+  "q2": "1",
+  "q3": "yes",
+  "q4": "1",
+  "q5": "1",
+  "clickCount": 14,
+  "screenHeight": 864,
+  "screenWidth": 1536,
+  "timeTaken": "01:29",
+  "normalizedX": null,
+  "normalizedY": null
+},{
+  "_id": {
+    "$oid": "65899b7825073fa4a32fed22"
+  },
+  "rollNo": "CB.EN.U4CSE20435",
+  "q1": "yes",
+  "q2": "3",
+  "q3": "yes",
+  "q4": "3",
+  "q5": "3",
+  "clickCount": 16,
+  "screenHeight": 864,
+  "screenWidth": 1536,
+  "timeTaken": "01:12",
+  "normalizedX": null,
+  "normalizedY": null
 }]
