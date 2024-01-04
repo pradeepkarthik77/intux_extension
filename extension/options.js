@@ -10,8 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
         optionsPageData = data;
     });
 
-    document.getElementById('videoStatus').style.display = "none";
-
     const fileInput = document.getElementById('fileInput');
     fileInput.addEventListener('change', handleFileSelect);
 
@@ -19,14 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function handleFileSelect(event) {
     const file = event.target.files[0];
-    const videoStatus = document.getElementById('videoStatus');
 
     if (file) {
         globalFile = file;
-        videoStatus.style.display = "block";
-        videoStatus.textContent = "Video is uploading. Please wait...";
     } else {
-        videoStatus.style.display = "none";
         alert("Please choose a video file before submitting.");
     }
 }
