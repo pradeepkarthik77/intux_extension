@@ -64,61 +64,60 @@ function handleFileSelect(event) {
 
 
 async function submitForm() {
-    // const form = document.getElementById('feedbackForm');
     var formData = new FormData();
 
-    if(!globalFile)
-    {
-        alert("Choose a file before submission")
+    if (!globalFile) {
+        alert("Choose a file before submission");
         return;
     }
 
+    // Disable submit button and change its text
+    submitButton.disabled = true;
+    submitButton.textContent = "Submitting...";
+
     formData.append('file', globalFile, globalFile.name);
 
-    // // Convert FormData to JSON
-    // const jsonData = {};
-    // formData.forEach((value, key) => {
-    //     jsonData[key] = value;
-    // });
-
-    // Loop through optionsPageData and add key-value pairs to jsonData
     for (const key in optionsPageData) {
         if (optionsPageData.hasOwnProperty(key)) {
-            // jsonData[key] = optionsPageData[key];
-            if(key == "gazeData" || key == "clickData")
-            {
-                await formData.append(key,JSON.stringify(optionsPageData[key]));
-            }
-            else{
-            await formData.append(key,optionsPageData[key]);
+            if (key == "gazeData" || key == "clickData") {
+                await formData.append(key, JSON.stringify(optionsPageData[key]));
+            } else {
+                await formData.append(key, optionsPageData[key]);
             }
         }
     }
 
-    // jsonData["videoURL"] = videoUrl;
-
-    // Adjust the endpoint URL to your backend
     const endpointURL = 'http://localhost:8080/uploadData';
 
-    // Perform a POST request to the backend
-    fetch(endpointURL, {
-        method: 'POST',
-        body: formData
-    })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
+    try {
+        const response = await fetch(endpointURL, {
+            method: 'POST',
+            body: formData
+        });
+
+        if (response.ok) {
+            // Data submitted successfully
             alert("Data Submitted Successfully. You can Close this tab");
             console.log('Data submitted successfully');
-            // You can perform additional actions after successful submission
-        })
-        .catch(error => {
-            console.error('Error submitting data:', error);
-            alert("Cannot Submit Data. Try Again!")
-            // Handle errors as needed
-        });
+            // Keep the button disabled and change its text
+            submitButton.textContent = "Submitted Successfully";
+        } else {
+            // Enable the button and change its color and text
+            submitButton.disabled = false;
+            submitButton.style.backgroundColor = "#4CAF50";
+            submitButton.textContent = "Submit again";
+            alert("Cannot Submit Data. Try Again!");
+        }
+    } catch (error) {
+        console.error('Error submitting data:', error);
+        // Enable the button and change its color and text
+        submitButton.disabled = false;
+        submitButton.style.backgroundColor = "#4CAF50";
+        submitButton.textContent = "Submit again";
+        alert("Error submitting data. Try Again!");
+    }
 }
+
 
 document.getElementById("submitbtn").addEventListener('click', function () {
     submitForm();
