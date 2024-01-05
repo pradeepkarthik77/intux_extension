@@ -60,7 +60,8 @@ async function normalizeCollections(rollNo,screen_height,screen_width)
             {
                 $set: {
                     'normalizedX': { $divide: [{ $toDouble: '$x' }, { $toDouble: screen_width }] },
-                    'normalizedY': { $divide: [{ $toDouble: '$y' }, { $toDouble: screen_height }] }
+                    'normalizedY': { $divide: [{ $toDouble: '$y' }, { $toDouble: screen_height }] },
+                    'rollNo': rollNo
             }
             }
         ],
@@ -76,7 +77,8 @@ async function normalizeCollections(rollNo,screen_height,screen_width)
             {
                 $set: {
                     'normalizedX': { $divide: [{ $toDouble: '$x' }, { $toDouble: screen_width }] },
-                    'normalizedY': { $divide: [{ $toDouble: '$y' }, { $toDouble: screen_height }] }
+                    'normalizedY': { $divide: [{ $toDouble: '$y' }, { $toDouble: screen_height }] },
+                    'rollNo': rollNo
             }
             }
         ],
@@ -161,6 +163,17 @@ async function moveNnormalize(rollNo)
     screen_width = screen_details.screenWidth;
 
     await normalizeCollections(rollNo,screen_height,screen_width)
+
+    gazerolldata = await GazeDB.collection(rollNo).find({}).toArray();
+    clickrolldata = await ClickDB.collection(rollNo).find({}).toArray();
+    metarolldata = await MetaDB.collection(rollNo).find({}).toArray();
+
+    console.log(gazerolldata);
+
+
+    await GazeData.insertMany(gazerolldata);
+    await ClickData.insertMany(clickrolldata);
+    await MetaData.insertMany(metarolldata);
 
     //TODO: Logic for storing the values into ClickData and GazeData and MetaData
 
