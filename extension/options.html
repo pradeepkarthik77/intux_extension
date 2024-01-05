@@ -95,10 +95,10 @@
 </head>
 <body>
 
-<h1>Post Task Survey</h1>
+<h1>Submit Data</h1>
 
 <form id="feedbackForm">
-    <label>
+    <!-- <label>
     Q1. Were you able to complete the given task? 
     <input type="radio" name="q1" value="yes"> Yes
     <input type="radio" name="q1" value="no"> No
@@ -129,7 +129,11 @@
     <input id="q5slide" type="range" name="q5" min="1" max="5" step="1" value="3">
     <span id="q5Value">3</span>
     </label>
-    <p id="videoStatus">Video is Uploading Please Wait...</p>
+    <p id="videoStatus">Video is Uploading Please Wait...</p> -->
+
+    <label for="fileInput">Upload Video:</label>
+    <input type="file" id="fileInput" name="fileInput" accept="video/*" required>
+
     <button type="button" id="submitbtn">Submit</button>
 </form>
 <script src="options.js"></script>
