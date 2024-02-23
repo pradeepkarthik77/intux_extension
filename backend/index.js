@@ -308,10 +308,6 @@ function executeIndividualFixationMap(rollNo)
     });
 }
 
-executeIndividualFixationMap("CB.EN.U4CSE20447")
-
-// executeIndividualHeatmapUpload("CB.EN.U4CSE20447")
-
 app.post("/returnMetaData",async (req, res) => {
     try {
         
@@ -436,6 +432,8 @@ app.post('/uploadData',upload.single('file'), async (req, res) => {
         executeIndividualHeatmapUpload(rollNo)
 
         executeCumulativeHeatmap()
+
+        executeIndividualFixationMap(rollNo)
 
     } catch (error) {
         console.error("Error in server while processing request", error);
