@@ -6,6 +6,8 @@ const config = require("./config.json");
 const admin = require('firebase-admin');
 const multer = require('multer');
 const serviceAccount = require('./serviceAccountKey.json');
+const { exec } = require('child_process');
+const path = require('path');
 
 const app = express();
 const port = 8080;
@@ -21,7 +23,7 @@ admin.initializeApp({
 const storage = admin.storage();
 const upload = multer();
 
-uri = config.MONGO_LOCAL;
+uri = config.MONGO_URI;
 
 const client = new MongoClient(uri);
 
@@ -252,7 +254,80 @@ async function moveNnormalize(rollNo)
         // }
     // })
 
+function convertTimeToSeconds(timeString) {
+    const [minutes, seconds] = timeString.split(':');
+    const totalSeconds = parseInt(minutes) * 60 + parseInt(seconds);
+    return totalSeconds;
+}
 
+function executeIndividualHeatmapUpload(rollNo)
+{
+    // Path to the Python script
+    const scriptPath = path.join(__dirname, 'Heatmap', 'IndividualHeatmap.py');
+
+    const command = `cd "${path.join(__dirname, 'Heatmap')}" && python3 IndividualHeatmap.py ${rollNo}`;
+
+    // Execute the command
+    exec(command, (error, stdout, stderr) => {
+        if (error) {
+            console.error(`Error executing command: ${error}`);
+            return;
+        }
+        console.log(`stdout: ${stdout}`);
+        console.error(`stderr: ${stderr}`);
+    });
+}
+
+function executeCumulativeHeatmap()
+{
+    // Path to the Python script
+    const scriptPath = path.join(__dirname, 'Heatmap', 'CumulativeHeatmap.py');
+
+    const command = `cd "${path.join(__dirname, 'Heatmap')}" && python3 CumulativeHeatmap.py`;
+
+    // Execute the command
+    exec(command, (error, stdout, stderr) => {
+        if (error) {
+            console.error(`Error executing command: ${error}`);
+            return;
+        }
+        console.log(`stdout: ${stdout}`);
+        console.error(`stderr: ${stderr}`);
+    });
+}
+
+// executeIndividualHeatmapUpload("CB.EN.U4CSE20447")
+
+app.post("/returnMetaData",async (req, res) => {
+    try {
+        
+        // Fetch data from MetaData collection
+        const metaDataCollection = INTUX.collection('MetaData');
+        const metaData = await metaDataCollection.find({}).toArray();
+
+        // Calculate total users
+        const totalUsers = metaData.length;
+
+        // Construct the response object
+        const userData = {};
+        metaData.forEach(entry => {
+            const { rollNo, timeTaken, clickCount } = entry;
+            if (!userData[rollNo]) {
+                userData[rollNo] = [];
+            }
+            userData[rollNo].push(convertTimeToSeconds(timeTaken), clickCount);
+        });
+
+        // Send response
+        res.json({ totalUsers, userData });
+
+        // Close MongoDB connection
+        client.close();
+    } catch (err) {
+        console.error('Error:', err);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+})
 
 app.post('/saveRecording', upload.single('recording'), async (req, res) => {
     try {
@@ -343,6 +418,10 @@ app.post('/uploadData',upload.single('file'), async (req, res) => {
         await moveNnormalize(rollNo);
 
         console.log("Finished normalzation")
+
+        executeIndividualHeatmapUpload(rollNo)
+
+        executeCumulativeHeatmap()
 
     } catch (error) {
         console.error("Error in server while processing request", error);
