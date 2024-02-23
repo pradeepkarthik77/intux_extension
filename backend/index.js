@@ -262,8 +262,6 @@ function convertTimeToSeconds(timeString) {
 
 function executeIndividualHeatmapUpload(rollNo)
 {
-    // Path to the Python script
-    const scriptPath = path.join(__dirname, 'Heatmap', 'IndividualHeatmap.py');
 
     const command = `cd "${path.join(__dirname, 'Heatmap')}" && python3 IndividualHeatmap.py ${rollNo}`;
 
@@ -280,8 +278,6 @@ function executeIndividualHeatmapUpload(rollNo)
 
 function executeCumulativeHeatmap()
 {
-    // Path to the Python script
-    const scriptPath = path.join(__dirname, 'Heatmap', 'CumulativeHeatmap.py');
 
     const command = `cd "${path.join(__dirname, 'Heatmap')}" && python3 CumulativeHeatmap.py`;
 
@@ -295,6 +291,24 @@ function executeCumulativeHeatmap()
         console.error(`stderr: ${stderr}`);
     });
 }
+
+function executeIndividualFixationMap(rollNo)
+{
+
+    const command = `cd "${path.join(__dirname, 'Fixation')}" && python3 fixation.py ${rollNo}`;
+
+    // Execute the command
+    exec(command, (error, stdout, stderr) => {
+        if (error) {
+            console.error(`Error executing command: ${error}`);
+            return;
+        }
+        console.log(`stdout: ${stdout}`);
+        console.error(`stderr: ${stderr}`);
+    });
+}
+
+executeIndividualFixationMap("CB.EN.U4CSE20447")
 
 // executeIndividualHeatmapUpload("CB.EN.U4CSE20447")
 
