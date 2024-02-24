@@ -276,10 +276,42 @@ function executeIndividualHeatmapUpload(rollNo)
     });
 }
 
+function executeIndividualClickmapUpload(rollNo)
+{
+
+    const command = `cd "${path.join(__dirname, 'Clickmap')}" && python3 clickmap.py ${rollNo}`;
+
+    // Execute the command
+    exec(command, (error, stdout, stderr) => {
+        if (error) {
+            console.error(`Error executing command: ${error}`);
+            return;
+        }
+        console.log(`stdout: ${stdout}`);
+        console.error(`stderr: ${stderr}`);
+    });
+}
+
 function executeCumulativeHeatmap()
 {
 
     const command = `cd "${path.join(__dirname, 'Heatmap')}" && python3 CumulativeHeatmap.py`;
+
+    // Execute the command
+    exec(command, (error, stdout, stderr) => {
+        if (error) {
+            console.error(`Error executing command: ${error}`);
+            return;
+        }
+        console.log(`stdout: ${stdout}`);
+        console.error(`stderr: ${stderr}`);
+    });
+}
+
+function executeCumulativeClickmap()
+{
+
+    const command = `cd "${path.join(__dirname, 'Clickmap')}" && python3 Cumulative-clickmap.py`;
 
     // Execute the command
     exec(command, (error, stdout, stderr) => {
@@ -338,6 +370,24 @@ app.post("/returnMetaData",async (req, res) => {
         res.status(500).json({ error: 'Internal server error' });
     }
 })
+
+app.post("/distinctRollNos", async (req, res) => {
+    try {
+        // Fetch distinct roll numbers from MetaData collection
+        const metaDataCollection = INTUX.collection('MetaData');
+        const distinctRollNos = await metaDataCollection.distinct('rollNo');
+
+        // Send response
+        res.json({ distinctRollNos });
+
+        // Close MongoDB connection
+        client.close();
+    } catch (err) {
+        console.error('Error:', err);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+})
+
 
 app.post('/saveRecording', upload.single('recording'), async (req, res) => {
     try {
@@ -434,6 +484,11 @@ app.post('/uploadData',upload.single('file'), async (req, res) => {
         executeCumulativeHeatmap()
 
         executeIndividualFixationMap(rollNo)
+
+        executeIndividualClickmapUpload(rollNo)
+        
+        executeCumulativeClickmap()
+
 
     } catch (error) {
         console.error("Error in server while processing request", error);

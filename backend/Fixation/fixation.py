@@ -131,6 +131,6 @@ if __name__ == '__main__':
 
     # Upload the image to Google Cloud Storage
     bucket_name = 'intux_fixation'  # Replace with your bucket name
-    key_json_path = "finalyear-409412-5412169777f2.json"  # Replace with your service account key JSON path
+    key_json_path = "../finalyear-409412-5412169777f2.json"  # Replace with your service account key JSON path
     remote_file_path = f'{rollNo}.png'  # Remote file path in your bucket
     upload_to_gcs(bucket_name, f"{rollNo}.png", remote_file_path, key_json_path)

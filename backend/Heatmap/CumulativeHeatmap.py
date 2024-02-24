@@ -87,6 +87,6 @@ plt.savefig(image_file, bbox_inches='tight', pad_inches=0)
 
 # Upload the image to Google Cloud Storage
 bucket_name = 'intux_general'  # Replace with your bucket name
-key_json_path = 'finalyear-409412-5412169777f2.json'  # Replace with your service account key JSON path
+key_json_path = '../finalyear-409412-5412169777f2.json'  # Replace with your service account key JSON path
 remote_file_path = 'heatmap.jpg'
 upload_to_gcs(bucket_name, image_file, remote_file_path, key_json_path)

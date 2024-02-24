@@ -84,7 +84,7 @@ def generate_heatmap_image(roll_number, image_path, sigma, bucket_name, myplot_f
     plt.close()
 
     # Upload the image to Google Cloud Storage
-    key_json_path = "finalyear-409412-5412169777f2.json"
+    key_json_path = "../finalyear-409412-5412169777f2.json"
     upload_to_gcs(bucket_name, image_file, f'{roll_number}.jpg', key_json_path)
 
 if __name__ == "__main__":
