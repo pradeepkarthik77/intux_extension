@@ -81,7 +81,7 @@ async function submitForm() {
         }
     }
 
-    const endpointURL = 'http://localhost:8080/uploadData';
+    const endpointURL = 'http://34.66.135.227:8080/uploadData';
 
     try {
         const response = await fetch(endpointURL, {
