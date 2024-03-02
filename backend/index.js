@@ -6,6 +6,8 @@ const config = require("./config.json");
 const admin = require('firebase-admin');
 const multer = require('multer');
 const serviceAccount = require('./serviceAccountKey.json');
+const { exec } = require('child_process');
+const path = require('path');
 
 const app = express();
 const port = 8080;
@@ -21,16 +23,16 @@ admin.initializeApp({
 const storage = admin.storage();
 const upload = multer();
 
-uri = config.MONGO_LOCAL;
+uri = config.MONGO_URI;
 
 const client = new MongoClient(uri);
 
-const GazeDB = client.db("GazeDB");
-const ClickDB = client.db("ClickDB");
-const MetaDB = client.db('MetaDB');
+const GazeDB = client.db("GazeDB2");
+const ClickDB = client.db("ClickDB2");
+const MetaDB = client.db('MetaDB2');
 // const MetaDB = database.collection("ClickCollection");
 
-const INTUX = client.db('INTUX');
+const INTUX = client.db('INTUX2');
 
 async function deleteCollection(db,rollNo)
 {
@@ -252,6 +254,139 @@ async function moveNnormalize(rollNo)
         // }
     // })
 
+function convertTimeToSeconds(timeString) {
+    const [minutes, seconds] = timeString.split(':');
+    const totalSeconds = parseInt(minutes) * 60 + parseInt(seconds);
+    return totalSeconds;
+}
+
+function executeIndividualHeatmapUpload(rollNo)
+{
+
+    const command = `cd "${path.join(__dirname, 'Heatmap')}" && python3 IndividualHeatmap.py ${rollNo}`;
+
+    // Execute the command
+    exec(command, (error, stdout, stderr) => {
+        if (error) {
+            console.error(`Error executing command: ${error}`);
+            return;
+        }
+        console.log(`stdout: ${stdout}`);
+        console.error(`stderr: ${stderr}`);
+    });
+}
+
+function executeIndividualClickmapUpload(rollNo)
+{
+
+    const command = `cd "${path.join(__dirname, 'Clickmap')}" && python3 clickmap.py ${rollNo}`;
+
+    // Execute the command
+    exec(command, (error, stdout, stderr) => {
+        if (error) {
+            console.error(`Error executing command: ${error}`);
+            return;
+        }
+        console.log(`stdout: ${stdout}`);
+        console.error(`stderr: ${stderr}`);
+    });
+}
+
+function executeCumulativeHeatmap()
+{
+
+    const command = `cd "${path.join(__dirname, 'Heatmap')}" && python3 CumulativeHeatmap.py`;
+
+    // Execute the command
+    exec(command, (error, stdout, stderr) => {
+        if (error) {
+            console.error(`Error executing command: ${error}`);
+            return;
+        }
+        console.log(`stdout: ${stdout}`);
+        console.error(`stderr: ${stderr}`);
+    });
+}
+
+function executeCumulativeClickmap()
+{
+
+    const command = `cd "${path.join(__dirname, 'Clickmap')}" && python3 Cumulative-clickmap.py`;
+
+    // Execute the command
+    exec(command, (error, stdout, stderr) => {
+        if (error) {
+            console.error(`Error executing command: ${error}`);
+            return;
+        }
+        console.log(`stdout: ${stdout}`);
+        console.error(`stderr: ${stderr}`);
+    });
+}
+
+function executeIndividualFixationMap(rollNo)
+{
+
+    const command = `cd "${path.join(__dirname, 'Fixation')}" && python3 fixation.py ${rollNo}`;
+
+    // Execute the command
+    exec(command, (error, stdout, stderr) => {
+        if (error) {
+            console.error(`Error executing command: ${error}`);
+            return;
+        }
+        console.log(`stdout: ${stdout}`);
+        console.error(`stderr: ${stderr}`);
+    });
+}
+
+app.post("/returnMetaData",async (req, res) => {
+    try {
+        
+        // Fetch data from MetaData collection
+        const metaDataCollection = INTUX.collection('MetaData');
+        const metaData = await metaDataCollection.find({}).toArray();
+
+        // Calculate total users
+        const totalUsers = metaData.length;
+
+        // Construct the response object
+        const userData = {};
+        metaData.forEach(entry => {
+            const { rollNo, timeTaken, clickCount } = entry;
+            if (!userData[rollNo]) {
+                userData[rollNo] = [];
+            }
+            userData[rollNo].push(convertTimeToSeconds(timeTaken), clickCount);
+        });
+
+        // Send response
+        res.json({ totalUsers, userData });
+
+        // Close MongoDB connection
+        client.close();
+    } catch (err) {
+        console.error('Error:', err);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+})
+
+app.post("/distinctRollNos", async (req, res) => {
+    try {
+        // Fetch distinct roll numbers from MetaData collection
+        const metaDataCollection = INTUX.collection('MetaData');
+        const distinctRollNos = await metaDataCollection.distinct('rollNo');
+
+        // Send response
+        res.json({ distinctRollNos });
+
+        // Close MongoDB connection
+        client.close();
+    } catch (err) {
+        console.error('Error:', err);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+})
 
 
 app.post('/saveRecording', upload.single('recording'), async (req, res) => {
@@ -343,6 +478,17 @@ app.post('/uploadData',upload.single('file'), async (req, res) => {
         await moveNnormalize(rollNo);
 
         console.log("Finished normalzation")
+
+        // executeIndividualHeatmapUpload(rollNo)
+
+        // executeCumulativeHeatmap()
+
+        // executeIndividualFixationMap(rollNo)
+
+        // executeIndividualClickmapUpload(rollNo)
+        
+        // executeCumulativeClickmap()
+
 
     } catch (error) {
         console.error("Error in server while processing request", error);
