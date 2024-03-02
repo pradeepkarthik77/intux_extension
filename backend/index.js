@@ -27,12 +27,12 @@ uri = config.MONGO_URI;
 
 const client = new MongoClient(uri);
 
-const GazeDB = client.db("GazeDB");
-const ClickDB = client.db("ClickDB");
-const MetaDB = client.db('MetaDB');
+const GazeDB = client.db("GazeDB2");
+const ClickDB = client.db("ClickDB2");
+const MetaDB = client.db('MetaDB2');
 // const MetaDB = database.collection("ClickCollection");
 
-const INTUX = client.db('INTUX');
+const INTUX = client.db('INTUX2');
 
 async function deleteCollection(db,rollNo)
 {
@@ -479,15 +479,15 @@ app.post('/uploadData',upload.single('file'), async (req, res) => {
 
         console.log("Finished normalzation")
 
-        executeIndividualHeatmapUpload(rollNo)
+        // executeIndividualHeatmapUpload(rollNo)
 
-        executeCumulativeHeatmap()
+        // executeCumulativeHeatmap()
 
-        executeIndividualFixationMap(rollNo)
+        // executeIndividualFixationMap(rollNo)
 
-        executeIndividualClickmapUpload(rollNo)
+        // executeIndividualClickmapUpload(rollNo)
         
-        executeCumulativeClickmap()
+        // executeCumulativeClickmap()
 
 
     } catch (error) {
