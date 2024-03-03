@@ -161,8 +161,13 @@ async function moveNnormalize(rollNo)
 
     screen_details = await MetaDB.collection(rollNo).findOne({ 'rollNo': rollNo})
 
+    try{
     screen_height = screen_details.screenHeight;
     screen_width = screen_details.screenWidth;
+    }
+    catch(err){
+        console.log(rollNo)
+    }
 
     await normalizeCollections(rollNo,screen_height,screen_width)
 
@@ -195,6 +200,20 @@ async function moveNnormalize(rollNo)
     // await normalizeCollections(rollNo,screen_height,screen_width)
     
 }
+
+// async function iterateandNormalize()
+// {
+//     MetaData = INTUX.collection("MetaData");
+
+//     rollNos = await MetaData.distinct("rollNo");
+
+//     rollNos.forEach(async (rollNo) => {
+//         await moveNnormalize(rollNo);
+//     })
+
+// }
+
+// iterateandNormalize();
 
     // MetaData.findOne({"rollNo":rollNo}, (err, data) => {
 

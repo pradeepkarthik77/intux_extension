@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
         optionsPageData = data;
     });
 
-    const fileInput = document.getElementById('fileInput');
-    fileInput.addEventListener('change', handleFileSelect);
+    // const fileInput = document.getElementById('fileInput');
+    // fileInput.addEventListener('change', handleFileSelect);
 
 });
 
@@ -60,16 +60,16 @@ function handleFileSelect(event) {
 async function submitForm() {
     var formData = new FormData();
 
-    if (!globalFile) {
-        alert("Choose a file before submission");
-        return;
-    }
+    // if (!globalFile) {
+    //     alert("Choose a file before submission");
+    //     return;
+    // }
 
     // Disable submit button and change its text
     submitButton.disabled = true;
     submitButton.textContent = "Submitting...";
 
-    formData.append('file', globalFile, globalFile.name);
+    // formData.append('file', globalFile, globalFile.name);
 
     for (const key in optionsPageData) {
         if (optionsPageData.hasOwnProperty(key)) {
